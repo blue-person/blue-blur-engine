@@ -1,0 +1,1 @@
+aumentar_vidas();

@@ -1,0 +1,3 @@
+Para crear un puente se necesita usar el obj_gestor_tablones, este creara 16 tablones una vez el nivel
+sea cargado. Es por esto que para usar puentes en un nivel, se requiere que se deje un espacio de 16 tablones
+donde se quiera tener el puente, y en el inicio del espacio se deje el obj_gestor_tablones.

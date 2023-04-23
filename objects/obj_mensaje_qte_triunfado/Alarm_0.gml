@@ -1,0 +1,1 @@
+realizar_animacion = 2;

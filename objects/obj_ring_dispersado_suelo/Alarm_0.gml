@@ -1,0 +1,1 @@
+jugador_puede_recogerlo = false;

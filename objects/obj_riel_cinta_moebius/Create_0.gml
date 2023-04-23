@@ -1,0 +1,1 @@
+instance_create_depth(x + 170, y, -2, obj_riel_cinta_moebius_final);

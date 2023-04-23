@@ -1,0 +1,27 @@
+***************************
+Platformer Water Reflection
+    -by matharoo
+***************************
+
+**USAGE**---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Place obj_platwater where you need the water. You can stretch/scale to make the water body larger.
+
+You can tweak the reflection/refraction settings inside the object's Create event. You can reduce refl_alpha to make the objects visible through the water.
+
+There you can also assign which background and tile layers you want the water to reflect.
+Example:
+
+If you have a background layer called "Background" and two tile layers called "Tiles_Main" and "Tiles_Detail", you'll do this in the "Reflective layers" section of the object's
+Create event:
+
+back_layers = ["Background"];
+tile_layers = ["Tiles_Detail", "Tiles_Main"];
+
+**IMPORTANT**---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To make sure the reflection animation doesn't cut off to the sprite's edges, make sure there is enough empty space around the graphic in the sprite.
+Also, go to Tools > Texture Groups and make sure "Automatically Crop" is DISABLED.
+
+--------------------
+Make sure the water object is in a layer that is of a lower depth than your instances. In other words, the water object's layer should be at the top.

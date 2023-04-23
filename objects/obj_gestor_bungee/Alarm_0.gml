@@ -1,0 +1,1 @@
+permitir_salto = true;

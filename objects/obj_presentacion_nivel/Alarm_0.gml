@@ -1,0 +1,1 @@
+animacion_actual = 2;

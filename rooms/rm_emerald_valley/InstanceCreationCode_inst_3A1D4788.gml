@@ -1,0 +1,1 @@
+compuerta = obj_compuerta

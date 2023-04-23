@@ -1,0 +1,1 @@
+cantidad_fuerza = 10.5;
