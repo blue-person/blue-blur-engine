@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "ts_cave",
+  "name": "ts_cueva",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Mining Mayhem",
-    "path": "folders/Conjuntos de casillas/Mining Mayhem.yy",
+    "name": "Generales",
+    "path": "folders/Conjuntos de casillas/Generales.yy",
   },
   "spriteId": {
     "name": "spr_cueva",

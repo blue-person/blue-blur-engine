@@ -186,6 +186,8 @@
     {"name":"Superficies","order":1,"path":"folders/Sprites/Texturas/Superficies.yy",},
     {"name":"Esfera","order":1,"path":"folders/Sprites/Texturas/Superficies/Esfera.yy",},
     {"name":"Normal","order":1,"path":"folders/Sprites/Texturas/Superficies/Esfera/Normal.yy",},
+    {"name":"Generales","order":7,"path":"folders/Conjuntos de casillas/Generales.yy",},
+    {"name":"Generales","order":6,"path":"folders/Sprites/Texturas/Niveles/Generales.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_capa_frontal","order":1,"path":"sprites/spr_capa_frontal/spr_capa_frontal.yy",},
@@ -733,7 +735,7 @@
     {"name":"obj_trampolin_trampa","order":1,"path":"objects/obj_trampolin_trampa/obj_trampolin_trampa.yy",},
     {"name":"obj_trampolin_jump_panel","order":2,"path":"objects/obj_trampolin_jump_panel/obj_trampolin_jump_panel.yy",},
     {"name":"obj_transicion_niveles_blanco","order":1,"path":"objects/obj_transicion_niveles_blanco/obj_transicion_niveles_blanco.yy",},
-    {"name":"ts_cave","order":1,"path":"tilesets/ts_cave/ts_cave.yy",},
+    {"name":"ts_cueva","order":1,"path":"tilesets/ts_cueva/ts_cueva.yy",},
     {"name":"obj_springboard","order":4,"path":"objects/obj_springboard/obj_springboard.yy",},
     {"name":"obj_poste_salto","order":1,"path":"objects/obj_poste_salto/obj_poste_salto.yy",},
     {"name":"obj_spinner","order":2,"path":"objects/obj_spinner/obj_spinner.yy",},
