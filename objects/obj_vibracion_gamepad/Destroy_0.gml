@@ -1,1 +1,0 @@
-gamepad_set_vibration(obj_controles.puerto_dispositivo, 0, 0);

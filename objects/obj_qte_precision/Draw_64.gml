@@ -20,7 +20,7 @@ for (var n = limite_final_circulo_c; n <= limite_inicial_circulo_c; n += 0.1) {
 }
 
 // Dibujar tecla a presionar
-draw_sprite_ext(iconos_controles, boton_aleatorio.indice_sprite, x, y, escala_x_boton, escala_y_boton, 1, c_white, transparencia_boton);
+draw_sprite_ext(icono_boton, 0, x, y, escala_x_boton, escala_y_boton, 1, c_white, transparencia_boton);
 
 // Dibujar linea de seleccion
 draw_set_colour(c_lime);

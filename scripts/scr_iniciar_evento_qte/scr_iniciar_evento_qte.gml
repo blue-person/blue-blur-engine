@@ -1,8 +1,8 @@
 function determinar_botones_qte() {
-	if (obj_controles.tipo_entrada == "teclado") {
-		return [obj_controles.boton_izquierda, obj_controles.boton_abajo, obj_controles.boton_arriba, obj_controles.boton_derecha];
+	if (input_source_using(INPUT_KEYBOARD)) {
+		return ["boton_izquierda", "boton_abajo", "boton_arriba", "boton_derecha"];
 	} else {
-		return [obj_controles.boton_salto, obj_controles.boton_boost, obj_controles.boton_ataque, obj_controles.boton_especial];
+		return ["boton_salto", "boton_boost", "boton_ataque", "boton_especial"];
 	}
 }
 
@@ -17,7 +17,7 @@ function iniciar_evento_qte() {
 	obj_jugador.velocidad_horizontal = 8 * obj_jugador.direccion_horizontal;
 	obj_jugador.velocidad_vertical = -7;
 	
-	obj_controles.permitir_uso_controles = false;
+	//obj_controles.permitir_uso_controles = false;
 	activar_evento = false;
 	reproducir_efecto_sonido(snd_dashramp, 1, false);
 	alarm[0] = 60;

@@ -50,7 +50,7 @@ switch (fase_animacion) {
 	    }
         break;
     case 9:
-		if (obj_controles.boton_salto.estado_pulsado or obj_controles.boton_entrada.estado_pulsado) {
+		if (input_check_pressed("boton_salto") or input_check_pressed("boton_entrada")) {
 			global.puntaje_final += global.puntaje_rings + global.puntaje_tiempo + global.puntaje_cool;
 			
 			global.puntaje_rings = 0;
@@ -85,7 +85,7 @@ switch (fase_animacion) {
 		   }
 	    }
 
-	    if (permitir_transicion and obj_controles.boton_salto.estado_pulsado) {
+	    if (permitir_transicion and input_check_pressed("boton_salto")) {
 			permitir_transicion = false;
 			
 	        audio_stop_all();

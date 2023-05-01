@@ -1,5 +1,4 @@
 // Variables del objeto
-iconos_controles = obj_controles.tipo_iconos;
 limite_tiempo = 100;
 incremento_tiempo = 0.75;
 tiempo_restante = 0;

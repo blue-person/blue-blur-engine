@@ -1,4 +1,4 @@
-// Variables
+// Variables generales
 mostrar_en_pantalla = false;
 transparencia = 1;
 alarm[0] = 10;

@@ -1,4 +1,5 @@
-// HUD
+
+
 switch (global.personaje_actual) {
     case "Sonic":
         hud_vidas = spr_contador_vidas_sonic;
