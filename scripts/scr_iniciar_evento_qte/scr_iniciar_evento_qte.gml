@@ -1,6 +1,5 @@
 function determinar_botones_qte() {
-	var tipo_controles = determinar_tipo_controles();
-	if (tipo_controles == "teclado") {
+	if (obj_controles.tipo_entrada == "teclado") {
 		return [obj_controles.boton_izquierda, obj_controles.boton_abajo, obj_controles.boton_arriba, obj_controles.boton_derecha];
 	} else {
 		return [obj_controles.boton_salto, obj_controles.boton_boost, obj_controles.boton_ataque, obj_controles.boton_especial];

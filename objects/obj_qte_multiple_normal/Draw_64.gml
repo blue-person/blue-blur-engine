@@ -9,7 +9,7 @@ if (limite_tiempo > 0) {
 	    var transparencia = opcion_actual.transparencia;
 		var boton_aleatorio = lista_botones[indice_boton];
 		
-		draw_sprite_ext(sprites_controles, boton_aleatorio.indice_sprite, pos_x, pos_y, escala_x, escala_y, 0, c_white, transparencia);
+		draw_sprite_ext(iconos_controles, boton_aleatorio.indice_sprite, pos_x, pos_y, escala_x, escala_y, 0, c_white, transparencia);
 	}
 	
 	draw_healthbar(pos_x_1, pos_y_1, pos_x_2, pos_y_2, limite_tiempo, c_dkgray, c_green, c_lime, 0, true, false);	

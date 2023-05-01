@@ -1,5 +1,5 @@
 // Establecer valores y elementos
-establecer_variables_proyecto();
+establecer_variables_generales();
 establecer_variables_jugador();
 establecer_variables_niveles();
 establecer_constantes();

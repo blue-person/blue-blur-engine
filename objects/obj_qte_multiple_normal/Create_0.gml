@@ -1,13 +1,13 @@
 // Variables del objeto
-sprites_controles = determinar_sprites_controles();
+iconos_controles = obj_controles.tipo_iconos;
 limite_tiempo = 100;
 incremento_tiempo = 0.75;
 tiempo_restante = 0;
 evento_finalizado = false;
 
 // Variables temporales para las posiciones
-mitad_ancho = ANCHO_RESOLUCION / 2;
-mitad_altura = ALTURA_RESOLUCION / 2;
+mitad_ancho = Pantalla.RESOLUCION_HORIZONTAL / 2;
+mitad_altura = Pantalla.RESOLUCION_VERTICAL  / 2;
 distancia_separacion = 30;
 
 // Posicion de la barra de tiempo

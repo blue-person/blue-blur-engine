@@ -8,11 +8,11 @@ draw_sprite_ext(spr_banda_inferior, indice, 0, pos_y_barra_inferior, 1, 1, 0, c_
 draw_sprite_ext(spr_marco_titulo, 0, 0, pos_y_titulo + 7, 1, 0.6, 0, c_white, transparencia_barra);
 
 // Mostrar el texto de Stage Clear
-draw_set_font(font_titulo);
-dibujar_texto_sombreado(pos_x_titulo, pos_y_titulo, "Stage  Clear", 2, color);
+draw_set_font(font_principal_cursiva);
+dibujar_texto_sombreado(pos_x_titulo, pos_y_titulo + 3.5, "Stage  Clear", 2, color);
 
 // Estipular el font para todos los demas textos
-draw_set_font(font_general);
+draw_set_font(font_principal_normal);
 
 // Mostrar el 
 dibujar_texto_sombreado(pos_x_texto_tiempo, pos_y_texto_tiempo, "Time Bonus", 1, color);
@@ -34,7 +34,5 @@ dibujar_texto_sombreado(pos_x_puntaje_final, pos_y_puntaje_final, ("Score   " + 
 
 // Mostrar el boton para terminar la pantalla de nivel completado
 if (fase_animacion == 11) {
-	var sprites_controles = determinar_sprites_controles();
-	var indice_sprite = obj_controles.boton_salto.indice_sprite;
-	draw_sprite_ext(sprites_controles, indice_sprite, 428, 222, 1, 1, 0, c_white, transparencia_boton_continuar);
+	draw_sprite_ext(obj_controles.tipo_iconos, obj_controles.boton_salto.indice_sprite, 428, 222, 1, 1, 0, c_white, transparencia_boton_continuar);
 }

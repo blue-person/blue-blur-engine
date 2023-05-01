@@ -1,17 +1,21 @@
-// Detectar entrada del usuario
 if (permitir_uso_controles) {
-	var tipo_controles = determinar_tipo_controles();
-	if (tipo_controles == "teclado") {
+	// Detectar parametros de la entrada del usuario
+	var parametros_controles = determinar_parametros_controles();
+	puerto_dispositivo = parametros_controles[0];
+	tipo_entrada = parametros_controles[1];
+	tipo_iconos = parametros_controles[2];
+	
+	// Determinar el estado de los botones
+	if (tipo_entrada == "teclado") {
 	    for (var i = 0; i < array_length(lista_total_botones); i++) {
 	        var boton_actual = lista_total_botones[i];
 			determinar_estados_boton_teclado(boton_actual);
 	    }
 	} else {
-		var id_gamepad = gamepad_is_connected(0) ? 0 : 4;
-		configurar_gamepad(id_gamepad);
+		gamepad_set_axis_deadzone(puerto_dispositivo, global.porcentaje_zona_muerta_sticks);
 		
-		var valor_vertical_stick = gamepad_axis_value(id_gamepad, gp_axislv);
-	    var valor_horizontal_stick = gamepad_axis_value(id_gamepad, gp_axislh);
+	    var valor_horizontal_stick = gamepad_axis_value(puerto_dispositivo, gp_axislh);
+		var valor_vertical_stick = gamepad_axis_value(puerto_dispositivo, gp_axislv);
 		
 		determinar_estados_stick(boton_izquierda, (valor_horizontal_stick < 0));
 		determinar_estados_stick(boton_abajo, (valor_vertical_stick > 0));
@@ -20,10 +24,11 @@ if (permitir_uso_controles) {
 		
 		for (var i = 0; i < array_length(lista_botones_gamepad); i++) {
 	        var boton_actual = lista_botones_gamepad[i];
-			determinar_estados_boton_gamepad(id_gamepad, boton_actual);
+			determinar_estados_boton_gamepad(puerto_dispositivo, boton_actual);
 	    }
 	}
 } else {
+	// Invalidar el estado de los botones
 	for (var i = 0; i < array_length(lista_total_botones); i++) {
 		var boton_actual = lista_total_botones[i];
 		invalidar_estados_boton(boton_actual, true);

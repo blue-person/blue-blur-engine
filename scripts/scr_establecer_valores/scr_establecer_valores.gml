@@ -1,14 +1,15 @@
 function establecer_constantes() {
-	// Visuales
-	#macro ANCHO_RESOLUCION 456
-	#macro ALTURA_RESOLUCION 256
-	
-	// Controles
-	#macro SENSIBILIDAD_GAMEPAD 0.45
+	enum Pantalla {
+		RESOLUCION_HORIZONTAL = 456,
+		RESOLUCION_VERTICAL = 256
+	}
 }
 
-function establecer_variables_proyecto() {
+function establecer_variables_generales() {
 	global.permitir_modo_debug = false;
+	global.permitir_pantalla_completa = true;
+	global.intensidad_vibracion_gamepad = 1;
+	global.porcentaje_zona_muerta_sticks = 0.45;
 }
 
 function establecer_variables_jugador() {

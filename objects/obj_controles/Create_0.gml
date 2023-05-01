@@ -1,4 +1,7 @@
 // Variables generales
+puerto_dispositivo = undefined;
+tipo_entrada = undefined;
+tipo_iconos = undefined;
 permitir_uso_controles = true;
 
 // Variables de botones

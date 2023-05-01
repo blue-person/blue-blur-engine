@@ -68,6 +68,4 @@ if (((other.accion == 1) or (other.accion == -2) or (other.accion == 4) or (othe
     herir_jugador();
 }
 
-if (determinar_tipo_controles() != "teclado") {
-    vibrar_gamepad(15);
-}
+efecto_haptico_colision();

@@ -57,8 +57,8 @@ if (objeto_enfocado == obj_jugador)  {
 }
 
 // Hacer que la camara no se salga de los bordes del nivel
-var mitad_ancho = ANCHO_RESOLUCION / 2;
-var mitad_altura = ALTURA_RESOLUCION / 2;
+var mitad_ancho = Pantalla.RESOLUCION_HORIZONTAL / 2;
+var mitad_altura = Pantalla.RESOLUCION_VERTICAL  / 2;
 x = clamp(x, mitad_ancho, room_width - mitad_ancho);
 y = clamp(y, mitad_altura, room_height - mitad_altura);
 

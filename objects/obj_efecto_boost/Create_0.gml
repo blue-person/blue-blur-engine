@@ -34,5 +34,4 @@ switch (global.personaje_actual) {
 
 
 // Gestion de la vibracion
-sacudir_camara(6, 25);
-if (determinar_tipo_controles() != "teclado") then vibrar_gamepad(15);
+efecto_haptico_colision();

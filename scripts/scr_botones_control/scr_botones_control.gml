@@ -13,10 +13,10 @@ function determinar_estados_boton_teclado(boton) {
 	boton.estado_liberado = keyboard_check_released(boton.accionador_teclado);
 }
 
-function determinar_estados_boton_gamepad(id_gamepad, boton) {
-	boton.estado_pulsado = gamepad_button_check_pressed(id_gamepad, boton.accionador_gamepad);
-	boton.estado_retenido = gamepad_button_check(id_gamepad, boton.accionador_gamepad);
-	boton.estado_liberado = gamepad_button_check_released(id_gamepad, boton.accionador_gamepad);
+function determinar_estados_boton_gamepad(puerto_dispositivo, boton) {
+	boton.estado_pulsado = gamepad_button_check_pressed(puerto_dispositivo, boton.accionador_gamepad);
+	boton.estado_retenido = gamepad_button_check(puerto_dispositivo, boton.accionador_gamepad);
+	boton.estado_liberado = gamepad_button_check_released(puerto_dispositivo, boton.accionador_gamepad);
 }
 
 function determinar_estados_stick(boton, comprobacion_valor_analogo) {
