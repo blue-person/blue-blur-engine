@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_colision_circular_principal",
+  "name": "scr_colisiones_circulares",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
