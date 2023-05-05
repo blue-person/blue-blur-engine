@@ -1,4 +1,4 @@
-function colision_parte_superior(mascara = 16, radio = 3, entidad = obj_jugador) {
+function colision_circular_superior(mascara = 16, radio = 3, entidad = obj_jugador) {
 	// Declaracion de valores
 	var pos_x = entidad.x - entidad.asin * mascara;
 	var pos_y = entidad.y - entidad.acos * mascara;
@@ -19,7 +19,7 @@ function colision_parte_superior(mascara = 16, radio = 3, entidad = obj_jugador)
 	return false;
 }
 
-function colision_parte_inferior(mascara = 16, radio = 4, entidad = obj_jugador) {
+function colision_circular_inferior(mascara = 16, radio = 4, entidad = obj_jugador) {
 	// Declaracion de valores
 	var pos_x = entidad.x + entidad.asin * mascara;
 	var pos_y = entidad.y + entidad.acos * mascara;

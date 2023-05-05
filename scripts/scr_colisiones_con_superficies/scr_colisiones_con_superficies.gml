@@ -39,7 +39,7 @@ function colision_con_riel(mascara = 32, entidad = obj_jugador) {
 	
 	// Determinar colisiones
 	var colision_normal_riel = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel, true, true);
-	var colision_capas_riel = colision_lineal_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
+	var colision_capas_riel = colision_lineall_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
 	
 	// Retornar comprobacion
 	return (colision_normal_riel or colision_capas_riel);

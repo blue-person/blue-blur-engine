@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_colisiones_generales_superficies",
+  "name": "scr_colisiones_con_superficies",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

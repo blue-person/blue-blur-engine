@@ -1,4 +1,4 @@
-function colision_parte_izquierda(mascara = 16, radio = 3, entidad = obj_jugador) {
+function colision_circular_izquierda(mascara = 16, radio = 3, entidad = obj_jugador) {
 	// Declaracion de valores
 	var pos_x = entidad.x - entidad.acos * mascara - entidad.asin * 2;
 	var pos_y = entidad.y + entidad.asin * mascara - entidad.acos * 2;
@@ -21,7 +21,7 @@ function colision_parte_izquierda(mascara = 16, radio = 3, entidad = obj_jugador
 	return false;
 }
 
-function colision_parte_derecha(mascara = 16, radio = 3, entidad = obj_jugador) {
+function colision_circular_derecha(mascara = 16, radio = 3, entidad = obj_jugador) {
 	// Declaracion de valores
 	var pos_x = entidad.x + entidad.acos * mascara - entidad.asin * 2;
 	var pos_y = entidad.y - entidad.asin * mascara - entidad.acos * 2;

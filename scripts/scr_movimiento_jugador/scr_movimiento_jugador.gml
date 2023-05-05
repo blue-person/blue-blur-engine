@@ -10,7 +10,7 @@ function movimiento_jugador() {
     // Frenar al cambiar de direccion
     if ((accion == 0) and tocando_suelo) {
         if (((direccion_horizontal == 1) and input_check("boton_izquierda") and (velocidad_horizontal >= 3)) or ((direccion_horizontal == -1) and input_check("boton_derecha") and (velocidad_horizontal <= -3))) {
-            if (calcular_colision_linea(obj_superficie_agua)) {
+            if (calcular_colision_lineal(obj_superficie_agua)) {
                 audio_play_sound(snd_frenar_agua, 1, 0);
             } else if (verificar_colision_tipo_suelo(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
                 audio_play_sound(snd_frenar_vidrio, 1, 0);
@@ -293,7 +293,7 @@ function movimiento_jugador() {
     }
 
     // Aterrizar en el suelo
-    if (permitir_movimiento and ((accion != 0) or ((accion == 0) and (velocidad_vertical > 0) and ((sprite_actual == spr_sonic_cayendo) or (sprite_actual == spr_shadow_saltando)))) and (accion > -1) and (accion != 2) and (accion != 16) and (accion != 17) and (accion != 8) and (accion != 9) and (accion != 22) and (accion != 26) and (accion != 34) and (accion != 35) and tocando_suelo and calcular_colision_linea(obj_superficie)) {
+    if (permitir_movimiento and ((accion != 0) or ((accion == 0) and (velocidad_vertical > 0) and ((sprite_actual == spr_sonic_cayendo) or (sprite_actual == spr_shadow_saltando)))) and (accion > -1) and (accion != 2) and (accion != 16) and (accion != 17) and (accion != 8) and (accion != 9) and (accion != 22) and (accion != 26) and (accion != 34) and (accion != 35) and tocando_suelo and calcular_colision_lineal(obj_superficie)) {
         var sonido_aterrizar = snd_aterrizar;
 		
 		if (collision_line(x, y, x, y + 20, obj_superficie_agua, true, true)) {

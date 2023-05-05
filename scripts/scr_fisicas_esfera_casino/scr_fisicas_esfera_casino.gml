@@ -9,14 +9,14 @@ function fisicas_esfera_casino() {
 
 	// Velocidad horizontal
 	if (velocidad_horizontal > 0) {
-	    for (var n = 0; n < velocidad_horizontal and !colision_parte_derecha(mascara); ++n) {
+	    for (var n = 0; n < velocidad_horizontal and !colision_circular_derecha(mascara); ++n) {
 	        x += acos;
 	        y -= asin;    
 	    }
 	}
 
 	if (velocidad_horizontal < 0) {
-	    for (var n = 0; n > velocidad_horizontal and !colision_parte_izquierda(mascara); --n) {
+	    for (var n = 0; n > velocidad_horizontal and !colision_circular_izquierda(mascara); --n) {
 	        x -= acos;
 	        y += asin;
 	    }
@@ -24,19 +24,19 @@ function fisicas_esfera_casino() {
 
 	// Velocidad vertical
 	if (velocidad_vertical > 0) {
-	    for (var n = 0; n < velocidad_vertical and!colision_parte_inferior(mascara); ++n) {
+	    for (var n = 0; n < velocidad_vertical and!colision_circular_inferior(mascara); ++n) {
 	        y += 1;
 	    }
 	}
 
 	if (velocidad_vertical < 0) {
-	    for (var n = 0; n > velocidad_vertical and !colision_parte_superior(mascara); --n) {
+	    for (var n = 0; n > velocidad_vertical and !colision_circular_superior(mascara); --n) {
 	        y -= 1;
 	    }
 	}
 
 	// Aterrizar en el suelo
-	if (velocidad_vertical >= 0 and !tocando_suelo and colision_parte_inferior(mascara) and (colision_linea_izquierda(mascara) or colision_linea_derecha(mascara))) {
+	if (velocidad_vertical >= 0 and !tocando_suelo and colision_circular_inferior(mascara) and (colision_lineal_izquierda(mascara) or colision_lineal_derecha(mascara))) {
 	    angulo = calcular_angulo(angulo, mascara,mascara);
 		acos = dcos(angulo);
 		asin = dsin(angulo);
@@ -48,12 +48,12 @@ function fisicas_esfera_casino() {
 
 	// Mantener en el suelo
 	if (tocando_suelo) {
-	    while (colision_parte_principal(mascara)) {
+	    while (colision_circular_principal(mascara)) {
 	        x -= asin;
 	        y -= acos;
 	    }
 
-	    while (!colision_parte_principal(mascara) and colision_con_suelo(mascara)) {
+	    while (!colision_circular_principal(mascara) and colision_con_suelo(mascara)) {
 	        x += asin;
 	        y += acos;
 	    }
@@ -70,7 +70,7 @@ function fisicas_esfera_casino() {
 	}
 
 	// Dejar de estar en el suelo
-	if (!colision_linea_izquierda(mascara) or !colision_linea_derecha(mascara)) and !colision_parte_inferior(mascara) and tocando_suelo  and !collision_line(x,y,x+mascara+4*asin,y+mascara+4*acos,obj_superficie,true,true) {   
+	if (!colision_lineal_izquierda(mascara) or !colision_lineal_derecha(mascara)) and !colision_circular_inferior(mascara) and tocando_suelo  and !collision_line(x,y,x+mascara+4*asin,y+mascara+4*acos,obj_superficie,true,true) {   
 	    velocidad_vertical = -asin * velocidad_horizontal;
 	    velocidad_horizontal = acos * velocidad_horizontal; 
     
@@ -81,13 +81,13 @@ function fisicas_esfera_casino() {
 	}
 
 	// Colisionar con las paredes
-	while (colision_parte_derecha(mascara)) {
+	while (colision_circular_derecha(mascara)) {
 	    x -= acos;
 	    y += asin;
 	    velocidad_horizontal = 0;
 	}
 
-	while (colision_parte_izquierda(mascara)) {
+	while (colision_circular_izquierda(mascara)) {
 	    x += acos;
 	    y -= asin;
 	    velocidad_horizontal = 0;
@@ -110,7 +110,7 @@ function fisicas_esfera_casino() {
 	}
 
 	// Pendiente del suelo
-	if (tocando_suelo and (colision_linea_izquierda(mascara) and colision_linea_derecha(mascara))) {
+	if (tocando_suelo and (colision_lineal_izquierda(mascara) and colision_lineal_derecha(mascara))) {
 		angulo = calcular_angulo(angulo, mascara, mascara + 11);
 	}
 

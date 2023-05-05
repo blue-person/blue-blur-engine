@@ -50,11 +50,11 @@ if (acos == 1 and tocando_suelo) {
 if (global.permitir_modo_debug) {
 	colision_con_suelo();
 	colision_con_riel();
-	colision_linea_derecha();
-	colision_linea_izquierda();
-	colision_parte_principal();
-	colision_parte_izquierda();
-	colision_parte_derecha();
-	colision_parte_superior();
-	colision_parte_inferior();
+	colision_lineal_derecha();
+	colision_lineal_izquierda();
+	colision_circular_principal();
+	colision_circular_izquierda();
+	colision_circular_derecha();
+	colision_circular_superior();
+	colision_circular_inferior();
 }

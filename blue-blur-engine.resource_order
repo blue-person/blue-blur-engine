@@ -721,7 +721,7 @@
     {"name":"snd_explosion_enemigo_b","order":4,"path":"sounds/snd_explosion_enemigo_b/snd_explosion_enemigo_b.yy",},
     {"name":"snd_explosion_enemigo_c","order":5,"path":"sounds/snd_explosion_enemigo_c/snd_explosion_enemigo_c.yy",},
     {"name":"snd_grinding","order":2,"path":"sounds/snd_grinding/snd_grinding.yy",},
-    {"name":"scr_calculos_colisiones","order":10,"path":"scripts/scr_calculos_colisiones/scr_calculos_colisiones.yy",},
+    {"name":"scr_calcular_colisiones","order":10,"path":"scripts/scr_calcular_colisiones/scr_calcular_colisiones.yy",},
     {"name":"input_binding_scan_in_progress","order":10,"path":"scripts/input_binding_scan_in_progress/input_binding_scan_in_progress.yy",},
     {"name":"scr_reproducir_cancion","order":4,"path":"scripts/scr_reproducir_cancion/scr_reproducir_cancion.yy",},
     {"name":"obj_efecto_salpicadura_agua","order":1,"path":"objects/obj_efecto_salpicadura_agua/obj_efecto_salpicadura_agua.yy",},

@@ -3,12 +3,12 @@ function manejo_fisicas_jugador() {
 	var pendiente = 0.125;
 
 	// Definir constantes
-	#macro COLISION_PARTE_DERECHA colision_parte_derecha(MASCARA_COLISION)
-    #macro COLISION_PARTE_IZQUIERDA colision_parte_izquierda(MASCARA_COLISION)
-    #macro COLISION_PARTE_INFERIOR colision_parte_inferior(MASCARA_COLISION)
-    #macro COLISION_PARTE_SUPERIOR colision_parte_superior(MASCARA_COLISION)
-    #macro COLISION_LINEA_IZQUIERDA colision_linea_izquierda(MASCARA_COLISION)
-    #macro COLISION_LINEA_DERECHA colision_linea_derecha(MASCARA_COLISION)
+	#macro COLISION_PARTE_DERECHA colision_circular_derecha(MASCARA_COLISION)
+    #macro COLISION_PARTE_IZQUIERDA colision_circular_izquierda(MASCARA_COLISION)
+    #macro COLISION_PARTE_INFERIOR colision_circular_inferior(MASCARA_COLISION)
+    #macro COLISION_PARTE_SUPERIOR colision_circular_superior(MASCARA_COLISION)
+    #macro COLISION_LINEA_IZQUIERDA colision_lineal_izquierda(MASCARA_COLISION)
+    #macro COLISION_LINEA_DERECHA colision_lineal_derecha(MASCARA_COLISION)
 	
 	with (obj_jugador) {
 		// Establecer los limites de velocidad del movimiento del jugador
@@ -56,12 +56,12 @@ function manejo_fisicas_jugador() {
 
 	    // Mantener en el suelo
 	    if (tocando_suelo) {
-	        while (colision_parte_principal(MASCARA_COLISION)) {
+	        while (colision_circular_principal(MASCARA_COLISION)) {
 	            x -= asin;
 	            y -= acos;
 	        }
 
-	        while (!colision_parte_principal(MASCARA_COLISION) and colision_con_suelo(MASCARA_COLISION)) {
+	        while (!colision_circular_principal(MASCARA_COLISION) and colision_con_suelo(MASCARA_COLISION)) {
 	            x += asin;
 	            y += acos;
 	        }
@@ -94,13 +94,13 @@ function manejo_fisicas_jugador() {
 	    }
 
 	    // Colisionar con las paredes
-	    while (colision_parte_derecha(MASCARA_COLISION) and (velocidad_horizontal > 0)) {
+	    while (colision_circular_derecha(MASCARA_COLISION) and (velocidad_horizontal > 0)) {
 	        x -= acos;
 	        y += asin;
 	        velocidad_horizontal = 0;
 	    }
 
-	    while (colision_parte_izquierda(MASCARA_COLISION) and (velocidad_horizontal < 0)) {
+	    while (colision_circular_izquierda(MASCARA_COLISION) and (velocidad_horizontal < 0)) {
 	        x += acos;
 	        y -= asin;
 	        velocidad_horizontal = 0;

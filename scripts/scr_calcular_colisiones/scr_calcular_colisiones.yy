@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_calculos_colisiones",
+  "name": "scr_calcular_colisiones",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
