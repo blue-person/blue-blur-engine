@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.094218,
+  "duration": 1.417302,
   "parent": {
     "name": "Walljump",
     "path": "folders/Sonidos/Voces/Jugador/General/Walljump.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_walljump.wav",
   "type": 1,
-  "volume": 0.75,
+  "volume": 1.0,
 }

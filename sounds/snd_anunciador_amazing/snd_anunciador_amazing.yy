@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.60322,
+  "duration": 1.957937,
   "parent": {
     "name": "Anunciador",
     "path": "folders/Sonidos/Voces/Anunciador.yy",

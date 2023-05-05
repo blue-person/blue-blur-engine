@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.992,
+  "duration": 0.991995,
   "parent": {
     "name": "Salto",
     "path": "folders/Sonidos/Voces/Jugador/General/Salto.yy",
