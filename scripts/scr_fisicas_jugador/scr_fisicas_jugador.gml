@@ -1,14 +1,6 @@
 function manejo_fisicas_jugador() {
 	// Definir variables
 	var pendiente = 0.125;
-
-	// Definir constantes
-	#macro COLISION_PARTE_DERECHA colision_circular_derecha(MASCARA_COLISION)
-    #macro COLISION_PARTE_IZQUIERDA colision_circular_izquierda(MASCARA_COLISION)
-    #macro COLISION_PARTE_INFERIOR colision_circular_inferior(MASCARA_COLISION)
-    #macro COLISION_PARTE_SUPERIOR colision_circular_superior(MASCARA_COLISION)
-    #macro COLISION_LINEA_IZQUIERDA colision_lineal_izquierda(MASCARA_COLISION)
-    #macro COLISION_LINEA_DERECHA colision_lineal_derecha(MASCARA_COLISION)
 	
 	with (obj_jugador) {
 		// Establecer los limites de velocidad del movimiento del jugador
@@ -17,14 +9,14 @@ function manejo_fisicas_jugador() {
 
 	    // Velocidad horizontal
 	    if (velocidad_horizontal > 0) {
-	        for (var n = 0; (n < velocidad_horizontal) and !COLISION_PARTE_DERECHA; ++n) {
+	        for (var n = 0; (n < velocidad_horizontal) and !colision_circular_derecha(MASCARA_COLISION); ++n) {
 	            x += acos;
 	            y -= asin;
 	        }
 	    }
 
 	    if (velocidad_horizontal < 0) {
-	        for (var n = 0; (n > velocidad_horizontal) and !COLISION_PARTE_IZQUIERDA; --n) {
+	        for (var n = 0; (n > velocidad_horizontal) and !colision_circular_izquierda(MASCARA_COLISION); --n) {
 	            x -= acos;
 	            y += asin;
 	        }
@@ -32,19 +24,19 @@ function manejo_fisicas_jugador() {
 
 	    // Velocidad vertical
 	    if (velocidad_vertical > 0) {
-	        for (var n = 0; (n < velocidad_vertical) and !COLISION_PARTE_INFERIOR; ++n) {
+	        for (var n = 0; (n < velocidad_vertical) and !colision_circular_inferior(MASCARA_COLISION); ++n) {
 	            ++y;
 	        }
 	    }
 
 	    if (velocidad_vertical < 0) {
-	        for (var n = 0; (n > velocidad_vertical) and !COLISION_PARTE_SUPERIOR; --n) {
+	        for (var n = 0; (n > velocidad_vertical) and !colision_circular_superior(MASCARA_COLISION); --n) {
 	            --y;
 	        }
 	    }
 
 	    // Aterrizar en el suelo
-	    if ((velocidad_vertical >= 0) and !tocando_suelo and COLISION_PARTE_INFERIOR and (COLISION_LINEA_IZQUIERDA or COLISION_LINEA_DERECHA)) {
+	    if ((velocidad_vertical >= 0) and !tocando_suelo and colision_circular_inferior(MASCARA_COLISION) and (colision_lineal_izquierda(MASCARA_COLISION) or colision_lineal_derecha(MASCARA_COLISION))) {
 	        angulo = calcular_angulo(angulo, MASCARA_COLISION, MASCARA_COLISION);
 	        acos = dcos(angulo);
 	        asin = dsin(angulo);
@@ -83,7 +75,7 @@ function manejo_fisicas_jugador() {
 	    }
 
 	    // Dejar de estar en el suelo
-	    if ((!COLISION_LINEA_IZQUIERDA or !COLISION_LINEA_DERECHA) and !COLISION_PARTE_INFERIOR and tocando_suelo and !collision_line(x, y, x + (MASCARA_COLISION + 4) * asin, y + (MASCARA_COLISION + 4) * acos, obj_superficie, true, true)) {
+	    if ((!colision_lineal_izquierda(MASCARA_COLISION) or !colision_lineal_derecha(MASCARA_COLISION)) and !colision_circular_inferior(MASCARA_COLISION) and tocando_suelo and !collision_line(x, y, x + (MASCARA_COLISION + 4) * asin, y + (MASCARA_COLISION + 4) * acos, obj_superficie, true, true)) {
 	        velocidad_vertical = -asin * velocidad_horizontal;
 	        velocidad_horizontal = acos * velocidad_horizontal;
 
@@ -130,9 +122,9 @@ function manejo_fisicas_jugador() {
 
 	    if ((accion >= 0) and (abs(velocidad_horizontal) < limite_velocidad_horizontal)) then velocidad_horizontal -= pendiente * asin;
 
-	    if (tocando_suelo and (COLISION_LINEA_IZQUIERDA and COLISION_LINEA_DERECHA)) then angulo = calcular_angulo(angulo, MASCARA_COLISION, 25);
+	    if (tocando_suelo and (colision_lineal_izquierda(MASCARA_COLISION) and colision_lineal_derecha(MASCARA_COLISION))) then angulo = calcular_angulo(angulo, MASCARA_COLISION, 25);
 
-	    if (!tocando_suelo and COLISION_PARTE_SUPERIOR and (velocidad_vertical < 0)) {
+	    if (!tocando_suelo and colision_circular_superior(MASCARA_COLISION) and (velocidad_vertical < 0)) {
 	        var verificar_angulo = calcular_angulo(180, MASCARA_COLISION, 25);
 
 	        if ((verificar_angulo >= 125) and (verificar_angulo <= 170)) {
