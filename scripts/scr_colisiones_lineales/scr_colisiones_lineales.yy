@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Manejo de colisiones",
-    "path": "folders/Scripts/Manejo de colisiones.yy",
+    "path": "folders/Scripts/Fisicas/Manejo de colisiones.yy",
   },
 }

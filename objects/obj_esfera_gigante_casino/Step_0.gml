@@ -1,5 +1,5 @@
 if (activar_evento) {
-    fisicas_esfera_casino();
+    gestor_principal_fisicas(self);
 	
     if (tocando_suelo) {
         velocidad_horizontal = limite_velocidad_horizontal * image_xscale;

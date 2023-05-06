@@ -4,8 +4,8 @@ var pared_requerida;
 var pos_x = x;
 var pos_y = y;
 
-var valor_x = pos_x + asin * MASCARA_COLISION;
-var valor_y = pos_y + acos * MASCARA_COLISION;
+var valor_x = pos_x + asin * mascara_colision;
+var valor_y = pos_y + acos * mascara_colision;
 
 if (place_meeting(pos_x, pos_y, obj_superficie)) {
     pared_requerida = instance_place(valor_x, valor_y, obj_superficie);

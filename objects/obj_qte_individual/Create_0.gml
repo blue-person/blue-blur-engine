@@ -2,11 +2,7 @@ limite_tiempo = 100;
 tiempo_restante = 0;
 evento_finalizado = false;
 
-if (input_source_using(INPUT_KEYBOARD)) {
-	lista_botones = ["boton_izquierda", "boton_abajo", "boton_arriba", "boton_derecha"];
-} else {
-	lista_botones = ["boton_salto", "boton_boost", "boton_ataque", "boton_especial"];
-}
+lista_botones = determinar_botones_qte();
 
 indice_aleatorio = choose(0, 1, 2, 3);
 boton_aleatorio = lista_botones[indice_aleatorio];

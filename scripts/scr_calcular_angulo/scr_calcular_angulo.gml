@@ -1,4 +1,4 @@
-function calcular_angulo(angulo, mascara, verificacion_angulo_final, entidad = obj_jugador) {
+function calcular_angulo(angulo, mascara, verificacion_angulo_final, entidad = self) {
 	// Declaracion de valores
 	var angulo_aproximado = floor(angulo);
 	var valor_acos = dcos(angulo_aproximado);

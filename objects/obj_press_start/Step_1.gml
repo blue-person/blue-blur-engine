@@ -1,5 +1,5 @@
-if (input_source_using(INPUT_KEYBOARD)) {
-	mensaje = "press enter key";
-} else {
+if (input_source_using(INPUT_GAMEPAD)) {
 	mensaje = "press start button";
+} else {
+	mensaje = "press enter key";
 }

@@ -1,4 +1,4 @@
-function colision_lineal_izquierda(mascara = 16, entidad = obj_jugador) {
+function colision_lineal_izquierda(mascara = 16, entidad = self) {
 	// Declaracion de valores
 	var valor_referencia_coseno = mascara * entidad.acos;
 	var valor_referencia_seno = mascara * entidad.asin;
@@ -18,12 +18,12 @@ function colision_lineal_izquierda(mascara = 16, entidad = obj_jugador) {
 
 	// Determinar colisiones con obj_superficie
 	var colision_normal_superficie = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie, true, true);
-	var colision_capas_superficie = colision_lineall_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie_posterior, obj_superficie_frontal);
+	var colision_capas_superficie = colision_lineal_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie_posterior, obj_superficie_frontal);
 	if (colision_normal_superficie or colision_capas_superficie) then return true;
 
 	// Determinar colisiones con obj_riel
 	var colision_normal_riel = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel, true, true);
-	var colision_capas_riel = colision_lineall_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
+	var colision_capas_riel = colision_lineal_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
 	if (permitir_grinding and (colision_normal_riel or colision_capas_riel)) then return true;
 	
 	// Determinar colisiones con obj_superficie_agua
@@ -36,7 +36,7 @@ function colision_lineal_izquierda(mascara = 16, entidad = obj_jugador) {
 	return false;
 }
 
-function colision_lineal_derecha(mascara = 16, entidad = obj_jugador) {
+function colision_lineal_derecha(mascara = 16, entidad = self) {
 	// Declaracion de valores
 	var valor_referencia_coseno = mascara * entidad.acos;
 	var valor_referencia_seno = mascara * entidad.asin;
@@ -56,12 +56,12 @@ function colision_lineal_derecha(mascara = 16, entidad = obj_jugador) {
 
 	// Determinar colisiones con obj_superficie
 	var colision_normal_superficie = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie, true, true);
-	var colision_capas_superficie = colision_lineall_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie_posterior, obj_superficie_frontal);
+	var colision_capas_superficie = colision_lineal_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie_posterior, obj_superficie_frontal);
 	if (colision_normal_superficie or colision_capas_superficie) then return true;
 
 	// Determinar colisiones con obj_riel
 	var colision_normal_riel = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel, true, true);
-	var colision_capas_riel = colision_lineall_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
+	var colision_capas_riel = colision_lineal_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
 	if (permitir_grinding and (colision_normal_riel or colision_capas_riel)) then return true;
 	
 	// Determinar colisiones con obj_superficie_agua

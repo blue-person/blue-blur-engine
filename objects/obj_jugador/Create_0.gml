@@ -1,4 +1,5 @@
 // Variables esenciales
+mascara_colision = 16;
 velocidad_horizontal = 0;
 velocidad_vertical = 0;
 limite_velocidad_vertical = 16;
@@ -82,8 +83,5 @@ alarma_3 = 0;
 alarma_4 = 0;
 alarma_5 = 0;
 
-// Constantes
-#macro MASCARA_COLISION 16
-
-
+// Funciones
 preparar_ubicacion_jugador();

@@ -1,12 +1,12 @@
 function determinar_botones_qte() {
-	if (input_source_using(INPUT_KEYBOARD)) {
-		return ["boton_izquierda", "boton_abajo", "boton_arriba", "boton_derecha"];
-	} else {
+	if (input_source_using(INPUT_GAMEPAD)) {
 		return ["boton_salto", "boton_boost", "boton_ataque", "boton_especial"];
+	} else {
+		return ["boton_izquierda", "boton_abajo", "boton_arriba", "boton_derecha"];
 	}
 }
 
-function iniciar_evento_qte() {
+function iniciar_evento_qte(tiempo_reaccion = 60) {
 	obj_jugador.usando_boost = false;
 	obj_jugador.tocando_suelo = false;
 	obj_jugador.indice_sprite = 0;
@@ -20,5 +20,5 @@ function iniciar_evento_qte() {
 	//obj_controles.permitir_uso_controles = false;
 	activar_evento = false;
 	reproducir_efecto_sonido(snd_dashramp, 1, false);
-	alarm[0] = 60;
+	alarm[0] = tiempo_reaccion;
 }

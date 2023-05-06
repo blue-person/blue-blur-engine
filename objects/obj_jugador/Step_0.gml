@@ -122,7 +122,7 @@ if (sumergido_agua and (random(1) < 0.0115)) {
 }
 
 // Ejecutar scripts esenciales
-manejo_fisicas_jugador();
+gestor_principal_fisicas(self);
 
 if (!zona_superada) {
 	movimiento_jugador();

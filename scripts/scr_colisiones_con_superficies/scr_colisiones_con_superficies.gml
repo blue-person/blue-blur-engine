@@ -1,4 +1,4 @@
-function colision_con_suelo(mascara = 16, radio = 9, entidad = obj_jugador) {
+function colision_con_suelo(mascara = 16, radio = 9, entidad = self) {
 	// Declaracion de valores
 	var valor_referencia = mascara * 2.5;
 	var pos_x = entidad.x + entidad.asin * valor_referencia;
@@ -27,7 +27,7 @@ function colision_con_suelo(mascara = 16, radio = 9, entidad = obj_jugador) {
 	return false;
 }
 
-function colision_con_riel(mascara = 32, entidad = obj_jugador) {
+function colision_con_riel(mascara = 32, entidad = self) {
 	// Declaracion de valores
 	var pos_x_1 = entidad.x;
 	var pos_y_1 = entidad.y;
@@ -39,7 +39,7 @@ function colision_con_riel(mascara = 32, entidad = obj_jugador) {
 	
 	// Determinar colisiones
 	var colision_normal_riel = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel, true, true);
-	var colision_capas_riel = colision_lineall_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
+	var colision_capas_riel = colision_lineal_capas(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
 	
 	// Retornar comprobacion
 	return (colision_normal_riel or colision_capas_riel);
