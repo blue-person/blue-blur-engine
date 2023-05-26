@@ -1,7 +1,7 @@
 function colision_con_suelo(mascara = 16, radio = 9, entidad = self) {
 	// Declaracion de valores
 	var valor_referencia = mascara * 2.5;
-	var pos_x = entidad.x + entidad.asin * valor_referencia;
+	var pos_x = entidad.x - entidad.asin * valor_referencia;
 	var pos_y = entidad.y + entidad.acos * valor_referencia;
 	
 	// Determinar si se debe mostrar la colision
@@ -27,12 +27,12 @@ function colision_con_suelo(mascara = 16, radio = 9, entidad = self) {
 	return false;
 }
 
-function colision_con_riel(mascara = 32, entidad = self) {
+function colision_con_riel(mascara = 20, entidad = self) {
 	// Declaracion de valores
 	var pos_x_1 = entidad.x;
 	var pos_y_1 = entidad.y;
-	var pos_x_2 = pos_x_1 + mascara * entidad.asin;
-	var pos_y_2 = pos_y_1 + mascara * entidad.acos;
+	var pos_x_2 = entidad.x + mascara * entidad.asin;
+	var pos_y_2 = entidad.y + mascara * entidad.acos;
 	
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2);

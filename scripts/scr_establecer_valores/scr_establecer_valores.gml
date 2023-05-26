@@ -6,7 +6,7 @@ function establecer_constantes() {
 }
 
 function establecer_variables_generales() {
-	global.permitir_modo_debug = false;
+	global.permitir_modo_debug = true;
 	global.permitir_pantalla_completa = true;
 	global.intensidad_vibracion_gamepad = 1;
 	global.porcentaje_zona_muerta_sticks = 0.45;

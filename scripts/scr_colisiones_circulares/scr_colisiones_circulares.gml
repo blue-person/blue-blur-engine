@@ -47,7 +47,7 @@ function colision_circular_superior(mascara = 16, radio = 3, entidad = self) {
 	return false;
 }
 
-function colision_circular_inferior(mascara = 16, radio = 4, entidad = self) {
+function colision_circular_inferior(mascara = 16, radio = 8, entidad = self) {
 	// Declaracion de valores
 	var pos_x = entidad.x + entidad.asin * mascara;
 	var pos_y = entidad.y + entidad.acos * mascara;
@@ -78,8 +78,8 @@ function colision_circular_inferior(mascara = 16, radio = 4, entidad = self) {
 
 function colision_circular_izquierda(mascara = 16, radio = 3, entidad = self) {
 	// Declaracion de valores
-	var pos_x = entidad.x - entidad.acos * mascara - entidad.asin * 2;
-	var pos_y = entidad.y + entidad.asin * mascara - entidad.acos * 2;
+	var pos_x = entidad.x - (entidad.acos * mascara) - (entidad.asin * 2);
+	var pos_y = entidad.y + (entidad.asin * mascara) - (entidad.acos * 2);
 	
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_circle(pos_x, pos_y, radio, true);
@@ -101,8 +101,8 @@ function colision_circular_izquierda(mascara = 16, radio = 3, entidad = self) {
 
 function colision_circular_derecha(mascara = 16, radio = 3, entidad = self) {
 	// Declaracion de valores
-	var pos_x = entidad.x + entidad.acos * mascara - entidad.asin * 2;
-	var pos_y = entidad.y - entidad.asin * mascara - entidad.acos * 2;
+	var pos_x = entidad.x + (entidad.acos * mascara) - (entidad.asin * 2);
+	var pos_y = entidad.y - (entidad.asin * mascara) - (entidad.acos * 2);
 	
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_circle(pos_x, pos_y, radio, true);

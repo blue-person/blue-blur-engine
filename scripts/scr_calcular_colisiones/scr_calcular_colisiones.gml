@@ -29,8 +29,8 @@ function calcular_colision_lineal(superficie, mascara = 20, entidad = self) {
 	// Declaracion de valores
 	var pos_x_1 = entidad.x;
 	var pos_y_1 = entidad.y;
-	var pos_x_2 = pos_x_1 + mascara * entidad.asin;
-	var pos_y_2 = pos_y_1 + mascara * entidad.acos;
+	var pos_x_2 = entidad.x + mascara * entidad.asin;
+	var pos_y_2 = entidad.y + mascara * entidad.acos;
 	
 	// Retornar comprobacion
 	return collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, superficie, true, true);
@@ -40,7 +40,7 @@ function verificar_colision_aterrizaje(superficie_normal, superficie_posterior, 
 	// Declaracion de valores
 	var pos_x_1 = entidad.x;
 	var pos_y_1 = entidad.y;
-	var pos_y_2 = pos_y_1 + mascara;
+	var pos_y_2 = entidad.y + mascara;
 	
 	// Determinar colisiones
 	var colision_normal = collision_line(pos_x_1, pos_y_1, pos_x_1, pos_y_2, superficie_normal, true, true);

@@ -2,16 +2,13 @@ function colision_lineal_izquierda(mascara = 16, entidad = self) {
 	// Declaracion de valores
 	var valor_referencia_coseno = mascara * entidad.acos;
 	var valor_referencia_seno = mascara * entidad.asin;
-	var longitud_linea = mascara * 3;
+	var longitud_linea = floor(mascara * 3.5);
 
 	// Declaracion de puntos
-	var pos_x = entidad.x;
-	var pos_y = entidad.y;
-	
-	var pos_x_1 = pos_x - valor_referencia_coseno + valor_referencia_seno;
-	var pos_y_1 = pos_y + valor_referencia_seno + valor_referencia_coseno;
-	var pos_x_2 = pos_x - valor_referencia_coseno + (entidad.asin * longitud_linea);
-	var pos_y_2 = pos_y + valor_referencia_seno + (entidad.acos * longitud_linea);
+	var pos_x_1 = entidad.x - valor_referencia_coseno + valor_referencia_seno;
+	var pos_y_1 = entidad.y + valor_referencia_seno + valor_referencia_coseno;
+	var pos_x_2 = entidad.x - valor_referencia_coseno + (entidad.asin * longitud_linea);
+	var pos_y_2 = entidad.y + valor_referencia_seno + (entidad.acos * longitud_linea);
 	
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2);
@@ -40,16 +37,13 @@ function colision_lineal_derecha(mascara = 16, entidad = self) {
 	// Declaracion de valores
 	var valor_referencia_coseno = mascara * entidad.acos;
 	var valor_referencia_seno = mascara * entidad.asin;
-	var longitud_linea = mascara * 3;
+	var longitud_linea = floor(mascara * 3.5);
 
 	// Declaracion de puntos
-	var pos_x = entidad.x;
-	var pos_y = entidad.y;
-	
-	var pos_x_1 = pos_x + valor_referencia_coseno + valor_referencia_seno;
-	var pos_y_1 = pos_y - valor_referencia_seno + valor_referencia_coseno;
-	var pos_x_2 = pos_x + valor_referencia_coseno + (entidad.asin * longitud_linea);
-	var pos_y_2 = pos_y - valor_referencia_seno + (entidad.acos * longitud_linea);
+	var pos_x_1 = entidad.x + valor_referencia_coseno + valor_referencia_seno;
+	var pos_y_1 = entidad.y - valor_referencia_seno + valor_referencia_coseno;
+	var pos_x_2 = entidad.x + valor_referencia_coseno + (entidad.asin * longitud_linea);
+	var pos_y_2 = entidad.y - valor_referencia_seno + (entidad.acos * longitud_linea);
 	
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2);

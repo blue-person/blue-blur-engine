@@ -59,8 +59,8 @@ function gestor_principal_fisicas(entidad) {
 	            y += acos;
 	        }
 
-	        var punto_x = x + asin * mascara_colision;
-	        var punto_y = y + acos * mascara_colision;
+	        var punto_x = x + mascara_colision * asin;
+	        var punto_y = y + mascara_colision * acos;
 	        var sin_colision_superficie = !collision_point(punto_x, punto_y, obj_superficie, true, true);
 	        var sin_colision_superficie_posterior = !collision_point(punto_x, punto_y, obj_superficie_posterior, true, true) and (capa_nivel == 0);
 	        var sin_colision_superficie_frontal = !collision_point(punto_x, punto_y, obj_superficie_frontal, true, true) and (capa_nivel == 1);
@@ -87,13 +87,13 @@ function gestor_principal_fisicas(entidad) {
 	    }
 
 	    // Colisionar con las paredes
-	    while (colision_circular_derecha(mascara_colision) and (velocidad_horizontal > 0)) {
+	    while (colision_circular_derecha(mascara_colision)) {
 	        x -= acos;
 	        y += asin;
 	        velocidad_horizontal = 0;
 	    }
 
-	    while (colision_circular_izquierda(mascara_colision) and (velocidad_horizontal < 0)) {
+	    while (colision_circular_izquierda(mascara_colision)) {
 	        x += acos;
 	        y -= asin;
 	        velocidad_horizontal = 0;
@@ -108,7 +108,7 @@ function gestor_principal_fisicas(entidad) {
 	        y -= acos * 5;
 	        angulo = 0;
 
-	        velocidad_vertical = -asin * velocidad_horizontal;
+	        velocidad_vertical = -(asin * velocidad_horizontal);
 	        velocidad_horizontal = acos * velocidad_horizontal;
 	        tocando_suelo = false;
 	    }

@@ -3,14 +3,11 @@ function calcular_angulo(angulo, mascara, verificacion_angulo_final, entidad = s
 	var angulo_aproximado = floor(angulo);
 	var valor_acos = dcos(angulo_aproximado);
 	var valor_asin = dsin(angulo_aproximado);
-	
-	var pos_x = entidad.x;
-	var pos_y = entidad.y;
 
-	var pos_x_1 = pos_x - valor_acos * mascara;
-	var pos_y_1 = pos_y + valor_asin * mascara;
-	var pos_x_2 = pos_x + valor_acos * mascara;
-	var pos_y_2 = pos_y - valor_asin * mascara;
+	var pos_x_1 = round(entidad.x - valor_acos * mascara);
+	var pos_y_1 = round(entidad.y + valor_asin * mascara);
+	var pos_x_2 = round(entidad.x + valor_acos * mascara);
+	var pos_y_2 = round(entidad.y - valor_asin * mascara);
 
 	var primer_subconjunto = false;
 	var segundo_subconjunto = false;
@@ -68,5 +65,6 @@ function calcular_angulo(angulo, mascara, verificacion_angulo_final, entidad = s
 	}
 
 	// Retornar angulo
-	return point_direction(pos_x_1, pos_y_1, pos_x_2, pos_y_2);
+	var angulo_calculado = point_direction(pos_x_1, pos_y_1, pos_x_2, pos_y_2);
+	return round(angulo_calculado);
 }
