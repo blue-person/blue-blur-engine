@@ -34,7 +34,7 @@ if (alarma_1 > 0) {
 // Homing Attack
 if (alarma_2 > 0) {
     --alarma_2;
-
+	
 	if ((alarma_2 == 1) and (accion == 4.5)) {
 		accion = 0;
 		gravedad = 0.21875;

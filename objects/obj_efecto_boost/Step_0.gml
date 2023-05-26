@@ -29,8 +29,8 @@ if (activar_efecto) {
 	var sin_impulso_aereo = (tiempo_impulso_aereo < 0);
 	var condiciones_velocidad = (obj_jugador.tocando_suelo and (obj_jugador.velocidad_horizontal < 2) and (obj_jugador.velocidad_horizontal > -2));
 	
-	if (!input_check("boton_boost") or boost_vacio or sin_impulso_aereo or condiciones_velocidad
-	    or input_check_released("boton_boost") or obj_jugador.zona_superada
+	if (!verificar_boton_mantenido("boton_boost") or boost_vacio or sin_impulso_aereo or condiciones_velocidad
+	    or verificar_boton_liberado("boton_boost") or obj_jugador.zona_superada
 	    or (obj_jugador.accion == 4) or (obj_jugador.accion == 4.5)
 	    or (obj_jugador.accion == 12) or (obj_jugador.accion == 14)
 	    or (obj_jugador.accion == 21) or (obj_jugador.accion == 24)

@@ -12,7 +12,7 @@ if (estado_animacion == 0) {
 	}
 }
 
-if (input_check_pressed("boton_entrada")) {
+if (verificar_boton_presionado("boton_entrada")) {
 	valor_aumento_transparencia = 0.1;
 	
 	if (permitir_transicion) {

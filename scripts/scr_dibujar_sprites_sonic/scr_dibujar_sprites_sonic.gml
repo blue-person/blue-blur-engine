@@ -10,7 +10,7 @@ function dibujar_sprites_sonic() {
 	if (accion == -1) {
 	    sprite_actual = spr_sonic_agachandose;
 
-	    if (input_check("boton_abajo") and (indice_sprite == 3)) {
+	    if (verificar_boton_mantenido("boton_abajo") and (indice_sprite == 3)) {
 	        fotograma = 0;
 		}
 	    else {
@@ -22,7 +22,7 @@ function dibujar_sprites_sonic() {
 	if (accion == -3) {
 	    sprite_actual = spr_sonic_mirar_arriba;
     
-	    if (input_check("boton_arriba") and (indice_sprite == 2)) {
+	    if (verificar_boton_mantenido("boton_arriba") and (indice_sprite == 2)) {
 			fotograma = 0;
 		}
 	    else {
@@ -134,7 +134,7 @@ function dibujar_sprites_sonic() {
 	        indice_sprite = 0;
 		}
 
-	    if (input_check_pressed("boton_salto")) {
+	    if (verificar_boton_presionado("boton_salto")) {
 			indice_sprite = 4;
 		}
 	}

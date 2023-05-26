@@ -1,8 +1,8 @@
 // Si se encuentra en pausa, se puede usar Enter o Saltar para escoger alguna opcion
 if (pausar_juego) {
-	boton_necesario = input_check_pressed("boton_entrada") or input_check_pressed("boton_salto");
+	boton_necesario = verificar_boton_presionado("boton_entrada") or verificar_boton_presionado("boton_salto");
 } else {
-	boton_necesario = input_check_pressed("boton_entrada");
+	boton_necesario = verificar_boton_presionado("boton_entrada");
 }
 
 if (boton_necesario and !instance_exists(obj_presentacion_nivel) and !instance_exists(obj_transicion_niveles)) {
@@ -48,14 +48,14 @@ if (boton_necesario and !instance_exists(obj_presentacion_nivel) and !instance_e
 
 // Bloquear opciones del menu dependiendo del nivel donde este el jugador
 if (pausar_juego) {
-    if (input_check_pressed("boton_abajo")) {
+    if (verificar_boton_presionado("boton_abajo")) {
         if (nivel_actual == rm_hub_world) {
 			opcion_menu = 2;
 		} else if (opcion_menu < 2) {
 			++opcion_menu;
 		}
 		audio_play_sound(snd_escoger_opcion, 1, false);
-    } else if (input_check_pressed("boton_arriba")) {
+    } else if (verificar_boton_presionado("boton_arriba")) {
         if (nivel_actual == rm_hub_world) {
 			opcion_menu = 0;
 		} else if (opcion_menu > 0) {

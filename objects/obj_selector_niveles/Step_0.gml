@@ -1,7 +1,7 @@
 if (place_meeting(x, y, obj_jugador)) {
     obj_jugador.angulo = 0;
     
-    if (input_check("boton_arriba") and (abs(obj_jugador.velocidad_horizontal) < 3)) {
+    if (verificar_boton_mantenido("boton_arriba") and (abs(obj_jugador.velocidad_horizontal) < 3)) {
         if ((nombre_nivel != -1) and !seleccionar_nivel) {
             obj_jugador.x = x;
             obj_jugador.permitir_movimiento = false;
