@@ -342,7 +342,7 @@ function movimiento_jugador() {
     }
 
     // Dejar de rodar al ir por el suelo
-    if ((accion == 2) and (velocidad_vertical > 0) and !tocando_suelo and colision_con_suelo(14)) {
+    if ((accion == 2) and (velocidad_vertical > 0) and !tocando_suelo and colision_con_suelo()) {
         accion = 0;
     }
 

@@ -9,30 +9,30 @@ var valor_y = pos_y + acos * mascara_colision;
 
 if (place_meeting(pos_x, pos_y, obj_superficie)) {
     pared_requerida = instance_place(valor_x, valor_y, obj_superficie);
-} else if (place_meeting(pos_x, pos_y, obj_superficie_posterior) or (capa_nivel == 0)) {
+} else if (place_meeting(pos_x, pos_y, obj_superficie_posterior) or (capa_actual == "posterior")) {
     pared_requerida = instance_place(valor_x, valor_y, obj_superficie_posterior);
-} else if (place_meeting(pos_x, pos_y, obj_superficie_frontal) or (capa_nivel == 1)) {
+} else if (place_meeting(pos_x, pos_y, obj_superficie_frontal) or (capa_actual == "frontal")) {
     pared_requerida = instance_place(valor_x, valor_y, obj_superficie_frontal);
 } else if (place_meeting(pos_x, pos_y, obj_riel)) {
     pared_requerida = instance_place(valor_x, valor_y, obj_riel);
-} else if (place_meeting(pos_x, pos_y, obj_riel_posterior) or (capa_nivel == 0)) {
+} else if (place_meeting(pos_x, pos_y, obj_riel_posterior) or (capa_actual == "posterior")) {
     pared_requerida = instance_place(valor_x, valor_y, obj_riel_posterior);
-} else if (place_meeting(pos_x, pos_y, obj_riel_frontal) or (capa_nivel == 1)) {
+} else if (place_meeting(pos_x, pos_y, obj_riel_frontal) or (capa_actual == "frontal")) {
     pared_requerida = instance_place(valor_x, valor_y, obj_riel_frontal);
 }
 
 var pos_bbox_top = sprite_get_bbox_top(pared_requerida) - sprite_get_yoffset(pared_requerida);
 if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_superficie, true, true)) {
     ++pos_bbox_top;
-} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_superficie_posterior, true, true) or (capa_nivel == 0)) {
+} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_superficie_posterior, true, true) or (capa_actual == "posterior")) {
 	++pos_bbox_top;
-} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_superficie_frontal, true, true) or (capa_nivel == 1)) {
+} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_superficie_frontal, true, true) or (capa_actual == "frontal")) {
 	++pos_bbox_top;
 } else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_riel, true, true)) {
 	++pos_bbox_top;
-} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_riel_posterior, true, true) or (capa_nivel == 0)) {
+} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_riel_posterior, true, true) or (capa_actual == "posterior")) {
 	++pos_bbox_top;
-} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_riel_frontal, true, true) or (capa_nivel == 1)) {
+} else if (collision_point(pos_x + 14.5 * asin, pos_y + 14.5 * acos, obj_riel_frontal, true, true) or (capa_actual == "frontal")) {
 	++pos_bbox_top;
 }
 dibujar_y_post = pos_bbox_top;

@@ -22,13 +22,13 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 38,
+  "height": 35,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c9284462-723b-4c27-a4a7-1e7bfa627124","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Sonic",
     "path": "folders/Sprites/Entidades/Jugador/Sonic.yy",

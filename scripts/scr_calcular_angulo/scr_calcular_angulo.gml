@@ -1,59 +1,31 @@
-function calcular_angulo(angulo, mascara, verificacion_angulo_final, entidad = self) {
-	// Declaracion de valores
+function calcular_angulo(angulo, espaciado_horizontal, cantidad_puntos_verificacion) {
+	// Declarar variables
 	var angulo_aproximado = floor(angulo);
 	var valor_acos = dcos(angulo_aproximado);
 	var valor_asin = dsin(angulo_aproximado);
 
-	var pos_x_1 = round(entidad.x - valor_acos * mascara);
-	var pos_y_1 = round(entidad.y + valor_asin * mascara);
-	var pos_x_2 = round(entidad.x + valor_acos * mascara);
-	var pos_y_2 = round(entidad.y - valor_asin * mascara);
-
+	var pos_x_1 = round(self.x - valor_acos * espaciado_horizontal);
+	var pos_y_1 = round(self.y + valor_asin * espaciado_horizontal);
+	var pos_x_2 = round(self.x + valor_acos * espaciado_horizontal);
+	var pos_y_2 = round(self.y - valor_asin * espaciado_horizontal);
+	
 	var primer_subconjunto = false;
 	var segundo_subconjunto = false;
 	
 	// Realizar comprobaciones
-	while (verificacion_angulo_final > 0) {
+	while (cantidad_puntos_verificacion > 0) {
 		if (!primer_subconjunto) {
-			// Determinar colisiones con obj_superficie
-			var colision_normal_superficie = collision_point(pos_x_1, pos_y_1, obj_superficie, true, true);
-			var colision_capas_superficie = colision_puntos_capas(pos_x_1, pos_y_1, obj_superficie_posterior, obj_superficie_frontal);
-			if (colision_normal_superficie or colision_capas_superficie) then primer_subconjunto = true;
-
-			// Determinar colisiones con obj_riel
-			var colision_normal_riel = collision_point(pos_x_1, pos_y_1, obj_riel, true, true);
-			var colision_capas_riel = colision_puntos_capas(pos_x_1, pos_y_1, obj_riel_posterior, obj_riel_frontal);
-			if (entidad.permitir_grinding and (colision_normal_riel or colision_capas_riel)) then primer_subconjunto = true;
-
-			// Determinar colisiones con obj_superficie_agua
-			var permisos_requeridos = (entidad.caminar_sobre_agua and !entidad.sumergido_agua);
-			var angulo_requerido = (entidad.angulo <= 45) or (entidad.angulo >= 315);
-			var velocidad_requerida = (abs(entidad.velocidad_horizontal) >= 8);
-			var colision_normal_agua = collision_point(pos_x_1, pos_y_1, obj_superficie_agua, true, true);
-			if (permisos_requeridos and angulo_requerido and velocidad_requerida and colision_normal_agua) then primer_subconjunto = true;
-
+			// Determinar estado del primer subconjunto
+			primer_subconjunto = colision_punto(pos_x_1, pos_y_1);
+			
 			// Actualizar posiciones
 			pos_x_1 += valor_asin;
 			pos_y_1 += valor_acos;
 		}
 
 		if (!segundo_subconjunto) {
-			// Determinar colisiones con obj_superficie
-			var colision_normal_superficie = collision_point(pos_x_2, pos_y_2, obj_superficie, true, true);
-			var colision_capas_superficie = colision_puntos_capas(pos_x_2, pos_y_2, obj_superficie_posterior, obj_superficie_frontal);
-			if (colision_normal_superficie or colision_capas_superficie) then segundo_subconjunto = true;
-
-			// Determinar colisiones con obj_riel
-			var colision_normal_riel = collision_point(pos_x_2, pos_y_2, obj_riel, true, true);
-			var colision_capas_riel = colision_puntos_capas(pos_x_2, pos_y_2, obj_riel_posterior, obj_riel_frontal);
-			if (entidad.permitir_grinding and (colision_normal_riel or colision_capas_riel)) then segundo_subconjunto = true;
-
-			// Determinar colisiones con obj_superficie_agua
-			var permisos_requeridos = (entidad.caminar_sobre_agua and !entidad.sumergido_agua);
-			var angulo_requerido = (entidad.angulo <= 45) or (entidad.angulo >= 315);
-			var velocidad_requerida = (abs(entidad.velocidad_horizontal) >= 8);
-			var colision_normal_agua = collision_point(pos_x_2, pos_y_2, obj_superficie_agua, true, true);
-			if (permisos_requeridos and angulo_requerido and velocidad_requerida and colision_normal_agua) then segundo_subconjunto = true;
+			// Determinar estado del segundo subcojunto
+			segundo_subconjunto = colision_punto(pos_x_2, pos_y_2);
 
 			// Actualizar posiciones
 			pos_x_2 += valor_asin;
@@ -61,7 +33,11 @@ function calcular_angulo(angulo, mascara, verificacion_angulo_final, entidad = s
 		}
 
 		// Verificar si se ha encontrado un angulo valido
-		if (primer_subconjunto and segundo_subconjunto) then break else --verificacion_angulo_final;
+		if (primer_subconjunto and segundo_subconjunto) {
+			break;
+		} else {
+			--cantidad_puntos_verificacion;
+		}
 	}
 
 	// Retornar angulo

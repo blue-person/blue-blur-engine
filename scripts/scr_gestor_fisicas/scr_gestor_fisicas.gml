@@ -25,19 +25,19 @@ function gestor_principal_fisicas(entidad) {
 
 	    // Velocidad vertical
 	    if (velocidad_vertical > 0) {
-	        for (var n = 0; (n < velocidad_vertical) and !colision_circular_inferior(mascara_colision); ++n) {
+	        for (var n = 0; (n < velocidad_vertical) and !colision_circular_inferior(); ++n) {
 	            ++y;
 	        }
 	    }
 
 	    if (velocidad_vertical < 0) {
-	        for (var n = 0; (n > velocidad_vertical) and !colision_circular_superior(mascara_colision); --n) {
+	        for (var n = 0; (n > velocidad_vertical) and !colision_circular_superior(); --n) {
 	            --y;
 	        }
 	    }
 
 	    // Aterrizar en el suelo
-	    if ((velocidad_vertical >= 0) and !tocando_suelo and colision_circular_inferior(mascara_colision) and (colision_lineal_izquierda(mascara_colision) or colision_lineal_derecha(mascara_colision))) {
+	    if ((velocidad_vertical >= 0) and !tocando_suelo and colision_circular_inferior() and (colision_lineal_izquierda() or colision_lineal_derecha())) {
 	        angulo = calcular_angulo(angulo, mascara_colision, mascara_colision);
 	        acos = dcos(angulo);
 	        asin = dsin(angulo);
@@ -49,12 +49,12 @@ function gestor_principal_fisicas(entidad) {
 
 	    // Mantener en el suelo
 	    if (tocando_suelo) {
-	        while (colision_circular_principal(mascara_colision)) {
+	        while (colision_circular_principal()) {
 	            x -= asin;
 	            y -= acos;
 	        }
 
-	        while (!colision_circular_principal(mascara_colision) and colision_con_suelo(mascara_colision)) {
+	        while (!colision_circular_principal() and colision_con_suelo()) {
 	            x += asin;
 	            y += acos;
 	        }
@@ -62,8 +62,8 @@ function gestor_principal_fisicas(entidad) {
 	        var punto_x = x + mascara_colision * asin;
 	        var punto_y = y + mascara_colision * acos;
 	        var sin_colision_superficie = !collision_point(punto_x, punto_y, obj_superficie, true, true);
-	        var sin_colision_superficie_posterior = !collision_point(punto_x, punto_y, obj_superficie_posterior, true, true) and (capa_nivel == 0);
-	        var sin_colision_superficie_frontal = !collision_point(punto_x, punto_y, obj_superficie_frontal, true, true) and (capa_nivel == 1);
+	        var sin_colision_superficie_posterior = !collision_point(punto_x, punto_y, obj_superficie_posterior, true, true) and (capa_actual == "posterior");
+	        var sin_colision_superficie_frontal = !collision_point(punto_x, punto_y, obj_superficie_frontal, true, true) and (capa_actual == "frontal");
 	        var sin_colision_riel = !collision_point(punto_x, punto_y, obj_riel, true, true) and permitir_grinding;
 
 	        if (sin_colision_superficie or sin_colision_superficie_posterior or sin_colision_superficie_frontal or sin_colision_riel) {
@@ -76,7 +76,7 @@ function gestor_principal_fisicas(entidad) {
 	    }
 
 	    // Dejar de estar en el suelo
-	    if ((!colision_lineal_izquierda(mascara_colision) or !colision_lineal_derecha(mascara_colision)) and !colision_circular_inferior(mascara_colision) and tocando_suelo and !collision_line(x, y, x + (mascara_colision + 4) * asin, y + (mascara_colision + 4) * acos, obj_superficie, true, true)) {
+	    if ((!colision_lineal_izquierda() or !colision_lineal_derecha()) and !colision_circular_inferior() and tocando_suelo and !collision_line(x, y, x + (mascara_colision + 4) * asin, y + (mascara_colision + 4) * acos, obj_superficie, true, true)) {
 	        velocidad_vertical = -asin * velocidad_horizontal;
 	        velocidad_horizontal = acos * velocidad_horizontal;
 
@@ -123,9 +123,9 @@ function gestor_principal_fisicas(entidad) {
 
 	    if ((accion >= 0) and (abs(velocidad_horizontal) < limite_velocidad_horizontal)) then velocidad_horizontal -= pendiente * asin;
 
-	    if (tocando_suelo and (colision_lineal_izquierda(mascara_colision) and colision_lineal_derecha(mascara_colision))) then angulo = calcular_angulo(angulo, mascara_colision, 25);
+	    if (tocando_suelo and (colision_lineal_izquierda() and colision_lineal_derecha())) then angulo = calcular_angulo(angulo, mascara_colision, 25);
 
-	    if (!tocando_suelo and colision_circular_superior(mascara_colision) and (velocidad_vertical < 0)) {
+	    if (!tocando_suelo and colision_circular_superior() and (velocidad_vertical < 0)) {
 	        var verificar_angulo = calcular_angulo(180, mascara_colision, 25);
 
 	        if ((verificar_angulo >= 125) and (verificar_angulo <= 170)) {

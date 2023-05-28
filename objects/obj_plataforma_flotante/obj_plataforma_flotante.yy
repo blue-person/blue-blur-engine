@@ -33,5 +33,5 @@
     "path": "sprites/spr_plataforma_flotante/spr_plataforma_flotante.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

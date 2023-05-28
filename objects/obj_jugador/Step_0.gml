@@ -137,20 +137,20 @@ if (!zona_superada) {
 
 // Cambiar la capa del nivel. Se hace cuando el personaje pasa por un loop, por ejemplo
 if (collision_circle(x, y, 16, obj_capa_posterior, true, true)) {
-    capa_nivel = 0;
+    capa_actual = "posterior";
 }
 
 if (collision_circle(x, y, 16, obj_capa_frontal, true, true)) {
-    capa_nivel = 1;
+    capa_actual = "frontal";
 }
 
 if (collision_circle(x, y, 16, obj_cambiar_capa_pf, true, true)) {
 	if (tocando_suelo) {
 		if (velocidad_horizontal > 0) {
-			capa_nivel = 0;
+			capa_actual = "posterior";
 		}
 		if (velocidad_horizontal < 0) {
-			capa_nivel = 1;
+			capa_actual = "frontal";
 		}
 	}
 }
@@ -158,10 +158,10 @@ if (collision_circle(x, y, 16, obj_cambiar_capa_pf, true, true)) {
 if (collision_circle(x, y, 16, obj_cambiar_capa_fp, true, true)) {
 	if (tocando_suelo) {
 		if (velocidad_horizontal > 0) {
-			capa_nivel = 1;
+			capa_actual = "frontal";
 		}
 		if (velocidad_horizontal < 0) {
-			capa_nivel = 0;
+			capa_actual = "posterior";
 		}
 	}
 }

@@ -20,7 +20,7 @@ accion = 0;
 tocando_suelo = false;
 
 direccion_horizontal = 1;
-capa_nivel = 0;
+capa_actual = "frontal";
 angulo_imagen = 0;
 tiempo_aire = 0;
 limite_velocidad_actual = 0;

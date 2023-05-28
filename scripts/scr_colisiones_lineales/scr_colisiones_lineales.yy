@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Manejo de colisiones",
-    "path": "folders/Scripts/Fisicas/Manejo de colisiones.yy",
+    "name": "Calculos generales",
+    "path": "folders/Scripts/Fisicas/Manejo de colisiones/Calculos generales.yy",
   },
 }
