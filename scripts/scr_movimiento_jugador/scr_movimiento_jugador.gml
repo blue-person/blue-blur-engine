@@ -1129,8 +1129,9 @@ function movimiento_jugador() {
 	
 	// Fisicas dentro del agua
 	if (instance_exists(obj_profundidad_agua)) {
+		var superficie_agua = instance_nearest(x, y, obj_superficie_agua);
 		var colisionando_con_agua = collision_point(x, y, obj_profundidad_agua, true, true);
-		var altura_salpicadura = y - 15;
+		var altura_salpicadura = superficie_agua.y - 16;
 		
 		if (!sumergido_agua and colisionando_con_agua) {
 			sumergido_agua = true;
