@@ -169,7 +169,7 @@ if (collision_circle(x, y, 16, obj_cambiar_capa_fp, true, true)) {
 // Hacer que suenen los pasos del jugador dependiendo de la superficie donde este
 if (tocando_suelo) {
 	caminar_sobre_agua = false;
-    if (calcular_colision_lineal(obj_superficie_agua)) {
+    if (colision_lineal_simple(obj_superficie_agua)) {
         caminar_sobre_agua = true;
 		sonido_pisada_a = snd_pisada_agua_a;
 	    sonido_pisada_b = snd_pisada_agua_b;

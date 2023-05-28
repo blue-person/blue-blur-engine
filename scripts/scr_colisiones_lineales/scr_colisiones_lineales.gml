@@ -1,3 +1,14 @@
+function colision_lineal_simple(superficie) {
+	// Declaracion de valores
+	var pos_x_1 = self.x;
+	var pos_y_1 = self.y;
+	var pos_x_2 = self.x + (self.asin * self.mascara_colision)
+	var pos_y_2 = self.y + (self.acos * self.mascara_colision)
+	
+	// Retornar comprobacion
+	return collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, superficie, true, true);
+}
+
 function colision_lineal_general(pos_x_1, pos_y_1, pos_x_2, pos_y_2, requisitos_colision_riel){
 	// Determinar colisiones con superficie
 	var colision_normal_superficie = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie, true, true);
