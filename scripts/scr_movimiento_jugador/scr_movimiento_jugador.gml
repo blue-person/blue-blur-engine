@@ -475,7 +475,8 @@ function movimiento_jugador() {
 		}
 		velocidad_horizontal = direccion_horizontal * velocidad_homing_attack;
         velocidad_vertical = 0;
-		//global.permitir_uso_controles = false;
+		global.permitir_uso_controles = false;
+		alarm[3] = 2;
     }
 
     if ((accion == 4) and instance_exists(obj_enfoque_homing)) {

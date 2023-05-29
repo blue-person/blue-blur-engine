@@ -1,0 +1,1 @@
+global.permitir_uso_controles = true;
