@@ -14,7 +14,7 @@ switch (global.personaje_actual) {
 
 // Determinar tiempo en el aire
 if (!tocando_suelo) {
-	++tiempo_aire;
+	tiempo_aire++;
 } else {
 	tiempo_aire = 0;
 }

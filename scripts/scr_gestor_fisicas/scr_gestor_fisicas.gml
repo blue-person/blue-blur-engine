@@ -15,14 +15,14 @@ function gestor_principal_fisicas(entidad) {
 
 	    // Velocidad horizontal
 	    if (velocidad_horizontal > 0) {
-	        for (var n = 0; (n < velocidad_horizontal) and !colision_circular_derecha(); ++n) {
+	        for (var n = 0; (n < velocidad_horizontal) and !colision_circular_derecha(); n++) {
 	            x += acos;
 	            y -= asin;
 	        }
 	    }
 
 	    if (velocidad_horizontal < 0) {
-	        for (var n = 0; (n > velocidad_horizontal) and !colision_circular_izquierda(); --n) {
+	        for (var n = 0; (n > velocidad_horizontal) and !colision_circular_izquierda(); n--) {
 	            x -= acos;
 	            y += asin;
 	        }
@@ -30,13 +30,13 @@ function gestor_principal_fisicas(entidad) {
 
 	    // Velocidad vertical
 	    if (velocidad_vertical > 0) {
-	        for (var n = 0; (n < velocidad_vertical) and !colision_circular_inferior(); ++n) {
-	            ++y;
+	        for (var n = 0; (n < velocidad_vertical) and !colision_circular_inferior(); n++) {
+	            y++;
 	        }
 	    }
 
 	    if (velocidad_vertical < 0) {
-	        for (var n = 0; (n > velocidad_vertical) and !colision_circular_superior(); --n) {
+	        for (var n = 0; (n > velocidad_vertical) and !colision_circular_superior(); n--) {
 	            --y;
 	        }
 	    }

@@ -37,10 +37,10 @@ function calcular_angulo(angulo, espaciado_horizontal, cantidad_puntos_verificac
     }
 	
 	// Verificar si se ha encontrado un angulo valido
-    if (primer_subconjunto and segundo_subconjunto) {
+	if (primer_subconjunto and segundo_subconjunto) {
 		break;
 	} else {
-		--cantidad_puntos_verificacion;
+		cantidad_puntos_verificacion--;
 	}
   }
   

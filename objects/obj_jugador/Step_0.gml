@@ -16,7 +16,7 @@ if (room == rm_hub_world) then cantidad_boost = 100;
 
 // Manejar las alarmas personalizadas
 if (alarma_0 > 0) {
-    --alarma_0;
+    alarma_0--;
 	
     if (alarma_0 == 1) {
 		gravedad = 0.21875;
@@ -24,7 +24,7 @@ if (alarma_0 > 0) {
 }
 
 if (alarma_1 > 0) {
-    --alarma_1;
+    alarma_1--;
 	
     if ((alarma_1 == 1) and (accion = 8)) {
 		accion = 0;
@@ -33,7 +33,7 @@ if (alarma_1 > 0) {
 
 // Homing Attack
 if (alarma_2 > 0) {
-    --alarma_2;
+    alarma_2--;
 	
 	if ((alarma_2 == 1) and (accion == 4.5)) {
 		accion = 0;
@@ -44,11 +44,11 @@ if (alarma_2 > 0) {
 
 // Reiniciar el nivel al morir
 if (alarma_3 > 0) {
-    --alarma_3;
+    alarma_3--;
 	
     if (alarma_3 == 1) {
 		if (global.vidas_restantes > 0) {
-			--global.vidas_restantes;
+			global.vidas_restantes--;
 			iniciar_transicion_niveles(room, "negro", 0.025);
 		} else {
 			global.vidas_restantes = 3;
@@ -58,7 +58,7 @@ if (alarma_3 > 0) {
 }
 
 if (alarma_4 > 0) {
-	--alarma_4;
+	alarma_4--;
 	
     if (!instance_exists(obj_invertir_colores)) {
 		instance_create_depth(0, 0, -16000, obj_invertir_colores);
@@ -67,12 +67,12 @@ if (alarma_4 > 0) {
     if (alarma_4 == 1) {
         instance_destroy(obj_invertir_colores);
         room_speed = 60;
-        --alarma_4;
+        alarma_4--;
     }
 }
 
 if (alarma_5 > 0) {
-    --alarma_5;
+    alarma_5--;
     if (alarm == 1) {
         hspeed = 0;
         vspeed = 0;
@@ -108,7 +108,7 @@ if (instance_exists(obj_efecto_boost) or ((global.personaje_actual == "Shadow") 
 }
 
 if (accion == 15) {
-    ++valor_incremento_rastro;
+    valor_incremento_rastro++;
 	
     if (valor_incremento_rastro >= 5) {
         instance_create_depth(x, y, 0, obj_destello_rastro);
@@ -215,7 +215,7 @@ if ((accion == 0) and (sprite_actual != spr_sonic_normal) and (sprite_actual != 
 
 // Permitir invencibilidad al personaje de manera temporal despues de ser herido
 if (tiempo_invencibilidad > 0) {
-    --tiempo_invencibilidad;
+    tiempo_invencibilidad--;
 	
     if (tiempo_invencibilidad == 1) {
 		permitir_ser_apuntado = true;

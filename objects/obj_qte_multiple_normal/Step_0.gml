@@ -1,7 +1,7 @@
 limite_tiempo -= incremento_tiempo;
 
 if (limite_tiempo > 0) {
-	for (var i = 0; i < array_length(lista_opciones_qte); ++i) {
+	for (var i = 0; i < array_length(lista_opciones_qte); i++) {
 		var opcion_actual = lista_opciones_qte[i];
 		if (!opcion_actual.finalizado and opcion_actual.transparencia < 1) {
 			opcion_actual.transparencia += 0.125;
@@ -28,7 +28,7 @@ if (limite_tiempo > 0) {
 }
 
 if (!evento_finalizado and (limite_tiempo > 0)) {
-	for (var i = 0; i < array_length(lista_opciones_qte); ++i) {
+	for (var i = 0; i < array_length(lista_opciones_qte); i++) {
 		var opcion_actual = lista_opciones_qte[i];
 		if (opcion_actual.finalizado and opcion_actual.transparencia > 0) {
 			opcion_actual.transparencia -= 0.125;

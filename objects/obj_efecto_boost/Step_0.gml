@@ -11,7 +11,7 @@ if (activar_efecto) {
     obj_jugador.cantidad_boost -= 0.2;
 
     if (!obj_jugador.tocando_suelo) {
-		--tiempo_impulso_aereo;
+		tiempo_impulso_aereo--;
 	} else {
         tiempo_impulso_aereo = 240;
 	}

@@ -9,7 +9,7 @@ depth = -100;
 var estructura_fondos = obj_fondo_escenario.estructura_fondos;
 if (array_length(estructura_fondos) > 0) {
 	back_layers = [];
-	for (var n = 0; n < array_length(estructura_fondos); ++n) {
+	for (var n = 0; n < array_length(estructura_fondos); n++) {
 		if (estructura_fondos[n].permitir_reflexion_agua) {
 			array_push(back_layers, estructura_fondos[n].capa);
 		}
@@ -20,7 +20,7 @@ if (array_length(estructura_fondos) > 0) {
 var estructura_tilesets = obj_fondo_escenario.estructura_tilesets;
 if (array_length(estructura_tilesets) > 0) {
 	tile_layers = [];
-	for (var n = 0; n < array_length(estructura_tilesets); ++n) {
+	for (var n = 0; n < array_length(estructura_tilesets); n++) {
 		if (estructura_tilesets[n].permitir_reflexion_agua) {
 			array_push(tile_layers, estructura_tilesets[n].capa);
 		}

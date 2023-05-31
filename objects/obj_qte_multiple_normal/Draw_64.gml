@@ -1,5 +1,5 @@
 if (limite_tiempo > 0) {
-	for (var i = 0; i < array_length(lista_opciones_qte); ++i) {
+	for (var i = 0; i < array_length(lista_opciones_qte); i++) {
 		var opcion_actual = lista_opciones_qte[i];
 	    var pos_x = opcion_actual.pos_x;
 	    var pos_y = opcion_actual.pos_y;

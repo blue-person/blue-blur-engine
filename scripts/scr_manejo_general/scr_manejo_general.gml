@@ -9,7 +9,7 @@ function preparar_ubicacion_jugador() {
 
 function aumentar_vidas() {
 	reproducir_efecto_sonido(snd_vida_extra, 1, false);
-	++global.vidas_restantes;
+	global.vidas_restantes++;
 }
 
 function herir_jugador() {

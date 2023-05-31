@@ -45,7 +45,7 @@ function disperar_rings() {
         }
 
         voltear = !voltear;
-        ++contador;
+        contador++;
 
         if (contador == 16) {
             angulo = 70.25;
@@ -65,7 +65,7 @@ function disperar_rings() {
         ring_requerido.image_xscale = 1.2;
         ring_requerido.image_yscale = 1.2;
         angulo += 30;
-        ++contador;
+        contador++;
     }
 	
 	audio_play_sound(snd_perder_rings, 1, false);

@@ -1,7 +1,7 @@
 if (evento_finalizado) {
     if (obj_jugador.cantidad_eventos_qte < 3) {
         instance_create_depth(x, y, -100, obj_qte_individual);
-		++obj_jugador.cantidad_eventos_qte;
+		obj_jugador.cantidad_eventos_qte++;
     } else {
         obj_jugador.cantidad_eventos_qte = 1;
         obj_jugador.accion = 15;

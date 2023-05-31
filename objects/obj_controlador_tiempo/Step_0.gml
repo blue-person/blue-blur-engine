@@ -1,15 +1,15 @@
 // Aumentar valores de cada variable segun la cantidad de ticks
 if (medir_tiempo) {
-    ++milisegundos;
+    milisegundos++;
 	
     if (milisegundos >= 60) { 
         milisegundos = 0;
-        ++segundos;
+        segundos++;
     }
 	
     if (segundos >= 60) {
         segundos = 0;
-        ++minutos;
+        minutos++;
     }
 	
     if (minutos >= 10) {

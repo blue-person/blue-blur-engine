@@ -8,14 +8,14 @@ function transformar_texto(pos_x_1, pos_y_1, texto, magnitud_texto, color_bordes
 	repeat (1 + (magnitud_texto * 2)) {
 	  repeat (1 + (magnitud_texto * 2)) {
         if (pos_x_2 == 0) and (pos_y_2 == 0) {
-            ++pos_x_2;
+            pos_x_2++;
             continue;
         }
    
 	    draw_text_transformed(pos_x_1 + pos_x_2, pos_y_1 + pos_y_2, string_hash_to_newline(texto), escala_x, escala_y, 0);
-        ++pos_x_2;
+        pos_x_2++;
 	  }
-      ++pos_y_2;
+      pos_y_2++;
 	  pos_x_2 = -magnitud_texto;
 	}
 	draw_set_color(color_inicial_dibujo);

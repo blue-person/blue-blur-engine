@@ -52,14 +52,14 @@ if (pausar_juego) {
         if (nivel_actual == rm_hub_world) {
 			opcion_menu = 2;
 		} else if (opcion_menu < 2) {
-			++opcion_menu;
+			opcion_menu++;
 		}
 		audio_play_sound(snd_escoger_opcion, 1, false);
     } else if (verificar_boton_presionado("boton_arriba")) {
         if (nivel_actual == rm_hub_world) {
 			opcion_menu = 0;
 		} else if (opcion_menu > 0) {
-            --opcion_menu;
+            opcion_menu--;
 		}
 		audio_play_sound(snd_escoger_opcion, 1, false);
     }

@@ -41,12 +41,12 @@ if (objeto_enfocado == obj_jugador)  {
 		var permitir_bajar_camara = (cronometro >= requisito_bajar_camara);
 		
 		if (accion_jugador == -3) {
-			++cronometro;
+			cronometro++;
 			if (permitir_elevar_camara) {
 			   pos_y -= 55;
 			}
 		} else if (accion_jugador == -1) {
-			++cronometro;
+			cronometro++;
 			if (permitir_bajar_camara) {
 			   pos_y += 45;
 			}

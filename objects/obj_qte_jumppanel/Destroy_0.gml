@@ -2,7 +2,7 @@ if (evento_finalizado) {
     if (obj_jugador.jump_panel < 5) {
         obj_jugador.accion = 24;
         obj_jugador.gravedad = 0.21875;
-		++obj_jugador.jump_panel;  
+		obj_jugador.jump_panel++;  
 		
         if (instance_exists(obj_mensaje_qte_triunfado)) {
             instance_destroy(obj_mensaje_qte_triunfado);

@@ -15,11 +15,11 @@ function refl_catch_draw() {
 	//add layers to priority ds
 	var prior = ds_priority_create();
 	
-	for (var n = 0; n < array_length_1d(tile_layers); ++n) {
+	for (var n = 0; n < array_length_1d(tile_layers); n++) {
 	    ds_priority_add(prior, tile_layers[n], layer_get_depth(tile_layers[n]));
 	}
  
-	for (var n = 0; n < array_length_1d(back_layers); ++n) {
+	for (var n = 0; n < array_length_1d(back_layers); n++) {
 	    ds_priority_add(prior, back_layers[n], layer_get_depth(back_layers[n]));
 	}
  

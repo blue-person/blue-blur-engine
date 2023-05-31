@@ -78,7 +78,7 @@ if (!activar_evento) {
     obj_jugador.y = y;
 	
     image_speed += 0.5;
-    --cronometro;
+    cronometro--;
     if (cronometro <= 0) {
         activar_evento = false;
         obj_jugador.accion = 0;

@@ -8,7 +8,7 @@ if (activar_evento) {
     
     draw_sprite(spr_resorte_bungee, 0, x, y);
 
-	for (var n = 0; n < (distancia / 16); ++n) {
+	for (var n = 0; n < (distancia / 16); n++) {
 		draw_sprite(spr_resorte_bungee, 0, x + lengthdir_x(n * 16, direccion), y + lengthdir_y(n * 16, direccion));
 		draw_sprite(spr_resorte_bungee, 0, self.x, self.y);
 		draw_sprite(spr_resorte_bungee, 0, x_inicial, y_inicial)
