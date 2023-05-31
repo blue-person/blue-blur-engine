@@ -27,7 +27,6 @@ function colision_con_suelo() {
 	var requisitos_caminar_sobre_agua = (self.caminar_sobre_agua) and (not self.sumergido_agua);
 	
 	// Determinar si se debe mostrar la colision
-	global.permitir_modo_debug = true
 	if (global.permitir_modo_debug) then draw_circle(pos_x, pos_y, radio_circulo, true);
 	
 	// Retornar comprobacion
