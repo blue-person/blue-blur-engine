@@ -18,12 +18,16 @@ function rodear_angulo(angulo) {
 }
 
 function division_segura(valor_a, valor_b) {
-	if (valor_b == 0.0) then return 0.0 else return (valor_a / valor_b);
+	if (valor_b == 0.0) {
+		return 0.0
+	} else {
+		return (valor_a / valor_b);
+	}
 }
 
-function calcular_fotograma(valor_calculo, valor_comparacion, entidad = obj_jugador) {
-	var valor_maximo = max(valor_calculo - abs(entidad.velocidad_horizontal), valor_comparacion);
-	return 1 / valor_maximo;
+function calcular_fotograma(valor_calculo, valor_comparacion) {
+	var valor_maximo = max(valor_calculo - abs(self.velocidad_horizontal), valor_comparacion);
+	return (1 / valor_maximo);
 }
 
 function calcular_interpolacion_lineal(punto_a, punto_b, incremento) {
