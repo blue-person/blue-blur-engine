@@ -18,9 +18,8 @@ function colision_lineal_superficie(superficie_normal, superficie_posterior, sup
 
 function colision_con_suelo() {
 	// Declaracion de valores
-	var valor_auxiliar_posicion = 2.5;
-	var pos_x = self.x + self.asin * (self.mascara_colision * valor_auxiliar_posicion);
-	var pos_y = self.y + self.acos * (self.mascara_colision * valor_auxiliar_posicion);
+	var pos_x = self.x + self.asin * self.mascara_colision;
+	var pos_y = self.y + self.acos * self.mascara_colision;
 	var radio_circulo = 9;
 	
 	// Declaracion de requisitos de colision
@@ -28,6 +27,7 @@ function colision_con_suelo() {
 	var requisitos_caminar_sobre_agua = (self.caminar_sobre_agua) and (not self.sumergido_agua);
 	
 	// Determinar si se debe mostrar la colision
+	global.permitir_modo_debug = true
 	if (global.permitir_modo_debug) then draw_circle(pos_x, pos_y, radio_circulo, true);
 	
 	// Retornar comprobacion
@@ -36,11 +36,11 @@ function colision_con_suelo() {
 
 function colision_con_riel() {
 	// Declaracion de valores
-	var valor_auxiliar_posicion = 1.25;
+	var valor_auxiliar_distancia = 1.25;
 	var pos_x_1 = self.x;
 	var pos_y_1 = self.y;
-	var pos_x_2 = self.x + self.asin * (self.mascara_colision * valor_auxiliar_posicion);
-	var pos_y_2 = self.y + self.acos * (self.mascara_colision * valor_auxiliar_posicion);
+	var pos_x_2 = self.x + self.asin * (self.mascara_colision * valor_auxiliar_distancia);
+	var pos_y_2 = self.y + self.acos * (self.mascara_colision * valor_auxiliar_distancia);
 
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2);
