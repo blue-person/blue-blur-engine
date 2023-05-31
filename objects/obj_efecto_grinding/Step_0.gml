@@ -1,8 +1,8 @@
 x = obj_jugador.x;    
 y = obj_jugador.y;
 
-image_angle = obj_jugador.direccion_aura_boost;
-image_yscale = obj_jugador.direccion_horizontal;
+image_angle = obj_jugador.angulo;
+image_xscale = obj_jugador.direccion_horizontal;
 
 switch (obj_jugador.accion) {
     case 11:

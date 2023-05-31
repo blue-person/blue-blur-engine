@@ -116,15 +116,22 @@ if (accion == 15) {
     }
 }
 
+if (not sumergido_agua and tocando_suelo) and (abs(velocidad_horizontal) >= 6) and (accion == 0 or accion == 1 or accion == 2) {
+    caminar_sobre_agua = true;
+} else {
+    caminar_sobre_agua = false;
+}
+
 if (sumergido_agua and (random(1) < 0.0115)) {
 	var pos_x = x + choose(5, 7, 9) * direccion_horizontal;
-	instance_create_depth(pos_x, y - 5, -2, obj_burbuja_agua);
+	var pos_y = y - 5;
+	instance_create_depth(pos_x, pos_y, -2, obj_burbuja_agua);
 }
 
 // Ejecutar scripts esenciales
 gestor_principal_fisicas(self);
 
-if (!zona_superada) {
+if (not zona_superada) {
 	movimiento_jugador();
 } else {
     accion = 0;
@@ -168,27 +175,25 @@ if (collision_circle(x, y, 16, obj_cambiar_capa_fp, true, true)) {
 
 // Hacer que suenen los pasos del jugador dependiendo de la superficie donde este
 if (tocando_suelo) {
-	caminar_sobre_agua = false;
     if (colision_lineal_simple(obj_superficie_agua)) {
-        caminar_sobre_agua = true;
 		sonido_pisada_a = snd_pisada_agua_a;
 	    sonido_pisada_b = snd_pisada_agua_b;
-    } else if (verificar_colision_tipo_suelo(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
+    } else if (colision_lineal_superficie(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
         sonido_pisada_a = snd_pisada_vidrio_a;
         sonido_pisada_b = snd_pisada_vidrio_b;
-    } else if (verificar_colision_tipo_suelo(obj_material_pasto, obj_muro_pasto_posterior, obj_muro_pasto_frontal)) {
+    } else if (colision_lineal_superficie(obj_material_pasto, obj_muro_pasto_posterior, obj_muro_pasto_frontal)) {
         sonido_pisada_a = snd_pisada_pasto_a;
         sonido_pisada_b = snd_pisada_pasto_b;
-    } else if (verificar_colision_tipo_suelo(obj_material_piedra, obj_muro_piedra_posterior, obj_muro_piedra_frontal)) {
-        sonido_pisada_a = snd_pisada_a;
-        sonido_pisada_b = snd_pisada_b;
-    } else if (verificar_colision_tipo_suelo(obj_material_metal, obj_muro_metal_posterior, obj_muro_metal_frontal)) {
+    } else if (colision_lineal_superficie(obj_material_piedra, obj_muro_piedra_posterior, obj_muro_piedra_frontal)) {
+        sonido_pisada_a = snd_pisada_piedra_a;
+        sonido_pisada_b = snd_pisada_piedra_b;
+    } else if (colision_lineal_superficie(obj_material_metal, obj_muro_metal_posterior, obj_muro_metal_frontal)) {
         sonido_pisada_a = snd_pisada_metal_a;
         sonido_pisada_b = snd_pisada_metal_b;
-    } else if (verificar_colision_tipo_suelo(obj_material_madera, obj_muro_madera_posterior, obj_muro_madera_frontal)) {
+    } else if (colision_lineal_superficie(obj_material_madera, obj_muro_madera_posterior, obj_muro_madera_frontal)) {
         sonido_pisada_a = snd_pisada_madera_a;
         sonido_pisada_b = snd_pisada_madera_b;
-    } else if (verificar_colision_tipo_suelo(obj_material_tierra, obj_muro_tierra_posterior, obj_muro_tierra_frontal)) {
+    } else if (colision_lineal_superficie(obj_material_tierra, obj_muro_tierra_posterior, obj_muro_tierra_frontal)) {
         sonido_pisada_a = snd_pisada_tierra_a;
         sonido_pisada_b = snd_pisada_tierra_b;
     } else {

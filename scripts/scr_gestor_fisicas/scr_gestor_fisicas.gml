@@ -5,19 +5,24 @@ function gestor_principal_fisicas(entidad) {
 	// Gestionar las fisicas de la entidad
 	with (entidad) {
 		// Establecer los limites de velocidad del movimiento de la entidad
-	    if (abs(velocidad_horizontal) > limite_velocidad_horizontal) then velocidad_horizontal = sign(velocidad_horizontal) * limite_velocidad_horizontal;
-	    if (abs(velocidad_vertical) > limite_velocidad_vertical) then velocidad_vertical = sign(velocidad_vertical) * limite_velocidad_vertical;
+	    if (abs(velocidad_horizontal) > limite_velocidad_horizontal) {
+			velocidad_horizontal = sign(velocidad_horizontal) * limite_velocidad_horizontal;
+		}
+	    
+		if (abs(velocidad_vertical) > limite_velocidad_vertical) { 
+			velocidad_vertical = sign(velocidad_vertical) * limite_velocidad_vertical;
+		}
 
 	    // Velocidad horizontal
 	    if (velocidad_horizontal > 0) {
-	        for (var n = 0; (n < velocidad_horizontal) and !colision_circular_derecha(mascara_colision); ++n) {
+	        for (var n = 0; (n < velocidad_horizontal) and !colision_circular_derecha(); ++n) {
 	            x += acos;
 	            y -= asin;
 	        }
 	    }
 
 	    if (velocidad_horizontal < 0) {
-	        for (var n = 0; (n > velocidad_horizontal) and !colision_circular_izquierda(mascara_colision); --n) {
+	        for (var n = 0; (n > velocidad_horizontal) and !colision_circular_izquierda(); --n) {
 	            x -= acos;
 	            y += asin;
 	        }
@@ -87,13 +92,13 @@ function gestor_principal_fisicas(entidad) {
 	    }
 
 	    // Colisionar con las paredes
-	    while (colision_circular_derecha(mascara_colision)) {
+	    while (colision_circular_derecha()) {
 	        x -= acos;
 	        y += asin;
 	        velocidad_horizontal = 0;
 	    }
 
-	    while (colision_circular_izquierda(mascara_colision)) {
+	    while (colision_circular_izquierda()) {
 	        x += acos;
 	        y -= asin;
 	        velocidad_horizontal = 0;

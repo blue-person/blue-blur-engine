@@ -1,58 +1,47 @@
-function colision_circular_agua(pos_x, pos_y, radio_circulo) {
-	// Determinar si esta tocando la superficie del agua
-	if (!self.sumergido_agua) {
-		var angulo_requerido = (self.angulo <= 45) or (self.angulo >= 315);
-		var velocidad_requerida = (abs(self.velocidad_horizontal) >= 8);
-		if (angulo_requerido and velocidad_requerida) {
-			var colision_superficie_agua = collision_circle(pos_x, pos_y, radio_circulo, obj_superficie_agua, true, true);
-			if (colision_superficie_agua) then return true;
-		}
-	}
-	
-	// En caso de que ningun caso se cumpla, se regresa false
-	return false;
-}
+function colision_lineal_superficie(superficie_normal, superficie_posterior, superficie_frontal) {
+	// Determinar colision con superficie
+	var colision_normal = colision_lineal_simple(superficie_normal);
+	if (colision_normal) then return true;
 
-function colision_lineal_agua(pos_x_1, pos_y_1, pos_x_2, pos_y_2) {
-	// Determinar si esta tocando la superficie del agua
-	if (!self.sumergido_agua) {
-		var angulo_requerido = (self.angulo <= 45) or (self.angulo >= 315);
-		var velocidad_requerida = (abs(self.velocidad_horizontal) >= 8);
-		if (angulo_requerido and velocidad_requerida) {
-			var colision_superficie_agua = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie_agua, true, true);
-			if (colision_superficie_agua) then return true;
-		}
-	}
+	// Determinar colisiones con superficies, ya sea capa frontal o capa posterior
+	if (self.capa_actual == "frontal") {
+        var colision_capa_frontal = colision_lineal_simple(superficie_frontal);
+		if (colision_capa_frontal) then return true;
+    } else {
+        var colision_capa_posterior = colision_lineal_simple(superficie_posterior);
+		if (colision_capa_posterior) then return true;
+    }
 	
-	// En caso de que ningun caso se cumpla, se regresa false
+	// Retornar comprobacion
 	return false;
 }
 
 function colision_con_suelo() {
 	// Declaracion de valores
-	var pos_x = self.x + self.asin * self.mascara_colision;
-	var pos_y = self.y + self.acos * self.mascara_colision;
-	var radio_circulo = 7;
+	var valor_auxiliar_posicion = 2.5;
+	var pos_x = self.x + self.asin * (self.mascara_colision * valor_auxiliar_posicion);
+	var pos_y = self.y + self.acos * (self.mascara_colision * valor_auxiliar_posicion);
+	var radio_circulo = 9;
+	
+	// Declaracion de requisitos de colision
 	var requisitos_colision_riel = self.permitir_grinding;
-
+	var requisitos_caminar_sobre_agua = (self.caminar_sobre_agua) and (not self.sumergido_agua);
+	
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_circle(pos_x, pos_y, radio_circulo, true);
 	
-	// Determinar si esta tocando la superficie del agua
-	var colision_superficie_agua = colision_circular_agua(pos_x, pos_y, radio_circulo);
-	if (colision_superficie_agua) then return true;
-	
-	// Devolver resultado
-	return colision_circular_general(pos_x, pos_y, radio_circulo, requisitos_colision_riel);
+	// Retornar comprobacion
+	return colision_circular_general(pos_x, pos_y, radio_circulo, requisitos_colision_riel, requisitos_caminar_sobre_agua);
 }
 
 function colision_con_riel() {
 	// Declaracion de valores
+	var valor_auxiliar_posicion = 1.25;
 	var pos_x_1 = self.x;
 	var pos_y_1 = self.y;
-	var pos_x_2 = self.x + self.asin * self.mascara_colision;
-	var pos_y_2 = self.y + self.acos * self.mascara_colision;
-	
+	var pos_x_2 = self.x + self.asin * (self.mascara_colision * valor_auxiliar_posicion);
+	var pos_y_2 = self.y + self.acos * (self.mascara_colision * valor_auxiliar_posicion);
+
 	// Determinar si se debe mostrar la colision
 	if (global.permitir_modo_debug) then draw_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2);
 	

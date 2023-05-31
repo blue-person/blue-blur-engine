@@ -12,17 +12,17 @@ function movimiento_jugador() {
         if (((direccion_horizontal == 1) and verificar_boton_mantenido("boton_izquierda") and (velocidad_horizontal >= 3)) or ((direccion_horizontal == -1) and verificar_boton_mantenido("boton_derecha") and (velocidad_horizontal <= -3))) {
             if (colision_lineal_simple(obj_superficie_agua)) {
                 audio_play_sound(snd_frenar_agua, 1, 0);
-            } else if (verificar_colision_tipo_suelo(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
+            } else if (colision_lineal_superficie(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
                 audio_play_sound(snd_frenar_vidrio, 1, 0);
-            } else if (verificar_colision_tipo_suelo(obj_material_pasto, obj_muro_pasto_posterior, obj_muro_pasto_frontal)) {
+            } else if (colision_lineal_superficie(obj_material_pasto, obj_muro_pasto_posterior, obj_muro_pasto_frontal)) {
                 audio_play_sound(snd_frenar_pasto, 1, 0);
-            } else if (verificar_colision_tipo_suelo(obj_material_piedra, obj_muro_piedra_posterior, obj_muro_piedra_frontal)) {
+            } else if (colision_lineal_superficie(obj_material_piedra, obj_muro_piedra_posterior, obj_muro_piedra_frontal)) {
                 audio_play_sound(snd_frenar, 1, 0);
-            } else if (verificar_colision_tipo_suelo(obj_material_metal, obj_muro_metal_posterior, obj_muro_metal_frontal)) {
+            } else if (colision_lineal_superficie(obj_material_metal, obj_muro_metal_posterior, obj_muro_metal_frontal)) {
                 audio_play_sound(snd_frenar_metal, 1, 0);
-            } else if (verificar_colision_tipo_suelo(obj_material_madera, obj_muro_madera_posterior, obj_muro_madera_frontal)) {
+            } else if (colision_lineal_superficie(obj_material_madera, obj_muro_madera_posterior, obj_muro_madera_frontal)) {
                 audio_play_sound(snd_frenar_madera, 1, 0);
-            } else if (verificar_colision_tipo_suelo(obj_material_tierra, obj_muro_tierra_posterior, obj_muro_tierra_frontal)) {
+            } else if (colision_lineal_superficie(obj_material_tierra, obj_muro_tierra_posterior, obj_muro_tierra_frontal)) {
                 audio_play_sound(snd_frenar_tierra, 1, 0);
             } else {
                 audio_play_sound(snd_frenar, 1, 0);
@@ -298,15 +298,15 @@ function movimiento_jugador() {
 		
 		if (colision_lineal_simple(obj_superficie_agua)) {
             sonido_aterrizar = snd_aterrizar_agua;
-        } else if (verificar_colision_aterrizaje(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
+        } else if (colision_lineal_superficie(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
 			sonido_aterrizar = snd_aterrizar_vidrio;
-        } else if (verificar_colision_aterrizaje(obj_material_pasto, obj_muro_pasto_posterior, obj_muro_pasto_frontal)) {
+        } else if (colision_lineal_superficie(obj_material_pasto, obj_muro_pasto_posterior, obj_muro_pasto_frontal)) {
 			sonido_aterrizar = snd_aterrizar_pasto;
-        } else if (verificar_colision_aterrizaje(obj_material_metal, obj_muro_metal_posterior, obj_muro_metal_frontal)) {
+        } else if (colision_lineal_superficie(obj_material_metal, obj_muro_metal_posterior, obj_muro_metal_frontal)) {
 			sonido_aterrizar = snd_aterrizar_metal;
-        } else if (verificar_colision_aterrizaje(obj_material_madera, obj_muro_madera_posterior, obj_muro_madera_frontal)) {
+        } else if (colision_lineal_superficie(obj_material_madera, obj_muro_madera_posterior, obj_muro_madera_frontal)) {
 			sonido_aterrizar = snd_aterrizar_madera;
-        } else if (verificar_colision_aterrizaje(obj_material_tierra, obj_muro_tierra_posterior, obj_muro_tierra_frontal)) {
+        } else if (colision_lineal_superficie(obj_material_tierra, obj_muro_tierra_posterior, obj_muro_tierra_frontal)) {
 			sonido_aterrizar = snd_aterrizar_tierra;
         }
 		
@@ -1134,7 +1134,7 @@ function movimiento_jugador() {
 		var colisionando_con_agua = collision_point(x, y, obj_profundidad_agua, true, true);
 		var altura_salpicadura = superficie_agua.y - 16;
 		
-		if (!sumergido_agua and colisionando_con_agua) {
+		if (not sumergido_agua and colisionando_con_agua) {
 			sumergido_agua = true;
 			
 			// Efectos al entrar al agua
@@ -1150,7 +1150,7 @@ function movimiento_jugador() {
 			altura_salto_minima = -2;
 		}
 		
-		if (sumergido_agua and !colisionando_con_agua) {
+		if (sumergido_agua and not colisionando_con_agua) {
 			sumergido_agua = false;
 			
 			// Efectos al salir del agua
