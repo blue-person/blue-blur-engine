@@ -18,7 +18,7 @@ function reproducir_sonido_muerte(){
 			sonido_muerte = snd_muerte_sonic;
 			break;
 		case "Shadow":
-			sonido_muerte = snd_quejido_shadow;
+			sonido_muerte = snd_muerte_shadow;
 			break;
 	}
 	audio_play_sound(sonido_muerte, 1, false);

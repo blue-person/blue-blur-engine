@@ -13,7 +13,7 @@
   "duration": 3.616508,
   "parent": {
     "name": "Perder rings",
-    "path": "folders/Sonidos/Voces/Jugador/General/Perder rings.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Perder rings.yy",
   },
   "preload": true,
   "sampleRate": 44100,

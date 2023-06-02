@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_emerald_valley",
-  "creationCodeFile": "${project_dir}/rooms/rm_emerald_valley/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_emerald_valley/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

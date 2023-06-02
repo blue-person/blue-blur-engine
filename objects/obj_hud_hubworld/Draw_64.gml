@@ -1,5 +1,5 @@
 if (mostrar_en_pantalla) {
-	var icono_boton = input_binding_get_icon(input_binding_get("boton_especial"));
+	var icono_boton = control.obtener_icono_boton("boton_especial");
 	var cantidad_vidas = obj_determinar_texto_vidas.texto_vidas;
 	
 	// Vidas

@@ -1,7 +1,7 @@
 if (place_meeting(x, y, obj_jugador)) {
     obj_jugador.angulo = 0;
     
-    if (verificar_boton_mantenido("boton_arriba") and (abs(obj_jugador.velocidad_horizontal) < 3)) {
+    if (control.boton_mantenido("boton_arriba") and (abs(obj_jugador.velocidad_horizontal) < 3)) {
         if ((nombre_nivel != -1) and !seleccionar_nivel) {
             obj_jugador.x = x;
             obj_jugador.permitir_movimiento = false;
@@ -19,7 +19,7 @@ if (place_meeting(x, y, obj_jugador)) {
 
 if (seleccionar_nivel) {
 	seleccionar_nivel = false;
-	instance_destroy(obj_reproductor_musica);
+	audio.detener_todo();
 	
 	iniciar_transicion_niveles(nombre_nivel, "negro", 0.05);
 	alarm[0] = 40;

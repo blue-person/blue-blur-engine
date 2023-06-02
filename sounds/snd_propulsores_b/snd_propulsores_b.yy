@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_teletransporte_shadow",
+  "name": "snd_propulsores_b",
   "audioGroupId": {
     "name": "grp_efectos_sonido",
     "path": "audiogroups/grp_efectos_sonido",
@@ -10,14 +10,14 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.700952,
+  "duration": 0.650159,
   "parent": {
-    "name": "Teletransportacion",
-    "path": "folders/Sonidos/Voces/Jugador/Shadow/Teletransportacion.yy",
+    "name": "Propulsores",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Propulsores.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd_teletransporte_shadow.wav",
+  "soundFile": "snd_propulsores_b.wav",
   "type": 1,
-  "volume": 1.0,
+  "volume": 0.69,
 }

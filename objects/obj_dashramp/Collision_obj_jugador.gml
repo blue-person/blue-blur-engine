@@ -16,7 +16,8 @@ if (activar_evento and (other.accion != 26)) {
     }
     
 	activar_evento = false;
-    reproducir_efecto_sonido(snd_dashramp, 1, false);
+    audio.detener_audio(snd_dashramp);
+    audio.reproducir_audio(snd_dashramp);
 	
-	//obj_controles.permitir_uso_controles = false;
+	control.inhabilitar_lectura(2);
 }

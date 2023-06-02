@@ -12,8 +12,7 @@ function establecer_variables_generales() {
 	// Funcionalidad general
 	global.permitir_pantalla_completa = true;
 	
-	// Controles
-	global.permitir_uso_controles = true;
+
 }
 
 function establecer_variables_jugador() {

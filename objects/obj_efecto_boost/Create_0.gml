@@ -23,12 +23,10 @@ audio_play_sound(snd_velocidad_sonica, 1, true);
 
 switch (global.personaje_actual) {
     case "Sonic":
-		var audio_aleatorio = choose(snd_boost_sonic_a, snd_boost_sonic_b, snd_boost_sonic_c);
-		reproducir_efecto_sonido(audio_aleatorio, 1, false);
+		audio.reproducir_audio_aleatorio([snd_boost_sonic_a, snd_boost_sonic_b, snd_boost_sonic_c]);
         break;
 	case "Shadow":
-        var audio_aleatorio = choose(snd_boost_shadow_a, snd_boost_shadow_b, snd_boost_shadow_c);
-		reproducir_efecto_sonido(audio_aleatorio, 1, false);
+		audio.reproducir_audio_aleatorio([snd_boost_shadow_a, snd_boost_shadow_b, snd_boost_shadow_c]);
         break;
 }
 

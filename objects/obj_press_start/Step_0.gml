@@ -12,14 +12,14 @@ if (estado_animacion == 0) {
 	}
 }
 
-if (verificar_boton_presionado("boton_entrada")) {
+if (control.boton_presionado("boton_entrada")) {
 	valor_aumento_transparencia = 0.1;
 	
 	if (permitir_transicion) {
 		permitir_transicion = false;
 	
-		audio_stop_all();
-		audio_play_sound(snd_confirmar_opcion, 1, false);
+		audio.detener_todo();
+		audio.reproducir_audio(snd_confirmar_opcion);
 		iniciar_transicion_niveles(rm_hub_world, "negro", 0.01);
 	}
 }

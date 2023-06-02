@@ -9,7 +9,7 @@ function movimiento_jugador() {
 
     // Frenar al cambiar de direccion
     if ((accion == 0) and tocando_suelo) {
-        if (((direccion_horizontal == 1) and verificar_boton_mantenido("boton_izquierda") and (velocidad_horizontal >= 3)) or ((direccion_horizontal == -1) and verificar_boton_mantenido("boton_derecha") and (velocidad_horizontal <= -3))) {
+        if (((direccion_horizontal == 1) and control.boton_mantenido("boton_izquierda") and (velocidad_horizontal >= 3)) or ((direccion_horizontal == -1) and control.boton_mantenido("boton_derecha") and (velocidad_horizontal <= -3))) {
             if (colision_lineal_simple(obj_superficie_agua)) {
                 audio_play_sound(snd_frenar_agua, 1, 0);
             } else if (colision_lineal_superficie(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
@@ -41,15 +41,15 @@ function movimiento_jugador() {
             velocidad_horizontal += desaceleracion;
         }
 
-        if (velocidad_horizontal > 1 and verificar_boton_mantenido("boton_izquierda")) {
+        if (velocidad_horizontal > 1 and control.boton_mantenido("boton_izquierda")) {
             velocidad_horizontal -= desaceleracion / 0.75;
         }
 
-        if ((velocidad_horizontal < -1) and verificar_boton_mantenido("boton_derecha")) {
+        if ((velocidad_horizontal < -1) and control.boton_mantenido("boton_derecha")) {
             velocidad_horizontal += desaceleracion / 0.75;
         }
 
-        if (((direccion_horizontal == 1) and verificar_boton_mantenido("boton_derecha") and !verificar_boton_mantenido("boton_izquierda")) or ((direccion_horizontal == -1) and verificar_boton_mantenido("boton_izquierda") and !verificar_boton_mantenido("boton_derecha"))) {
+        if (((direccion_horizontal == 1) and control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) or ((direccion_horizontal == -1) and control.boton_mantenido("boton_izquierda") and !control.boton_mantenido("boton_derecha"))) {
             accion = 0;
         }
 
@@ -61,9 +61,9 @@ function movimiento_jugador() {
 
     // Determinar direccion
     if (accion == 0) {
-        if (verificar_boton_mantenido("boton_izquierda")) {
+        if (control.boton_mantenido("boton_izquierda")) {
             direccion_horizontal = -1;
-        } else if (verificar_boton_mantenido("boton_derecha")) {
+        } else if (control.boton_mantenido("boton_derecha")) {
             direccion_horizontal = 1;
         }
     }
@@ -71,7 +71,7 @@ function movimiento_jugador() {
     // Manejar movimiento
     if ((accion == 0) or (accion == 1) or (accion == 16)) {
         if (tocando_suelo) {
-            if (verificar_boton_mantenido("boton_derecha")) {
+            if (control.boton_mantenido("boton_derecha")) {
                 if (velocidad_horizontal > 0) {
                     if (velocidad_horizontal < limite_velocidad_actual) {
                         velocidad_horizontal += aceleracion;
@@ -80,7 +80,7 @@ function movimiento_jugador() {
                     velocidad_horizontal += desaceleracion;
                 }
             }
-            if (verificar_boton_mantenido("boton_izquierda")) {
+            if (control.boton_mantenido("boton_izquierda")) {
                 if (velocidad_horizontal < 0) {
                     if (velocidad_horizontal > -limite_velocidad_actual) {
                         velocidad_horizontal -= aceleracion;
@@ -90,7 +90,7 @@ function movimiento_jugador() {
                 }
             }
 
-            if (!verificar_boton_mantenido("boton_derecha") and !verificar_boton_mantenido("boton_izquierda")) {
+            if (!control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
                 if (velocidad_horizontal > 0) {
                     velocidad_horizontal -= friccion;
                 }
@@ -104,14 +104,14 @@ function movimiento_jugador() {
                 }
             }
 
-            if (verificar_boton_mantenido("boton_derecha") and verificar_boton_mantenido("boton_izquierda")) {
+            if (control.boton_mantenido("boton_derecha") and control.boton_mantenido("boton_izquierda")) {
                 if (abs(velocidad_horizontal) <= desaceleracion) {
                     velocidad_horizontal = 0;
                 }
             }
         } else {
             if ((accion == 0) or (accion == 16)) {
-                if (verificar_boton_mantenido("boton_derecha")) {
+                if (control.boton_mantenido("boton_derecha")) {
                     if (velocidad_horizontal > 0) {
                         if (velocidad_horizontal < limite_velocidad_actual) {
                             velocidad_horizontal += aceleracion;
@@ -121,7 +121,7 @@ function movimiento_jugador() {
                     }
                 }
 
-                if (verificar_boton_mantenido("boton_izquierda")) {
+                if (control.boton_mantenido("boton_izquierda")) {
                     if (velocidad_horizontal < 0) {
                         if (velocidad_horizontal > -limite_velocidad_actual) {
                             velocidad_horizontal -= aceleracion;
@@ -131,7 +131,7 @@ function movimiento_jugador() {
                     }
                 }
 
-                if (!verificar_boton_mantenido("boton_derecha") and !verificar_boton_mantenido("boton_izquierda")) {
+                if (!control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
                     if (velocidad_horizontal > 0) {
                         velocidad_horizontal -= friccion;
                     }
@@ -145,13 +145,13 @@ function movimiento_jugador() {
                     }
                 }
 
-                if (verificar_boton_mantenido("boton_derecha") and verificar_boton_mantenido("boton_izquierda")) {
+                if (control.boton_mantenido("boton_derecha") and control.boton_mantenido("boton_izquierda")) {
                     if (abs(velocidad_horizontal) <= desaceleracion) {
                         velocidad_horizontal = 0;
                     }
                 }
             } else if (accion == 1) {
-                if (verificar_boton_mantenido("boton_derecha")) {
+                if (control.boton_mantenido("boton_derecha")) {
                     if (velocidad_horizontal > 0) {
                         if (velocidad_horizontal < limite_velocidad_actual) {
                             velocidad_horizontal += aceleracion;
@@ -161,7 +161,7 @@ function movimiento_jugador() {
                     }
                 }
 
-                if (verificar_boton_mantenido("boton_izquierda")) {
+                if (control.boton_mantenido("boton_izquierda")) {
                     if (velocidad_horizontal < 0) {
                         if (velocidad_horizontal > -limite_velocidad_actual) {
                             velocidad_horizontal -= aceleracion;
@@ -171,7 +171,7 @@ function movimiento_jugador() {
                     }
                 }
 
-                if (!verificar_boton_mantenido("boton_derecha") and !verificar_boton_mantenido("boton_izquierda")) {
+                if (!control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
                     if (velocidad_horizontal > 0) {
                         velocidad_horizontal -= friccion;
                     }
@@ -185,7 +185,7 @@ function movimiento_jugador() {
                     }
                 }
 
-                if (verificar_boton_mantenido("boton_derecha") and verificar_boton_mantenido("boton_izquierda")) {
+                if (control.boton_mantenido("boton_derecha") and control.boton_mantenido("boton_izquierda")) {
                     if (abs(velocidad_horizontal) <= desaceleracion) {
                         velocidad_horizontal = 0;
                     }
@@ -199,7 +199,7 @@ function movimiento_jugador() {
             if (velocidad_horizontal > friccion_bola) {
                 velocidad_horizontal -= friccion_bola;
 
-                if (verificar_boton_mantenido("boton_izquierda")) {
+                if (control.boton_mantenido("boton_izquierda")) {
                     velocidad_horizontal -= desaceleracion_bola;
                 }
             }
@@ -207,7 +207,7 @@ function movimiento_jugador() {
             if (velocidad_horizontal < -friccion_bola) {
                 velocidad_horizontal += friccion_bola;
 
-                if (verificar_boton_mantenido("boton_derecha")) {
+                if (control.boton_mantenido("boton_derecha")) {
                     velocidad_horizontal += desaceleracion_bola;
                 }
             }
@@ -216,14 +216,14 @@ function movimiento_jugador() {
                 velocidad_horizontal = 0;
             }
         } else {
-            if (verificar_boton_mantenido("boton_derecha")) {
+            if (control.boton_mantenido("boton_derecha")) {
                 if (velocidad_horizontal >= 0) {
                     if (velocidad_horizontal < velocidad_horizontal_normal) {
                         velocidad_horizontal += aceleracion * 2;
                     }
                 }
             }
-            if (verificar_boton_mantenido("boton_izquierda")) {
+            if (control.boton_mantenido("boton_izquierda")) {
                 if (velocidad_horizontal <= 0) {
                     if (velocidad_horizontal > -velocidad_horizontal_normal) {
                         velocidad_horizontal -= aceleracion * 2;
@@ -235,7 +235,7 @@ function movimiento_jugador() {
     }
 
     // Manejo del salto
-    if (verificar_boton_presionado("boton_salto") and tocando_suelo and ((accion == -4) or (accion == 0) or (accion == 2) or (accion == 9) or (accion == 11))) {
+    if (control.boton_presionado("boton_salto") and tocando_suelo and ((accion == -4) or (accion == 0) or (accion == 2) or (accion == 9) or (accion == 11))) {
         accion = 1;
 		tocando_suelo = false;
         velocidad_vertical = acos * altura_salto + (-asin * velocidad_horizontal) / 1.5;
@@ -252,12 +252,12 @@ function movimiento_jugador() {
     }
 
     // Manejo de la altura minima del salto
-    if (verificar_boton_liberado("boton_salto") and (velocidad_vertical < altura_salto_minima) and (accion == 1)) {
+    if (control.boton_liberado("boton_salto") and (velocidad_vertical < altura_salto_minima) and (accion == 1)) {
         velocidad_vertical = altura_salto_minima;
     }
 
     if ((accion == 1) and !tocando_suelo) {
-        if (verificar_boton_mantenido("boton_derecha")) {
+        if (control.boton_mantenido("boton_derecha")) {
             if (velocidad_horizontal >= 0) {
                 if (velocidad_horizontal < limite_velocidad_actual) {
                     velocidad_horizontal += aceleracion / 2;
@@ -267,7 +267,7 @@ function movimiento_jugador() {
             }
         }
 
-        if (verificar_boton_mantenido("boton_izquierda")) {
+        if (control.boton_mantenido("boton_izquierda")) {
             if (velocidad_horizontal <= 0) {
                 if (velocidad_horizontal > -limite_velocidad_actual) {
                     velocidad_horizontal -= aceleracion / 2;
@@ -276,7 +276,7 @@ function movimiento_jugador() {
                 }
             }
 
-            if (!verificar_boton_mantenido("boton_derecha") and !verificar_boton_mantenido("boton_izquierda")) {
+            if (!control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
                 if (velocidad_horizontal > 0) {
                     velocidad_horizontal -= friccion;
                 }
@@ -318,7 +318,7 @@ function movimiento_jugador() {
     }
 
     // Agacharse y rodar
-    if (verificar_boton_mantenido("boton_abajo") and tocando_suelo and ((accion == 0) or (accion == 1))) {
+    if (control.boton_mantenido("boton_abajo") and tocando_suelo and ((accion == 0) or (accion == 1))) {
         if (abs(velocidad_horizontal) < 1.03125) {
             velocidad_horizontal = 0;
             accion = -1;
@@ -332,7 +332,7 @@ function movimiento_jugador() {
     }
 	
     // Dejar de agacharse
-    if ((accion == -1) and !verificar_boton_mantenido("boton_abajo") and (indice_sprite >= 5)) {
+    if ((accion == -1) and !control.boton_mantenido("boton_abajo") and (indice_sprite >= 5)) {
         accion = 0;
     }
 
@@ -347,7 +347,7 @@ function movimiento_jugador() {
     }
 
     // Mirar hacia arriba
-    if (verificar_boton_mantenido("boton_arriba") and tocando_suelo and (accion == 0)) {
+    if (control.boton_mantenido("boton_arriba") and tocando_suelo and (accion == 0)) {
         if (abs(velocidad_horizontal) < 0.2) {
             velocidad_horizontal = 0;
             accion = -3;
@@ -355,7 +355,7 @@ function movimiento_jugador() {
         }
     }
 
-    if ((!verificar_boton_mantenido("boton_arriba") or !tocando_suelo or verificar_boton_mantenido("boton_derecha") or verificar_boton_mantenido("boton_izquierda")) and ((accion == -3) and (indice_sprite >= 5))) {
+    if ((!control.boton_mantenido("boton_arriba") or !tocando_suelo or control.boton_mantenido("boton_derecha") or control.boton_mantenido("boton_izquierda")) and ((accion == -3) and (indice_sprite >= 5))) {
         accion = 0;
     }
 
@@ -368,19 +368,19 @@ function movimiento_jugador() {
         velocidad_spindash = 192;
     }
 
-    if ((accion == -2) and verificar_boton_presionado("boton_salto")) {
+    if ((accion == -2) and control.boton_presionado("boton_salto")) {
         velocidad_spindash += 8;
         audio_play_sound(snd_cargar_spindash, 1, false);
     }
 
-    if ((accion == -2) and !verificar_boton_mantenido("boton_abajo")) {
+    if ((accion == -2) and !control.boton_mantenido("boton_abajo")) {
         velocidad_horizontal = direccion_horizontal * 9 + (direccion_horizontal * floor(velocidad_spindash) / 8);
         accion = 2;
         velocidad_spindash = 0;
         audio_play_sound(snd_soltar_spindash, 1, false);
     }
 
-    if ((accion == -1) and verificar_boton_presionado("boton_salto")) {
+    if ((accion == -1) and control.boton_presionado("boton_salto")) {
         velocidad_spindash = 0;
         accion = -2;
         indice_sprite = 0;
@@ -406,12 +406,12 @@ function movimiento_jugador() {
         }
     }
 
-    if (((accion == 1) and permitir_homing_attack and verificar_boton_liberado("boton_salto")) or ((accion == 0) and !tocando_suelo) or (accion == 5)) {
+    if (((accion == 1) and permitir_homing_attack and control.boton_liberado("boton_salto")) or ((accion == 0) and !tocando_suelo) or (accion == 5)) {
         permitir_homing_attack = false;
     }
 
     if (instance_exists(obj_enfoque_homing)) {
-        if (verificar_boton_presionado("boton_salto") and !permitir_homing_attack) {
+        if (control.boton_presionado("boton_salto") and !permitir_homing_attack) {
             if (accion != 4) {
                 audio_play_sound(snd_homing_attack, 1, false);
             }
@@ -422,14 +422,14 @@ function movimiento_jugador() {
             move_towards_point(obj_enfoque_homing.x, obj_enfoque_homing.y, 20);
         }
     } else {
-        if (verificar_boton_presionado("boton_salto") and !tocando_suelo and ((accion == 1) or (accion == 0)) and !permitir_homing_attack and permitir_air_dash) {
+        if (control.boton_presionado("boton_salto") and !tocando_suelo and ((accion == 1) or (accion == 0)) and !permitir_homing_attack and permitir_air_dash) {
             if (accion != 4.5) {
                 switch (global.personaje_actual) {
                     case "Sonic":
                         audio_play_sound(snd_homing_attack, 1, false);
                         break;
                     case "Shadow":
-                        audio_play_sound(snd_teletransporte_shadow, 1, false);
+                        audio_play_sound(snd_teletransportacion, 1, false);
                         break;
                 }
             }
@@ -457,10 +457,10 @@ function movimiento_jugador() {
     }
 
     if (accion == 4.5) {
-		if (verificar_boton_mantenido("boton_derecha")) {
+		if (control.boton_mantenido("boton_derecha")) {
 			direccion_horizontal = 1;
 		} 
-		else if (verificar_boton_mantenido("boton_izquierda")) {
+		else if (control.boton_mantenido("boton_izquierda")) {
 			direccion_horizontal = -1;
 		}
 		
@@ -475,8 +475,8 @@ function movimiento_jugador() {
 		}
 		velocidad_horizontal = direccion_horizontal * velocidad_homing_attack;
         velocidad_vertical = 0;
-		global.permitir_uso_controles = false;
-		alarm[3] = 2;
+		control.inhabilitar_lectura(2);
+		//alarm[3] = 2;
     }
 
     if ((accion == 4) and instance_exists(obj_enfoque_homing)) {
@@ -526,7 +526,7 @@ function movimiento_jugador() {
     // Deslizarse en el suelo
     switch (global.personaje_actual) {
         case "Sonic":
-            if (tocando_suelo and (accion == 0) and (abs(velocidad_horizontal) >= 3) and verificar_boton_mantenido("boton_ataque")) {
+            if (tocando_suelo and (accion == 0) and (abs(velocidad_horizontal) >= 3) and control.boton_mantenido("boton_ataque")) {
                 sprite_actual = spr_sonic_trotando;
                 accion = 9;
                 audio_play_sound(snd_ataque_sonic_c, 1, false);
@@ -539,9 +539,9 @@ function movimiento_jugador() {
                     direccion_horizontal = -1;
                 }
 
-                if (direccion_horizontal == 1 and verificar_boton_mantenido("boton_izquierda")) {
+                if (direccion_horizontal == 1 and control.boton_mantenido("boton_izquierda")) {
                     velocidad_horizontal -= desaceleracion;
-                } else if (direccion_horizontal == -1 and verificar_boton_mantenido("boton_derecha")) {
+                } else if (direccion_horizontal == -1 and control.boton_mantenido("boton_derecha")) {
                     velocidad_horizontal += desaceleracion;
                 }
 
@@ -557,14 +557,14 @@ function movimiento_jugador() {
                     accion = 0;
                 }
 
-                if (!verificar_boton_mantenido("boton_ataque")) {
+                if (!control.boton_mantenido("boton_ataque")) {
                     accion = 2;
                 }
             }
             break;
 
         case "Shadow":
-            if (tocando_suelo and (accion == 0) and verificar_boton_presionado("boton_ataque")) {
+            if (tocando_suelo and (accion == 0) and control.boton_presionado("boton_ataque")) {
                 indice_sprite = 0;
 
                 if (abs(velocidad_horizontal) < 10) {
@@ -573,7 +573,7 @@ function movimiento_jugador() {
 
                 accion = 9;
                 audio_play_sound(snd_ataque_shadow_b, 1, false);
-                audio_play_sound(snd_teletransporte_shadow, 1, false);
+                audio_play_sound(snd_teletransportacion, 1, false);
             }
 
             if (accion == 9) {
@@ -654,12 +654,12 @@ function movimiento_jugador() {
         velocidad_horizontal = 0;
         velocidad_vertical = 0;
 
-        if (verificar_boton_presionado("boton_salto") and (((indice_sprite % 15) >= 0) and ((indice_sprite % 15) < 5))) {
+        if (control.boton_presionado("boton_salto") and (((indice_sprite % 15) >= 0) and ((indice_sprite % 15) < 5))) {
             audio_play_sound(snd_vuelta_aerea, 1, false);
             accion = 13;
             velocidad_vertical = -8;
             velocidad_horizontal = direccion_horizontal * 10;
-        } else if (verificar_boton_presionado("boton_salto")) {
+        } else if (control.boton_presionado("boton_salto")) {
             accion = 0;
             y += 10;
         }
@@ -763,7 +763,7 @@ function movimiento_jugador() {
         velocidad_vertical = 0;
         velocidad_horizontal = 0;
 
-        if (verificar_boton_presionado("boton_salto")) {
+        if (control.boton_presionado("boton_salto")) {
             alarm[2] = 0;
             direccion_horizontal = -direccion_horizontal;
             accion = 20;
@@ -785,27 +785,27 @@ function movimiento_jugador() {
         velocidad_vertical = 0;
         velocidad_horizontal = 0;
 
-        if (verificar_boton_presionado("boton_salto")) {
+        if (control.boton_presionado("boton_salto")) {
             var permitir_disparo = false;
 			var potencia_disparo = 10;
 			
-            if (verificar_boton_mantenido("boton_arriba")) {
+            if (control.boton_mantenido("boton_arriba")) {
                 velocidad_vertical = -potencia_disparo;
                 accion = 0;
                 permitir_disparo = true;
-            } else if (verificar_boton_mantenido("boton_derecha")) {
+            } else if (control.boton_mantenido("boton_derecha")) {
                 alarma_0 = 30;
                 gravedad = 0;
                 velocidad_horizontal = potencia_disparo;
                 accion = 6;
                 permitir_disparo = true;
-            } else if (verificar_boton_mantenido("boton_izquierda")) {
+            } else if (control.boton_mantenido("boton_izquierda")) {
                 alarma_0 = 30;
                 gravedad = 0;
                 velocidad_horizontal = -potencia_disparo;
                 accion = 6;
                 permitir_disparo = true;
-            } else if (verificar_boton_mantenido("boton_abajo")) {
+            } else if (control.boton_mantenido("boton_abajo")) {
                 velocidad_vertical = potencia_disparo;
                 accion = 0;
                 permitir_disparo = true;
@@ -835,7 +835,7 @@ function movimiento_jugador() {
 	light_ring_cercano = instance_nearest(x, y, obj_lightdash_ring);
 	distancia_light_ring = distance_to_object(light_ring_cercano);
 	
-    if ((distancia_light_ring <= 25) and verificar_boton_mantenido("boton_especial")) {
+    if ((distancia_light_ring <= 25) and control.boton_mantenido("boton_especial")) {
 		var apuntando_derecha = ((light_ring_cercano.x > x) and (direccion_horizontal == 1));
 		var apuntando_izquierda = ((light_ring_cercano.x < x) and (direccion_horizontal == -1));
 		if (apuntando_derecha or apuntando_izquierda) then accion = 23;
@@ -947,12 +947,12 @@ function movimiento_jugador() {
             x = instance_nearest(x, y, obj_poste_giratorio).x;
             y += 2;
 
-            if (verificar_boton_presionado("boton_salto")) {
+            if (control.boton_presionado("boton_salto")) {
                 accion = 1;
 
-                if (verificar_boton_mantenido("boton_derecha")) {
+                if (control.boton_mantenido("boton_derecha")) {
                     velocidad_horizontal = 7;
-                } else if (verificar_boton_mantenido("boton_izquierda")) {
+                } else if (control.boton_mantenido("boton_izquierda")) {
                     velocidad_horizontal = -7;
                 } else {
                     velocidad_horizontal = direccion_horizontal * 7;
@@ -1057,10 +1057,10 @@ function movimiento_jugador() {
         tocando_suelo = false;
 
         var distancia = 56
-        if (!collision_point(x, y - distancia, obj_superficie, true, true) and verificar_boton_presionado("boton_arriba")) {
+        if (!collision_point(x, y - distancia, obj_superficie, true, true) and control.boton_presionado("boton_arriba")) {
             y -= distancia;
             audio_play_sound(snd_quickstep, 1, false)
-        } else if (!collision_point(x, y + distancia, obj_superficie, true, true) and verificar_boton_presionado("boton_abajo")) {
+        } else if (!collision_point(x, y + distancia, obj_superficie, true, true) and control.boton_presionado("boton_abajo")) {
             y += distancia;
             audio_play_sound(snd_quickstep, 1, false);
         }
@@ -1083,7 +1083,7 @@ function movimiento_jugador() {
             }
         }
 
-        if (verificar_boton_mantenido("boton_derecha")) {
+        if (control.boton_mantenido("boton_derecha")) {
             if (velocidad_horizontal > 0) {
                 if (velocidad_horizontal < limite_velocidad_actual) {
                     velocidad_horizontal += aceleracion;
@@ -1093,7 +1093,7 @@ function movimiento_jugador() {
             }
         }
 
-        if (verificar_boton_mantenido("boton_izquierda")) {
+        if (control.boton_mantenido("boton_izquierda")) {
             if (velocidad_horizontal < 0) {
                 if (velocidad_horizontal > -limite_velocidad_actual) {
                     velocidad_horizontal -= aceleracion;
@@ -1103,7 +1103,7 @@ function movimiento_jugador() {
             }
         }
 
-        if (!verificar_boton_mantenido("boton_derecha") and !verificar_boton_mantenido("boton_izquierda")) {
+        if (!control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
             if (velocidad_horizontal > 0) {
                 velocidad_horizontal -= friccion;
             }
@@ -1117,13 +1117,13 @@ function movimiento_jugador() {
             }
         }
 
-        if (verificar_boton_mantenido("boton_derecha") and verificar_boton_mantenido("boton_izquierda")) {
+        if (control.boton_mantenido("boton_derecha") and control.boton_mantenido("boton_izquierda")) {
             if (abs(velocidad_horizontal) <= desaceleracion) then velocidad_horizontal = 0;
         }
 
-        if (verificar_boton_mantenido("boton_izquierda") and !verificar_boton_mantenido("boton_derecha")) {
+        if (control.boton_mantenido("boton_izquierda") and !control.boton_mantenido("boton_derecha")) {
             direccion_horizontal = -1;
-        } else if (verificar_boton_mantenido("boton_derecha") and !verificar_boton_mantenido("boton_izquierda")) {
+        } else if (control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
             direccion_horizontal = 1;
         }
     }

@@ -1,6 +1,8 @@
 function recoger_ring(efecto_visual, efecto_sonido, valor_aumento_rings) {	
 	instance_create_depth(x, y, 0, efecto_visual);
-	reproducir_efecto_sonido(efecto_sonido, 1, false);
+
+	audio.detener_audio(efecto_sonido);
+	audio.reproducir_audio(efecto_sonido);
 	
 	var valor_anterior = obj_jugador.rings;
 	obj_jugador.rings += valor_aumento_rings;

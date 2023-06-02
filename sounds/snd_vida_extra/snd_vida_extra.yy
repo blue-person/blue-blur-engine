@@ -13,7 +13,7 @@
   "duration": 2.586122,
   "parent": {
     "name": "Vida extra",
-    "path": "folders/Sonidos/Voces/Jugador/General/Vida extra.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Vida extra.yy",
   },
   "preload": true,
   "sampleRate": 44100,

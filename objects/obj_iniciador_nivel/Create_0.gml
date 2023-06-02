@@ -19,4 +19,3 @@ instance_create_depth(0, 0, 0, obj_limite_cantidad_boost);
 
 // Crear controladores de elementos decorativos
 instance_create_depth(0, 0, 0, obj_fondo_escenario);
-instance_create_depth(0, 0, 0, obj_reproductor_musica);

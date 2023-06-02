@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_mining_mayhem",
-  "creationCodeFile": "${project_dir}/rooms/rm_mining_mayhem/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_mining_mayhem/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

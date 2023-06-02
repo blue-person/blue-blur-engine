@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_luminous_bingo",
-  "creationCodeFile": "${project_dir}/rooms/rm_luminous_bingo/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_luminous_bingo/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_practice_zone",
-  "creationCodeFile": "${project_dir}/rooms/rm_practice_zone/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_practice_zone/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

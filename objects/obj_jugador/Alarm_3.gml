@@ -1,1 +1,1 @@
-global.permitir_uso_controles = true;
+control.habilitar_lectura()

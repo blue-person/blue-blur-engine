@@ -1,5 +1,5 @@
-if (input_source_using(INPUT_GAMEPAD)) {
-	mensaje = "press start button";
-} else {
+if (control.obtener_tipo_controles() == "teclado") {
 	mensaje = "press enter key";
+} else {
+	mensaje = "press start button";
 }

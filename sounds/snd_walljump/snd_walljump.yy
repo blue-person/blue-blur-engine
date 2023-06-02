@@ -13,7 +13,7 @@
   "duration": 1.417302,
   "parent": {
     "name": "Walljump",
-    "path": "folders/Sonidos/Voces/Jugador/General/Walljump.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Walljump.yy",
   },
   "preload": true,
   "sampleRate": 44100,

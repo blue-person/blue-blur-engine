@@ -7,6 +7,8 @@ establecer_particulas();
 
 // Cargar datos esenciales
 cargar_fonts();
+cargar_gestores();
+cargar_constantes();
 cargar_grupos_sonido();
 
 // Crear objetos controladores

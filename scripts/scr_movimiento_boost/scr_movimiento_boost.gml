@@ -1,7 +1,7 @@
 function manejo_movimiento_boost() {
-	if (verificar_boton_presionado("boton_boost")) {
+	if (control.boton_presionado("boton_boost")) {
         usando_boost = true;
-    } else if (verificar_boton_liberado("boton_boost")) {
+    } else if (control.boton_liberado("boton_boost")) {
         usando_boost = false;
     }
 	

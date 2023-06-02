@@ -34,6 +34,6 @@ dibujar_texto_sombreado(pos_x_puntaje_final, pos_y_puntaje_final, ("Score   " + 
 
 // Mostrar el boton para terminar la pantalla de nivel completado
 if (fase_animacion == 11) {
-	var icono_boton = input_binding_get_icon(input_binding_get("boton_salto"));
+	var icono_boton = control.obtener_icono_boton("boton_salto");
 	draw_sprite_ext(icono_boton, 0, 428, 222, 1, 1, 0, c_white, transparencia_boton_continuar);
 }

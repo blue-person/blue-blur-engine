@@ -13,7 +13,7 @@
   "duration": 0.818059,
   "parent": {
     "name": "Quickstep",
-    "path": "folders/Sonidos/Voces/Jugador/General/Quickstep.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Quickstep.yy",
   },
   "preload": true,
   "sampleRate": 44100,

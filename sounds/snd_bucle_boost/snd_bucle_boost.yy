@@ -13,7 +13,7 @@
   "duration": 8.684308,
   "parent": {
     "name": "Boost",
-    "path": "folders/Sonidos/Voces/Jugador/General/Boost.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Boost.yy",
   },
   "preload": true,
   "sampleRate": 44100,

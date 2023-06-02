@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_propulsores_shadow_b",
+  "name": "snd_propulsores_a",
   "audioGroupId": {
     "name": "grp_efectos_sonido",
     "path": "audiogroups/grp_efectos_sonido",
@@ -13,11 +13,11 @@
   "duration": 0.650159,
   "parent": {
     "name": "Propulsores",
-    "path": "folders/Sonidos/Voces/Jugador/Shadow/Propulsores.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Propulsores.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd_propulsores_shadow_b.wav",
+  "soundFile": "snd_propulsores_a.wav",
   "type": 1,
-  "volume": 0.69,
+  "volume": 0.7,
 }

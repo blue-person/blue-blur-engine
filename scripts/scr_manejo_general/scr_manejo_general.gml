@@ -8,7 +8,8 @@ function preparar_ubicacion_jugador() {
 }
 
 function aumentar_vidas() {
-	reproducir_efecto_sonido(snd_vida_extra, 1, false);
+	audio.detener_audio(snd_vida_extra);
+	audio.reproducir_audio(snd_vida_extra);
 	global.vidas_restantes++;
 }
 

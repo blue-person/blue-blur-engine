@@ -203,8 +203,8 @@ if (tocando_suelo) {
 }
 
 if ((global.personaje_actual == "Shadow") and ((sprite_actual == spr_shadow_patinando_a) or (sprite_actual == spr_shadow_patinando_b))) {
-    sonido_pisada_a = snd_propulsores_shadow_a;
-    sonido_pisada_b = snd_propulsores_shadow_b;
+    sonido_pisada_a = snd_propulsores_a;
+    sonido_pisada_b = snd_propulsores_b;
 }
 
 if ((accion == 0) and (sprite_actual != spr_sonic_normal) and (sprite_actual != spr_shadow_normal) and tocando_suelo and !zona_superada and !((global.personaje_actual == "Shadow") and ((sprite_actual == spr_shadow_patinando_b) or (sprite_actual == spr_shadow_patinando_a) or (sprite_actual == spr_shadow_volando)))) {

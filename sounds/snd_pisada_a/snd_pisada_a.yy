@@ -13,7 +13,7 @@
   "duration": 0.227551,
   "parent": {
     "name": "Pisadas",
-    "path": "folders/Sonidos/Voces/Jugador/General/Pisadas.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Pisadas.yy",
   },
   "preload": true,
   "sampleRate": 44100,

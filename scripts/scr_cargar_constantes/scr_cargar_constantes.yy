@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_reproducir_cancion",
+  "name": "scr_cargar_constantes",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Audios",
-    "path": "folders/Scripts/Efectos/Audios.yy",
+    "name": "Configuracion",
+    "path": "folders/Scripts/Configuracion.yy",
   },
 }

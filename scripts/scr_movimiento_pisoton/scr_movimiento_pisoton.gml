@@ -1,5 +1,5 @@
 function manejo_movimiento_pisoton() {
-	var boton_oprimido = verificar_boton_presionado("boton_ataque");
+	var boton_oprimido = control.boton_presionado("boton_ataque");
 	var acciones_validas = ((accion == 0) or (accion == 1)) and permitir_pisoton;
 	var requisitos = !tocando_suelo and (tiempo_aire >= 10);
 	var validacion_permiso_pisoton = (!permitir_pisoton and tocando_suelo);
@@ -24,7 +24,7 @@ function manejo_movimiento_pisoton() {
 
     if (validacion_permiso_pisoton) then permitir_pisoton = true;
 	
-    if (accion == 18) then realizar_pisoton_general() else detener_efecto_sonido(snd_iniciar_pisoton);
+    if (accion == 18) then realizar_pisoton_general() else audio.detener_audio(snd_iniciar_pisoton);
     if (accion == 18.5) then realizar_pisoton_diagonal();
 }
 
@@ -34,7 +34,7 @@ function realizar_pisoton_general() {
 	if (tocando_suelo) {
 		efecto_haptico_colision();
 
-		detener_efecto_sonido(snd_iniciar_pisoton);
+		audio.detener_audio(snd_iniciar_pisoton);
 		audio_play_sound(snd_terminar_pisoton, 1, false);
 		
 		if (abs(asin) > 0.55) {

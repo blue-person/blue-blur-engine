@@ -13,7 +13,7 @@
   "duration": 0.169955,
   "parent": {
     "name": "Agarrar objeto",
-    "path": "folders/Sonidos/Voces/Jugador/General/Agarrar objeto.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Agarrar objeto.yy",
   },
   "preload": true,
   "sampleRate": 44100,

@@ -1,8 +1,8 @@
 function determinar_botones_qte() {
-	if (input_source_using(INPUT_GAMEPAD)) {
-		return ["boton_salto", "boton_boost", "boton_ataque", "boton_especial"];
-	} else {
+	if (control.obtener_tipo_controles() == "teclado") {
 		return ["boton_izquierda", "boton_abajo", "boton_arriba", "boton_derecha"];
+	} else {
+		return ["boton_salto", "boton_boost", "boton_ataque", "boton_especial"];
 	}
 }
 
@@ -17,8 +17,10 @@ function iniciar_evento_qte(tiempo_reaccion = 60) {
 	obj_jugador.velocidad_horizontal = 8 * obj_jugador.direccion_horizontal;
 	obj_jugador.velocidad_vertical = -7;
 	
-	//obj_controles.permitir_uso_controles = false;
+	audio.detener_audio(snd_dashramp);
+	audio.reproducir_audio(snd_dashramp);
+
+	control.inhabilitar_lectura(2);
 	activar_evento = false;
-	reproducir_efecto_sonido(snd_dashramp, 1, false);
 	alarm[0] = tiempo_reaccion;
 }

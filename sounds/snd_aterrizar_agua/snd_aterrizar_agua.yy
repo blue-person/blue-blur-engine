@@ -13,7 +13,7 @@
   "duration": 0.603719,
   "parent": {
     "name": "Aterrizar",
-    "path": "folders/Sonidos/Voces/Jugador/General/Aterrizar.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Aterrizar.yy",
   },
   "preload": true,
   "sampleRate": 44100,

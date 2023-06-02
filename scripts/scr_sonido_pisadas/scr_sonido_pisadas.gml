@@ -27,7 +27,7 @@ function sonido_pisadas_shadow(sonido_pisada_a, sonido_pisada_b) {
 				audio_play_sound(sonido_pisada_b, 1, false);
 				pisada_actual = "a";
 			}
-			reproducir_audio_aleatorio([sonido_pisada_a, sonido_pisada_b]);
+			audio.reproducir_audio_aleatorio([sonido_pisada_a, sonido_pisada_b]);
 			
 		} else if (indice_sprite != 7 and indice_sprite != 21) {
 			dando_pisadas = false;

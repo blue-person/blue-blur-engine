@@ -16,7 +16,7 @@ if (!activar_evento) {
     }   
 } else if (activar_evento and (obj_jugador.accion == 21)) {
     if (realizar_animacion) {
-        if (verificar_boton_mantenido("boton_arriba")) {
+        if (control.boton_mantenido("boton_arriba")) {
             if (lados.indice_sprite == 0) {
                 lados.indice_sprite = 5;
                 audio_play_sound(snd_fourwaycannon_apuntar, 1, false);
@@ -27,7 +27,7 @@ if (!activar_evento) {
 			}
 			
             angulo_lados = 0;
-        } else if (verificar_boton_mantenido("boton_derecha")) {
+        } else if (control.boton_mantenido("boton_derecha")) {
             if (lados.indice_sprite == 0) {
                 lados.indice_sprite = 1;
                 audio_play_sound(snd_fourwaycannon_apuntar, 1, false);
@@ -38,7 +38,7 @@ if (!activar_evento) {
 			}
 			
             angulo_lados = 270;
-        } else if (verificar_boton_mantenido("boton_izquierda")) {
+        } else if (control.boton_mantenido("boton_izquierda")) {
             if (lados.indice_sprite == 0) {
                 lados.indice_sprite = 9;
                 audio_play_sound(snd_fourwaycannon_apuntar, 1, false);
@@ -49,7 +49,7 @@ if (!activar_evento) {
 			}
 			
             angulo_lados = 90;
-        } else if (verificar_boton_mantenido("boton_abajo")) {
+        } else if (control.boton_mantenido("boton_abajo")) {
             if (lados.indice_sprite == 0) {    
                 lados.indice_sprite = 13;
                 audio_play_sound(snd_fourwaycannon_apuntar, 1, false);
@@ -62,7 +62,7 @@ if (!activar_evento) {
             angulo_lados = 180;
         }
 		
-		if (verificar_boton_liberado("boton_arriba") or verificar_boton_liberado("boton_abajo") or verificar_boton_liberado("boton_derecha") or verificar_boton_liberado("boton_izquierda")) { 
+		if (control.boton_liberado("boton_arriba") or control.boton_liberado("boton_abajo") or control.boton_liberado("boton_derecha") or control.boton_liberado("boton_izquierda")) { 
 			realizar_animacion = false;
 		}
     } else {

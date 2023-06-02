@@ -13,7 +13,7 @@
   "duration": 0.672,
   "parent": {
     "name": "Frenar",
-    "path": "folders/Sonidos/Voces/Jugador/General/Frenar.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Frenar.yy",
   },
   "preload": true,
   "sampleRate": 44100,

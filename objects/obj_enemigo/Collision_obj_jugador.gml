@@ -8,12 +8,12 @@ if (((other.accion == 1) or (other.accion == -2) or (other.accion == 4) or (othe
         switch (global.personaje_actual) {
             case "Sonic":
                 other.sprite_actual = choose(spr_sonic_acrobacia_a, spr_sonic_acrobacia_a, spr_sonic_acrobacia_c);
-                reproducir_audio_aleatorio([snd_ataque_sonic_a, snd_ataque_sonic_b, snd_ataque_sonic_c]);
+                audio.reproducir_audio_aleatorio([snd_ataque_sonic_a, snd_ataque_sonic_b, snd_ataque_sonic_c]);
                 break;
             case "Shadow":
                 other.sprite_actual = spr_shadow_saltando;
                 other.indice_sprite = 2;
-                reproducir_audio_aleatorio([snd_ataque_shadow_a, snd_ataque_shadow_b, snd_ataque_shadow_c]);
+                audio.reproducir_audio_aleatorio([snd_ataque_shadow_a, snd_ataque_shadow_b, snd_ataque_shadow_c]);
                 break;
         }
         
@@ -36,14 +36,14 @@ if (((other.accion == 1) or (other.accion == -2) or (other.accion == 4) or (othe
         instance_destroy(obj_enfoque_homing);
     }
 
-    reproducir_audio_aleatorio([snd_explosion_enemigo_a, snd_explosion_enemigo_b, snd_explosion_enemigo_c]);
+    audio.reproducir_audio_aleatorio([snd_explosion_enemigo_a, snd_explosion_enemigo_b, snd_explosion_enemigo_c]);
 } else if (instance_exists(obj_efecto_boost) or (other.accion == 9)) {
     if (permitir_ser_apuntado and !recibio_golpe) {
         permitir_ser_apuntado = false;
         recibio_golpe = true;
 
         dibujar_efectos(spr_efecto_destruccion_enemigo, 0, 1, 1, false);
-        reproducir_audio_aleatorio([snd_explosion_enemigo_a, snd_explosion_enemigo_b, snd_explosion_enemigo_c]);
+        audio.reproducir_audio_aleatorio([snd_explosion_enemigo_a, snd_explosion_enemigo_b, snd_explosion_enemigo_c]);
         y -= 10;
 
         if (abs(other.velocidad_horizontal) >= 4) {
