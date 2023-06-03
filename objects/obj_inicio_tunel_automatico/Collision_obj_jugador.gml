@@ -8,5 +8,5 @@ if (other.accion != 34) {
         obj_efecto_boost.activar_efecto = false;
     }
     
-    audio_play_sound(snd_rodar, 1, false);
+    audio.reproducir_audio(snd_rodar);
 }

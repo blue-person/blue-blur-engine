@@ -5,4 +5,4 @@ if ((angulo_conducto <= 90) and (angulo_conducto >= -90)) {
 }
 
 obj_jugador.accion = 36;
-audio_play_sound(snd_fourwaycannon_disparo, 1, false);
+audio.reproducir_audio(snd_fourwaycannon_disparo);

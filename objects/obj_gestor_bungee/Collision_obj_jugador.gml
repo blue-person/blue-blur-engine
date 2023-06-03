@@ -5,7 +5,7 @@ if (activar_evento and (other.tocando_suelo) and (other.velocidad_horizontal >= 
     other.x = x + image_xscale * 2;
     other.y = y + 15;
     other.indice_sprite = 0;
-    audio_play_sound(snd_agarrar_objeto, 1, false);
+    audio.reproducir_audio(snd_agarrar_objeto);
     other.direccion_horizontal = image_xscale;
     alarm[0] = 15;
     other.accion = 30;
@@ -17,5 +17,5 @@ if (activar_evento and (other.tocando_suelo) and (other.velocidad_horizontal >= 
     other.velocidad_horizontal = 0;
     other.velocidad_vertical = -13;
     activar_evento = true;
-    audio_play_sound(snd_trampolin, 1, false);
+    audio.reproducir_audio(snd_trampolin);
 }

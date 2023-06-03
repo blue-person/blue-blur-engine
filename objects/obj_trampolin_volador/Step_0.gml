@@ -4,8 +4,7 @@ if (colision_jugador and !obj_jugador.tocando_suelo and (obj_jugador.velocidad_v
     obj_jugador.accion = 1;
     obj_jugador.velocidad_vertical = -7;
 
-    audio.detener_audio(snd_trampolin_volador);
-    audio.reproducir_audio(snd_trampolin_volador);
+    audio.reproducir_audio_aislado(snd_trampolin_volador, false);
     y += 16;
 }
 

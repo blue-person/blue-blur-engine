@@ -17,19 +17,18 @@ obj_jugador.velocidad_horizontal = obj_jugador.limite_velocidad_horizontal * obj
 
 // Crear los efectos visuales y de sonido
 instance_create_depth(obj_jugador.x, obj_jugador.y, -2, obj_explosion_boost);
-audio_play_sound(snd_inicio_boost, 1, false);
-audio_play_sound(snd_bucle_boost, 1, false);
-audio_play_sound(snd_velocidad_sonica, 1, true);
+audio.reproducir_audio(snd_inicio_boost);
+audio.reproducir_audio(snd_bucle_boost);
+audio.reproducir_audio(snd_velocidad_sonica, PRIORIDAD_SONIDOS, true);
 
 switch (global.personaje_actual) {
     case "Sonic":
-		audio.reproducir_audio_aleatorio([snd_boost_sonic_a, snd_boost_sonic_b, snd_boost_sonic_c]);
+		audio.reproducir_audio_aleatorio([snd_boost_sonic_a, snd_boost_sonic_b, snd_boost_sonic_c], false);
         break;
 	case "Shadow":
-		audio.reproducir_audio_aleatorio([snd_boost_shadow_a, snd_boost_shadow_b, snd_boost_shadow_c]);
+		audio.reproducir_audio_aleatorio([snd_boost_shadow_a, snd_boost_shadow_b, snd_boost_shadow_c], false);
         break;
 }
-
 
 // Gestion de la vibracion
 efecto_haptico_colision();

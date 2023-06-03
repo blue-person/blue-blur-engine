@@ -4,5 +4,5 @@ if ((other.accion == 24) and activar_evento) {
     other.accion = 25;
 
 	instance_create_depth(x, y, -100, obj_qte_jumppanel);
-    audio_play_sound(snd_tocar_jumppanel, 1, false);
+    audio.reproducir_audio(snd_tocar_jumppanel);
 }

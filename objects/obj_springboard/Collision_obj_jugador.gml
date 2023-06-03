@@ -3,7 +3,7 @@ if (other.tocando_suelo and (((other.x >= x) and (image_xscale == 1)) or ((other
     other.velocidad_vertical = -cantidad_fuerza;
     other.accion = 0;
     other.angulo = 0;
-    audio_play_sound(snd_springboard, 1, false);
+    audio.reproducir_audio(snd_springboard);
 }
 
 image_index = 1;

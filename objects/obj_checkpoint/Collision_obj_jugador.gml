@@ -3,7 +3,7 @@ if ((estado_animacion == 1) and (other.accion != 26)) {
     image_index = 0;
 	
     if ((other.sprite_actual != spr_sonic_normal) and (other.sprite_actual != spr_shadow_normal)) {
-        audio_play_sound(snd_checkpoint, 1, false);
+        audio.reproducir_audio(snd_checkpoint);
         instance_create_depth(x, y, -80, obj_mostrar_info_checkpoint);
     }
 	

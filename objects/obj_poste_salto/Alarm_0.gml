@@ -1,7 +1,7 @@
 with (obj_jugador) {
     accion = 0;
     velocidad_vertical = -8;
-    audio_play_sound(snd_poste_salto, 1, false);
+    audio.reproducir_audio(snd_poste_salto);
 }
 
 image_speed = 0.7;

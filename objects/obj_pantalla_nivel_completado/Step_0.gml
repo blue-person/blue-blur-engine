@@ -61,11 +61,11 @@ switch (fase_animacion) {
 			global.puntaje_tiempo = registrar_puntaje(global.puntaje_tiempo);
 		    global.puntaje_cool = registrar_puntaje(global.puntaje_cool);
 		}
-    
-	    if (!audio_is_playing(snd_agregar_puntos)) then audio_play_sound(snd_agregar_puntos, 1, false);
+
+	    audio.reproducir_audio_aislado(snd_agregar_puntos, true);
     
 	    if ((global.puntaje_rings == 0) and (global.puntaje_tiempo == 0) and (global.puntaje_cool == 0)) {
-	        audio_play_sound(snd_registrar_puntaje, 1, false);
+	        audio.reproducir_audio(snd_registrar_puntaje);
 			fase_animacion = 10;
 	        alarm[3] = 180;
 	    }
@@ -88,8 +88,8 @@ switch (fase_animacion) {
 	    if (permitir_transicion and control.boton_presionado("boton_salto")) {
 			permitir_transicion = false;
 			
-	        audio_stop_all();
-	        audio_play_sound(snd_confirmar_opcion, 1, false);
+	        audio.detener_todo();
+	        audio.reproducir_audio(snd_confirmar_opcion);
 			iniciar_transicion_niveles(rm_hub_world, "negro", 0.015);
 	    }
         break;

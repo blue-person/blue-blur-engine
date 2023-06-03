@@ -1,6 +1,6 @@
 if (activar_evento and (other.accion != 26)) {
     if (other.accion != 29) {
-		audio_play_sound(snd_agarrar_objeto, 1, false);
+		audio.reproducir_audio(snd_agarrar_objeto);
 	}
 	
     activar_evento = false;

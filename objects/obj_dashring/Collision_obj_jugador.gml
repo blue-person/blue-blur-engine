@@ -55,6 +55,5 @@ if (activar_evento and (other.accion != 26)) {
 	global.puntaje_cool += 100; 
     dibujar_efectos(spr_efecto_dashring);
 
-	audio.detener_audio(snd_dashring);
-	audio.reproducir_audio(snd_dashring);
+	audio.reproducir_audio_aislado(snd_dashring, false);
 }

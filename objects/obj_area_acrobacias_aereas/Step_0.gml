@@ -8,8 +8,8 @@ if (activar_efecto and colision_jugador and jugador_dentro_radio) {
         obj_jugador.velocidad_vertical = -cantidad_fuerza;
         obj_jugador.indice_sprite = 0;
 		
-        audio_play_sound(snd_acrobacia_aerea, 1, false);
-        audio_play_sound(snd_rainbowring, 1, false);
+        audio.reproducir_audio(snd_acrobacia_aerea);
+        audio.reproducir_audio(snd_rainbowring);
         dibujar_efectos(spr_efecto_acrobacias_aereas);
 		
 		activar_efecto = false;

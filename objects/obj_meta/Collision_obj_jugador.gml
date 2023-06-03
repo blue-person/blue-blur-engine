@@ -4,12 +4,12 @@ obj_controlador_tiempo.medir_tiempo = false;
 obj_camara.objeto_enfocado = self;
 
 // Efecto de sonido
-if (!audio_is_playing(snd_tocar_meta)) then audio_play_sound(snd_tocar_meta, 1, false);
+audio.reproducir_audio_aislado(snd_tocar_meta, true);
 
 if (instance_exists(obj_menu_pausa)) then instance_destroy(obj_menu_pausa);
 
 if (!activar_evento) {
-    audio_play_sound(snd_animacion_meta, 1, false);
+    audio.reproducir_audio(snd_animacion_meta);
     alarm[0] = 180;
 	
 	// Puntaje de los rings

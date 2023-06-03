@@ -17,8 +17,7 @@ function iniciar_evento_qte(tiempo_reaccion = 60) {
 	obj_jugador.velocidad_horizontal = 8 * obj_jugador.direccion_horizontal;
 	obj_jugador.velocidad_vertical = -7;
 	
-	audio.detener_audio(snd_dashramp);
-	audio.reproducir_audio(snd_dashramp);
+	audio.reproducir_audio_aislado(snd_dashramp, false);
 
 	control.inhabilitar_lectura(2);
 	activar_evento = false;

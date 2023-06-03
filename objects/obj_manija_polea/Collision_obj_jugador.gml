@@ -1,7 +1,7 @@
 if (!place_meeting(x, y, obj_motor_polea) and (other.accion != 26)) {
     if (!activar_evento) {
-        audio_play_sound(snd_agarrar_objeto, 1, false);
-        audio_play_sound(snd_usar_polea, 1, false);
+        audio.reproducir_audio(snd_agarrar_objeto);
+        audio.reproducir_audio(snd_usar_polea);
     }
 	
     activar_evento = true;

@@ -1,4 +1,4 @@
 event_inherited();
 
 efecto_sonido = snd_explosion_grande;
-audio_play_sound(efecto_sonido, 1, false);
+audio.reproducir_audio(efecto_sonido);

@@ -10,9 +10,9 @@ function manejo_movimiento_pisoton() {
         switch (global.personaje_actual) {
             case "Sonic":
                 accion = 18;
-                audio_play_sound(snd_ataque_sonic_c, 1, false);
+                audio.reproducir_audio(snd_ataque_sonic_c);
                 instance_create_depth(x, y, -10, obj_efecto_pisoton);
-                audio_play_sound(snd_iniciar_pisoton, 1, false);
+                audio.reproducir_audio(snd_iniciar_pisoton);
                 break;
             case "Shadow":
                 accion = 18.5;
@@ -35,13 +35,13 @@ function realizar_pisoton_general() {
 		efecto_haptico_colision();
 
 		audio.detener_audio(snd_iniciar_pisoton);
-		audio_play_sound(snd_terminar_pisoton, 1, false);
+		audio.reproducir_audio(snd_terminar_pisoton);
 		
 		if (abs(asin) > 0.55) {
 			accion = 2;
 			velocidad_horizontal = sign(asin) * -(velocidad_vertical / 1.5);
 			velocidad_vertical = 0;
-			audio_play_sound(snd_rodar, 1, false);
+			audio.reproducir_audio(snd_rodar);
 		} else {
 			indice_sprite = 0;
 			accion = -1;
@@ -56,8 +56,8 @@ function realizar_pisoton_diagonal() {
 	velocidad_horizontal = 0;
 	
 	if (indice_sprite >= 6) {
-		audio_play_sound(snd_ataque_shadow_b, 1, false);
-		audio_play_sound(snd_iniciar_pisoton, 1, false);
+		audio.reproducir_audio(snd_ataque_shadow_b);
+		audio.reproducir_audio(snd_iniciar_pisoton);
 		velocidad_horizontal = direccion_horizontal * 5;
 		accion = 18;
 	}

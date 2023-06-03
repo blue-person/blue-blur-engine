@@ -24,7 +24,7 @@ function verificar_opcion_qte(_limite_tiempo, opcion_requerida, lista_botones) {
 	}
 	
 	if (opcion_requerida.finalizado) {
-		audio_play_sound(snd_triunfar_boton_qte, 1, false);
+		audio.reproducir_audio(snd_triunfar_boton_qte);
 	}
 	
 	return limite_tiempo;

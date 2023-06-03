@@ -13,10 +13,10 @@ if (boton_necesario and !instance_exists(obj_presentacion_nivel) and !instance_e
 		file_delete(archivo_pantallazo);
 
         // Desactivar todos los sonidos
-		audio_pause_all();
+		audio.pausar_todo();
 		
 		// Reproducir efecto de sonido
-		audio_play_sound(snd_activar_pausa, 1, false);
+		audio.reproducir_audio(snd_activar_pausa);
 		
 		// Almacenar el nivel actual y enviar al jugador a la pantalla de pausa
         nivel_actual = room;
@@ -28,7 +28,7 @@ if (boton_necesario and !instance_exists(obj_presentacion_nivel) and !instance_e
 		opcion_menu = 0;
     } else {
 		// Reproducir efecto de sonido
-		audio_play_sound(snd_salir_pausa, 1, false);
+		audio.reproducir_audio(snd_salir_pausa);
 		
 		// Regresar al nivel y reactivar los sonidos
         room_goto(nivel_actual);
@@ -54,13 +54,13 @@ if (pausar_juego) {
 		} else if (opcion_menu < 2) {
 			opcion_menu++;
 		}
-		audio_play_sound(snd_escoger_opcion, 1, false);
+		audio.reproducir_audio(snd_escoger_opcion);
     } else if (control.boton_presionado("boton_arriba")) {
         if (nivel_actual == rm_hub_world) {
 			opcion_menu = 0;
 		} else if (opcion_menu > 0) {
             opcion_menu--;
 		}
-		audio_play_sound(snd_escoger_opcion, 1, false);
+		audio.reproducir_audio(snd_escoger_opcion);
     }
 }

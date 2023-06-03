@@ -9,9 +9,7 @@ if (activar_evento) {
 			esfera_se_estrello = true;
 		}
 		
-        if (!audio_is_playing(snd_esfera_gigante_rodando)) {
-			audio_play_sound(snd_esfera_gigante_rodando, 1, false);
-		}
+        audio.reproducir_audio(snd_esfera_gigante_rodando);
     }
 } else {
 	var verificar_pos_jugador = ((image_xscale == 1) and (x <= obj_jugador.x)) or ((image_xscale == -1) and (x >= obj_jugador.x));

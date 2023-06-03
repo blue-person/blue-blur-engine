@@ -24,7 +24,7 @@ if (puede_usarse and place_meeting(x, y, obj_jugador)) {
     image_index = 13;
     image_speed = 2;
 	
-    audio_play_sound(snd_usar_interruptor_riel, 1, false);
+    audio.reproducir_audio(snd_usar_interruptor_riel);
 }
 
 if (image_speed > 0) {
