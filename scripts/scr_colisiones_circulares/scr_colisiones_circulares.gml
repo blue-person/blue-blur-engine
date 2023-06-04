@@ -28,7 +28,7 @@ function colision_circular_general(pos_x, pos_y, radio_circulo, requisitos_colis
 		// Determinar colisiones con rieles
 		if (requisitos_colision_riel) {
 	        var colision_riel_posterior = collision_circle(pos_x, pos_y, radio_circulo, obj_riel_posterior, true, true);
-			if (requisitos_colision_riel and colision_riel_posterior) then return true;
+			if (colision_riel_posterior) then return true;
 		}
     }
 	

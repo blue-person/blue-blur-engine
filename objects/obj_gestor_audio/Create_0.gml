@@ -1,4 +1,10 @@
 // Metodos
+cargar_audios = function() {
+	audio_group_load(grp_canciones);
+	audio_group_load(grp_efectos_sonido);
+	audio_group_load(grp_voces);
+}
+
 reproducir_audio = function(nombre_audio, prioridad_reproduccion = PRIORIDAD_SONIDOS, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
 	// Reproducir audio
 	return audio_play_sound(nombre_audio, prioridad_reproduccion, reproducir_en_bucle, volumen, 0, tonalidad);

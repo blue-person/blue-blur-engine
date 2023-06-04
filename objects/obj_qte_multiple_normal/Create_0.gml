@@ -5,8 +5,8 @@ tiempo_restante = 0;
 evento_finalizado = false;
 
 // Variables temporales para las posiciones
-mitad_ancho = Pantalla.RESOLUCION_HORIZONTAL / 2;
-mitad_altura = Pantalla.RESOLUCION_VERTICAL  / 2;
+mitad_ancho = pantalla.obtener_ancho() / 2;
+mitad_altura = pantalla.obtener_altura()  / 2;
 distancia_separacion = 30;
 
 // Posicion de la barra de tiempo

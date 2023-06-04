@@ -1,6 +1,6 @@
 // Establecer ubicacion
-x = Pantalla.RESOLUCION_HORIZONTAL / 2;
-y = Pantalla.RESOLUCION_VERTICAL  / 2;
+x = pantalla.obtener_ancho() / 2;
+y = pantalla.obtener_altura()  / 2;
 
 // Dibujar tecla a presionar
 draw_sprite_ext(icono_boton, 0, x, y, escala_x_boton, escala_y_boton, 1, c_white, transparencia_boton);

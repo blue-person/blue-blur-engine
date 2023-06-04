@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Gestores de inicio",
-    "path": "folders/Scripts/Gestores de inicio.yy",
+    "name": "Configuracion",
+    "path": "folders/Scripts/Configuracion.yy",
   },
 }

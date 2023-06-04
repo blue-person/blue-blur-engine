@@ -636,7 +636,7 @@ function movimiento_jugador() {
     }
 
     if ((accion == 11) or (accion == 16.5)) {
-        audio.reproducir_audio_aislado(snd_grinding, false);
+        audio.reproducir_audio_aislado(snd_grinding, true);
     }
 
     if ((accion != 11) and (accion != 16.5) and (accion != 32) and (accion != 32.5)) {

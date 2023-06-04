@@ -10,11 +10,11 @@ pos_y_tiempo = 20;
 pos_x_rings = 25;
 pos_y_rings = 45;
 
-pos_x_vidas = Pantalla.RESOLUCION_HORIZONTAL * 0.80;
+pos_x_vidas = pantalla.obtener_ancho() * 0.80;
 pos_y_vidas = 20;
 
 pos_x_boost = 25;
-pos_y_boost = Pantalla.RESOLUCION_VERTICAL  * 0.85;
+pos_y_boost = pantalla.obtener_altura()  * 0.85;
 
 // Determinar sprites
 switch (global.personaje_actual) {

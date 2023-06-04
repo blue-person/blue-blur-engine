@@ -1,5 +1,5 @@
-var mitad_ancho_resolucion = Pantalla.RESOLUCION_HORIZONTAL / 2;
-var mitad_altura_resolucion =  Pantalla.RESOLUCION_VERTICAL / 2;
+var mitad_ancho_resolucion = pantalla.obtener_ancho() / 2;
+var mitad_altura_resolucion =  pantalla.obtener_altura() / 2;
 
 draw_sprite_ext(spr_pantalla_gris, 0, mitad_ancho_resolucion, mitad_altura_resolucion, 1, 1, 0, c_white, transparencia_transicion_gris);
 draw_sprite_ext(spr_transicion_barra_diagonal, indice, x, y, 1, 1, angulo_salida, c_white, 1);

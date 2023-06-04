@@ -1,13 +1,3 @@
-// Calculo principal para el efecto de Smooth Camera
-x += (pos_x - x) / valor_retraso;
-y += (pos_y - y) / valor_retraso;
-
-// Establecer el enfoque de la camara
-if (objeto_enfocado != noone) {
-	pos_x = objeto_enfocado.x;
-	pos_y = objeto_enfocado.y;
-} 
-
 // Sacudir camara
 if (permitir_sacudir) {
 	x += random_range(-sacudida_restante, sacudida_restante);
@@ -55,12 +45,3 @@ if (objeto_enfocado == obj_jugador)  {
 		cronometro = 0;
 	}
 }
-
-// Hacer que la camara no se salga de los bordes del nivel
-var mitad_ancho = Pantalla.RESOLUCION_HORIZONTAL / 2;
-var mitad_altura = Pantalla.RESOLUCION_VERTICAL  / 2;
-x = clamp(x, mitad_ancho, room_width - mitad_ancho);
-y = clamp(y, mitad_altura, room_height - mitad_altura);
-
-// Establecer la vista de la camara, esto se hace en modo de matriz
-camera_set_view_mat(camara, matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0));

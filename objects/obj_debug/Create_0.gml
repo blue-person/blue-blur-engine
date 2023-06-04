@@ -1,0 +1,1 @@
+global.permitir_modo_debug = false;

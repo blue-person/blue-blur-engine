@@ -1,6 +1,6 @@
 // Establecer ubicacion del simbola
-x = Pantalla.RESOLUCION_HORIZONTAL / 2;
-y = Pantalla.RESOLUCION_VERTICAL  / 2;
+x = pantalla.obtener_ancho() / 2;
+y = pantalla.obtener_altura()  / 2;
 
 // Dibujar el mensaje
 draw_self();

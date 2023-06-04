@@ -1,5 +1,5 @@
-x = Pantalla.RESOLUCION_HORIZONTAL / 2;
-y = Pantalla.RESOLUCION_VERTICAL  / 2;
+x = pantalla.obtener_ancho() / 2;
+y = pantalla.obtener_altura()  / 2;
 
 // Dibujar ciculos limite
 draw_set_circle_precision(64);
