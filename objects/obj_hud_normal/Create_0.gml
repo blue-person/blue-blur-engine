@@ -20,14 +20,14 @@ pos_y_boost = pantalla.obtener_altura()  * 0.85;
 switch (global.personaje_actual) {
     case "Sonic":
 	    hud_vidas = spr_contador_vidas_sonic;
-	    font_numerica = global.font_numerica_azul;
-		color_boost_a = make_colour_rgb(33, 74, 223);
-		color_boost_b = make_colour_rgb(78, 194, 252);
+	    font_numerica = fonts.obtener_numeros_azules();
+		color_boost_a = COLOR_AZUL_NORMAL;
+		color_boost_b = COLOR_AZUL_CLARO;
         break;
     case "Shadow":
 	    hud_vidas = spr_contador_vidas_shadow;
-	    font_numerica = global.font_numerica_gris;
-		color_boost_a = make_colour_rgb(218, 84, 69);
-		color_boost_b = make_colour_rgb(255, 160, 64);
+	    font_numerica = fonts.obtener_numeros_grises();
+		color_boost_a = COLOR_NARANJA_NORMAL;
+		color_boost_b = COLOR_NARANJA_CLARO;
         break;
 }

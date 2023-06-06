@@ -45,16 +45,3 @@ if (acos == 1 and tocando_suelo) {
 } else {
     draw_sprite_ext(sprite_actual, indice_sprite, pos_x, pos_y, direccion_horizontal, 1, angulo_imagen, c_white, image_alpha);
 }
-
-// Dibujar colisiones
-if (global.permitir_modo_debug) {
-	colision_con_suelo();
-	colision_con_riel();
-	colision_lineal_derecha();
-	colision_lineal_izquierda();
-	colision_circular_principal();
-	colision_circular_izquierda();
-	colision_circular_derecha();
-	colision_circular_superior();
-	colision_circular_inferior();
-}

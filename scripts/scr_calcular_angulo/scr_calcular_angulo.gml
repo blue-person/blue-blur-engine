@@ -20,7 +20,7 @@ function calcular_angulo(angulo, espaciado_horizontal, cantidad_puntos_verificac
   while (cantidad_puntos_verificacion > 0) {
     if (not primer_subconjunto) {
 		// Determinar estado del primer subconjunto
-		primer_subconjunto = colision_punto(pos_x_1, pos_y_1, requisitos_colision_riel, requisitos_caminar_sobre_agua);
+		primer_subconjunto = colision_punto(self, pos_x_1, pos_y_1, requisitos_colision_riel, requisitos_caminar_sobre_agua);
 		
 		// Actualizar posiciones
 		pos_x_1 += valor_asin;
@@ -29,7 +29,7 @@ function calcular_angulo(angulo, espaciado_horizontal, cantidad_puntos_verificac
 	
     if (not segundo_subconjunto) {
 		// Determinar estado del segundo subconjunto
-		segundo_subconjunto = colision_punto(pos_x_2, pos_y_2, requisitos_colision_riel, requisitos_caminar_sobre_agua);
+		segundo_subconjunto = colision_punto(self, pos_x_2, pos_y_2, requisitos_colision_riel, requisitos_caminar_sobre_agua);
 		
 		// Actualizar posiciones
 		pos_x_2 += valor_asin;

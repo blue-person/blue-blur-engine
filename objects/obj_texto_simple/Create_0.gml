@@ -1,3 +1,3 @@
 mensaje = "";
-font = global.font_texto_negro;
+font = fonts.obtener_texto_negro();
 transparencia = 1;

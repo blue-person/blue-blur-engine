@@ -11,11 +11,11 @@ numeros_requeridos = -1;
 
 switch (global.personaje_actual) {
     case "Sonic":
-        font_requerida = global.font_texto_azul;
-		numeros_requeridos = global.font_numerica_azul;
+        font_requerida = fonts.obtener_texto_azul();
+		numeros_requeridos = fonts.obtener_numeros_azules();
         break;
     case "Shadow":
-        font_requerida = global.font_texto_gris;
-		numeros_requeridos = global.font_numerica_gris;
+        font_requerida = fonts.obtener_texto_gris();
+		numeros_requeridos = fonts.obtener_numeros_grises();
         break;
 }

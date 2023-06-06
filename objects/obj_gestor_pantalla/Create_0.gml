@@ -1,7 +1,7 @@
 // Constantes
 #macro RESOLUCION_HORIZONTAL 456
 #macro RESOLUCION_VERTICAL 256
-#macro ZOOM 2
+#macro FACTOR_ESCALA 2
 
 // Variables
 modo_pantalla = "pantalla_completa";
@@ -15,8 +15,8 @@ obtener_altura = function() {
 	return RESOLUCION_VERTICAL;
 }
 
-obtener_zoom = function() {
-	return ZOOM;
+obtener_factor_escala = function() {
+	return FACTOR_ESCALA;
 }
 
 establecer_modo_pantalla = function(modo_pantalla) {
@@ -29,12 +29,12 @@ obtener_modo_pantalla = function() {
 
 configuracion_inicial = function() {
 	// Variables
-	var ancho_ventana = self.obtener_ancho() * self.obtener_zoom();
-	var altura_ventana = self.obtener_altura() * self.obtener_zoom();
+	var ancho_ventana = self.obtener_ancho() * self.obtener_factor_escala();
+	var altura_ventana = self.obtener_altura() * self.obtener_factor_escala();
 	
 	// Configuracion
 	display_set_gui_size(self.obtener_ancho(), self.obtener_altura());
-	surface_resize(application_surface, ancho_ventana, altura_ventana);
+	surface_resize(application_surface, self.obtener_ancho(), self.obtener_altura());
 	window_set_size(ancho_ventana, altura_ventana);
 	window_center();
 }
@@ -52,8 +52,8 @@ cambiar_modo_pantalla = function(modo_pantalla, mostrar_bordes, ancho_ventana, a
 }
 
 iniciar_modo_ventana = function() {
-	var ancho_ventana = self.obtener_ancho() * self.obtener_zoom();
-	var altura_ventana = self.obtener_altura() * self.obtener_zoom();
+	var ancho_ventana = self.obtener_ancho() * self.obtener_factor_escala();
+	var altura_ventana = self.obtener_altura() * self.obtener_factor_escala();
 	cambiar_modo_pantalla("ventana", true, ancho_ventana, altura_ventana);
 }
 
