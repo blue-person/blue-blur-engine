@@ -30,6 +30,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Líneas temporales","folderPath":"folders/Líneas temporales.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notas","folderPath":"folders/Notas.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objetos","folderPath":"folders/Objetos.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controladores","folderPath":"folders/Objetos/Controladores.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Debug","folderPath":"folders/Objetos/Controladores/Debug.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Principal","folderPath":"folders/Objetos/Controladores/Principal.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Efectos","folderPath":"folders/Objetos/Efectos.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Elementos","folderPath":"folders/Objetos/Elementos.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Objetos/Elementos/Items.yy",},
@@ -114,6 +117,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Contadores","folderPath":"folders/Objetos/Gestores/Contadores.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controles","folderPath":"folders/Objetos/Gestores/Controles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Esenciales","folderPath":"folders/Objetos/Gestores/Esenciales.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Objetos/Gestores/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GUI","folderPath":"folders/Objetos/Gestores/GUI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Diapositivas","folderPath":"folders/Objetos/Gestores/GUI/Diapositivas.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu de pausa","folderPath":"folders/Objetos/Gestores/GUI/Diapositivas/Menu de pausa.yy",},
@@ -451,10 +455,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Frontal","folderPath":"folders/Sprites/Texturas/Superficies/Rieles/Capas/Frontal.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Posterior","folderPath":"folders/Sprites/Texturas/Superficies/Rieles/Capas/Posterior.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Normal","folderPath":"folders/Sprites/Texturas/Superficies/Rieles/Normal.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controladores","folderPath":"folders/Objetos/Controladores.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Debug","folderPath":"folders/Objetos/Controladores/Debug.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Principal","folderPath":"folders/Objetos/Controladores/Principal.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Objetos/Gestores/Fonts.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles",},
@@ -466,7 +466,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.200.0.299",
   },
   "resources": [
     {"id":{"name":"input_vibrate_get_pause","path":"scripts/input_vibrate_get_pause/input_vibrate_get_pause.yy",},},
