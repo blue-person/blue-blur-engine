@@ -4,7 +4,7 @@
 #macro FACTOR_ESCALA 2
 
 // Variables
-modo_pantalla = "pantalla_completa";
+modo_pantalla = "ventana";
 
 // Metodos
 obtener_ancho = function() {

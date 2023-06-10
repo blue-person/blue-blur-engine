@@ -1,9 +1,7 @@
 function preparar_ubicacion_jugador() {
-	if (instance_exists(obj_controlador_checkpoint)) {
-	    if (obj_controlador_checkpoint.checkpoint) {
-	        obj_jugador.x = obj_controlador_checkpoint.pos_x;
-	        obj_jugador.y = obj_controlador_checkpoint.pos_y;
-	    }
+	if (reaparicion.obtener_permiso_reaparicion()) {
+		obj_jugador.x = reaparicion.obtener_pos_x();
+		obj_jugador.y = reaparicion.obtener_pos_y();
 	}
 }
 

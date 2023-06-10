@@ -6,15 +6,15 @@ if (mostrar_en_pantalla) {
 	
 	// Tiempo
 	draw_sprite(spr_contador_tiempo, 0, pos_x_tiempo, pos_y_tiempo);
-	dibujar_texto_simple(pos_x_tiempo + 30, pos_y_tiempo + 5, cantidad_tiempo, font_numerica, fa_top, fa_top, transparencia);
+	texto.graficacion_simple(pos_x_tiempo + 30, pos_y_tiempo + 5, cantidad_tiempo, font_numerica, fa_top, fa_top, transparencia);
 	
 	// Rings
 	draw_sprite(spr_contador_rings, 0, pos_x_rings, pos_y_rings);
-	dibujar_texto_simple(pos_x_rings + 30, pos_y_rings + 3, cantidad_rings, font_numerica, fa_top, fa_top, transparencia);
+	texto.graficacion_simple(pos_x_rings + 30, pos_y_rings + 3, cantidad_rings, font_numerica, fa_top, fa_top, transparencia);
 	
 	// Vidas
     draw_sprite(hud_vidas, 0, pos_x_vidas, pos_y_vidas);
-	dibujar_texto_simple(pos_x_vidas + 30, pos_y_vidas + 3, cantidad_vidas, font_numerica, fa_top, fa_top, transparencia);
+	texto.graficacion_simple(pos_x_vidas + 30, pos_y_vidas + 3, cantidad_vidas, font_numerica, fa_top, fa_top, transparencia);
 	
 	// Boost
 	draw_sprite(spr_barra_boost, 0, pos_x_boost, pos_y_boost);

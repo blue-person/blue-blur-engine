@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Gyro",
-    "path": "folders/Paquetes externos/Input/Gyro.yy",
+    "path": "folders/Paquetes externos/Input v5.6.1/Gyro.yy",
   },
 }

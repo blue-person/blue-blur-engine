@@ -20,13 +20,13 @@ pos_y_boost = pantalla.obtener_altura()  * 0.85;
 switch (global.personaje_actual) {
     case "Sonic":
 	    hud_vidas = spr_contador_vidas_sonic;
-	    font_numerica = fonts.obtener_numeros_azules();
+	    font_numerica = texto.obtener_font_azul();
 		color_boost_a = COLOR_AZUL_NORMAL;
 		color_boost_b = COLOR_AZUL_CLARO;
         break;
     case "Shadow":
 	    hud_vidas = spr_contador_vidas_shadow;
-	    font_numerica = fonts.obtener_numeros_grises();
+	    font_numerica = texto.obtener_font_gris();
 		color_boost_a = COLOR_NARANJA_NORMAL;
 		color_boost_b = COLOR_NARANJA_CLARO;
         break;

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Virtual Buttons",
-    "path": "folders/Paquetes externos/Input/Virtual Buttons.yy",
+    "path": "folders/Paquetes externos/Input v5.6.1/Virtual Buttons.yy",
   },
 }

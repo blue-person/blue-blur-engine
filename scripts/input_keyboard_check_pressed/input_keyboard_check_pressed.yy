@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Keyboard (Direct)",
-    "path": "folders/Paquetes externos/Input/Keyboard (Direct).yy",
+    "path": "folders/Paquetes externos/Input v5.6.1/Keyboard (Direct).yy",
   },
 }

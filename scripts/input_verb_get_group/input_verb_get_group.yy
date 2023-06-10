@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Verbs",
-    "path": "folders/Paquetes externos/Input/Verbs.yy",
+    "path": "folders/Paquetes externos/Input v5.6.1/Verbs.yy",
   },
 }

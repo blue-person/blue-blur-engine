@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Gamepads (Direct)",
-    "path": "folders/Paquetes externos/Input/Gamepads (Direct).yy",
+    "path": "folders/Paquetes externos/Input v5.6.1/Gamepads (Direct).yy",
   },
 }

@@ -25,13 +25,14 @@ global.gestor_audio = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gest
 global.gestor_controles = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gestor_controles);
 #macro control global.gestor_controles
 
-// Gestor de controles
-global.gestor_fonts = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gestor_fonts);
-#macro fonts global.gestor_fonts
+// Gestor de texto
+global.gestor_texto = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gestor_texto);
+#macro texto global.gestor_texto
+
+// Gestor de reaparicion del jugador
+global.gestor_reaparicion = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gestor_reaparicion);
+#macro reaparicion global.gestor_reaparicion
 
 // Controlador del modo debug
 global.controlador_depuracion = instance_create_depth(0, 0, PROFUNDIDAD_CONTROLADORES, obj_controlador_depuracion);
 #macro debug global.controlador_depuracion
-
-// Controlador del checkpoint
-global.controlador_checkpoint = instance_create_depth(x, y, 0, obj_controlador_checkpoint);

@@ -4,7 +4,7 @@ animacion_actual = 1;
 // Determinar variables segun el personaje
 switch (global.personaje_actual) {
     case "Sonic":
-		if (obj_controlador_checkpoint.checkpoint) {
+		if (reaparicion.obtener_permiso_reaparicion()) {
 			sprite_index = spr_animacion_sonic_normal;
 			image_speed = 0.20
 		} else {
@@ -13,7 +13,7 @@ switch (global.personaje_actual) {
 		}
         break;
     case "Shadow":
-		if (obj_controlador_checkpoint.checkpoint) {
+		if (reaparicion.obtener_permiso_reaparicion()) {
 			sprite_index = spr_animacion_shadow_inmovil;
 			image_speed = 0.20
 		} else {

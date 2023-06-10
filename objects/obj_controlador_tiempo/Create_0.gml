@@ -13,8 +13,9 @@ texto_minutos = "";
 texto_tiempo = "";
 
 // Almacenar el tiempo al momento de usar un checkpoint
-if (instance_exists(obj_controlador_checkpoint) and obj_controlador_checkpoint.checkpoint) {
-    milisegundos = obj_controlador_checkpoint.milisegundos;
-    segundos = obj_controlador_checkpoint.segundos; 
-    minutos = obj_controlador_checkpoint.minutos;
+if (reaparicion.obtener_permiso_reaparicion()) {
+    var tiempo_registrado = reaparicion.obtener_tiempo_registrado();
+    milisegundos = tiempo_registrado[0];
+    segundos = tiempo_registrado[1];
+    minutos = tiempo_registrado[2];
 }

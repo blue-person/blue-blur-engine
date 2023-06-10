@@ -6,16 +6,16 @@ velocidad_animacion = 0.1;
 // Variables del dibujo
 mensaje = "checkpoint";
 tiempo_actual = obj_controlador_tiempo.texto_tiempo;
-font_requerida = -1;
-numeros_requeridos = -1;
+font_requerida = noone;
+numeros_requeridos = noone;
 
 switch (global.personaje_actual) {
     case "Sonic":
-        font_requerida = fonts.obtener_texto_azul();
-		numeros_requeridos = fonts.obtener_numeros_azules();
+        font_requerida = texto.obtener_font_azul();
+		numeros_requeridos = texto.obtener_font_azul();
         break;
     case "Shadow":
-        font_requerida = fonts.obtener_texto_gris();
-		numeros_requeridos = fonts.obtener_numeros_grises();
+        font_requerida = texto.obtener_font_gris();
+		numeros_requeridos = texto.obtener_font_gris();
         break;
 }
