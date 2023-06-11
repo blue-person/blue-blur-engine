@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_agarrar_objeto.wav",
   "type": 1,
-  "volume": 0.75,
+  "volume": 1.0,
 }

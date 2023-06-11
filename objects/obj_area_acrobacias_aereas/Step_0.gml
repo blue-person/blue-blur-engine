@@ -1,9 +1,8 @@
-var jugador_dentro_radio = collision_circle(x, y, 60, obj_jugador, true, true);
-var colision_jugador = place_meeting(x, y, obj_jugador);
-
-if (activar_efecto and colision_jugador and jugador_dentro_radio) {
-    if (control.boton_presionado("boton_salto") and (obj_jugador.tocando_suelo == false) and (obj_jugador.accion != 26)) {
-        obj_jugador.direccion_horizontal = image_xscale;
+if (activar_efecto) {
+	var colision_con_jugador = collision_circle(x, y, 35, obj_jugador, true, true);
+	var jugador_saltando = (obj_jugador.accion == 4) or (obj_jugador.accion == 4.5);
+	
+    if (colision_con_jugador and jugador_saltando) {
         obj_jugador.accion = 15;
         obj_jugador.velocidad_vertical = -cantidad_fuerza;
         obj_jugador.indice_sprite = 0;
@@ -14,7 +13,7 @@ if (activar_efecto and colision_jugador and jugador_dentro_radio) {
 		
 		activar_efecto = false;
     }
-} else if (!activar_efecto) {
+} else {
     image_xscale -= 0.1;
     image_yscale -= 0.1;
     image_alpha -= 0.1;

@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ae03bc82-cfbf-4faa-97ba-069b20ee17b4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Sonic",
     "path": "folders/Sprites/Entidades/Jugador/Sonic.yy",
@@ -61,7 +61,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 16,
+    "xorigin": 14,
     "yorigin": 17,
   },
   "swatchColours": null,
