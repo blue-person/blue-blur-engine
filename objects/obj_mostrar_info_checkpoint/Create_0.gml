@@ -5,7 +5,7 @@ velocidad_animacion = 0.1;
 
 // Variables del dibujo
 mensaje = "checkpoint";
-tiempo_actual = obj_controlador_tiempo.texto_tiempo;
+tiempo_actual = obj_cronometro.valores_cronometro;
 font_requerida = noone;
 numeros_requeridos = noone;
 

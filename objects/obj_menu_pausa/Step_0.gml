@@ -2,10 +2,10 @@
 if (pausar_juego) {
 	boton_necesario = control.boton_presionado("boton_entrada") or control.boton_presionado("boton_salto");
 } else {
-	boton_necesario = control.boton_presionado("boton_entrada");
+	boton_necesario = control.boton_presionado("boton_entrada") or os_is_paused();
 }
 
-if ((boton_necesario or os_is_paused()) and !instance_exists(obj_presentacion_nivel) and !instance_exists(obj_transicion_niveles)) {
+if ((boton_necesario) and !instance_exists(obj_presentacion_nivel) and !instance_exists(obj_transicion_niveles)) {
     if (!pausar_juego) {
 		// Tomar pantallazo y guardarlo como un sprite
 		surface_save(application_surface, archivo_pantallazo);

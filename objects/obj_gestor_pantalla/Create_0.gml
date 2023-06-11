@@ -19,46 +19,46 @@ obtener_factor_escala = function() {
 	return FACTOR_ESCALA;
 }
 
-establecer_modo_pantalla = function(modo_pantalla) {
-	self.modo_pantalla = modo_pantalla;
-}
-
 obtener_modo_pantalla = function() {
 	return modo_pantalla;
 }
 
+configurar_graficos = function(nivel_antialiasing, permitir_vsync) {
+	display_reset(nivel_antialiasing, permitir_vsync);
+}
+
 configuracion_inicial = function() {
 	// Variables
-	var ancho_ventana = self.obtener_ancho() * self.obtener_factor_escala();
-	var altura_ventana = self.obtener_altura() * self.obtener_factor_escala();
+	var ancho_ventana = RESOLUCION_HORIZONTAL * FACTOR_ESCALA;
+	var altura_ventana = RESOLUCION_VERTICAL * FACTOR_ESCALA;
 	
 	// Configuracion
-	display_set_gui_size(self.obtener_ancho(), self.obtener_altura());
-	surface_resize(application_surface, self.obtener_ancho(), self.obtener_altura());
+	self.configurar_graficos(8, true);
+	display_set_gui_size(RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
+	surface_resize(application_surface, RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
 	window_set_size(ancho_ventana, altura_ventana);
 	window_center();
 }
 
-cambiar_modo_pantalla = function(modo_pantalla, mostrar_bordes, ancho_ventana, altura_ventana) {
-	if (self.obtener_modo_pantalla() != modo_pantalla) {
-        // Cambio de configuracion
-		self.establecer_modo_pantalla(modo_pantalla);
+cambiar_modo_pantalla = function(modo_pantalla, mostrar_bordes, simbolo_cursor, ancho_ventana, altura_ventana) {
+	// Cambio de configuracion
+	self.modo_pantalla = modo_pantalla;
+	window_set_showborder(mostrar_bordes);
+	window_set_cursor(simbolo_cursor);
 	
-		// Cambio del tamaño
-		window_set_showborder(mostrar_bordes);
-		window_set_size(ancho_ventana, altura_ventana);
-		window_center();
-    }
+	// Cambio del tamaño
+	window_set_size(ancho_ventana, altura_ventana);
+	window_center();
 }
 
 iniciar_modo_ventana = function() {
-	var ancho_ventana = self.obtener_ancho() * self.obtener_factor_escala();
-	var altura_ventana = self.obtener_altura() * self.obtener_factor_escala();
-	cambiar_modo_pantalla("ventana", true, ancho_ventana, altura_ventana);
+	var ancho_ventana = RESOLUCION_HORIZONTAL * FACTOR_ESCALA;
+	var altura_ventana = RESOLUCION_VERTICAL * FACTOR_ESCALA;
+	self.cambiar_modo_pantalla("ventana", true, cr_default, ancho_ventana, altura_ventana);
 }
 
 iniciar_modo_pantalla_completa = function() {
 	var ancho_ventana = display_get_width();
 	var altura_ventana = display_get_height();
-	cambiar_modo_pantalla("pantalla_completa", false, ancho_ventana, altura_ventana);
+	self.cambiar_modo_pantalla("pantalla_completa", false, cr_none, ancho_ventana, altura_ventana);
 }

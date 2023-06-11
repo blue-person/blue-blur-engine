@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_controlador_tiempo",
+  "name": "obj_cronometro",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Contadores",
-    "path": "folders/Objetos/Gestores/Contadores.yy",
+    "name": "Cronometro",
+    "path": "folders/Objetos/Controladores/Cronometro.yy",
   },
   "parentObjectId": null,
   "persistent": false,

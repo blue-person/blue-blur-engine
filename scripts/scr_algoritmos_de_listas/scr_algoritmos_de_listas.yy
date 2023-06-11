@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_verificaciones_listas",
+  "name": "scr_algoritmos_de_listas",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

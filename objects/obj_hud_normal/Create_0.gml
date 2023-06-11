@@ -1,7 +1,7 @@
 // Variables
 mostrar_en_pantalla = false;
 transparencia = 1;
-alarm[0] = room_speed;
+alarm[0] = room_speed / 2;
 
 // Determinar posiciones
 pos_x_tiempo = 25;

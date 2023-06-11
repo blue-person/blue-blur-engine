@@ -12,7 +12,7 @@ if (room != rm_hub_world) {
 }
 
 // Iniciar controladores esenciales
-instance_create_depth(0, 0, 0, obj_controlador_tiempo);
+instance_create_depth(0, 0, 0, obj_cronometro);
 instance_create_depth(0, 0, 0, obj_determinar_texto_rings);
 instance_create_depth(0, 0, 0, obj_determinar_texto_vidas);
 instance_create_depth(0, 0, 0, obj_limite_cantidad_boost);
