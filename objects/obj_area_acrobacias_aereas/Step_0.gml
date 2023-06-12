@@ -1,8 +1,10 @@
 if (activar_efecto) {
+	var jugador_vivo = obj_jugador.accion != 26;
 	var colision_con_jugador = collision_circle(x, y, 35, obj_jugador, true, true);
 	var jugador_saltando = (obj_jugador.accion == 4) or (obj_jugador.accion == 4.5);
+	var acciones_requeridas = jugador_saltando or control.boton_presionado("boton_salto");
 	
-    if (colision_con_jugador and jugador_saltando) {
+    if (jugador_vivo and colision_con_jugador and acciones_requeridas) {
         obj_jugador.accion = 15;
         obj_jugador.velocidad_vertical = -cantidad_fuerza;
         obj_jugador.indice_sprite = 0;
