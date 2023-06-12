@@ -17,7 +17,7 @@ function dibujar_circulo_progreso(pos_x, pos_y, valor, valor_maximo, color, radi
             draw_primitive_begin(pr_trianglefan);
 	        draw_vertex(radio, radio);
 
-            for (var n = 0; n <= contador; ++n) {
+            for (var n = 0; n <= contador; n++) {
                 var longitud = n * magnitud_secciones + 90;
                 var altura_triangulo = lengthdir_x(radio, longitud);
                 var ancho_triangulo = lengthdir_y(radio, longitud);

@@ -1,6 +1,6 @@
 if (pausar_juego) {
-	var mitad_ancho_resolucion = ANCHO_RESOLUCION / 2;
-	var mitad_altura_resolucion = ALTURA_RESOLUCION / 2;
+	var mitad_ancho_resolucion = pantalla.obtener_ancho() / 2;
+	var mitad_altura_resolucion = pantalla.obtener_altura()  / 2;
 	
 	// Dibujar el escenario
 	draw_sprite_ext(sprite_escenario, 0, 0, 0, 1, 1, 0, c_white, 0.5);

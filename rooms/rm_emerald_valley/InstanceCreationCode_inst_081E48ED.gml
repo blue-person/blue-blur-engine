@@ -1,2 +1,1 @@
-cantidad_fuerza = 16
-depth = 26
+cantidad_fuerza = 10;

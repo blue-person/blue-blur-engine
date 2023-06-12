@@ -1,5 +1,5 @@
 // Establecer ubicacion del texto
-x = ANCHO_RESOLUCION / 2;
+x = pantalla.obtener_ancho() / 2;
 y = 165;
 
 // Determinar mensaje en base a cuanto tiempo tardo en hacer el QTE

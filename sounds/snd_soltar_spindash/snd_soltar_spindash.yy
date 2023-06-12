@@ -13,7 +13,7 @@
   "duration": 1.857596,
   "parent": {
     "name": "Spindash",
-    "path": "folders/Sonidos/Voces/Jugador/General/Spindash.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Spindash.yy",
   },
   "preload": true,
   "sampleRate": 44100,

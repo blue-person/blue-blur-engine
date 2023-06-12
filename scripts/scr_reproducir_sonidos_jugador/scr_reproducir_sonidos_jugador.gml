@@ -8,7 +8,7 @@ function reproducir_sonido_triunfar_qte() {
 			sonido_qte = snd_festejo_shadow;
 			break;
 	}
-	audio_play_sound(sonido_qte, 1, false);
+	audio.reproducir_audio(sonido_qte);
 }
 
 function reproducir_sonido_muerte(){
@@ -18,8 +18,8 @@ function reproducir_sonido_muerte(){
 			sonido_muerte = snd_muerte_sonic;
 			break;
 		case "Shadow":
-			sonido_muerte = snd_quejido_shadow;
+			sonido_muerte = snd_muerte_shadow;
 			break;
 	}
-	audio_play_sound(sonido_muerte, 1, false);
+	audio.reproducir_audio(sonido_muerte);
 }

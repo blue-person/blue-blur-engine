@@ -10,7 +10,7 @@ if (permitir_ser_apuntado and !obj_jugador.tocando_suelo and (colision_a or coli
     }
 	
     if (accion == 0) {
-		audio_play_sound(snd_trampolin, 1, false);
+		audio.reproducir_audio(snd_trampolin);
 	}
 	
     accion = 1;

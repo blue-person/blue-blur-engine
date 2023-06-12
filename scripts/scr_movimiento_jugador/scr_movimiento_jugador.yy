@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Fisicas",
-    "path": "folders/Scripts/Jugador/Fisicas.yy",
+    "name": "Gestor principal",
+    "path": "folders/Scripts/Jugador/Movimientos/Gestor principal.yy",
   },
 }

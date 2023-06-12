@@ -51,5 +51,5 @@ switch (global.personaje_actual) {
 }
 
 // Cancion inicial de nivel completado
-audio_play_sound(msc_nivel_completado, 0, false);
+audio.reproducir_cancion(msc_nivel_completado);
 alarm[1] = 350;

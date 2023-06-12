@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites/Texturas/Niveles/Mining Mayhem/Sprites.yy",
+    "name": "Generales",
+    "path": "folders/Sprites/Texturas/Niveles/Generales.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,5 +1,6 @@
 activar_evento = false;
 
+mascara_colision = 50;
 velocidad_vertical = 0;
 velocidad_horizontal = 0;
 limite_velocidad_horizontal = 13;
@@ -12,7 +13,7 @@ asin = 0;
 
 accion = 0;
 pendiente = 0;
-capa_nivel = 0;
+capa_actual = "posterior";
 tocando_suelo = false;
 
 permitir_grinding = false;

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Internal",
-    "path": "folders/Scripts/Efectos/Agua/Internal.yy",
+    "path": "folders/Paquetes externos/Platformer Water Reflection v1.1.4/Scripts/Internal.yy",
   },
 }

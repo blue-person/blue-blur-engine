@@ -10,10 +10,10 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.256,
+  "duration": 0.256009,
   "parent": {
     "name": "Pisadas",
-    "path": "folders/Sonidos/Voces/Jugador/General/Pisadas.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Pisadas.yy",
   },
   "preload": true,
   "sampleRate": 44100,

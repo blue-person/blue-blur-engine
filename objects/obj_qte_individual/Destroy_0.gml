@@ -1,7 +1,7 @@
 if (evento_finalizado) {
     if (obj_jugador.cantidad_eventos_qte < 3) {
         instance_create_depth(x, y, -100, obj_qte_individual);
-		++obj_jugador.cantidad_eventos_qte;
+		obj_jugador.cantidad_eventos_qte++;
     } else {
         obj_jugador.cantidad_eventos_qte = 1;
         obj_jugador.accion = 15;
@@ -22,13 +22,13 @@ if (evento_finalizado) {
 		}
 		
 		// Sonido de triunfo
-		audio_play_sound(snd_triunfar_qte, 1, false);
+		audio.reproducir_audio(snd_triunfar_qte);
 		
 		// Sonido del jugador
         reproducir_sonido_triunfar_qte();
     }
 	
-    audio_play_sound(snd_triunfar_boton_qte, 1, false);
+    audio.reproducir_audio(snd_triunfar_boton_qte);
 } else {
     obj_jugador.cantidad_eventos_qte = 1;
     obj_jugador.accion = 15.5;

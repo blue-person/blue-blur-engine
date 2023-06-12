@@ -2,12 +2,12 @@ if (!activar_evento) {
     activar_evento = true;
     image_speed = 0.25;
 	
-    audio_play_sound(snd_activar_interruptor, 1, false);
+    audio.reproducir_audio(snd_activar_interruptor);
 	
     if (compuerta == obj_compuerta) {
-		audio_play_sound(snd_abrir_compuerta, 1, false);
-		
-		var compuerta_cercana = instance_nearest(x, y, compuerta);
-		compuerta_cercana.activar_evento = true;
-	}
+      audio.reproducir_audio(snd_abrir_compuerta);
+      
+      var compuerta_cercana = instance_nearest(x, y, compuerta);
+      compuerta_cercana.activar_evento = true;
+    }
 }

@@ -15,7 +15,7 @@ if (activar_evento and collision_line(valor_x_1, valor_y_1, valor_x_2, valor_y_2
             x = self.x - dcos(image_angle) * 24;
             y = self.y + dsin(image_angle) * 24;
 
-            audio_play_sound(snd_rodar, 1, false);
+            audio.reproducir_audio(snd_rodar);
         }
     }
 	

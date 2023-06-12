@@ -4,7 +4,7 @@ function presentar_nivel(nombre = "Nivel generico", objetivo = "Objetivo generic
 }
 
 function reiniciar_checkpoints() {
-	if (instance_exists(obj_controlador_checkpoint)) then obj_controlador_checkpoint.checkpoint = false;
+	reaparicion.reestablecer_datos();
 }
 
 function reiniciar_puntaje() {

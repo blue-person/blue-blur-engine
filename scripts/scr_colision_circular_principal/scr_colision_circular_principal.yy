@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Manejo de colisiones",
-    "path": "folders/Scripts/Manejo de colisiones.yy",
+    "name": "Colisiones circulares",
+    "path": "folders/Scripts/Fisicas/Manejo de colisiones/Colisiones circulares.yy",
   },
 }

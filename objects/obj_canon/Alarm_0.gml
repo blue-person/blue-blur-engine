@@ -10,4 +10,4 @@ obj_jugador.velocidad_horizontal = dcos(angulo_conducto) * cantidad_fuerza;
 obj_jugador.velocidad_vertical = -dsin(angulo_conducto) * cantidad_fuerza;
 obj_jugador.accion = 35.2;
 
-audio_play_sound(snd_fourwaycannon_disparo, 1, false);
+audio.reproducir_audio(snd_fourwaycannon_disparo);

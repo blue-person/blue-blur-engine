@@ -5,7 +5,7 @@ function dibujar_sprites_principal() {
 	}
 
 	if (fotograma >= 1) {
-	    ++indice_sprite;
+	    indice_sprite++;
 	    fotograma = 0;
 	}
 	

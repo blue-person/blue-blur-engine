@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Menu de pausa",
-    "path": "folders/Sprites/GUI/Diapositivas/Menu de pausa.yy",
+    "path": "folders/Sprites/GUI/Menus/Menu de pausa.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

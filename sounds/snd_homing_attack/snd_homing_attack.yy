@@ -13,7 +13,7 @@
   "duration": 1.160998,
   "parent": {
     "name": "Homing Attack",
-    "path": "folders/Sonidos/Voces/Jugador/General/Homing Attack.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Homing Attack.yy",
   },
   "preload": true,
   "sampleRate": 44100,

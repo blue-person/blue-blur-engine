@@ -2,7 +2,7 @@ event_inherited();
 
 if (permitir_ser_apuntado) {
     if (!collision_line(x, y, x, y + sprite_height / 2 + 1, obj_superficie, true, true)) {
-        ++y;
+        y++;
     }
 
     if (accion == 2) {

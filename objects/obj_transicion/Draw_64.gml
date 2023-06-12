@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_requerido, 0, 0, 0, ANCHO_RESOLUCION, ALTURA_RESOLUCION, 0, c_white, image_alpha);
+draw_sprite_ext(sprite_requerido, 0, 0, 0, pantalla.obtener_ancho(), pantalla.obtener_altura() , 0, c_white, image_alpha);

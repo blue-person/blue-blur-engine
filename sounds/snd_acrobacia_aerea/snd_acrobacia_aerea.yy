@@ -13,7 +13,7 @@
   "duration": 1.381361,
   "parent": {
     "name": "Acrobacia aerea",
-    "path": "folders/Sonidos/Voces/Jugador/General/Acrobacia aerea.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Acrobacia aerea.yy",
   },
   "preload": true,
   "sampleRate": 44100,

@@ -1,15 +1,13 @@
 function preparar_ubicacion_jugador() {
-	if (instance_exists(obj_controlador_checkpoint)) {
-	    if (obj_controlador_checkpoint.checkpoint) {
-	        obj_jugador.x = obj_controlador_checkpoint.pos_x;
-	        obj_jugador.y = obj_controlador_checkpoint.pos_y;
-	    }
+	if (reaparicion.obtener_permiso_reaparicion()) {
+		obj_jugador.x = reaparicion.obtener_pos_x();
+		obj_jugador.y = reaparicion.obtener_pos_y();
 	}
 }
 
 function aumentar_vidas() {
-	reproducir_efecto_sonido(snd_vida_extra, 1, false);
-	++global.vidas_restantes;
+	audio.reproducir_audio_aislado(snd_vida_extra, false);
+	global.vidas_restantes++;
 }
 
 function herir_jugador() {
@@ -26,10 +24,10 @@ function herir_jugador() {
 	    disperar_rings();
 		switch (global.personaje_actual) {
 			case "Sonic":
-				audio_play_sound(snd_quejido_sonic, 1, false);
+				audio.reproducir_audio(snd_quejido_sonic);
 				break;
 			case "Shadow":
-				audio_play_sound(snd_quejido_shadow, 1, false);
+				audio.reproducir_audio(snd_quejido_shadow);
 				break;
 		}
 	} else {

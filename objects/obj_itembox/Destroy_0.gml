@@ -10,4 +10,4 @@ if (item != noone) {
 	instance_create_depth(x, y, 0, item);
 }
 
-audio_play_sound(snd_explosion_itembox, 1, false);
+audio.reproducir_audio(snd_explosion_itembox);

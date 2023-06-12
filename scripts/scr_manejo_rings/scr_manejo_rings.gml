@@ -1,6 +1,7 @@
 function recoger_ring(efecto_visual, efecto_sonido, valor_aumento_rings) {	
 	instance_create_depth(x, y, 0, efecto_visual);
-	reproducir_efecto_sonido(efecto_sonido, 1, false);
+
+	audio.reproducir_audio_aislado(efecto_sonido, false);
 	
 	var valor_anterior = obj_jugador.rings;
 	obj_jugador.rings += valor_aumento_rings;
@@ -45,7 +46,7 @@ function disperar_rings() {
         }
 
         voltear = !voltear;
-        ++contador;
+        contador++;
 
         if (contador == 16) {
             angulo = 70.25;
@@ -65,9 +66,9 @@ function disperar_rings() {
         ring_requerido.image_xscale = 1.2;
         ring_requerido.image_yscale = 1.2;
         angulo += 30;
-        ++contador;
+        contador++;
     }
 	
-	audio_play_sound(snd_perder_rings, 1, false);
+	audio.reproducir_audio(snd_perder_rings);
 	other.rings = 0;
 }

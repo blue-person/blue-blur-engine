@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_groovy_badlands",
-  "creationCodeFile": "${project_dir}/rooms/rm_groovy_badlands/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_groovy_badlands/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

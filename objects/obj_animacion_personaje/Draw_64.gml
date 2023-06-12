@@ -1,5 +1,5 @@
-var mitad_ancho_resolucion = ANCHO_RESOLUCION / 2;
-var mitad_altura_resolucion = ALTURA_RESOLUCION / 2;
+var mitad_ancho_resolucion = pantalla.obtener_ancho() / 2;
+var mitad_altura_resolucion = pantalla.obtener_altura()  / 2;
 
 switch (animacion_actual) {
     case 1:

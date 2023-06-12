@@ -10,7 +10,7 @@ function dibujar_sprites_shadow() {
     if (accion == -1) {
         sprite_actual = spr_shadow_agachandose;
 
-        if (obj_controles.boton_abajo.estado_retenido and (indice_sprite == 3)) {
+        if (control.boton_mantenido("boton_abajo") and (indice_sprite == 3)) {
             fotograma = 0;
         }
         else {
@@ -22,7 +22,7 @@ function dibujar_sprites_shadow() {
     if (accion == -3) {
         sprite_actual = spr_shadow_mirar_arriba;
 
-        if (obj_controles.boton_arriba.estado_retenido and (indice_sprite == 2)) {
+        if (control.boton_mantenido("boton_arriba") and (indice_sprite == 2)) {
             fotograma = 0;
         }
         else {
@@ -127,7 +127,7 @@ function dibujar_sprites_shadow() {
             indice_sprite = 0;
         }
 
-        if (obj_controles.boton_salto.estado_pulsado) {
+        if (control.boton_presionado("boton_salto")) {
             indice_sprite = 4;
         }
     }

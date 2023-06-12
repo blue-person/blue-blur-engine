@@ -24,8 +24,8 @@ if (activar_evento and (other.accion != 26)) {
     }
     image_speed = 0.75;
 
-    reproducir_efecto_sonido(snd_trampolin, 1, false);
-	audio_play_sound(snd_trampolin_trampa, 1, false);
+    audio.reproducir_audio_aislado(snd_trampolin, false);
+	audio.reproducir_audio(snd_trampolin_trampa);
 
     switch (global.personaje_actual) {
         case "Sonic":

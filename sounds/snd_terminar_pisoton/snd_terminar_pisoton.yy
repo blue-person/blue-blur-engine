@@ -13,7 +13,7 @@
   "duration": 1.509297,
   "parent": {
     "name": "Pisoton",
-    "path": "folders/Sonidos/Voces/Jugador/General/Pisoton.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Pisoton.yy",
   },
   "preload": true,
   "sampleRate": 44100,

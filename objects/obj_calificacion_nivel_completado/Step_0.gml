@@ -5,6 +5,6 @@ if (image_alpha < 1) {
     image_yscale -= 0.5;
 	
     if (image_alpha == 1) {
-		audio_play_sound(snd_mostrar_calificacion, 1, false);
+		audio.reproducir_audio(snd_mostrar_calificacion);
 	}
 }

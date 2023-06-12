@@ -1,4 +1,5 @@
 // Variables esenciales
+mascara_colision = 16;
 velocidad_horizontal = 0;
 velocidad_vertical = 0;
 limite_velocidad_vertical = 16;
@@ -19,7 +20,7 @@ accion = 0;
 tocando_suelo = false;
 
 direccion_horizontal = 1;
-capa_nivel = 0;
+capa_actual = "frontal";
 angulo_imagen = 0;
 tiempo_aire = 0;
 limite_velocidad_actual = 0;
@@ -82,8 +83,5 @@ alarma_3 = 0;
 alarma_4 = 0;
 alarma_5 = 0;
 
-// Constantes
-#macro MASCARA_COLISION 16
-
-
+// Funciones
 preparar_ubicacion_jugador();

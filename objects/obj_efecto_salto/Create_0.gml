@@ -13,4 +13,4 @@ switch (global.personaje_actual) {
         break;
 }
 
-audio_play_sound(snd_vuelta_aerea, 1, false);
+audio.reproducir_audio(snd_vuelta_aerea);

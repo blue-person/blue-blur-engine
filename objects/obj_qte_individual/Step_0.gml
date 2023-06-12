@@ -4,13 +4,13 @@ if (!evento_finalizado and (transparencia_boton < 1)) then transparencia_boton +
 if (evento_finalizado and (transparencia_boton == 0)) then instance_destroy();
 
 if (limite_tiempo > 0) {
-	if (boton_aleatorio.estado_pulsado) {
+	if (input_check_pressed(boton_aleatorio)) {
 		evento_finalizado = true;
 	} else {
 		for (var i = 0; i < array_length(lista_botones); i++) {
 			var boton_actual = lista_botones[i];
 	        if (boton_actual != boton_aleatorio) {
-				if (boton_actual.estado_pulsado) then limite_tiempo = 0;
+				if (input_check_pressed(boton_actual)) then limite_tiempo = 0;
 			}
 	    }
 	}

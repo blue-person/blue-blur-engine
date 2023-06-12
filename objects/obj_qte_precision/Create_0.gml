@@ -1,6 +1,8 @@
 event_inherited();
 
 // Definir variables
+icono_boton = control.obtener_icono_boton(boton_aleatorio);
+
 limite_inicial_circulo_a = 40;
 limite_final_circulo_a = 30;
 

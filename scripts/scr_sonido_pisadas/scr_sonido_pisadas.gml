@@ -3,10 +3,10 @@ function sonido_pisadas_general(sonido_pisada_a, sonido_pisada_b) {
         dando_pisadas = true;
 		
 		if (pisada_actual == "a") {
-			audio_play_sound(sonido_pisada_a, 1, false);
+			audio.reproducir_audio(sonido_pisada_a);
 			pisada_actual = "b";
 		} else {
-			audio_play_sound(sonido_pisada_b, 1, false);
+			audio.reproducir_audio(sonido_pisada_b);
 			pisada_actual = "a";
 		}
         
@@ -21,13 +21,13 @@ function sonido_pisadas_shadow(sonido_pisada_a, sonido_pisada_b) {
 			dando_pisadas = true;
 			
 			if (pisada_actual == "a") {
-				audio_play_sound(sonido_pisada_a, 1, false);
+				audio.reproducir_audio(sonido_pisada_a);
 				pisada_actual = "b";
 			} else {
-				audio_play_sound(sonido_pisada_b, 1, false);
+				audio.reproducir_audio(sonido_pisada_b);
 				pisada_actual = "a";
 			}
-			reproducir_audio_aleatorio([sonido_pisada_a, sonido_pisada_b]);
+			audio.reproducir_audio_aleatorio([sonido_pisada_a, sonido_pisada_b]);
 			
 		} else if (indice_sprite != 7 and indice_sprite != 21) {
 			dando_pisadas = false;
@@ -37,10 +37,10 @@ function sonido_pisadas_shadow(sonido_pisada_a, sonido_pisada_b) {
 			dando_pisadas = true;
 			
 			if (pisada_actual == "a") {
-				audio_play_sound(sonido_pisada_a, 1, false);
+				audio.reproducir_audio(sonido_pisada_a);
 				pisada_actual = "b";
 			} else {
-				audio_play_sound(sonido_pisada_b, 1, false);
+				audio.reproducir_audio(sonido_pisada_b);
 				pisada_actual = "a";
 			}
 		} else if (indice_sprite != 0 and indice_sprite != 17) {

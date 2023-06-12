@@ -23,7 +23,7 @@ if (place_meeting(x, y - 1, obj_jugador) and obj_jugador.tocando_suelo) {
 }
 
 // Determinar direccion
---valor_alarma_actual;
+valor_alarma_actual--;
 if (valor_alarma_actual <= 0) {
     if (mover_hacia_derecha) {
 		mover_hacia_derecha = false;

@@ -10,14 +10,14 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.099705,
+  "duration": 0.169955,
   "parent": {
     "name": "Agarrar objeto",
-    "path": "folders/Sonidos/Voces/Jugador/General/Agarrar objeto.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Agarrar objeto.yy",
   },
   "preload": true,
   "sampleRate": 44100,
   "soundFile": "snd_agarrar_objeto.wav",
   "type": 1,
-  "volume": 0.7,
+  "volume": 1.0,
 }

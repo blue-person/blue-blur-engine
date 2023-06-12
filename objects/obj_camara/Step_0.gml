@@ -6,7 +6,7 @@ y += (pos_y - y) / valor_retraso;
 if (objeto_enfocado != noone) {
 	pos_x = objeto_enfocado.x;
 	pos_y = objeto_enfocado.y;
-} 
+}
 
 // Sacudir camara
 if (permitir_sacudir) {
@@ -41,12 +41,12 @@ if (objeto_enfocado == obj_jugador)  {
 		var permitir_bajar_camara = (cronometro >= requisito_bajar_camara);
 		
 		if (accion_jugador == -3) {
-			++cronometro;
+			cronometro++;
 			if (permitir_elevar_camara) {
 			   pos_y -= 55;
 			}
 		} else if (accion_jugador == -1) {
-			++cronometro;
+			cronometro++;
 			if (permitir_bajar_camara) {
 			   pos_y += 45;
 			}
@@ -57,8 +57,8 @@ if (objeto_enfocado == obj_jugador)  {
 }
 
 // Hacer que la camara no se salga de los bordes del nivel
-var mitad_ancho = ANCHO_RESOLUCION / 2;
-var mitad_altura = ALTURA_RESOLUCION / 2;
+var mitad_ancho = pantalla.obtener_ancho() / 2;
+var mitad_altura = pantalla.obtener_altura()  / 2;
 x = clamp(x, mitad_ancho, room_width - mitad_ancho);
 y = clamp(y, mitad_altura, room_height - mitad_altura);
 

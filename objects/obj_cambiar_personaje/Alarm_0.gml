@@ -3,4 +3,4 @@ if (global.personaje_actual == "Sonic") {
 } else {
 	global.personaje_actual = "Sonic";
 }
-obj_controles.permitir_uso_controles = false;
+control.inhabilitar_lectura(25);

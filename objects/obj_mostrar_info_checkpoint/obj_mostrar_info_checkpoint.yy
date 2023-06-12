@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Checkpoint",
-    "path": "folders/Objetos/Gestores/Checkpoint.yy",
+    "path": "folders/Objetos/Elementos/Items/Checkpoint.yy",
   },
   "parentObjectId": null,
   "persistent": false,

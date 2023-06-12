@@ -10,14 +10,14 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.141043,
+  "duration": 0.112676,
   "parent": {
     "name": "Homing Attack",
-    "path": "folders/Sonidos/Voces/Jugador/General/Homing Attack.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Jugador/Homing Attack.yy",
   },
   "preload": true,
   "sampleRate": 44100,
   "soundFile": "snd_apuntar_objeto.wav",
   "type": 1,
-  "volume": 0.7,
+  "volume": 0.85,
 }
