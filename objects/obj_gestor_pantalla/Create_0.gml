@@ -33,7 +33,7 @@ configuracion_inicial = function() {
 	var altura_ventana = RESOLUCION_VERTICAL * FACTOR_ESCALA;
 	
 	// Configuracion
-	self.configurar_graficos(8, true);
+	self.configurar_graficos(2, false);
 	display_set_gui_size(RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
 	surface_resize(application_surface, RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
 	window_set_size(ancho_ventana, altura_ventana);
