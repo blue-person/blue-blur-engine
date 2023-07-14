@@ -16,17 +16,17 @@ draw_set_font(font_principal_normal);
 
 // Mostrar el 
 texto.graficacion_sombreada(pos_x_texto_tiempo, pos_y_texto_tiempo, "Time Bonus", 1, color);
-texto.graficacion_sombreada(pos_x_puntaje_tiempo, pos_y_texto_tiempo, global.puntaje_tiempo, 1, color);
+texto.graficacion_sombreada(pos_x_puntaje_tiempo, pos_y_texto_tiempo, nivel.puntaje.tiempo, 1, color);
 
 texto.graficacion_sombreada(pos_x_texto_rings, pos_y_texto_rings, "Ring Bonus", 1, color);
-texto.graficacion_sombreada(pos_x_puntaje_rings, pos_y_texto_rings, global.puntaje_rings, 1, color);
+texto.graficacion_sombreada(pos_x_puntaje_rings, pos_y_texto_rings, nivel.puntaje.rings, 1, color);
 
 texto.graficacion_sombreada(pos_x_texto_cool, pos_y_texto_cool, "Cool Bonus", 1, color);
-texto.graficacion_sombreada(pos_x_puntaje_cool, pos_y_texto_cool, global.puntaje_cool, 1, color);
+texto.graficacion_sombreada(pos_x_puntaje_cool, pos_y_texto_cool, nivel.puntaje.cool, 1, color);
 
 // Mostrar el puntaje final
-if (global.puntaje_final < puntaje_maximo) {
-	texto_puntaje_final = string(global.puntaje_final);
+if (nivel.obtener_puntaje_final() < puntaje_maximo) {
+	texto_puntaje_final = string(nivel.obtener_puntaje_final());
 } else {
 	texto_puntaje_final = string(puntaje_maximo);
 }

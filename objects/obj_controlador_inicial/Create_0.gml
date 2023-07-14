@@ -29,9 +29,9 @@ global.gestor_controles = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_
 global.gestor_texto = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gestor_texto);
 #macro texto global.gestor_texto
 
-// Gestor de reaparicion del jugador
-global.gestor_reaparicion = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gestor_reaparicion);
-#macro reaparicion global.gestor_reaparicion
+// Gestor del nivel actual
+global.gestor_nivel = instance_create_depth(0, 0, PROFUNDIDAD_GESTORES, obj_gestor_nivel);
+#macro nivel global.gestor_nivel
 
 // Controlador del modo debug
 global.controlador_depuracion = instance_create_depth(0, 0, PROFUNDIDAD_CONTROLADORES, obj_controlador_depuracion);

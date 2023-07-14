@@ -30,7 +30,7 @@ function establecer_particulas() {
 	part_type_orientation(global.prt_rastro_naranja, 0, 0, 0, 0, 1);
 	part_type_blend(global.prt_rastro_naranja, 1);
 	part_type_life(global.prt_rastro_naranja, 12, 12);
-	
+
 	// Particulas del rastro de las chispas de energia del boost
 	global.prt_rastro_blanco = part_type_create();
 	part_type_shape(global.prt_rastro_blanco, pt_shape_flare);

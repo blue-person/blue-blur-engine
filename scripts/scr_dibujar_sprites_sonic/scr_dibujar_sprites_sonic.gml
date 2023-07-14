@@ -197,7 +197,7 @@ function dibujar_sprites_sonic() {
 
 	// Dashpad
 	if (accion == 8) {
-	    sprite_actual = spr_sonic_rodando_a;
+	    sprite_actual = spr_sonic_spindash;
 	    fotograma += calcular_fotograma(2, 1);
 	}
 

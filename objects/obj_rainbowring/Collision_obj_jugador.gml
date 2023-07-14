@@ -53,7 +53,7 @@ if (activar_evento and (other.accion != 26)) {
     efecto = instance_create_depth(x, y, 0, obj_efecto_rainbowring);
     efecto.image_angle = image_angle;
     
-	global.puntaje_cool += 1000;
+	nivel.aumentar_puntaje_cool(1000);
     dibujar_efectos(spr_efecto_rainbowring);
 
 	audio.reproducir_audio_aislado(snd_rainbowring, false);

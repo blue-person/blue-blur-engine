@@ -1,7 +1,7 @@
 lista_botones = [];
 
 if (evento_finalizado) {
-	global.puntaje_cool += 5000;
+	nivel.aumentar_puntaje_cool(5000);
     obj_jugador.cantidad_eventos_qte = 1;
     obj_jugador.accion = 15;
     obj_jugador.velocidad_vertical = -8;
@@ -14,9 +14,9 @@ if (evento_finalizado) {
 	
 	// Determinar puntaje
 	if (mensaje_triunfo.respuesta_rapida) {
-		global.puntaje_cool += 5000;
+		nivel.aumentar_puntaje_cool(5000);
 	} else if (mensaje_triunfo.respuesta_normal) {
-		global.puntaje_cool += 3000;
+		nivel.aumentar_puntaje_cool(3000);
 	}
 	
 	// Sonido de triunfo

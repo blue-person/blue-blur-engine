@@ -4,12 +4,12 @@ function presentar_nivel(nombre = "Nivel generico", objetivo = "Objetivo generic
 }
 
 function reiniciar_checkpoints() {
-	reaparicion.reestablecer_datos();
+	nivel.reestablecer_datos_jugador();
 }
 
 function reiniciar_puntaje() {
-	global.puntaje_tiempo = 0;
-	global.puntaje_rings = 0;
-	global.puntaje_cool = 0;
-	global.puntaje_final = 0;
+	nivel.establecer_puntaje_tiempo(0);
+	nivel.establecer_puntaje_rings(0;
+	nivel.puntaje.cool = 0);
+	nivel.obtener_puntaje_final() = 0);
 }

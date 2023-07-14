@@ -13,30 +13,30 @@ if (not activar_evento) {
     alarm[0] = 180;
 	
 	// Puntaje de los rings
-    global.puntaje_rings = other.rings * 100;
+    nivel.establecer_puntaje_rings(other.rings * 100);
 	
 	// Puntaje del tiempo
 	var tiempo = obj_cronometro.tiempo_en_numeros;
 	switch (tiempo[0]) {
 	    case 0:
 			if (tiempo[1] <= 30) {
-				global.puntaje_tiempo = 50000;
+				nivel.establecer_puntaje_tiempo(50000);
 			} else {
-	            global.puntaje_tiempo = 10000;
+	            nivel.establecer_puntaje_tiempo(10000);
 			}
 	        break;
 		case 1:
-	        global.puntaje_tiempo = 5000;
+	        nivel.establecer_puntaje_tiempo(5000);
 	        break;
 		case 2:
 	        if (tiempo[1] <= 30) {
-				global.puntaje_tiempo = 2500;
+				nivel.establecer_puntaje_tiempo(2500);
 			} else {
-				global.puntaje_tiempo = 1250;
+				nivel.establecer_puntaje_tiempo(1250);
 			}
 	        break;
 	    default:
-	        global.puntaje_tiempo = 1000;
+	        nivel.establecer_puntaje_tiempo(1000);
 	        break;
 	}
 }

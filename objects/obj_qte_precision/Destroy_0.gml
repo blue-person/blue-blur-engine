@@ -13,9 +13,9 @@ if (evento_finalizado) {
 	
 	// Determinar puntaje
 	if (mensaje_triunfo.respuesta_rapida) {
-		global.puntaje_cool += 2500;
+		nivel.aumentar_puntaje_cool(2500);
 	} else if (mensaje_triunfo.respuesta_normal) {
-		global.puntaje_cool += 1250;
+		nivel.aumentar_puntaje_cool(1250);
 	}
 	
 	// Sonido de triunfo

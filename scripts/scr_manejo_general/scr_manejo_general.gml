@@ -1,7 +1,10 @@
 function preparar_ubicacion_jugador() {
-	if (reaparicion.obtener_permiso_reaparicion()) {
-		obj_jugador.x = reaparicion.obtener_pos_x();
-		obj_jugador.y = reaparicion.obtener_pos_y();
+	nivel.eliminar_puntaje();
+	
+	if (nivel.obtener_permiso_reaparicion()) {
+		var ubicacion_reaparicion = nivel.obtener_ubicacion_reaparicion();
+		obj_jugador.x = ubicacion_reaparicion.pos_x;
+		obj_jugador.y = ubicacion_reaparicion.pos_y;
 	}
 }
 

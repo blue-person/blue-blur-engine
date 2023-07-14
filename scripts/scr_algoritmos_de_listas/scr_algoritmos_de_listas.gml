@@ -1,5 +1,7 @@
-function copiar_lista(lista_fuente, lista_destino) {
-	return array_copy(lista_destino, 0, lista_fuente, 0, array_length(lista_fuente));
+function copiar_lista(lista_fuente) {
+	var lista_destino = [];
+	array_copy(lista_destino, 0, lista_fuente, 0, array_length(lista_fuente));
+	return lista_destino;
 }
 
 function valor_en_lista(valor, lista) {

@@ -1,5 +1,6 @@
-// Presentar nivel
-presentar_nivel("Groovy  Badlands", "Escape  from  Rail  Canyon !");
+// Establecer informacion del nivel
+nivel.establecer_descripcion("Groovy  Badlands", "Escape  from  Rail  Canyon !");
+nivel.establecer_cancion(msc_wild_groovy, 75, 138.03);
 
-// Reproducir cancion del nivel
-audio.reproducir_cancion_bucle(msc_wild_groovy, 75, 138.03);
+// Depurar entorno y reproducir la cancion
+nivel.preparar_inicio();

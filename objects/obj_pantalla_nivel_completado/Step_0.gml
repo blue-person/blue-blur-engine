@@ -51,20 +51,14 @@ switch (fase_animacion) {
         break;
     case 9:
 		if (control.boton_presionado("boton_salto") or control.boton_presionado("boton_entrada")) {
-			global.puntaje_final += global.puntaje_rings + global.puntaje_tiempo + global.puntaje_cool;
-			
-			global.puntaje_rings = 0;
-			global.puntaje_tiempo = 0;
-		    global.puntaje_cool = 0;
+			nivel.calcular_puntaje_final("automatico");
 		} else {
-			global.puntaje_rings = registrar_puntaje(global.puntaje_rings);
-			global.puntaje_tiempo = registrar_puntaje(global.puntaje_tiempo);
-		    global.puntaje_cool = registrar_puntaje(global.puntaje_cool);
+			nivel.calcular_puntaje_final("incremental");
 		}
 
 	    audio.reproducir_audio_aislado(snd_agregar_puntos, true);
     
-	    if ((global.puntaje_rings == 0) and (global.puntaje_tiempo == 0) and (global.puntaje_cool == 0)) {
+	    if (nivel.comprobar_puntaje_vacio()) {
 	        audio.reproducir_audio(snd_registrar_puntaje);
 			fase_animacion = 10;
 	        alarm[3] = 180;
@@ -88,7 +82,7 @@ switch (fase_animacion) {
 	    if (permitir_transicion and control.boton_presionado("boton_salto")) {
 			permitir_transicion = false;
 			
-	        audio.detener_todo();
+	        nivel.depurar_entorno();
 	        audio.reproducir_audio(snd_confirmar_opcion);
 			iniciar_transicion_niveles(rm_hub_world, "negro", 0.015);
 	    }

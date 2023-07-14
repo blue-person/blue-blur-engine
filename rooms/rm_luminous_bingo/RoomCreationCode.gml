@@ -1,5 +1,6 @@
-// Presentar el nivel
-presentar_nivel("Luminous  Bingo", "Dodge  the  traps  of  Casino  Park !");
+// Establecer informacion del nivel
+nivel.establecer_descripcion("Luminous  Bingo", "Dodge  the  traps  of  Casino  Park !");
+nivel.establecer_cancion(msc_luminous_bingo, 8.5, 108.97);
 
-// Reproducir cancion del nivel
-audio.reproducir_cancion_bucle(msc_luminous_bingo, 8.5, 108.97);
+// Depurar entorno y reproducir la cancion
+nivel.preparar_inicio();

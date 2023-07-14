@@ -5,7 +5,7 @@ tiempo_en_texto = ["", "", ""];
 valores_cronometro = "";
 
 // Determinar el tiempo inicial en caso de checkpoint
-if (reaparicion.obtener_permiso_reaparicion()) {
-	var tiempo_registrado = reaparicion.obtener_tiempo_registrado();
-	copiar_lista(tiempo_registrado, tiempo_en_numeros);
+if (nivel.obtener_permiso_reaparicion()) {
+	var tiempo_registrado = nivel.obtener_tiempo_checkpoint();
+	tiempo_en_numeros = copiar_lista(tiempo_registrado);
 }

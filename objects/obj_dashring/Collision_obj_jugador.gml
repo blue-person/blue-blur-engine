@@ -52,7 +52,7 @@ if (activar_evento and (other.accion != 26)) {
     efecto = instance_create_depth(x, y, 0, obj_efecto_dashring);
     efecto.image_angle = image_angle;
     
-	global.puntaje_cool += 100; 
+	nivel.aumentar_puntaje_cool(100); 
     dibujar_efectos(spr_efecto_dashring);
 
 	audio.reproducir_audio_aislado(snd_dashring, false);
