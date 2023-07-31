@@ -1,4 +1,4 @@
 function establecer_variables_jugador() {
-	global.personaje_actual = "Sonic";
+	global.personaje_actual = "Shadow";
 	global.vidas_restantes = 3;
 }

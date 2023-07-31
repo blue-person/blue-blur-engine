@@ -328,7 +328,7 @@ function dibujar_sprites_shadow() {
     if (accion == 22) {
         sprite_actual = spr_shadow_herido;
 
-        if (!(!tocando_suelo and (indice_sprite == 1))) {
+        if (not (not tocando_suelo and (indice_sprite == 1))) {
             fotograma += 0.25;
         }
     }
@@ -353,25 +353,17 @@ function dibujar_sprites_shadow() {
     if (accion == 26) {
         sprite_actual = spr_shadow_muriendo;
 
-        if (!(!tocando_suelo and indice_sprite == 4)) {
+        if (not (not tocando_suelo and (indice_sprite == 1))) {
             fotograma += 0.25;
         }
 
-        if (indice_sprite >= 11) {
-            indice_sprite = 10;
-        }
+        if (indice_sprite >= 4) then indice_sprite = 4;
     }
 
     // Agarrarse de polea y de zipline
     if ((accion == 27) or (accion == 32) or (accion == 32.5) or (accion == 33)) {
         sprite_actual = spr_shadow_agarrandose;
         fotograma += 0.125;
-    }
-
-    // Chaos Control
-    if (accion == 28) {
-        sprite_actual = spr_shadow_chaos_control
-        fotograma += 0.125
     }
 
     // Agarrarse de poste giratorio 

@@ -27,7 +27,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1439d65c-b074-43b6-811c-471390fc19ab","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "Shadow",
     "path": "folders/Sprites/Entidades/Jugador/Shadow.yy",
@@ -68,7 +68,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 17,
-    "yorigin": 23,
+    "yorigin": 19,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

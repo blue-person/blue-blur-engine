@@ -567,7 +567,6 @@
     {"id":{"name":"input_accessibility_verb_toggle_get","path":"scripts/input_accessibility_verb_toggle_get/input_accessibility_verb_toggle_get.yy",},},
     {"id":{"name":"snd_activar_pausa","path":"sounds/snd_activar_pausa/snd_activar_pausa.yy",},},
     {"id":{"name":"spr_shadow_patinando_b","path":"sprites/spr_shadow_patinando_b/spr_shadow_patinando_b.yy",},},
-    {"id":{"name":"spr_shadow_rodando_a","path":"sprites/spr_shadow_rodando_a/spr_shadow_rodando_a.yy",},},
     {"id":{"name":"spr_icono_izquierda_playstation","path":"sprites/spr_icono_izquierda_playstation/spr_icono_izquierda_playstation.yy",},},
     {"id":{"name":"spr_shadow_deslizarse_riel","path":"sprites/spr_shadow_deslizarse_riel/spr_shadow_deslizarse_riel.yy",},},
     {"id":{"name":"input_chord_create","path":"scripts/input_chord_create/input_chord_create.yy",},},
@@ -611,7 +610,6 @@
     {"id":{"name":"spr_shadow_deslizarse_piso","path":"sprites/spr_shadow_deslizarse_piso/spr_shadow_deslizarse_piso.yy",},},
     {"id":{"name":"spr_shadow_agarrandose","path":"sprites/spr_shadow_agarrandose/spr_shadow_agarrandose.yy",},},
     {"id":{"name":"spr_shadow_sostenerse_pared","path":"sprites/spr_shadow_sostenerse_pared/spr_shadow_sostenerse_pared.yy",},},
-    {"id":{"name":"spr_shadow_chaos_control","path":"sprites/spr_shadow_chaos_control/spr_shadow_chaos_control.yy",},},
     {"id":{"name":"spr_shadow_poste_giratorio","path":"sprites/spr_shadow_poste_giratorio/spr_shadow_poste_giratorio.yy",},},
     {"id":{"name":"input_gamepad_constant_get_name","path":"scripts/input_gamepad_constant_get_name/input_gamepad_constant_get_name.yy",},},
     {"id":{"name":"spr_shadow_salto_bungee","path":"sprites/spr_shadow_salto_bungee/spr_shadow_salto_bungee.yy",},},
@@ -1410,6 +1408,7 @@
     {"id":{"name":"obj_baranda_diagonal_frontal","path":"objects/obj_baranda_diagonal_frontal/obj_baranda_diagonal_frontal.yy",},},
     {"id":{"name":"ts_rieles","path":"tilesets/ts_rieles/ts_rieles.yy",},},
     {"id":{"name":"obj_baranda_curva","path":"objects/obj_baranda_curva/obj_baranda_curva.yy",},},
+    {"id":{"name":"spr_shadow_rodando_a","path":"sprites/spr_shadow_rodando_a/spr_shadow_rodando_a.yy",},},
     {"id":{"name":"scr_manejo_general","path":"scripts/scr_manejo_general/scr_manejo_general.yy",},},
     {"id":{"name":"obj_baranda_curva_posterior_a","path":"objects/obj_baranda_curva_posterior_a/obj_baranda_curva_posterior_a.yy",},},
     {"id":{"name":"ts_practice_zone","path":"tilesets/ts_practice_zone/ts_practice_zone.yy",},},
@@ -1638,6 +1637,7 @@
     {"children":[
         {"roomId":{"name":"rm_gestor_inicio","path":"rooms/rm_gestor_inicio/rm_gestor_inicio.yy",},},
       ],"groupName":"Iniciadores",},
+    {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
     {"children":[
         {"roomId":{"name":"rm_titulo_juego","path":"rooms/rm_titulo_juego/rm_titulo_juego.yy",},},
       ],"groupName":"Pantallas de titulo",},
@@ -1649,7 +1649,6 @@
         {"roomId":{"name":"rm_groovy_badlands","path":"rooms/rm_groovy_badlands/rm_groovy_badlands.yy",},},
         {"roomId":{"name":"rm_luminous_bingo","path":"rooms/rm_luminous_bingo/rm_luminous_bingo.yy",},},
         {"roomId":{"name":"rm_mining_mayhem","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},},
-        {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
       ],"groupName":"Niveles",},
     {"children":[
         {"roomId":{"name":"rm_pausa","path":"rooms/rm_pausa/rm_pausa.yy",},},
