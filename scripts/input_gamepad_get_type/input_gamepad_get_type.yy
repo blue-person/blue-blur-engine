@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Gamepads (Direct)",
-    "path": "folders/Paquetes externos/Input v5.6.1/Gamepads (Direct).yy",
+    "name": "25  Gamepads (Direct)",
+    "path": "folders/Paquetes externos/Input v6.0.4/25  Gamepads (Direct).yy",
   },
 }

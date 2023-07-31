@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Sources",
-    "path": "folders/Paquetes externos/Input v5.6.1/Sources.yy",
+    "name": "17  Source Modes",
+    "path": "folders/Paquetes externos/Input v6.0.4/17  Source Modes.yy",
   },
 }

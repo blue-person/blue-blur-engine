@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Players",
-    "path": "folders/Paquetes externos/Input v5.6.1/Players.yy",
+    "name": "15  Players",
+    "path": "folders/Paquetes externos/Input v6.0.4/15  Players.yy",
   },
 }

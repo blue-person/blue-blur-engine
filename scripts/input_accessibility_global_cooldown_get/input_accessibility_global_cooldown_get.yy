@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Accessibility",
-    "path": "folders/Paquetes externos/Input v5.6.1/Accessibility.yy",
+    "name": "12  Accessibility",
+    "path": "folders/Paquetes externos/Input v6.0.4/12  Accessibility.yy",
   },
 }

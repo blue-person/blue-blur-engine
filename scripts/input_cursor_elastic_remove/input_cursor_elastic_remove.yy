@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cursor",
-    "path": "folders/Paquetes externos/Input v5.6.1/Cursor.yy",
+    "name": "10  Cursor Control",
+    "path": "folders/Paquetes externos/Input v6.0.4/10  Cursor Control.yy",
   },
 }

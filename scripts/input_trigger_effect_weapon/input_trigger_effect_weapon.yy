@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Trigger Effects",
-    "path": "folders/Paquetes externos/Input v5.6.1/Trigger Effects.yy",
+    "name": "22  Trigger Effects",
+    "path": "folders/Paquetes externos/Input v6.0.4/22  Trigger Effects.yy",
   },
 }

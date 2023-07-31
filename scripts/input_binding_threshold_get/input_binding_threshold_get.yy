@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Binding Access",
-    "path": "folders/Paquetes externos/Input v5.6.1/Binding Access.yy",
+    "name": "06  Binding Access",
+    "path": "folders/Paquetes externos/Input v6.0.4/06  Binding Access.yy",
   },
 }

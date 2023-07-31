@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Mouse (Direct)",
-    "path": "folders/Paquetes externos/Input v5.6.1/Mouse (Direct).yy",
+    "name": "24  Mouse (Direct)",
+    "path": "folders/Paquetes externos/Input v6.0.4/24  Mouse (Direct).yy",
   },
 }

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Vibration",
-    "path": "folders/Paquetes externos/Input v5.6.1/Vibration.yy",
+    "name": "19  Vibration",
+    "path": "folders/Paquetes externos/Input v6.0.4/19  Vibration.yy",
   },
 }

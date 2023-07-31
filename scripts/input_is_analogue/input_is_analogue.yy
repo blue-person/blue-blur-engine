@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Checkers",
-    "path": "folders/Paquetes externos/Input v5.6.1/Checkers.yy",
+    "name": "01  Checking Verbs",
+    "path": "folders/Paquetes externos/Input v6.0.4/01  Checking Verbs.yy",
   },
 }

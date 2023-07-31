@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Virtual Buttons",
-    "path": "folders/Paquetes externos/Input v5.6.1/Virtual Buttons.yy",
+    "name": "14  Virtual Buttons",
+    "path": "folders/Paquetes externos/Input v6.0.4/14  Virtual Buttons.yy",
   },
 }

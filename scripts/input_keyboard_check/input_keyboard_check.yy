@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Keyboard (Direct)",
-    "path": "folders/Paquetes externos/Input v5.6.1/Keyboard (Direct).yy",
+    "name": "26  Keyboard (Direct)",
+    "path": "folders/Paquetes externos/Input v6.0.4/26  Keyboard (Direct).yy",
   },
 }

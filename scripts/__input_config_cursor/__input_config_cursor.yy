@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Configuration - Please edit these scripts!",
-    "path": "folders/Paquetes externos/Input v5.6.1/Configuration - Please edit these scripts!.yy",
+    "name": "00  Configuration - Please edit these scripts!",
+    "path": "folders/Paquetes externos/Input v6.0.4/00  Configuration - Please edit these scripts!.yy",
   },
 }

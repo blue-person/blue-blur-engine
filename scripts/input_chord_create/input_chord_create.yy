@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Extended Verbs",
-    "path": "folders/Paquetes externos/Input v5.6.1/Extended Verbs.yy",
+    "name": "04  Further Verb Functions",
+    "path": "folders/Paquetes externos/Input v6.0.4/04  Further Verb Functions.yy",
   },
 }
