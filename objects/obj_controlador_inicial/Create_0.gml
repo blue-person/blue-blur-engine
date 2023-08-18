@@ -1,3 +1,6 @@
+// Informacion general
+#macro TITULO_JUEGO "Blue Blur Engine"
+
 // Profundidades de dibujado
 #macro PROFUNDIDAD_GESTORES 0
 #macro PROFUNDIDAD_CONTROLADORES 0
