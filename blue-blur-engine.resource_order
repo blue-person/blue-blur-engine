@@ -236,6 +236,7 @@
     {"name":"Superficies","order":1,"path":"folders/Sprites/Texturas/Superficies.yy",},
     {"name":"Esfera","order":1,"path":"folders/Sprites/Texturas/Superficies/Esfera.yy",},
     {"name":"Normal","order":1,"path":"folders/Sprites/Texturas/Superficies/Esfera/Normal.yy",},
+    {"name":"Funcionalidades","order":8,"path":"folders/Sprites/Funcionalidades.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"input_vibrate_curve","order":2,"path":"scripts/input_vibrate_curve/input_vibrate_curve.yy",},
@@ -518,6 +519,7 @@
     {"name":"spr_icono_x_xbox","order":1,"path":"sprites/spr_icono_x_xbox/spr_icono_x_xbox.yy",},
     {"name":"input_verb_groups_get","order":6,"path":"scripts/input_verb_groups_get/input_verb_groups_get.yy",},
     {"name":"obj_flapper","order":4,"path":"objects/obj_flapper/obj_flapper.yy",},
+    {"name":"obj_camara","order":1,"path":"objects/obj_camara/obj_camara.yy",},
     {"name":"spr_riel_curva","order":1,"path":"sprites/spr_riel_curva/spr_riel_curva.yy",},
     {"name":"spr_rampa_pasto","order":6,"path":"sprites/spr_rampa_pasto/spr_rampa_pasto.yy",},
     {"name":"input_system_import","order":10,"path":"scripts/input_system_import/input_system_import.yy",},

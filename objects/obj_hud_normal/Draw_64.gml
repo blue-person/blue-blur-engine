@@ -1,5 +1,5 @@
 if (mostrar_en_pantalla) {
-	var cantidad_tiempo = obj_cronometro.valores_cronometro;
+	var cantidad_tiempo = obj_cronometro.obtener_tiempo("texto");
 	var cantidad_rings = obj_determinar_texto_rings.texto_rings;
 	var cantidad_vidas = obj_determinar_texto_vidas.texto_vidas;
 	var cantidad_boost = obj_jugador.cantidad_boost;

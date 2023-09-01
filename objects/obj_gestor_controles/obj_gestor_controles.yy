@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_funcionalidad",
+    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
+  },
   "spriteMaskId": null,
   "visible": false,
 }

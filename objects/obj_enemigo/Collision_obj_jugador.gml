@@ -47,7 +47,7 @@ if (((other.accion == 1) or (other.accion == -2) or (other.accion == 4) or (othe
         y -= 10;
 
         if (abs(other.velocidad_horizontal) >= 4) {
-            sacudir_camara(6, 25);
+            obj_camara.sacudir_camara(6, 25);
         }
 
         if (other.tocando_suelo) {
@@ -63,9 +63,9 @@ if (((other.accion == 1) or (other.accion == -2) or (other.accion == 4) or (othe
 } else if ((other.accion == -2) or (other.accion == 2) or (other.accion == 18)) {
     recibio_golpe = true;
     dibujar_efectos(spr_efecto_destruccion_enemigo, 0, 1, 1, false);
+    efecto_haptico_colision();
     instance_destroy();
 } else if (permitir_ser_apuntado and other.permitir_ser_apuntado) {
+    efecto_haptico_colision();
     herir_jugador();
 }
-
-efecto_haptico_colision();

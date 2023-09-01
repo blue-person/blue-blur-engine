@@ -463,6 +463,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Frontal","folderPath":"folders/Sprites/Texturas/Superficies/Rieles/Capas/Frontal.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Posterior","folderPath":"folders/Sprites/Texturas/Superficies/Rieles/Capas/Posterior.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Normal","folderPath":"folders/Sprites/Texturas/Superficies/Rieles/Normal.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Funcionalidades","folderPath":"folders/Sprites/Funcionalidades.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles",},
@@ -484,7 +485,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.800.0.402",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"spr_capa_posterior","path":"sprites/spr_capa_posterior/spr_capa_posterior.yy",},},
@@ -829,6 +830,7 @@
     {"id":{"name":"input_color_get","path":"scripts/input_color_get/input_color_get.yy",},},
     {"id":{"name":"obj_controlador_depuracion","path":"objects/obj_controlador_depuracion/obj_controlador_depuracion.yy",},},
     {"id":{"name":"obj_flapper","path":"objects/obj_flapper/obj_flapper.yy",},},
+    {"id":{"name":"obj_camara","path":"objects/obj_camara/obj_camara.yy",},},
     {"id":{"name":"spr_baranda_frontal","path":"sprites/spr_baranda_frontal/spr_baranda_frontal.yy",},},
     {"id":{"name":"spr_riel_curva","path":"sprites/spr_riel_curva/spr_riel_curva.yy",},},
     {"id":{"name":"spr_rampa_pasto","path":"sprites/spr_rampa_pasto/spr_rampa_pasto.yy",},},
@@ -1072,6 +1074,7 @@
     {"id":{"name":"snd_aterrizar_vidrio","path":"sounds/snd_aterrizar_vidrio/snd_aterrizar_vidrio.yy",},},
     {"id":{"name":"input_mouse_coord_space_get","path":"scripts/input_mouse_coord_space_get/input_mouse_coord_space_get.yy",},},
     {"id":{"name":"snd_ataque_sonic_a","path":"sounds/snd_ataque_sonic_a/snd_ataque_sonic_a.yy",},},
+    {"id":{"name":"spr_funcionalidad","path":"sprites/spr_funcionalidad/spr_funcionalidad.yy",},},
     {"id":{"name":"input_verb_get_group","path":"scripts/input_verb_get_group/input_verb_get_group.yy",},},
     {"id":{"name":"input_clear_momentary","path":"scripts/input_clear_momentary/input_clear_momentary.yy",},},
     {"id":{"name":"__input_steam_handles_changed","path":"scripts/__input_steam_handles_changed/__input_steam_handles_changed.yy",},},
@@ -1509,7 +1512,6 @@
     {"id":{"name":"obj_canon_wallrun","path":"objects/obj_canon_wallrun/obj_canon_wallrun.yy",},},
     {"id":{"name":"obj_esfera_gigante_casino","path":"objects/obj_esfera_gigante_casino/obj_esfera_gigante_casino.yy",},},
     {"id":{"name":"input_cursor_speed_set","path":"scripts/input_cursor_speed_set/input_cursor_speed_set.yy",},},
-    {"id":{"name":"obj_camara","path":"objects/obj_camara/obj_camara.yy",},},
     {"id":{"name":"obj_moneda_casino","path":"objects/obj_moneda_casino/obj_moneda_casino.yy",},},
     {"id":{"name":"obj_efecto_moneda_casino","path":"objects/obj_efecto_moneda_casino/obj_efecto_moneda_casino.yy",},},
     {"id":{"name":"bg_emerald_valley_oceano_d","path":"sprites/bg_emerald_valley_oceano_d/bg_emerald_valley_oceano_d.yy",},},
@@ -1650,7 +1652,6 @@
         {"roomId":{"name":"rm_pausa","path":"rooms/rm_pausa/rm_pausa.yy",},},
       ],"groupName":"Otros",},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":false,"loadType":"default","mipsToGenerate":0,"targets":-1,},
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"grp_texturas","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

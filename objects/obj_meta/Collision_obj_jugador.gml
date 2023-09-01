@@ -1,7 +1,7 @@
 other.zona_superada = true;
 obj_hud_normal.mostrar_en_pantalla = false;
-obj_cronometro.permitir_medir_tiempo = false;
-obj_camara.objeto_enfocado = self;
+obj_cronometro.detener_cronometro();
+obj_camara.establecer_enfoque(self);
 
 // Efecto de sonido
 audio.reproducir_audio_aislado(snd_tocar_meta, true);
@@ -16,7 +16,7 @@ if (not activar_evento) {
     nivel.establecer_puntaje_rings(other.rings * 100);
 	
 	// Puntaje del tiempo
-	var tiempo = obj_cronometro.tiempo_en_numeros;
+	var tiempo = obj_cronometro.obtener_tiempo("numerico");
 	switch (tiempo[0]) {
 	    case 0:
 			if (tiempo[1] <= 30) {
