@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Normal",
-    "path": "folders/Objetos/Gestores/GUI/Efectos/Transiciones/Normal.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Efectos/Transiciones/Normal.yy",
   },
   "parentObjectId": {
     "name": "obj_transicion",

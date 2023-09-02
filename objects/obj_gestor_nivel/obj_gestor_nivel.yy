@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Nivel",
-    "path": "folders/Objetos/Gestores/Nivel.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Nivel.yy",
   },
   "parentObjectId": null,
   "persistent": true,

@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Fondos",
-    "path": "folders/Objetos/Gestores/GUI/Fondos.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Fondos.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Riel",
-    "path": "folders/Objetos/Entidades/Jugador/Efectos/Riel.yy",
+    "path": "folders/Objetos/Efectos/Jugador/Riel.yy",
   },
   "parentObjectId": null,
   "persistent": false,

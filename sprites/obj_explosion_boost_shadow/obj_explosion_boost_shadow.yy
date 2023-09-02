@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "Shadow",
-    "path": "folders/Sprites/Efectos visuales/Jugador/Boost/Shadow.yy",
+    "path": "folders/Sprites/Efectos/Jugador/Boost/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Pisoton",
-    "path": "folders/Sprites/Efectos visuales/Jugador/Pisoton.yy",
+    "path": "folders/Sprites/Efectos/Jugador/Pisoton.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Audio",
-    "path": "folders/Objetos/Gestores/Audio.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Audio.yy",
   },
   "parentObjectId": null,
   "persistent": true,

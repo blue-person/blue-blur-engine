@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Iniciadores",
-    "path": "folders/Sprites/Gestores/Iniciadores.yy",
+    "path": "folders/Sprites/Funcionalidades/Iniciadores.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Normal",
-    "path": "folders/Objetos/Gestores/Objetos padres/Muros/Normal.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Objetos padres/Muros/Normal.yy",
   },
   "parentObjectId": null,
   "persistent": false,

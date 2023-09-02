@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cronometro",
-    "path": "folders/Objetos/Controladores/Cronometro.yy",
+    "path": "folders/Objetos/Funcionalidades/Controladores/Cronometro.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Particulas energia",
-    "path": "folders/Sprites/Efectos visuales/Jugador/Boost/Particulas energia.yy",
+    "path": "folders/Sprites/Efectos/Jugador/Boost/Particulas energia.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

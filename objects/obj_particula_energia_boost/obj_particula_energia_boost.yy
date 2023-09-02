@@ -14,7 +14,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Particula energia",
-    "path": "folders/Objetos/Entidades/Jugador/Efectos/Boost/Particula energia.yy",
+    "path": "folders/Objetos/Efectos/Jugador/Boost/Particula energia.yy",
   },
   "parentObjectId": null,
   "persistent": false,

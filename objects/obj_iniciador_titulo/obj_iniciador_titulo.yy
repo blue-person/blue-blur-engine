@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Iniciadores",
-    "path": "folders/Objetos/Iniciadores.yy",
+    "path": "folders/Objetos/Funcionalidades/Iniciadores.yy",
   },
   "parentObjectId": null,
   "persistent": false,

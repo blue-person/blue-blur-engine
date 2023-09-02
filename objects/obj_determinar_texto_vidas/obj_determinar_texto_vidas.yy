@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Contadores",
-    "path": "folders/Objetos/Gestores/Contadores.yy",
+    "name": "Otros",
+    "path": "folders/Objetos/Funcionalidades/Otros.yy",
   },
   "parentObjectId": null,
   "persistent": false,

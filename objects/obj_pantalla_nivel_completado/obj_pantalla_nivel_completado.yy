@@ -16,7 +16,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Pantalla de resultados",
-    "path": "folders/Objetos/Gestores/GUI/Diapositivas/Pantalla de resultados.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Diapositivas/Pantalla de resultados.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shaders",
-    "path": "folders/Objetos/Gestores/GUI/Efectos/Shaders.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Efectos/Shaders.yy",
   },
   "parentObjectId": null,
   "persistent": false,

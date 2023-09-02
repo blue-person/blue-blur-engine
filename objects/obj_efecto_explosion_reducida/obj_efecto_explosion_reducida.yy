@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Efectos",
-    "path": "folders/Objetos/Efectos.yy",
+    "name": "Generales",
+    "path": "folders/Objetos/Efectos/Generales.yy",
   },
   "parentObjectId": {
     "name": "obj_efectos_especiales",

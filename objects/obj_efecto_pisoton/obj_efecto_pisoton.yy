@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Pisoton",
-    "path": "folders/Objetos/Entidades/Jugador/Efectos/Pisoton.yy",
+    "path": "folders/Objetos/Efectos/Jugador/Pisoton.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Jump Panel",
-    "path": "folders/Objetos/Gestores/Objetos padres/Plataformas/Jump Panel.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Objetos padres/Plataformas/Jump Panel.yy",
   },
   "parentObjectId": null,
   "persistent": false,

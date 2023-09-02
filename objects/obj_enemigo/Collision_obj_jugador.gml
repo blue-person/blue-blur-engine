@@ -47,7 +47,7 @@ if (((other.accion == 1) or (other.accion == -2) or (other.accion == 4) or (othe
         y -= 10;
 
         if (abs(other.velocidad_horizontal) >= 4) {
-            obj_camara.sacudir_camara(6, 25);
+            obj_camara.sacudir_camara(25);
         }
 
         if (other.tocando_suelo) {

@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Normal",
-    "path": "folders/Objetos/Gestores/Objetos padres/Rieles/Normal.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Objetos padres/Rieles/Normal.yy",
   },
   "parentObjectId": null,
   "persistent": false,

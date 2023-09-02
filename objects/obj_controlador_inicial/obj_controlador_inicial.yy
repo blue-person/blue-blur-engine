@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Principal",
-    "path": "folders/Objetos/Controladores/Principal.yy",
+    "path": "folders/Objetos/Funcionalidades/Controladores/Principal.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_funcionalidad",
+    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
+  },
   "spriteMaskId": null,
   "visible": false,
 }

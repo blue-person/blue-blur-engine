@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Texto",
-    "path": "folders/Objetos/Gestores/Texto.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Texto.yy",
   },
   "parentObjectId": null,
   "persistent": true,

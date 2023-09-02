@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Camara",
-    "path": "folders/Objetos/Controladores/Camara.yy",
+    "path": "folders/Objetos/Funcionalidades/Controladores/Camara.yy",
   },
   "parentObjectId": null,
   "persistent": false,

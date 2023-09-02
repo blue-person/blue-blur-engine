@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Controles",
-    "path": "folders/Objetos/Gestores/Controles.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Controles.yy",
   },
   "parentObjectId": null,
   "persistent": true,

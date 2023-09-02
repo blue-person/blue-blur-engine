@@ -33,7 +33,7 @@
   "origin": 9,
   "parent": {
     "name": "Spindash",
-    "path": "folders/Sprites/Efectos visuales/Jugador/Spindash.yy",
+    "path": "folders/Sprites/Efectos/Jugador/Spindash.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

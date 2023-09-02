@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Generales",
-    "path": "folders/Sprites/Efectos visuales/Generales.yy",
+    "path": "folders/Sprites/Efectos/Generales.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

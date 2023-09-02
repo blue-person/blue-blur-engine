@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Rastro visual",
-    "path": "folders/Objetos/Entidades/Jugador/Efectos/Rastro visual.yy",
+    "path": "folders/Objetos/Efectos/Jugador/Rastro visual.yy",
   },
   "parentObjectId": null,
   "persistent": false,

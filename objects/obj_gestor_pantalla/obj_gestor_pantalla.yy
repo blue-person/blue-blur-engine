@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Pantalla",
-    "path": "folders/Objetos/Gestores/Pantalla.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Pantalla.yy",
   },
   "parentObjectId": null,
   "persistent": true,

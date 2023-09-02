@@ -1,5 +1,5 @@
-var camara_x = -camera_get_view_mat(view_camera[0])[12];
-var camara_y = -camera_get_view_mat(view_camera[0])[13];
+var camara_x = obj_camara.obtener_pos_x();
+var camara_y = obj_camara.obtener_pos_y();
 
 switch (nivel_actual) {
 	case rm_emerald_valley:

@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "Sonic",
-    "path": "folders/Sprites/Efectos visuales/Jugador/Boost/Sonic.yy",
+    "path": "folders/Sprites/Efectos/Jugador/Boost/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

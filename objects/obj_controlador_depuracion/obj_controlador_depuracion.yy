@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Debug",
-    "path": "folders/Objetos/Controladores/Debug.yy",
+    "path": "folders/Objetos/Funcionalidades/Controladores/Debug.yy",
   },
   "parentObjectId": null,
   "persistent": true,

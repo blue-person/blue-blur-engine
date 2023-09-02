@@ -16,8 +16,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Principal",
-    "path": "folders/Objetos/Entidades/Jugador/Principal.yy",
+    "name": "Jugador",
+    "path": "folders/Objetos/Entidades/Jugador.yy",
   },
   "parentObjectId": null,
   "persistent": false,

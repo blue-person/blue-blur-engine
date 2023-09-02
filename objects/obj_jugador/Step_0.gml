@@ -88,8 +88,7 @@ if (alarma_5 > 0) {
 }
 
 // Controlar la cantidad de boost
-if (cantidad_boost > 100) then cantidad_boost = 100;
-if (cantidad_boost < 0) then cantidad_boost = 0;
+cantidad_boost = clamp(cantidad_boost, 0, 100);
 
 // Hacer un rastro que sigue al personaje cuando usa el boost
 if (instance_exists(obj_efecto_boost) or ((global.personaje_actual == "Shadow") and (accion == 4.5))) {
