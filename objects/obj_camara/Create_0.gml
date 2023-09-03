@@ -42,12 +42,12 @@ camera_set_proj_mat(camara, matriz_proyeccion);
 view_camera[0] = camara;
 
 // Metodos
-obtener_pos_x = function() {
-	return -camera_get_view_mat(camara)[12];
-}
-
-obtener_pos_y = function() {
-	return -camera_get_view_mat(camara)[13];
+obtener_ubicacion = function() {
+	var ubicacion = {
+		pos_x: -camera_get_view_mat(camara)[12],
+		pos_y: -camera_get_view_mat(camara)[13]
+	};
+	return ubicacion;
 }
 
 establecer_enfoque = function(enfoque_camara, desplazamiento_x = 0, desplazamiento_y = 0, modo_seguimiento = "suave") {

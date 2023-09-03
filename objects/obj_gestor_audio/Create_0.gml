@@ -84,7 +84,7 @@ reproducir_cancion_bucle = function(nombre_audio, inicio_bucle = 0, final_bucle 
 	return audio_sound_loop(cancion, true);
 }
 
-detener_cancion = function(nombre_audio) {
-	// Detener la cancion
-	return self.detener_audio(nombre_audio);
+detener_canciones = function() {
+	// Detener todas las canciones
+	return audio_group_stop_all(grp_canciones);
 }

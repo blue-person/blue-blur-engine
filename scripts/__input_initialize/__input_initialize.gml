@@ -888,7 +888,7 @@ function __input_initialize()
     
     //Keyboard locale
     INPUT_KEYBOARD_LOCALE = "QWERTY";
-    var _locale = os_get_language() + "-" + os_get_region();;
+    var _locale = os_get_language() + "-" + os_get_region();
     switch(_locale)
     {
         case "ar-DZ": case "ar-MA": case "ar-TN":

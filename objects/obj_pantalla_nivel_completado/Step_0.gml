@@ -82,9 +82,9 @@ switch (fase_animacion) {
 	    if (permitir_transicion and control.boton_presionado("boton_salto")) {
 			permitir_transicion = false;
 			
+			audio.detener_canciones();
 	        audio.reproducir_audio(snd_confirmar_opcion);
 			iniciar_transicion_niveles(rm_hub_world, "negro", 0.015);
-			nivel.depurar_entorno();
 	    }
         break;
 }

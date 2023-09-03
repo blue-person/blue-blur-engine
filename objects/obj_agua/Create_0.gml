@@ -7,7 +7,7 @@ depth = -100;
 
 // Determina que fondos se veran reflejados
 back_layers = [];
-var propiedades_fondo = nivel.propiedades_fondo;
+var propiedades_fondo = copiar_lista(nivel.propiedades_fondo);
 if (array_length(propiedades_fondo) > 0) {
 	for (var i = 0; i < array_length(propiedades_fondo); i++) {
 		if (propiedades_fondo[i].permitir_reflexion_agua) {
@@ -18,9 +18,10 @@ if (array_length(propiedades_fondo) > 0) {
 
 // Determina que tilesets se veran reflejados
 tile_layers = [];
-var propiedades_tilesets = nivel.propiedades_tilesets;
-if (array_length(propiedades_tilesets) > 0) {
-	for (var i = 0; i < array_length(propiedades_tilesets); i++) {
+var propiedades_tilesets = copiar_lista(nivel.propiedades_tilesets);
+var longitud_lista = array_length(propiedades_tilesets);
+if (longitud_lista > 0) {
+	for (var i = 0; i < longitud_lista; i++) {
 		if (propiedades_tilesets[i].permitir_reflexion_agua) {
 			array_push(tile_layers, propiedades_tilesets[i].capa);
 		}

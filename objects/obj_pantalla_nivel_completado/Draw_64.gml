@@ -1,8 +1,8 @@
 // Mostrar banda superior
-draw_sprite_ext(spr_banda_superior, indice, 0, pos_y_barra_superior, 1, 1, 0, c_white, 1);;
+draw_sprite_ext(spr_banda_superior, indice, 0, pos_y_barra_superior, 1, 1, 0, c_white, 1);
 
 // Mostrar banda inferior
-draw_sprite_ext(spr_banda_inferior, indice, 0, pos_y_barra_inferior, 1, 1, 0, c_white, 1);;
+draw_sprite_ext(spr_banda_inferior, indice, 0, pos_y_barra_inferior, 1, 1, 0, c_white, 1);
 
 // Mostrar el marco de Stage Clear
 draw_sprite_ext(spr_marco_titulo, 0, 0, pos_y_titulo + 7, 1, 0.6, 0, c_white, transparencia_barra);

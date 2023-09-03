@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Presentacion de nivel",
-    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Diapositivas/Presentacion de nivel.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Interfaz/Diapositivas/Presentacion de nivel.yy",
   },
   "parentObjectId": null,
   "persistent": false,

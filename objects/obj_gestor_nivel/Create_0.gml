@@ -5,9 +5,7 @@ info = {
 };
 
 // Estructura con la informacion del puntaje
-puntaje = {
-	tiempo: 0, rings: 0, cool: 0, final: 0
-};
+puntaje = { tiempo: 0, rings: 0, cool: 0, final: 0 };
 
 // Estructura con la informacion del checkpoint
 checkpoint = {
@@ -16,18 +14,25 @@ checkpoint = {
 	tiempo_registrado: [0, 0, 0]
 };
 
-// Estructura del fondo
+// Estructura de las propiedades del fondo
 propiedades_fondo = [{
 	capa: noone,
 	velocidad_desplazamiento: 0,
 	permitir_reflexion_agua: false
 }];
 
-// Estructura de los tilesets
+// Estructura de las propiedades de los tilesets
 propiedades_tilesets = [{
 	capa: noone,
 	permitir_reflexion_agua: false
 }];
+
+// Estructura de la aparicion en el Hub World
+datos_aparicion_hubworld = {
+	nivel_seleccionado: noone,
+	pos_x: 0,
+	pos_y: 0
+};
 
 // Metodos
 establecer_descripcion = function(nombre_nivel, objetivo_nivel) {
@@ -60,6 +65,44 @@ aumentar_puntaje_cool = function(valor) {
 	self.puntaje.cool += valor;
 }
 
+establecer_propiedades_fondo = function(estructura) {
+	self.propiedades_fondo = copiar_lista(estructura);
+}
+
+establecer_propiedades_tilesets = function(estructura) {
+	self.propiedades_tilesets = copiar_lista(estructura);
+}
+
+establecer_aparicion_hubworld = function(nombre_nivel, pos_x_aparicion, pos_y_aparicion) {
+	self.datos_aparicion_hubworld.nivel_seleccionado = nombre_nivel;
+	self.datos_aparicion_hubworld.pos_x = pos_x_aparicion;
+	self.datos_aparicion_hubworld.pos_y = pos_y_aparicion;
+}
+
+obtener_descripcion = function() {
+	return info.descripcion;
+}
+
+obtener_puntaje_final = function() {
+	return puntaje.final;
+}
+
+obtener_permiso_reaparicion = function() {
+	return checkpoint.permitir_reaparicion;
+}
+
+obtener_ubicacion_reaparicion = function() {
+	return checkpoint.ubicacion_reaparicion;
+}
+
+obtener_tiempo_checkpoint = function() {
+	return checkpoint.tiempo_registrado;
+}
+
+obtener_aparicion_hubworld = function() {
+	return datos_aparicion_hubworld;
+}
+
 calcular_puntaje_final = function(metodo, valor_incremento = 100) {
 	if (metodo == "automatico") {
 		self.puntaje.final += puntaje.tiempo + puntaje.rings + puntaje.cool;
@@ -82,36 +125,8 @@ calcular_puntaje_final = function(metodo, valor_incremento = 100) {
 	}
 }
 
-establecer_propiedades_fondo = function(estructura) {
-	self.propiedades_fondo = estructura;
-}
-
-establecer_propiedades_tilesets = function(estructura) {
-	self.propiedades_tilesets = estructura;
-}
-
 comprobar_puntaje_vacio = function() {
 	return ((puntaje.tiempo == 0) and (puntaje.rings == 0) and (puntaje.cool == 0));
-}
-
-obtener_descripcion = function() {
-	return info.descripcion;
-}
-
-obtener_permiso_reaparicion = function() {
-	return checkpoint.permitir_reaparicion;
-}
-
-obtener_ubicacion_reaparicion = function() {
-	return checkpoint.ubicacion_reaparicion;
-} 
-
-obtener_tiempo_checkpoint = function() {
-	return checkpoint.tiempo_registrado;
-}
-
-obtener_puntaje_final = function() {
-	return puntaje.final;
 }
 
 eliminar_punto_control = function() {
@@ -128,15 +143,40 @@ eliminar_puntaje = function() {
 	self.puntaje.final = 0;
 }
 
+eliminar_propiedades_fondo = function() {
+	self.propiedades_fondo = [{
+		capa: noone,
+		velocidad_desplazamiento: 0,
+		permitir_reflexion_agua: false
+	}];
+}
+
+eliminar_propiedades_tilesets = function() {
+	self.propiedades_tilesets = [{
+		capa: noone,
+		permitir_reflexion_agua: false
+	}];
+}
+
+eliminar_aparicion_hubworld = function() {
+	self.datos_aparicion_hubworld.nivel_seleccionado = noone;
+	self.datos_aparicion_hubworld.pos_x = 0;
+	self.datos_aparicion_hubworld.pos_y = 0;
+}
+
 depurar_entorno = function() {
 	self.eliminar_punto_control();
 	self.eliminar_puntaje();
+	self.eliminar_propiedades_fondo();
+	self.eliminar_propiedades_tilesets();
 	audio.detener_todo();
 }
 
 preparar_inicio = function() {
 	// Realizar limpieza de valores y elementos
-	self.depurar_entorno();
+	self.eliminar_punto_control();
+	self.eliminar_puntaje();
+	audio.detener_todo();
 	
 	// Reproducir cancion del nivel
 	audio.reproducir_cancion_bucle(

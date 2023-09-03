@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Menu de pausa",
-    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Diapositivas/Menu de pausa.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Interfaz/Diapositivas/Menu de pausa.yy",
   },
   "parentObjectId": null,
   "persistent": true,

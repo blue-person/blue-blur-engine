@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Pantalla de titulo",
-    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Diapositivas/Pantalla de titulo.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Interfaz/Diapositivas/Pantalla de titulo.yy",
   },
   "parentObjectId": {
     "name": "obj_texto_simple",

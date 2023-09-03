@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Entre niveles",
-    "path": "folders/Objetos/Funcionalidades/Gestores/GUI/Efectos/Transiciones/Entre niveles.yy",
+    "path": "folders/Objetos/Funcionalidades/Gestores/Interfaz/Efectos/Transiciones/Entre niveles.yy",
   },
   "parentObjectId": {
     "name": "obj_transicion_niveles",
