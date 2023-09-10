@@ -10,7 +10,7 @@
 #macro PROFUNDIDAD_TRANSICIONES -255
 
 // Prioridades de sonidos
-#macro PRIORIDAD_CANCIONES OFFSCREEN
+#macro PRIORIDAD_CANCIONES 0
 #macro PRIORIDAD_SONIDOS 1
 
 // Colores
