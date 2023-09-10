@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Bungee",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Bungee.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Bungee.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

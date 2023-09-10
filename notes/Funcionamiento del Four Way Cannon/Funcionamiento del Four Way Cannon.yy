@@ -4,6 +4,6 @@
   "name": "Funcionamiento del Four Way Cannon",
   "parent": {
     "name": "Four Way Cannon",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Four Way Cannon.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Four Way Cannon.yy",
   },
 }

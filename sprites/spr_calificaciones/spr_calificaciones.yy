@@ -30,7 +30,7 @@
   "origin": 4,
   "parent": {
     "name": "Pantalla de resultados",
-    "path": "folders/Sprites/GUI/Diapositivas/Pantalla de resultados.yy",
+    "path": "folders/Sprites/Interfaz/Diapositivas/Pantalla de resultados.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

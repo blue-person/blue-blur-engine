@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cinta de Moebius",
-    "path": "folders/Objetos/Elementos/Obstaculos especificos/Groovy Badlands/Rieles/Cinta de Moebius.yy",
+    "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Cinta de Moebius.yy",
   },
   "parentObjectId": null,
   "persistent": false,

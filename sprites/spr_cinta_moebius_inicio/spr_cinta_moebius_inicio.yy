@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Cinta de Moebius",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Cinta de Moebius.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Cinta de Moebius.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

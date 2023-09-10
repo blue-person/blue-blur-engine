@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bungee",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Bungee.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Bungee.yy",
   },
   "parentObjectId": null,
   "persistent": false,

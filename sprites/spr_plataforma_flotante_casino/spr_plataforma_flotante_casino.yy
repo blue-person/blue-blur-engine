@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Plataformas",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Luminous Bingo/Plataformas.yy",
+    "name": "Plataformas flotantes",
+    "path": "folders/Sprites/Elementos/Obstaculos/Plataformas flotantes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

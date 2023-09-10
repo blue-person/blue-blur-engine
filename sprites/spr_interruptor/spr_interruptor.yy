@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Interruptor",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Interruptor.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Interruptor.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

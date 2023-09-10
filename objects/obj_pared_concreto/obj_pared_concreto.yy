@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Quebrantables",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Quebrantables.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Quebrantables.yy",
   },
   "parentObjectId": {
     "name": "obj_superficie",

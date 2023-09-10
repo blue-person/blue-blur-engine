@@ -26,7 +26,7 @@
   "origin": 1,
   "parent": {
     "name": "Cinta de Moebius",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Groovy Badlands/Rieles/Cinta de Moebius.yy",
+    "path": "folders/Sprites/Texturas/Superficies/Rieles/Normal/Cinta de Moebius.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

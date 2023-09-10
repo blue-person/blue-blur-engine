@@ -1,13 +1,12 @@
-// Importar todos los eventos de Platform Water Reflection 
+// Heredar datos del objeto padre
 event_inherited();
 
-// Hacer que la profundidad de la capa sea -100,
-// esto permite que todos los objetos queden "dentro" del agua
-depth = -100;
+// Ajustar la profundidad
+depth = PROFUNDIDAD_AGUA;
 
 // Determina que fondos se veran reflejados
 back_layers = [];
-var propiedades_fondo = copiar_lista(nivel.propiedades_fondo);
+var propiedades_fondo = nivel.obtener_propiedades_fondo();
 if (array_length(propiedades_fondo) > 0) {
 	for (var i = 0; i < array_length(propiedades_fondo); i++) {
 		if (propiedades_fondo[i].permitir_reflexion_agua) {
@@ -18,7 +17,7 @@ if (array_length(propiedades_fondo) > 0) {
 
 // Determina que tilesets se veran reflejados
 tile_layers = [];
-var propiedades_tilesets = copiar_lista(nivel.propiedades_tilesets);
+var propiedades_tilesets = nivel.obtener_propiedades_tilesets();
 var longitud_lista = array_length(propiedades_tilesets);
 if (longitud_lista > 0) {
 	for (var i = 0; i < longitud_lista; i++) {
@@ -29,7 +28,6 @@ if (longitud_lista > 0) {
 }
 
 // Crear superficie y que tenga el mismo largo pero un menor ancho que este objeto
-superficie_agua = instance_create_depth(x, y, depth, obj_superficie_agua);
-superficie_agua.visible = false;
+superficie_agua = instance_create_depth(x, y, PROFUNDIDAD_AGUA, obj_superficie_agua);
 superficie_agua.image_xscale = sprite_width / superficie_agua.sprite_width;
 superficie_agua.image_yscale = sprite_height / (superficie_agua.sprite_height * 16);

@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Trampolines",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Trampolines.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Trampolines.yy",
   },
   "parentObjectId": {
     "name": "obj_trampolin",

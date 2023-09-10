@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cinta de Moebius",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Cinta de Moebius.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Cinta de Moebius.yy",
   },
   "parentObjectId": null,
   "persistent": false,

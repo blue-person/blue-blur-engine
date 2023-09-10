@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Carteles",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Carteles.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Carteles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

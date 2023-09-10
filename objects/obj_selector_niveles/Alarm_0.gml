@@ -1,1 +1,0 @@
-obj_jugador.permitir_movimiento = true;

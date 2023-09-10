@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Mascara",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Groovy Badlands/Rieles/Mascara.yy",
+    "path": "folders/Sprites/Texturas/Superficies/Rieles/Normal/Mascara.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

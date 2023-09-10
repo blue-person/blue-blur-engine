@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Trampas",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Trampas.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Trampas.yy",
   },
   "parentObjectId": null,
   "persistent": false,

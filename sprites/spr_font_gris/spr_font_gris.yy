@@ -63,7 +63,7 @@
   "origin": 0,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Sprites/GUI/Fonts.yy",
+    "path": "folders/Sprites/Interfaz/Fonts.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

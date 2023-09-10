@@ -30,7 +30,7 @@
   "origin": 4,
   "parent": {
     "name": "Dashpad",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Dashpad.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Dashpad.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Rojo",
-    "path": "folders/Objetos/Elementos/Obstaculos especificos/Groovy Badlands/Rieles/Rojo.yy",
+    "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Rojo.yy",
   },
   "parentObjectId": {
     "name": "obj_riel_rojo",

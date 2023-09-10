@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Trampas",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Trampas.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Trampas.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -873,19 +873,19 @@ function movimiento_jugador() {
 
         switch (jump_panel) {
             case 1:
-                jump_panel_requerido = instance_nearest(x, y, obj_jumppanel_1);
+                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_1);
                 break;
             case 2:
-                jump_panel_requerido = instance_nearest(x, y, obj_jumppanel_2);
+                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_2);
                 break;
             case 3:
-                jump_panel_requerido = instance_nearest(x, y, obj_jumppanel_3);
+                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_3);
                 break;
             case 4:
-                jump_panel_requerido = instance_nearest(x, y, obj_jumppanel_4);
+                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_4);
                 break;
             case 5:
-                jump_panel_requerido = instance_nearest(x, y, obj_jumppanel_final);
+                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_final);
                 break;
         }
 
@@ -896,7 +896,7 @@ function movimiento_jugador() {
             direccion_horizontal = 1;
         }
 
-        if (tocando_suelo or place_meeting(x, y, obj_jumppanel_final)) {
+        if (tocando_suelo or place_meeting(x, y, obj_jump_panel_final)) {
             accion = 0;
             velocidad_horizontal = direccion_horizontal * 5;
             jump_panel = 1;
@@ -911,7 +911,7 @@ function movimiento_jugador() {
         velocidad_horizontal = 0;
         velocidad_vertical = 0;
 
-        var jump_panel_cercano = instance_nearest(x, y, obj_jumppanel);
+        var jump_panel_cercano = instance_nearest(x, y, obj_jump_panel);
         x = jump_panel_cercano.x - dsin(jump_panel_cercano.image_angle) * 4;
         y = jump_panel_cercano.y - dcos(jump_panel_cercano.image_angle) * 4;
     }
@@ -1125,9 +1125,9 @@ function movimiento_jugador() {
     }
 	
 	// Fisicas dentro del agua
-	if (instance_exists(obj_profundidad_agua)) {
+	if (instance_exists(obj_water)) {
 		var superficie_agua = instance_nearest(x, y, obj_superficie_agua);
-		var colisionando_con_agua = collision_point(x, y, obj_profundidad_agua, true, true);
+		var colisionando_con_agua = collision_point(x, y, obj_water, true, true);
 		var altura_salpicadura = superficie_agua.y - 16;
 		
 		if (not sumergido_agua and colisionando_con_agua) {

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Rojo",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Groovy Badlands/Rieles/Rojo.yy",
+    "path": "folders/Sprites/Texturas/Superficies/Rieles/Normal/Rojo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

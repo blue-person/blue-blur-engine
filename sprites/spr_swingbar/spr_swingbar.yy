@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Swingbar",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Swingbar.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Swingbar.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

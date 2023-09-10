@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Swingbar",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Swingbar.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Swingbar.yy",
   },
   "parentObjectId": {
     "name": "obj_apuntable",

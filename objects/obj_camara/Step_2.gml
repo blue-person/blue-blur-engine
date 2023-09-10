@@ -7,6 +7,7 @@ if (instance_exists(obj_jugador)) {
 				// Eliminar efecto de camara extendida si hay un QTE en proceso
 				modo_seguimiento = "inmediato";
 		        desplazamiento_x = 0;
+		        desplazamiento_y = 0;
 			} else {
 		        // Establecer modo de seguimiento
 				modo_seguimiento = "suave";

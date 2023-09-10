@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Materiales",
-    "path": "folders/Objetos/Funcionalidades/Gestores/Objetos padres/Muros/Materiales.yy",
+    "path": "folders/Objetos/Funcionalidades/Objetos padres/Muros/Materiales.yy",
   },
   "parentObjectId": {
     "name": "obj_superficie",

@@ -11,57 +11,57 @@ function configuracion_emerald_valley(){
 	// Establecer la estructura del fondo
 	var propiedades_fondo = [
 	  {
-	    capa: layer_get_id("fondo_cielo"),
+	    capa: layer_get_id("cielo"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_oceano_a"),
+	    capa: layer_get_id("oceano_a"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_oceano_b"),
+	    capa: layer_get_id("oceano_b"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_oceano_c"),
+	    capa: layer_get_id("oceano_c"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_oceano_d"),
+	    capa: layer_get_id("oceano_d"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_nubes_a"),
+	    capa: layer_get_id("nubes_a"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_nubes_b"),
+	    capa: layer_get_id("nubes_b"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_nubes_c"),
+	    capa: layer_get_id("nubes_c"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_nubes_d"),
+	    capa: layer_get_id("nubes_d"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_montes"),
+	    capa: layer_get_id("montes"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_piedras"),
+	    capa: layer_get_id("piedras"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
@@ -71,7 +71,7 @@ function configuracion_emerald_valley(){
 	// Establecer la estructura de los tilesets
 	var propiedades_tilesets = [
 	  {
-	    capa: layer_get_id("nivel_tilesets_a"),
+	    capa: layer_get_id("tilesets_a"),
 	    permitir_reflexion_agua: true,
 	  },
 	];

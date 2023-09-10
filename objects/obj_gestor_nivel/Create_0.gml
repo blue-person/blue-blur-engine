@@ -29,9 +29,9 @@ propiedades_tilesets = [{
 
 // Estructura de la aparicion en el Hub World
 datos_aparicion_hubworld = {
-	nivel_seleccionado: noone,
 	pos_x: 0,
-	pos_y: 0
+	pos_y: 0,
+	nivel_seleccionado: noone
 };
 
 // Metodos
@@ -73,10 +73,10 @@ establecer_propiedades_tilesets = function(estructura) {
 	self.propiedades_tilesets = copiar_lista(estructura);
 }
 
-establecer_aparicion_hubworld = function(nombre_nivel, pos_x_aparicion, pos_y_aparicion) {
-	self.datos_aparicion_hubworld.nivel_seleccionado = nombre_nivel;
+establecer_aparicion_hubworld = function(pos_x_aparicion, pos_y_aparicion, nombre_nivel) {
 	self.datos_aparicion_hubworld.pos_x = pos_x_aparicion;
 	self.datos_aparicion_hubworld.pos_y = pos_y_aparicion;
+	self.datos_aparicion_hubworld.nivel_seleccionado = nombre_nivel;
 }
 
 obtener_descripcion = function() {
@@ -101,6 +101,14 @@ obtener_tiempo_checkpoint = function() {
 
 obtener_aparicion_hubworld = function() {
 	return datos_aparicion_hubworld;
+}
+
+obtener_propiedades_fondo = function() {
+	return copiar_lista(propiedades_fondo);
+}
+
+obtener_propiedades_tilesets = function() {
+	return copiar_lista(propiedades_tilesets);
 }
 
 calcular_puntaje_final = function(metodo, valor_incremento = 100) {

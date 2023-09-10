@@ -29,7 +29,7 @@
   "origin": 1,
   "parent": {
     "name": "Trampolines",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Trampolines.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Trampolines.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

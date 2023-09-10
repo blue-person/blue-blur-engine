@@ -58,7 +58,7 @@ function dibujar_sprites_principal() {
 
 	// Si se encuentra en un jump panel, el angulo sera el del jump panel
 	if (accion == 25) {
-	    angulo_imagen = instance_nearest(x, y, obj_jumppanel).image_angle;
+	    angulo_imagen = instance_nearest(x, y, obj_jump_panel).image_angle;
 	}
     
 	// Dar invencibilidad al ser herido

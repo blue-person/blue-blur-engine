@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Sonic",
-    "path": "folders/Sprites/GUI/HUD/Sonic.yy",
+    "path": "folders/Sprites/Interfaz/HUD/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

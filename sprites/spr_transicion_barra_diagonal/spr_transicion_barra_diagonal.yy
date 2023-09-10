@@ -27,7 +27,7 @@
   "origin": 9,
   "parent": {
     "name": "Transiciones",
-    "path": "folders/Sprites/GUI/Diapositivas/Presentacion del nivel/Transiciones.yy",
+    "path": "folders/Sprites/Interfaz/Diapositivas/Presentacion del nivel/Transiciones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

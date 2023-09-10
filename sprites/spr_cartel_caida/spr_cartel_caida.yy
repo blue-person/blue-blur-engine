@@ -30,7 +30,7 @@
   "origin": 4,
   "parent": {
     "name": "Carteles",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Carteles.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Carteles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

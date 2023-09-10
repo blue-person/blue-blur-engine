@@ -34,7 +34,7 @@
   "origin": 4,
   "parent": {
     "name": "Monedas",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Luminous Bingo/Monedas.yy",
+    "path": "folders/Sprites/Elementos/Items/Monedas.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

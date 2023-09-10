@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "General",
-    "path": "folders/Sprites/GUI/HUD/General.yy",
+    "path": "folders/Sprites/Interfaz/HUD/General.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

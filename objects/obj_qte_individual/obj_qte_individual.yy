@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "QTE individual",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Quick Time Events/QTE individual.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Quick Time Events/QTE individual.yy",
   },
   "parentObjectId": null,
   "persistent": false,

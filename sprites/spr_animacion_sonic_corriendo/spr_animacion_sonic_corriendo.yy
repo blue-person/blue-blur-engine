@@ -33,7 +33,7 @@
   "origin": 9,
   "parent": {
     "name": "Sonic",
-    "path": "folders/Sprites/GUI/Diapositivas/Presentacion del nivel/Sonic.yy",
+    "path": "folders/Sprites/Interfaz/Diapositivas/Presentacion del nivel/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

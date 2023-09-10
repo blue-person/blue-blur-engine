@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "Ventiladores",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Ventiladores.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Ventiladores.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

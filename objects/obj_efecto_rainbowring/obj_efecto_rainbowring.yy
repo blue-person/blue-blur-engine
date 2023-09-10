@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Rainbow",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Dash Rings/Rainbow.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Rings/Rainbow.yy",
   },
   "parentObjectId": null,
   "persistent": false,

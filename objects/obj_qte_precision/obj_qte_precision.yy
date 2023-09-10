@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "QTE de precision",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Quick Time Events/QTE de precision.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Quick Time Events/QTE de precision.yy",
   },
   "parentObjectId": {
     "name": "obj_qte_individual",

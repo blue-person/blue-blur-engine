@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Polea",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Polea.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Polea.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

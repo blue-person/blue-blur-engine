@@ -6,5 +6,5 @@ audio.detener_todo();
 
 // Activar los efectos de sonido y la transicion de pantalla
 audio.reproducir_audio(snd_finalizar_nivel);
-iniciar_transicion_simple("blanco", 0.05);
+transicion.iniciar_efecto_basico("blanco", 0.05);
 instance_create_depth(0, 0, -100, obj_pantalla_nivel_completado);

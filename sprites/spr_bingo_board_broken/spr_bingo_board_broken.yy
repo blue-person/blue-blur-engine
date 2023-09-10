@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Decoracion",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Luminous Bingo/Decoracion.yy",
+    "path": "folders/Sprites/Elementos/Decoracion.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

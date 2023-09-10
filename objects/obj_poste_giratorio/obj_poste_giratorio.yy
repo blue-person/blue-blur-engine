@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Postes",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Postes.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Postes.yy",
   },
   "parentObjectId": null,
   "persistent": false,

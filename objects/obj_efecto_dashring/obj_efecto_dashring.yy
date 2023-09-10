@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Normal",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Dash Rings/Normal.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Rings/Normal.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Shadow",
-    "path": "folders/Sprites/GUI/HUD/Shadow.yy",
+    "path": "folders/Sprites/Interfaz/HUD/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

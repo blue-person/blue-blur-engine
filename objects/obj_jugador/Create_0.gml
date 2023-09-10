@@ -71,7 +71,7 @@ image_speed = 0;
 
 fotograma = 0;
 indice_sprite = 0;
-dibujar_y_post = 0;
+pos_y_efectos = 0;
 sprite_actual = spr_sonic_normal;
 ultima_accion_realizada = 0;
 

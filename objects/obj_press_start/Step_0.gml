@@ -20,6 +20,6 @@ if (control.boton_presionado("boton_entrada")) {
 	
 		audio.detener_todo();
 		audio.reproducir_audio(snd_confirmar_opcion);
-		iniciar_transicion_niveles(rm_hub_world, "negro", 0.01);
+		transicion.iniciar_efecto_intraniveles("morado", 0.01, rm_hub_world);
 	}
 }

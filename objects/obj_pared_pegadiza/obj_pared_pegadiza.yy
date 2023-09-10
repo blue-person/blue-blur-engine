@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Paredes pegadizas",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Paredes pegadizas.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Paredes pegadizas.yy",
   },
   "parentObjectId": null,
   "persistent": false,

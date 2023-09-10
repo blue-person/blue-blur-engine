@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Polea",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Polea.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Polea.yy",
   },
   "parentObjectId": {
     "name": "obj_apuntable",

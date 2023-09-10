@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Acrobacias aereas",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Acrobacias aereas.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Acrobacias aereas.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

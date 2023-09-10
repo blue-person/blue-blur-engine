@@ -54,7 +54,7 @@
   "origin": 9,
   "parent": {
     "name": "Shadow",
-    "path": "folders/Sprites/GUI/Diapositivas/Presentacion del nivel/Shadow.yy",
+    "path": "folders/Sprites/Interfaz/Diapositivas/Presentacion del nivel/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

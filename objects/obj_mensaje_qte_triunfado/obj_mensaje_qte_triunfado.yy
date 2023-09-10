@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Terminar QTE",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Quick Time Events/Terminar QTE.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Quick Time Events/Terminar QTE.yy",
   },
   "parentObjectId": null,
   "persistent": false,

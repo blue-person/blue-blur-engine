@@ -47,27 +47,14 @@ if (alarma_3 > 0) {
     alarma_3--;
 	
     if (alarma_3 == 1) {
+        room_persistent = false;
 		if (global.vidas_restantes > 0) {
 			global.vidas_restantes--;
-			iniciar_transicion_niveles(room, "negro", 0.025);
+			transicion.iniciar_efecto_intraniveles("morado", 0.025, room);
 		} else {
 			global.vidas_restantes = 3;
-			iniciar_transicion_niveles(rm_hub_world, "negro", 0.0095);
+			transicion.iniciar_efecto_intraniveles("morado", 0.0095, rm_hub_world);
 		}
-    }
-}
-
-if (alarma_4 > 0) {
-	alarma_4--;
-	
-    if (!instance_exists(obj_invertir_colores)) {
-		instance_create_depth(0, 0, -16000, obj_invertir_colores);
-	}
-	
-    if (alarma_4 == 1) {
-        instance_destroy(obj_invertir_colores);
-        room_speed = 60;
-        alarma_4--;
     }
 }
 

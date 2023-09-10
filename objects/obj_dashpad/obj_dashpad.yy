@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dashpad",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Dashpad.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dashpad.yy",
   },
   "parentObjectId": null,
   "persistent": false,

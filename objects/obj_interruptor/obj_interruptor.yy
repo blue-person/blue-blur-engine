@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Interruptor",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Interruptor.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Interruptor.yy",
   },
   "parentObjectId": null,
   "persistent": false,

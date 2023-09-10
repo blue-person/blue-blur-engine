@@ -11,22 +11,22 @@ function configuracion_mining_mayhem() {
 	// Establecer la estructura del fondo
 	var propiedades_fondo = [
 	  {
-	    capa: layer_get_id("fondo_nubes"),
+	    capa: layer_get_id("nubes"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_arboles"),
+	    capa: layer_get_id("arboles"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_montes"),
+	    capa: layer_get_id("montes"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("fondo_escenario"),
+	    capa: layer_get_id("escenario"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
@@ -36,27 +36,27 @@ function configuracion_mining_mayhem() {
 	// Establecer la estructura de los tilesets
 	var propiedades_tilesets = [
 	  {
-	    capa: layer_get_id("nivel_tilesets_a"),
+	    capa: layer_get_id("tilesets_a"),
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_b"),
+	    capa: layer_get_id("tilesets_b"),
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_c"),
+	    capa: layer_get_id("tilesets_c"),
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_d"),
+	    capa: layer_get_id("tilesets_d"),
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_e"),
+	    capa: layer_get_id("tilesets_e"),
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_f"),
+	    capa: layer_get_id("tilesets_f"),
 	    permitir_reflexion_agua: true,
 	  },
 	];

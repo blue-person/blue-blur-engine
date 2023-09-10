@@ -11,57 +11,57 @@ function configuracion_groovy_badlands() {
 	// Establecer la estructura del fondo
 	var propiedades_fondo = [
 	  {
-	    capa: layer_get_id("Monte_A"),
+	    capa: layer_get_id("monte_a"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Monte_B"),
+	    capa: layer_get_id("monte_b"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Nubes_A"),
+	    capa: layer_get_id("nubes_a"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Monte_C"),
+	    capa: layer_get_id("monte_c"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Nubes_B"),
+	    capa: layer_get_id("nubes_b"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Nubes_C"),
+	    capa: layer_get_id("nubes_c"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Nubes_D"),
+	    capa: layer_get_id("nubes_d"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Nubes_E"),
+	    capa: layer_get_id("nubes_e"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("Nubes_F"),
+	    capa: layer_get_id("nubes_f"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
-	  },
+	    permitir_reflexion_agua: false,
+	  }
 	];
 	nivel.establecer_propiedades_fondo(propiedades_fondo);
 
 	// Establecer la estructura de los tilesets
 	var propiedades_tilesets = [
 	  {
-	    capa: layer_get_id("nivel_tilesets_a"),
+	    capa: layer_get_id("tilesets_a"),
 	    permitir_reflexion_agua: true,
 	  },
 	];

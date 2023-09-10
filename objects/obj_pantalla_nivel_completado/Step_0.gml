@@ -84,7 +84,7 @@ switch (fase_animacion) {
 			
 			audio.detener_canciones();
 	        audio.reproducir_audio(snd_confirmar_opcion);
-			iniciar_transicion_niveles(rm_hub_world, "negro", 0.015);
+			transicion.iniciar_efecto_intraniveles("morado", 0.015, rm_hub_world);
 	    }
         break;
 }

@@ -11,7 +11,7 @@ function configuracion_practice_zone() {
 	// Establecer la estructura del fondo
 	var propiedades_fondo = [
 	  {
-	    capa: layer_get_id("fondo_cuadros"),
+	    capa: layer_get_id("cuadros"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: true,
 	  },
@@ -21,15 +21,15 @@ function configuracion_practice_zone() {
 	// Establecer la estructura de los tilesets
 	var propiedades_tilesets = [
 	  {
-	    capa: layer_get_id("nivel_tilesets_a"),
+	    capa: layer_get_id("tilesets_a"),
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_b"),
+	    capa: layer_get_id("tilesets_b"),
 	    permitir_reflexion_agua: true,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_c"),
+	    capa: layer_get_id("tilesets_c"),
 	    permitir_reflexion_agua: true,
 	  },
 	];

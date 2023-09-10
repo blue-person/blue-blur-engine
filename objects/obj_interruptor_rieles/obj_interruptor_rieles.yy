@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Interruptor",
-    "path": "folders/Objetos/Elementos/Obstaculos especificos/Groovy Badlands/Interruptor.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Interruptor.yy",
   },
   "parentObjectId": null,
   "persistent": false,

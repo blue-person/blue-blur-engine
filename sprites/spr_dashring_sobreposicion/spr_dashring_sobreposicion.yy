@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Normal",
-    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Dash Rings/Normal.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Dash Rings/Normal.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

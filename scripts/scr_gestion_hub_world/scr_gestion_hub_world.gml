@@ -5,7 +5,7 @@ function configuracion_hub_world() {
 	// Establecer la estructura del fondo
 	var propiedades_fondo = [
 	  {
-	    capa: layer_get_id("fondo_cuadros"),
+	    capa: layer_get_id("cuadros"),
 	    velocidad_desplazamiento: 0,
 	    permitir_reflexion_agua: false,
 	  },
@@ -15,15 +15,15 @@ function configuracion_hub_world() {
 	// Establecer la estructura de los tilesets
 	var propiedades_tilesets = [
 	  {
-	    capa: layer_get_id("nivel_tilesets_a"),
+	    capa: layer_get_id("tilesets_a"),
 	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_b"),
+	    capa: layer_get_id("tilesets_b"),
 	    permitir_reflexion_agua: false,
 	  },
 	  {
-	    capa: layer_get_id("nivel_tilesets_c"),
+	    capa: layer_get_id("tilesets_c"),
 	    permitir_reflexion_agua: false,
 	  },
 	];

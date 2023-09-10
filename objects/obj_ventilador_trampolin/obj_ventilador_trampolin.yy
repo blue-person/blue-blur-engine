@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Ventiladores",
-    "path": "folders/Objetos/Elementos/Obstaculos  normales/Ventiladores.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Ventiladores.yy",
   },
   "parentObjectId": null,
   "persistent": false,

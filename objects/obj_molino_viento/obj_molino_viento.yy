@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Decoracion",
-    "path": "folders/Objetos/Elementos/Obstaculos especificos/Groovy Badlands/Decoracion.yy",
+    "path": "folders/Objetos/Elementos/Decoracion.yy",
   },
   "parentObjectId": null,
   "persistent": false,

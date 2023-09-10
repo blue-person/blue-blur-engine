@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Capas",
-    "path": "folders/Objetos/Funcionalidades/Gestores/Objetos padres/Rieles/Capas.yy",
+    "path": "folders/Objetos/Funcionalidades/Objetos padres/Rieles/Capas.yy",
   },
   "parentObjectId": null,
   "persistent": false,
