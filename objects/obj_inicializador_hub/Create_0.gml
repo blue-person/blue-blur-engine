@@ -23,8 +23,5 @@ instance_create_depth(0, 0, -100, obj_hud_hubworld);
 // Crear controlador para cambiar de personaje
 crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_cambiar_personaje);
 
-// Iniciar controladores esenciales
-crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_determinar_texto_vidas);
-
 // Configurar los datos del Hub World
 configuracion_hub_world();

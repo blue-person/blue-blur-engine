@@ -1,6 +1,7 @@
 if (mostrar_en_pantalla) {
 	var icono_boton = control.obtener_icono_boton("boton_especial");
-	var cantidad_vidas = obj_determinar_texto_vidas.texto_vidas;
+	var cantidad_vidas = string(global.vidas_restantes);
+	if (global.vidas_restantes < 10) then cantidad_vidas = "0" + cantidad_vidas;
 	
 	// Vidas
 	draw_sprite(hud_vidas, 0, pos_x_vidas, pos_y_vidas);

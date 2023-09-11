@@ -1,8 +1,12 @@
 if (mostrar_en_pantalla) {
 	var cantidad_tiempo = obj_cronometro.obtener_tiempo("texto");
-	var cantidad_rings = obj_determinar_texto_rings.texto_rings;
-	var cantidad_vidas = obj_determinar_texto_vidas.texto_vidas;
+	var cantidad_rings = string(obj_jugador.rings);
+	var cantidad_vidas = string(global.vidas_restantes);
 	var cantidad_boost = obj_jugador.cantidad_boost;
+
+	if (obj_jugador.rings < 100) then cantidad_rings = "0" + cantidad_rings;
+	if (obj_jugador.rings < 10) then cantidad_rings = "0" + cantidad_rings;
+	if (global.vidas_restantes < 10) then cantidad_vidas = "0" + cantidad_vidas;
 	
 	// Tiempo
 	draw_sprite(spr_contador_tiempo, 0, pos_x_tiempo, pos_y_tiempo);

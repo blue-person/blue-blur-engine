@@ -14,8 +14,6 @@ if (room != rm_hub_world) {
 
 // Iniciar controladores esenciales
 crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_cronometro);
-crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_determinar_texto_rings);
-crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_determinar_texto_vidas);
 
 // Configurar el nivel actual
 switch (room) {
