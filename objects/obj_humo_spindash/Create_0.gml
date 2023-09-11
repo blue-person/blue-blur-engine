@@ -1,4 +1,4 @@
-depth = obj_jugador.depth + 1;
+depth = PROFUNDIDAD_JUGADOR + 1;
 
 x = obj_jugador.x;
 y = obj_jugador.y - obj_jugador.pos_y_efectos;

@@ -1,5 +1,5 @@
-if (instance_exists(obj_menu_pausa)) {
-	if (obj_menu_pausa.nivel_actual == -1) {
+if (instance_exists(obj_controlador_pausa)) {
+	if (obj_controlador_pausa.nivel_pausado == noone) {
 		// Rings
 	    texto_rings = string(obj_jugador.rings);
 		

@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Hub World",
-    "path": "folders/Objetos/Funcionalidades/Gestores/Interfaz/HUD/Hub World.yy",
+    "path": "folders/Objetos/Funcionalidades/Interfaz/HUD/Hub World.yy",
   },
   "parentObjectId": null,
   "persistent": false,

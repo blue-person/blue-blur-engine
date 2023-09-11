@@ -5,7 +5,7 @@ if ((obj_jugador.cantidad_boost <= 0) or (obj_jugador.zona_superada)) {
 
 // Declaracion de variables
 image_speed = 0.4;
-depth = obj_jugador.depth - 1;
+depth = PROFUNDIDAD_JUGADOR - 1;
 image_alpha = 0;
 image_angle = point_direction(obj_jugador.x_inicial, obj_jugador.y_inicial, x, y);
 

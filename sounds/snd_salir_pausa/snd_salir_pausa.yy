@@ -10,10 +10,10 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.493016,
+  "duration": 0.347625,
   "parent": {
-    "name": "Menu de pausa",
-    "path": "folders/Sonidos/Efectos de sonido/Diapositivas/Menu de pausa.yy",
+    "name": "Menus",
+    "path": "folders/Sonidos/Efectos de sonido/Menus.yy",
   },
   "preload": true,
   "sampleRate": 44100,

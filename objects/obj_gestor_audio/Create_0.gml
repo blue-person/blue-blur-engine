@@ -55,6 +55,11 @@ detener_todo = function() {
 	return audio_stop_all();
 }
 
+reanudar_todo = function() {
+	// Reanudar todos los sonidos que esten pausados
+	return audio_resume_all();
+}
+
 pausar_todo = function() {
 	// Pausar todos los sonidos
 	return audio_pause_all();

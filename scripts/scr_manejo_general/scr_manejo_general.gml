@@ -38,7 +38,7 @@ function herir_jugador() {
 	    obj_jugador.alarma_3 = 120;
 		
 	    if (instance_exists(obj_hud_normal)) then obj_hud_normal.mostrar_en_pantalla = false;
-	    if (instance_exists(obj_menu_pausa)) then instance_destroy(obj_menu_pausa);
+	    if (instance_exists(obj_controlador_pausa)) then instance_destroy(obj_controlador_pausa);
 		
 		reproducir_sonido_muerte();
 	}

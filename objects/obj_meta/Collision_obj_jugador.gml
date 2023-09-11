@@ -6,7 +6,7 @@ obj_camara.establecer_enfoque(self);
 // Efecto de sonido
 audio.reproducir_audio_aislado(snd_tocar_meta, true);
 
-if (instance_exists(obj_menu_pausa)) then instance_destroy(obj_menu_pausa);
+if (instance_exists(obj_controlador_pausa)) then instance_destroy(obj_controlador_pausa);
 
 if (not activar_evento) {
     audio.reproducir_audio(snd_animacion_meta);
