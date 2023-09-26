@@ -16,7 +16,7 @@ function manejo_movimiento_pisoton() {
                 break;
             case "Shadow":
                 accion = 18.5;
-                indice_sprite = 0;
+                image_index = 0;
                 break;
         }
         permitir_pisoton = false;
@@ -43,7 +43,7 @@ function realizar_pisoton_general() {
 			velocidad_vertical = 0;
 			audio.reproducir_audio(snd_rodar);
 		} else {
-			indice_sprite = 0;
+			image_index = 0;
 			accion = -1;
 			velocidad_horizontal = 0;
 			velocidad_vertical = 0;
@@ -55,7 +55,7 @@ function realizar_pisoton_diagonal() {
 	velocidad_vertical = 0;
 	velocidad_horizontal = 0;
 	
-	if (indice_sprite >= 6) {
+	if (image_index >= 6) {
 		audio.reproducir_audio(snd_ataque_shadow_b);
 		audio.reproducir_audio(snd_iniciar_pisoton);
 		velocidad_horizontal = direccion_horizontal * 5;

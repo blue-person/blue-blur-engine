@@ -1,5 +1,5 @@
 if (other.accion != 26) {
-    other.indice_sprite = 0;
+    other.image_index = 0;
     other.accion = 26;
     other.permitir_ser_apuntado = false;
     other.alarma_3 = 120;

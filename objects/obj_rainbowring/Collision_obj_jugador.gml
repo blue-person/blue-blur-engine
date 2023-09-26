@@ -10,25 +10,25 @@ if (activar_evento and (other.accion != 26)) {
 		switch (global.personaje_actual) {
 		    case "Sonic":
 		        if ((image_angle == 45) or (image_angle == 135)) {
-	                other.indice_sprite = 0;
-	                other.sprite_actual = spr_sonic_cinta_moebius;
+	                other.image_index = 0;
+	                other.sprite_index = spr_sonic_cinta_moebius;
 	            } else if (((image_angle > 0) and (image_angle < 45)) or ((image_angle < 180) and (image_angle > 135))) {
-	                other.sprite_actual = spr_sonic_impulsarse_pared;
+	                other.sprite_index = spr_sonic_impulsarse_pared;
 	            } else {
-	                other.sprite_actual = spr_sonic_saltando;
+	                other.sprite_index = spr_sonic_saltando;
 	            }
 		        break;
 			case "Shadow":
 	            if ((image_angle == 45) or (image_angle == 135)) {
-	                other.indice_sprite = 0;
-	                other.sprite_actual = spr_shadow_cinta_moebius;
+	                other.image_index = 0;
+	                other.sprite_index = spr_shadow_cinta_moebius;
 	            } else if (((image_angle > 0) and (image_angle < 45)) or ((image_angle < 180) and (image_angle > 135))) {
-	                other.sprite_actual = spr_shadow_impulsarse_pared;
+	                other.sprite_index = spr_shadow_impulsarse_pared;
 	            } else {
-	                other.sprite_actual = spr_shadow_saltando;
+	                other.sprite_index = spr_shadow_saltando;
 					
 	                if ((image_angle <= -45) and (image_angle >= -135)) {
-	                    other.indice_sprite = 10;
+	                    other.image_index = 10;
 					}
 	            }
 				break;
@@ -36,7 +36,7 @@ if (activar_evento and (other.accion != 26)) {
     }
 	
     other.tocando_suelo = false;
-    other.indice_sprite = 0;
+    other.image_index = 0;
     other.x = x;
     other.y = y;
     other.velocidad_horizontal = dcos(image_angle) * cantidad_fuerza;

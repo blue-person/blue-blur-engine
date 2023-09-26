@@ -20,15 +20,7 @@ instance_create_depth(obj_jugador.x, obj_jugador.y, -2, obj_explosion_boost);
 audio.reproducir_audio(snd_inicio_boost);
 audio.reproducir_audio(snd_bucle_boost);
 audio.reproducir_audio(snd_velocidad_sonica, PRIORIDAD_SONIDOS, true);
-
-switch (global.personaje_actual) {
-    case "Sonic":
-		audio.reproducir_audio_aleatorio([snd_boost_sonic_a, snd_boost_sonic_b, snd_boost_sonic_c], false);
-        break;
-	case "Shadow":
-		audio.reproducir_audio_aleatorio([snd_boost_shadow_a, snd_boost_shadow_b, snd_boost_shadow_c], false);
-        break;
-}
+audio.reproducir_audio_aleatorio(obj_jugador.audios_grito_boost, false);
 
 // Gestion de la vibracion
 efecto_haptico_colision();

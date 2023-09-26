@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Koura",
-    "path": "folders/Objetos/Entidades/Enemigos/Koura.yy",
+    "path": "folders/Objetos/Personajes/Enemigos/Koura.yy",
   },
   "parentObjectId": null,
   "persistent": false,

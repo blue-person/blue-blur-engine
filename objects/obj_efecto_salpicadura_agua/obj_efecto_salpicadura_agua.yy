@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Agua",
-    "path": "folders/Objetos/Efectos/Jugador/Agua.yy",
+    "path": "folders/Objetos/Personajes/Jugador/Efectos/Agua.yy",
   },
   "parentObjectId": {
     "name": "obj_efectos_especiales",

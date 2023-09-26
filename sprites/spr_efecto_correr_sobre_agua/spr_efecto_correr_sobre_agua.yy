@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Generales",
-    "path": "folders/Sprites/Efectos/Generales.yy",
+    "name": "Efectos generales",
+    "path": "folders/Sprites/Efectos generales.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

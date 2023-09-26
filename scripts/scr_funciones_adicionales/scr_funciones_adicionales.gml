@@ -17,3 +17,16 @@ function valor_en_lista(valor, lista) {
 	// En caso de no encontrar el valor, regresa falso
 	return false;
 }
+
+function valor_aleatorio(lista) {
+	// Obtener un nuevo valor para la aleatoriedad
+	randomize();
+	
+	// Escoger de forma aleatoria un elemento de la lista
+	var longitud_lista = array_length(lista);
+	var indice = irandom(longitud_lista - 1);
+	var valor_escogido = lista[indice];
+	
+	// Regresar un valor aleatorio
+	return valor_escogido
+}

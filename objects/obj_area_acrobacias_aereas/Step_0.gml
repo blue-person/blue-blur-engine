@@ -9,7 +9,7 @@ if (activar_efecto) {
 		if (jugador_saltando or jugador_intentando_saltar) {
 	        obj_jugador.accion = 15;
 	        obj_jugador.velocidad_vertical = -cantidad_fuerza;
-	        obj_jugador.indice_sprite = 0;
+	        obj_jugador.image_index = 0;
 		
 	        audio.reproducir_audio(snd_acrobacia_aerea);
 	        audio.reproducir_audio(snd_rainbowring);

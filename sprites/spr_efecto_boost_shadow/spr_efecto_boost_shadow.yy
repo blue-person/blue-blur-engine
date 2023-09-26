@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Shadow",
-    "path": "folders/Sprites/Efectos/Jugador/Boost/Shadow.yy",
+    "name": "Boost",
+    "path": "folders/Sprites/Personajes/Jugador/Shadow/Efectos/Boost.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

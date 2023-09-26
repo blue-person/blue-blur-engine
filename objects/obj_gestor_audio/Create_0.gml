@@ -26,13 +26,8 @@ reproducir_audio_aislado = function(nombre_audio, permitir_completar_audio, prio
 }
 
 reproducir_audio_aleatorio = function(lista_audios, permitir_completar_audio = noone, prioridad_reproduccion = PRIORIDAD_SONIDOS, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
-	// Obtener un nuevo valor para la aleatoriedad
-	randomize();
-	
 	// Escoger de forma aleatoria un audio
-	var longitud_lista = array_length(lista_audios);
-	var indice = irandom(longitud_lista - 1);
-	var audio_seleccionado = lista_audios[indice];
+	var audio_seleccionado = valor_aleatorio(lista_audios);
 	
 	// Reproducir el audio
 	if (permitir_completar_audio == noone) {

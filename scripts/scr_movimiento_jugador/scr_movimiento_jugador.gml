@@ -28,7 +28,7 @@ function movimiento_jugador() {
                 audio.reproducir_audio(snd_frenar);
             }
             accion = -4;
-            indice_sprite = 0;
+            image_index = 0;
         }
     }
 
@@ -293,7 +293,7 @@ function movimiento_jugador() {
     }
 
     // Aterrizar en el suelo
-    if (permitir_movimiento and ((accion != 0) or ((accion == 0) and (velocidad_vertical > 0) and ((sprite_actual == spr_sonic_cayendo) or (sprite_actual == spr_shadow_saltando)))) and (accion > -1) and (accion != 2) and (accion != 16) and (accion != 17) and (accion != 8) and (accion != 9) and (accion != 22) and (accion != 26) and (accion != 34) and (accion != 35) and tocando_suelo and colision_lineal_simple(obj_superficie)) {
+    if (permitir_movimiento and ((accion != 0) or ((accion == 0) and (velocidad_vertical > 0) and ((sprite_index == spr_sonic_cayendo) or (sprite_index == spr_shadow_saltando)))) and (accion > -1) and (accion != 2) and (accion != 16) and (accion != 17) and (accion != 8) and (accion != 9) and (accion != 22) and (accion != 26) and (accion != 34) and (accion != 35) and tocando_suelo and colision_lineal_simple(obj_superficie)) {
         var sonido_aterrizar = snd_aterrizar;
 		
 		if (colision_lineal_simple(obj_superficie_agua)) {
@@ -322,7 +322,7 @@ function movimiento_jugador() {
         if (abs(velocidad_horizontal) < 1.03125) {
             velocidad_horizontal = 0;
             accion = -1;
-            indice_sprite = 0;
+            image_index = 0;
         }
 
         if (abs(velocidad_horizontal) >= 1.03125) {
@@ -332,7 +332,7 @@ function movimiento_jugador() {
     }
 	
     // Dejar de agacharse
-    if ((accion == -1) and !control.boton_mantenido("boton_abajo") and (indice_sprite >= 5)) {
+    if ((accion == -1) and !control.boton_mantenido("boton_abajo") and (image_index >= 5)) {
         accion = 0;
     }
 
@@ -351,14 +351,15 @@ function movimiento_jugador() {
         if (abs(velocidad_horizontal) < 0.2) {
             velocidad_horizontal = 0;
             accion = -3;
-            indice_sprite = 0;
+            image_index = 0;
         }
     }
-
-    if ((!control.boton_mantenido("boton_arriba") or !tocando_suelo or control.boton_mantenido("boton_derecha") or control.boton_mantenido("boton_izquierda")) and ((accion == -3) and (indice_sprite >= 5))) {
+	
+	// Dejar de mirar arriba
+    if ((accion == -3) and !control.boton_mantenido("boton_arriba") and (image_index >= 5)) {
         accion = 0;
     }
-
+	
     // Spindash
     if (velocidad_spindash > 0) {
         velocidad_spindash = velocidad_spindash - ((velocidad_spindash div 1) / 265);
@@ -383,7 +384,7 @@ function movimiento_jugador() {
     if ((accion == -1) and control.boton_presionado("boton_salto")) {
         velocidad_spindash = 0;
         accion = -2;
-        indice_sprite = 0;
+        image_index = 0;
         instance_create_depth(x, y, 0, obj_humo_spindash);
         audio.reproducir_audio(snd_cargar_spindash);
     }
@@ -424,21 +425,14 @@ function movimiento_jugador() {
     } else {
         if (control.boton_presionado("boton_salto") and !tocando_suelo and ((accion == 1) or (accion == 0)) and !permitir_homing_attack and permitir_air_dash) {
             if (accion != 4.5) {
-                switch (global.personaje_actual) {
-                    case "Sonic":
-                        audio.reproducir_audio(snd_homing_attack);
-                        break;
-                    case "Shadow":
-                        audio.reproducir_audio(snd_teletransportacion);
-                        break;
-                }
+                audio.reproducir_audio(audio_homing_dash);
             }
 
             accion = 4.5;
             alarma_2 = 15;
             permitir_homing_attack = true;
             permitir_air_dash = false;
-            indice_sprite = 0;
+            image_index = 0;
         } else if ((accion == 4.5) and tocando_suelo) {
             accion = 0;
             alarma_2 = 0;
@@ -464,15 +458,7 @@ function movimiento_jugador() {
 			direccion_horizontal = -1;
 		}
 		
-		var velocidad_homing_attack = 0;
-		switch (global.personaje_actual) {
-		    case "Sonic":
-				velocidad_homing_attack = 10.5;
-		        break;
-		    case "Shadow":
-		        velocidad_homing_attack = 12;
-		        break;
-		}
+		var velocidad_homing_attack = obj_jugador.velocidad_homing_attack;
 		velocidad_horizontal = direccion_horizontal * velocidad_homing_attack;
         velocidad_vertical = 0;
 		control.inhabilitar_lectura(2);
@@ -527,7 +513,7 @@ function movimiento_jugador() {
     switch (global.personaje_actual) {
         case "Sonic":
             if (tocando_suelo and (accion == 0) and (abs(velocidad_horizontal) >= 3) and control.boton_mantenido("boton_ataque")) {
-                sprite_actual = spr_sonic_trotando;
+                sprite_index = spr_sonic_trotando;
                 accion = 9;
                 audio.reproducir_audio(snd_ataque_sonic_c);
             }
@@ -565,7 +551,7 @@ function movimiento_jugador() {
 
         case "Shadow":
             if (tocando_suelo and (accion == 0) and control.boton_presionado("boton_ataque")) {
-                indice_sprite = 0;
+                image_index = 0;
 
                 if (abs(velocidad_horizontal) < 10) {
                     velocidad_horizontal = 10 * direccion_horizontal;
@@ -585,7 +571,7 @@ function movimiento_jugador() {
                     velocidad_horizontal += friccion;
                 }
 
-                if ((indice_sprite >= 24) or !tocando_suelo) {
+                if ((image_index >= 24) or !tocando_suelo) {
                     accion = 0;
                 }
             }
@@ -652,7 +638,7 @@ function movimiento_jugador() {
         velocidad_horizontal = 0;
         velocidad_vertical = 0;
 
-        if (control.boton_presionado("boton_salto") and (((indice_sprite % 15) >= 0) and ((indice_sprite % 15) < 5))) {
+        if (control.boton_presionado("boton_salto") and (((image_index % 15) >= 0) and ((image_index % 15) < 5))) {
             audio.reproducir_audio(snd_vuelta_aerea);
             accion = 13;
             velocidad_vertical = -8;
@@ -722,7 +708,7 @@ function movimiento_jugador() {
 
         if (tocando_suelo or velocidad_insuficiente or sin_colisionar) {
             accion = 0;
-            indice_sprite = 0;
+            image_index = 0;
         }
     }
 
@@ -735,7 +721,7 @@ function movimiento_jugador() {
 
         if (tocando_suelo or velocidad_insuficiente or sin_colisionar) {
             accion = 11;
-            indice_sprite = 0;
+            image_index = 0;
         }
     }
 
@@ -749,7 +735,7 @@ function movimiento_jugador() {
 
         if (tocando_suelo or velocidad_insuficiente or sin_colisionar) {
             accion = 2;
-            indice_sprite = 0;
+            image_index = 0;
         }
     }
 
@@ -823,8 +809,8 @@ function movimiento_jugador() {
             velocidad_vertical = 0;
         }
 
-        if (indice_sprite >= 21) {
-            indice_sprite = 0;
+        if (image_index >= 21) {
+            image_index = 0;
             accion = 0;
         }
     }
@@ -841,24 +827,15 @@ function movimiento_jugador() {
 
     if (accion == 23) {
         if (distancia_light_ring <= 50) {
-	        angulo_imagen = point_direction(x, y, light_ring_cercano.x, light_ring_cercano.y);
+	        image_angle = point_direction(x, y, light_ring_cercano.x, light_ring_cercano.y);
 			x = light_ring_cercano.x;
 			y = light_ring_cercano.y;
 		} else {			
-            velocidad_horizontal = direccion_horizontal * 9 * cos(angulo_imagen);
-            velocidad_vertical = 9 * sin(angulo_imagen);
+            velocidad_horizontal = direccion_horizontal * 9 * cos(image_angle);
+            velocidad_vertical = 9 * sin(image_angle);
             accion = 0;
 			
-			var audio_requerido;
-			switch (global.personaje_actual) {
-			    case "Sonic":
-			        audio_requerido = snd_festejo_sonic;
-			        break;
-			    case "Shadow":
-			        audio_requerido = snd_festejo_shadow;
-			        break;
-			}
-
+			var audio_requerido = audio_festejo;
 			audio.reproducir_audio_aislado(audio_requerido, false);
         }
     }
@@ -970,7 +947,7 @@ function movimiento_jugador() {
         velocidad_horizontal = 0;
         velocidad_vertical = 0;
 
-        if (indice_sprite >= 16) {
+        if (image_index >= 16) {
             accion = 0;
         }
     }
@@ -1065,7 +1042,7 @@ function movimiento_jugador() {
     // Ventilador gigante
     if ((accion != 26) and (accion != 37) and place_meeting(x, y, obj_ventilador_gigante)) {
         accion = 37;
-        indice_sprite = 0;
+        image_index = 0;
     }
 
     if (accion == 37) {

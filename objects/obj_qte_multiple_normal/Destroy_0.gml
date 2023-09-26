@@ -6,7 +6,7 @@ if (evento_finalizado) {
     obj_jugador.accion = 15;
     obj_jugador.velocidad_vertical = -8;
 	obj_jugador.gravedad = 0.21875;
-    obj_jugador.indice_sprite = 0;
+    obj_jugador.image_index = 0;
 			
 	var mensaje_triunfo = instance_create_depth(x, y, -100, obj_mensaje_qte_triunfado);
 	mensaje_triunfo.respuesta_rapida = (tiempo_restante >= 66);
@@ -32,7 +32,7 @@ else
     obj_jugador.velocidad_vertical = -3;
     obj_jugador.velocidad_horizontal = obj_jugador.direccion_horizontal * 3;
 	obj_jugador.gravedad = 0.21875;
-    obj_jugador.indice_sprite = 0;
+    obj_jugador.image_index = 0;
 	
 	// Mensaje al fallar el QTE
     instance_create_depth(x, y, -100, obj_mensaje_qte_fallido);

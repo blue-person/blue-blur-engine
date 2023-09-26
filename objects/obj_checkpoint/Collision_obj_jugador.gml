@@ -8,7 +8,7 @@ if ((estado_animacion == 1) and (other.accion != 26)) {
 	nivel.establecer_punto_control(x, y - obj_jugador.mascara_colision, tiempo_punto_control);
 	
 	// Reproducir sonido
-    if ((other.sprite_actual != spr_sonic_normal) and (other.sprite_actual != spr_shadow_normal)) {
+    if ((other.sprite_index != spr_sonic_normal) and (other.sprite_index != spr_shadow_normal)) {
         audio.reproducir_audio(snd_checkpoint);
         instance_create_depth(x, y, -80, obj_mostrar_info_checkpoint);
     }

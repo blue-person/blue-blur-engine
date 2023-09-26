@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Spindash",
-    "path": "folders/Objetos/Efectos/Jugador/Spindash.yy",
+    "path": "folders/Objetos/Personajes/Jugador/Efectos/Spindash.yy",
   },
   "parentObjectId": null,
   "persistent": false,

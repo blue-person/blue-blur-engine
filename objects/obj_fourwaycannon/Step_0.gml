@@ -1,5 +1,5 @@
 if (!activar_evento) {
-    lados.indice_sprite = 0;
+    lados.image_index = 0;
     image_speed = 0;
     image_index = 0;
 	
@@ -17,45 +17,45 @@ if (!activar_evento) {
 } else if (activar_evento and (obj_jugador.accion == 21)) {
     if (realizar_animacion) {
         if (control.boton_mantenido("boton_arriba")) {
-            if (lados.indice_sprite == 0) {
-                lados.indice_sprite = 5;
+            if (lados.image_index == 0) {
+                lados.image_index = 5;
                 audio.reproducir_audio(snd_fourwaycannon_apuntar);
             }
 			
-            if ((lados.indice_sprite < 8) and (lados.indice_sprite >= 5)) {
+            if ((lados.image_index < 8) and (lados.image_index >= 5)) {
                 lados.fotograma += 0.5;
 			}
 			
             angulo_lados = 0;
         } else if (control.boton_mantenido("boton_derecha")) {
-            if (lados.indice_sprite == 0) {
-                lados.indice_sprite = 1;
+            if (lados.image_index == 0) {
+                lados.image_index = 1;
                 audio.reproducir_audio(snd_fourwaycannon_apuntar);
             }
 			
-            if ((lados.indice_sprite < 4) and (lados.indice_sprite >= 1)) {
+            if ((lados.image_index < 4) and (lados.image_index >= 1)) {
 				lados.fotograma += 0.5;
 			}
 			
             angulo_lados = 270;
         } else if (control.boton_mantenido("boton_izquierda")) {
-            if (lados.indice_sprite == 0) {
-                lados.indice_sprite = 9;
+            if (lados.image_index == 0) {
+                lados.image_index = 9;
                 audio.reproducir_audio(snd_fourwaycannon_apuntar);
             }
 			
-            if ((lados.indice_sprite < 12) and (lados.indice_sprite >= 9)) {
+            if ((lados.image_index < 12) and (lados.image_index >= 9)) {
                 lados.fotograma += 0.5;
 			}
 			
             angulo_lados = 90;
         } else if (control.boton_mantenido("boton_abajo")) {
-            if (lados.indice_sprite == 0) {    
-                lados.indice_sprite = 13;
+            if (lados.image_index == 0) {    
+                lados.image_index = 13;
                 audio.reproducir_audio(snd_fourwaycannon_apuntar);
             }
 			
-            if ((lados.indice_sprite < 16) and (lados.indice_sprite >= 13)) {
+            if ((lados.image_index < 16) and (lados.image_index >= 13)) {
 				lados.fotograma += 0.5;
 			}
 			
@@ -68,9 +68,9 @@ if (!activar_evento) {
     } else {
         lados.fotograma -= 0.5;
 		
-        if ((lados.indice_sprite == 1) or (lados.indice_sprite == 5) or (lados.indice_sprite == 9) or (lados.indice_sprite == 13)) {   
+        if ((lados.image_index == 1) or (lados.image_index == 5) or (lados.image_index == 9) or (lados.image_index == 13)) {   
             realizar_animacion = true;
-            lados.indice_sprite = 0;
+            lados.image_index = 0;
         }
     }
     

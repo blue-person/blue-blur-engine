@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Aura",
-    "path": "folders/Objetos/Efectos/Jugador/Boost/Aura.yy",
+    "path": "folders/Objetos/Personajes/Jugador/Efectos/Boost/Aura.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "obj_explosion_boost_sonic",
-    "path": "sprites/obj_explosion_boost_sonic/obj_explosion_boost_sonic.yy",
+    "name": "spr_explosion_boost_sonic",
+    "path": "sprites/spr_explosion_boost_sonic/spr_explosion_boost_sonic.yy",
   },
   "spriteMaskId": null,
   "visible": true,

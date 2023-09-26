@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Guia",
-    "path": "folders/Sprites/Entidades/Enemigos/Egg Pawn/Guia.yy",
+    "path": "folders/Sprites/Personajes/Enemigos/Egg Pawn/Guia.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

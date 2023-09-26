@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Homing Attack",
-    "path": "folders/Objetos/Efectos/Jugador/Homing Attack.yy",
+    "path": "folders/Objetos/Personajes/Jugador/Efectos/Homing Attack.yy",
   },
   "parentObjectId": null,
   "persistent": false,

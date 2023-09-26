@@ -21,7 +21,6 @@ tocando_suelo = false;
 
 direccion_horizontal = 1;
 capa_actual = "frontal";
-angulo_imagen = 0;
 tiempo_aire = 0;
 limite_velocidad_actual = 0;
 
@@ -64,15 +63,14 @@ zona_superada = false;
 tiempo_invencibilidad = 0;
 
 // Variables para el manejo de los sprites
-sprite_index = 0;
+sprite_index = noone;
 image_alpha = 1;
 image_index = 0;
 image_speed = 0;
+image_angle = 0;
 
 fotograma = 0;
-indice_sprite = 0;
 pos_y_efectos = 0;
-sprite_actual = spr_sonic_normal;
 ultima_accion_realizada = 0;
 
 // Creacion de alarmas personalizadas para tener mas control sobre los ticks
@@ -83,5 +81,55 @@ alarma_3 = 0;
 alarma_4 = 0;
 alarma_5 = 0;
 
-// Funciones
-preparar_ubicacion_jugador();
+// Eliminar todo puntaje al crear el jugador
+nivel.eliminar_puntaje();
+
+// Determinar donde sera creado el jugador
+if (nivel.obtener_permiso_reaparicion()) {
+	var ubicacion_reaparicion = nivel.obtener_ubicacion_reaparicion();
+	x = ubicacion_reaparicion.pos_x;
+	y = ubicacion_reaparicion.pos_y;
+}
+
+// tmp
+animacion_presentacion = {
+	normal: { sprite: noone, velocidad: 0 },
+	corriendo: { sprite: noone, velocidad: 0 }
+}
+
+audios_grito_boost = [];
+sprite_explosion_boost = noone;
+sprite_efecto_boost = noone;
+sprite_destello_boost = noone;
+
+sprite_efecto_pisoton = noone;
+
+sprite_efecto_salto = { sprite_aura: noone, sprite_aterrizar: noone }
+
+sprites_acrobacia = [];
+audios_acrobacia = [];
+
+sprites_hud = {
+	icono_vidas: noone,
+	font_numeros: noone,
+	colores_barra_boost: {
+		superior: noone,
+		inferior: noone
+	}
+}
+
+font_checkpoint = noone;
+
+particula_boost = noone;
+
+audio_quejido = noone;
+
+audio_homing_dash = noone;
+
+velocidad_homing_attack = noone;
+
+audio_festejo = noone;
+
+audio_muerte = noone;
+
+direccion_aura_boost = 0;

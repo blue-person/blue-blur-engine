@@ -2,20 +2,11 @@ if (((other.accion == 1) or (other.accion == -2) or (other.accion == 4) or (othe
     dibujar_efectos(spr_efecto_destruccion_enemigo, 0, 1, 1, false);
     
     if ((other.accion == 4) and permitir_ser_apuntado) {
-        other.indice_sprite = 0;
+        other.image_index = 0;
         other.accion = 10;
 
-        switch (global.personaje_actual) {
-            case "Sonic":
-                other.sprite_actual = choose(spr_sonic_acrobacia_a, spr_sonic_acrobacia_a, spr_sonic_acrobacia_c);
-                audio.reproducir_audio_aleatorio([snd_ataque_sonic_a, snd_ataque_sonic_b, snd_ataque_sonic_c]);
-                break;
-            case "Shadow":
-                other.sprite_actual = spr_shadow_saltando;
-                other.indice_sprite = 2;
-                audio.reproducir_audio_aleatorio([snd_ataque_shadow_a, snd_ataque_shadow_b, snd_ataque_shadow_c]);
-                break;
-        }
+        other.sprite_index = valor_aleatorio(obj_jugador.sprites_acrobacia);
+        audio.reproducir_audio_aleatorio(obj_jugador.audios_acrobacia);
         
         permitir_ser_apuntado = false;
         recibio_golpe = true;

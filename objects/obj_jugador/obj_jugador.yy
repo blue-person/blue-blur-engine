@@ -16,8 +16,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Jugador",
-    "path": "folders/Objetos/Entidades/Jugador.yy",
+    "name": "Entidades",
+    "path": "folders/Objetos/Personajes/Jugador/Entidades.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -36,8 +36,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_item_vidas",
-    "path": "sprites/spr_item_vidas/spr_item_vidas.yy",
+    "name": "spr_funcionalidad",
+    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,16 +1,3 @@
-// Determinar el sprite
-if (!permitir_movimiento) {
-    switch (global.personaje_actual) {
-        case "Sonic":
-            sprite_actual = spr_sonic_normal
-            break;
-        case "Shadow":
-            sprite_actual = spr_shadow_normal;
-            break;
-    }
-    exit;
-}
-
 // Dar boost infinito cuando se esta en el hub
 if (room == rm_hub_world) then cantidad_boost = 100;
 
@@ -60,7 +47,8 @@ if (alarma_3 > 0) {
 
 if (alarma_5 > 0) {
     alarma_5--;
-    if (alarm == 1) {
+	
+    if (alarma_5 == 1) {
         hspeed = 0;
         vspeed = 0;
 		
@@ -186,17 +174,6 @@ if (tocando_suelo) {
         sonido_pisada_a = snd_pisada_a;
         sonido_pisada_b = snd_pisada_b;
     }
-}
-
-if ((global.personaje_actual == "Shadow") and ((sprite_actual == spr_shadow_patinando_a) or (sprite_actual == spr_shadow_patinando_b))) {
-    sonido_pisada_a = snd_propulsores_a;
-    sonido_pisada_b = snd_propulsores_b;
-}
-
-if ((accion == 0) and (sprite_actual != spr_sonic_normal) and (sprite_actual != spr_shadow_normal) and tocando_suelo and !zona_superada and !((global.personaje_actual == "Shadow") and ((sprite_actual == spr_shadow_patinando_b) or (sprite_actual == spr_shadow_patinando_a) or (sprite_actual == spr_shadow_volando)))) {
-    sonido_pisadas_general(sonido_pisada_a, sonido_pisada_b);
-} else if (global.personaje_actual == "Shadow") {
-	sonido_pisadas_shadow(sonido_pisada_a, sonido_pisada_b);
 }
 
 // Permitir invencibilidad al personaje de manera temporal despues de ser herido
