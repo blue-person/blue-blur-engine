@@ -87,10 +87,10 @@ if (sumergido_agua and (random(1) < 0.0115)) {
 }
 
 // Ejecutar scripts esenciales
-gestionar_fisicas_entidad();
+gestion_fisicas_entidad();
 
 if (not zona_superada) {
-	gestionar_movimiento_jugador();
+	gestion_movimiento_jugador();
 } else {
     accion = 0;
     direccion_horizontal = 1;

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_movimiento_pisoton",
+  "name": "scr_accion_swingbar",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

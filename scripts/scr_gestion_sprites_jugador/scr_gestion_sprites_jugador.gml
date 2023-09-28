@@ -10,7 +10,7 @@ function crear_particulas_jugador() {
 	}
 }
 
-function gestionar_indice_sprites_jugador() {
+function gestion_indice_sprites_jugador() {
 	if (image_index > 998) {
 	    image_index = 0;
 	}
@@ -21,7 +21,7 @@ function gestionar_indice_sprites_jugador() {
 	}
 }
 
-function gestionar_angulo_sprites_jugador() {
+function gestion_angulo_sprites_jugador() {
 	// Manejar el angulo de la imagen
 	if ((velocidad_horizontal == 0) and (accion <= 0) and tocando_suelo) {
 	    image_angle = angulo;

@@ -1,4 +1,4 @@
-function gestionar_fisicas_entidad() {
+function gestion_fisicas_entidad() {
     // Definir variables
     var pendiente = 0;
 

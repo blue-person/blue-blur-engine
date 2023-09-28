@@ -1,4 +1,4 @@
-function manejo_movimiento_boost() {
+function gestion_boost() {
 	if (control.boton_presionado("boton_boost")) {
         usando_boost = true;
     } else if (control.boton_liberado("boton_boost")) {

@@ -1,4 +1,4 @@
-function manejo_movimiento_pisoton() {
+function gestion_accion_pisoton() {
 	var boton_oprimido = control.boton_presionado("boton_ataque");
 	var acciones_validas = ((accion == 0) or (accion == 1)) and permitir_pisoton;
 	var requisitos = !tocando_suelo and (tiempo_aire >= 10);

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_movimiento_boost",
+  "name": "scr_accion_aterrizar",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
