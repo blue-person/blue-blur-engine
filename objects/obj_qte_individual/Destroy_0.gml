@@ -25,7 +25,7 @@ if (evento_finalizado) {
 		audio.reproducir_audio(snd_triunfar_qte);
 		
 		// Sonido del jugador
-        reproducir_sonido_triunfar_qte();
+        audio.reproducir_audio(obj_jugador.audio_festejo);
     }
 	
     audio.reproducir_audio(snd_triunfar_boton_qte);

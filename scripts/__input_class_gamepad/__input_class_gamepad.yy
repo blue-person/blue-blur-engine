@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Classes",
-    "path": "folders/Paquetes externos/Input v6.0.4/(System)/Classes.yy",
+    "path": "folders/Extensiones/Input v6.0.4/(System)/Classes.yy",
   },
 }

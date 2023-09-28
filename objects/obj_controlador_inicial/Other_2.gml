@@ -1,6 +1,6 @@
-// Establecer valores y elementos
-establecer_variables_jugador();
-establecer_particulas();
+// Establecer valores
+global.personaje_actual = "Sonic";
+global.vidas_restantes = 3;
 
 // Cargar los audios del juegos
 audio.cargar_audios();

@@ -68,6 +68,7 @@ image_alpha = 1;
 image_index = 0;
 image_speed = 0;
 image_angle = 0;
+mask_index = mascara_colision;
 
 fotograma = 0;
 pos_y_efectos = 0;
@@ -120,7 +121,7 @@ sprites_hud = {
 
 font_checkpoint = noone;
 
-particula_boost = noone;
+particulas_rastro = noone;
 
 audio_quejido = noone;
 

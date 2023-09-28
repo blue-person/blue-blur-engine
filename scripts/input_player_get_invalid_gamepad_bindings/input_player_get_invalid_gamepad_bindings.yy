@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "15  Players",
-    "path": "folders/Paquetes externos/Input v6.0.4/15  Players.yy",
+    "path": "folders/Extensiones/Input v6.0.4/15  Players.yy",
   },
 }

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Efectos",
-    "path": "folders/Scripts/Dibujar elementos/Efectos.yy",
+    "name": "Dibujar elementos",
+    "path": "folders/Scripts/Dibujar elementos.yy",
   },
 }

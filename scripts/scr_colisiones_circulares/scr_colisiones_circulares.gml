@@ -1,4 +1,4 @@
-function colision_circular_general(entidad, pos_x, pos_y, radio_circulo, requisitos_colision_riel = false, requisitos_caminar_sobre_agua = false){
+function colision_circular_general(pos_x, pos_y, radio_circulo, requisitos_colision_riel = false, requisitos_caminar_sobre_agua = false){
 	// Determinar colisiones con superficie
 	var colision_normal_superficie = collision_circle(pos_x, pos_y, radio_circulo, obj_superficie, true, true);
 	if (colision_normal_superficie) then return true;
@@ -10,7 +10,7 @@ function colision_circular_general(entidad, pos_x, pos_y, radio_circulo, requisi
 	}
 	
 	// Determinar colisiones con superficies, ya sea capa frontal o capa posterior
-	if (entidad.capa_actual == "frontal") {
+	if (capa_actual == "frontal") {
 		// Determinar colisiones con superficie
         var colision_superficie_frontal = collision_circle(pos_x, pos_y, radio_circulo, obj_superficie_frontal, true, true);
 		if (colision_superficie_frontal) then return true;

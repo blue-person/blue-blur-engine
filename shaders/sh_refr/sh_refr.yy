@@ -4,7 +4,7 @@
   "name": "sh_refr",
   "parent": {
     "name": "Shaders",
-    "path": "folders/Paquetes externos/Platformer Water Reflection v1.1.4/Shaders.yy",
+    "path": "folders/Extensiones/Platformer Water Reflection v1.1.4/Shaders.yy",
   },
   "type": 1,
 }

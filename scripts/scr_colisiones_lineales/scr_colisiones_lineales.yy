@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Calculos generales",
-    "path": "folders/Scripts/Fisicas/Manejo de colisiones/Calculos generales.yy",
+    "path": "folders/Scripts/Entidades/General/Colisiones/Calculos generales.yy",
   },
 }

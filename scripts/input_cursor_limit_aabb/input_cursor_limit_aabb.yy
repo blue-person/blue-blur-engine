@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "10  Cursor Control",
-    "path": "folders/Paquetes externos/Input v6.0.4/10  Cursor Control.yy",
+    "path": "folders/Extensiones/Input v6.0.4/10  Cursor Control.yy",
   },
 }

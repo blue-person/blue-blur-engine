@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Gestor principal",
-    "path": "folders/Scripts/Fisicas/Gestor principal.yy",
+    "name": "Fisicas",
+    "path": "folders/Scripts/Entidades/General/Fisicas.yy",
   },
 }

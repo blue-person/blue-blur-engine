@@ -10,5 +10,5 @@ if (other.accion != 26) {
       obj_hud_normal.mostrar_en_pantalla = false;
 	}
 	
-	reproducir_sonido_muerte();
+	audio.reproducir_audio(other.audio_muerte);
 }

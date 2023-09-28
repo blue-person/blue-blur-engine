@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General",
-    "path": "folders/Scripts/Efectos/General.yy",
+    "name": "Efectos",
+    "path": "folders/Scripts/Efectos.yy",
   },
 }

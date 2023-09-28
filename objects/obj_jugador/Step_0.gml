@@ -49,23 +49,6 @@ if (alarma_3 > 0) {
     }
 }
 
-if (alarma_5 > 0) {
-    alarma_5--;
-	
-    if (alarma_5 == 1) {
-        hspeed = 0;
-        vspeed = 0;
-		
-        var canon_mas_cercano = instance_nearest(x, y, obj_canon);
-		var angulo_canon = canon_mas_cercano.angulo_conducto;
-		var fuerza_canon = canon_mas_cercano.cantidad_fuerza;
-		
-		accion = 35.2;
-		velocidad_horizontal = dcos(angulo_canon) * fuerza_canon;
-        velocidad_vertical = dsin(angulo_canon) * fuerza_canon;
-    }
-}
-
 // Hacer un rastro que sigue al personaje cuando usa el boost
 if (instance_exists(obj_efecto_boost) or ((global.personaje_actual == "Shadow") and (accion == 4.5))) {
     valor_incremento_rastro += 1;
@@ -104,10 +87,10 @@ if (sumergido_agua and (random(1) < 0.0115)) {
 }
 
 // Ejecutar scripts esenciales
-gestor_principal_fisicas(self);
+gestionar_fisicas_entidad();
 
 if (not zona_superada) {
-	movimiento_jugador();
+	gestionar_movimiento_jugador();
 } else {
     accion = 0;
     direccion_horizontal = 1;
@@ -118,15 +101,15 @@ if (not zona_superada) {
 }
 
 // Cambiar la capa del nivel. Se hace cuando el personaje pasa por un loop, por ejemplo
-if (collision_circle(x, y, 16, obj_capa_posterior, true, true)) {
+if (collision_circle(x, y, mascara_colision, obj_capa_posterior, true, true)) {
     capa_actual = "posterior";
 }
 
-if (collision_circle(x, y, 16, obj_capa_frontal, true, true)) {
+if (collision_circle(x, y, mascara_colision, obj_capa_frontal, true, true)) {
     capa_actual = "frontal";
 }
 
-if (collision_circle(x, y, 16, obj_cambiar_capa_pf, true, true)) {
+if (collision_circle(x, y, mascara_colision, obj_cambiar_capa_pf, true, true)) {
 	if (tocando_suelo) {
 		if (velocidad_horizontal > 0) {
 			capa_actual = "posterior";
@@ -137,7 +120,7 @@ if (collision_circle(x, y, 16, obj_cambiar_capa_pf, true, true)) {
 	}
 }
 
-if (collision_circle(x, y, 16, obj_cambiar_capa_fp, true, true)) {
+if (collision_circle(x, y, mascara_colision, obj_cambiar_capa_fp, true, true)) {
 	if (tocando_suelo) {
 		if (velocidad_horizontal > 0) {
 			capa_actual = "frontal";

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Animaciones",
-    "path": "folders/Scripts/Jugador/General/Animaciones.yy",
+    "path": "folders/Scripts/Entidades/Jugador/General/Animaciones.yy",
   },
 }

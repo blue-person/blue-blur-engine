@@ -42,7 +42,18 @@ sprites_hud = {
 
 font_checkpoint = texto.obtener_font_azul();
 
-particula_boost = global.prt_rastro_azul;
+particulas_rastro = part_type_create();
+part_type_shape(particulas_rastro, pt_shape_flare);
+part_type_size(particulas_rastro, 0.18, 0.18, 0, 0);
+part_type_scale(particulas_rastro, 5.8, 2);
+part_type_speed(particulas_rastro, -2.5, -2.5, 0.15, 0);
+part_type_direction(particulas_rastro, 0, 0, 0, 0);
+part_type_gravity(particulas_rastro, 0, 270);
+part_type_orientation(particulas_rastro, 0, 0, 0, 0, true);
+part_type_color1(particulas_rastro, COLOR_AZUL_CLARO);
+part_type_alpha2(particulas_rastro, 0.6, 0);
+part_type_blend(particulas_rastro, true);
+part_type_life(particulas_rastro, 12, 12);
 
 audio_quejido = snd_quejido_sonic;
 

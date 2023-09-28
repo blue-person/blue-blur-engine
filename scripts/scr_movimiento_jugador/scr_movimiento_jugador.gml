@@ -1,4 +1,4 @@
-function movimiento_jugador() {
+function gestionar_movimiento_jugador() {
 	var distancia_light_ring = 0;
     var light_ring_cercano = noone;
 	var canon_mas_cercano = noone;
