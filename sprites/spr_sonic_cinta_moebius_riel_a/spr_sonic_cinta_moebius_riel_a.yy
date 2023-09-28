@@ -36,7 +36,7 @@
   "origin": 9,
   "parent": {
     "name": "Animaciones",
-    "path": "folders/Sprites/Personajes/Jugador/Sonic/Animaciones.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Sonic/Animaciones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,5 +1,9 @@
-// Dar boost infinito cuando se esta en el hub
-if (room == rm_hub_world) then cantidad_boost = 100;
+// Controlar la cantidad de boost
+if (room == rm_hub_world) {
+	cantidad_boost = 100;
+} else {
+	cantidad_boost = clamp(cantidad_boost, 0, 100);
+}
 
 // Manejar las alarmas personalizadas
 if (alarma_0 > 0) {
@@ -61,9 +65,6 @@ if (alarma_5 > 0) {
         velocidad_vertical = dsin(angulo_canon) * fuerza_canon;
     }
 }
-
-// Controlar la cantidad de boost
-cantidad_boost = clamp(cantidad_boost, 0, 100);
 
 // Hacer un rastro que sigue al personaje cuando usa el boost
 if (instance_exists(obj_efecto_boost) or ((global.personaje_actual == "Shadow") and (accion == 4.5))) {
@@ -183,4 +184,11 @@ if (tiempo_invencibilidad > 0) {
     if (tiempo_invencibilidad == 1) {
 		permitir_ser_apuntado = true;
 	}
+}
+
+// Gestionar el tiempo en el aire
+if (not tocando_suelo) {
+	tiempo_aire++;
+} else {
+	tiempo_aire = 0;
 }

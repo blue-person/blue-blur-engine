@@ -33,7 +33,7 @@
   "origin": 9,
   "parent": {
     "name": "Presentacion del nivel",
-    "path": "folders/Sprites/Personajes/Jugador/Sonic/Interfaz/Presentacion del nivel.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Sonic/Interfaz/Presentacion del nivel.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

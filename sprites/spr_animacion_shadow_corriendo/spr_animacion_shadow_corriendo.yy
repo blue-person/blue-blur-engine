@@ -54,7 +54,7 @@
   "origin": 9,
   "parent": {
     "name": "Presentacion del nivel",
-    "path": "folders/Sprites/Personajes/Jugador/Shadow/Interfaz/Presentacion del nivel.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Shadow/Interfaz/Presentacion del nivel.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

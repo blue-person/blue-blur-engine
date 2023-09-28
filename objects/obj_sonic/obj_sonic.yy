@@ -4,14 +4,14 @@
   "name": "obj_sonic",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Entidades",
-    "path": "folders/Objetos/Personajes/Jugador/Entidades.yy",
+    "name": "Personajes",
+    "path": "folders/Objetos/Entidades/Jugador/Personajes.yy",
   },
   "parentObjectId": {
     "name": "obj_jugador",

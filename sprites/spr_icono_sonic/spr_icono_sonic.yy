@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Iconos",
-    "path": "folders/Sprites/Personajes/Jugador/Sonic/Iconos.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Sonic/Iconos.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

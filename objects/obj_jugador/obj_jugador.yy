@@ -16,8 +16,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Entidades",
-    "path": "folders/Objetos/Personajes/Jugador/Entidades.yy",
+    "name": "Personajes",
+    "path": "folders/Objetos/Entidades/Jugador/Personajes.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -36,8 +36,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_funcionalidad",
-    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
+    "name": "spr_entidad",
+    "path": "sprites/spr_entidad/spr_entidad.yy",
   },
   "spriteMaskId": null,
   "visible": true,

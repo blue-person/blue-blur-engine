@@ -15,6 +15,8 @@ indice_inclinacion_inferior = 73;
 velocidad_inclinacion_vertical = 3;
 
 permitir_camara_extendida = true;
+mitad_ancho_pantalla = pantalla.obtener_ancho() / 2;
+mitad_altura_pantalla = pantalla.obtener_altura() / 2;
 indice_inclinacion_horizontal = pantalla.obtener_ancho() / 5;
 velocidad_inclinacion_horizontal = 2;
 

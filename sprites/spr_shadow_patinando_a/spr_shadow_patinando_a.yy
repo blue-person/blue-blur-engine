@@ -54,7 +54,7 @@
   "origin": 9,
   "parent": {
     "name": "Animaciones",
-    "path": "folders/Sprites/Personajes/Jugador/Shadow/Animaciones.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Shadow/Animaciones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

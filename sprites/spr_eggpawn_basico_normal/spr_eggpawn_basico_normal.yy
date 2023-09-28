@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "Basico",
-    "path": "folders/Sprites/Personajes/Enemigos/Egg Pawn/Basico.yy",
+    "path": "folders/Sprites/Entidades/Enemigos/Egg Pawn/Basico.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

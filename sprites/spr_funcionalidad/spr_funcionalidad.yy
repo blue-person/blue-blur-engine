@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "General",
-    "path": "folders/Sprites/Funcionalidades/General.yy",
+    "name": "Funcionalidades",
+    "path": "folders/Sprites/Uso interno/Funcionalidades.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

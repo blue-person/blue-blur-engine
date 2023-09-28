@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "HUD",
-    "path": "folders/Sprites/Personajes/Jugador/Shadow/Interfaz/HUD.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Shadow/Interfaz/HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

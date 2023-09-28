@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Egg Pawn",
-    "path": "folders/Objetos/Personajes/Enemigos/Egg Pawn.yy",
+    "path": "folders/Objetos/Entidades/Enemigos/Egg Pawn.yy",
   },
   "parentObjectId": {
     "name": "obj_eggpawn_basico",

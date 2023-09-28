@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Efecto de velocidad",
-    "path": "folders/Sprites/Personajes/Jugador/Efectos generales/Efecto de velocidad.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Efectos/Efecto de velocidad.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

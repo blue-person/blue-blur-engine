@@ -1,5 +1,14 @@
-function dibujar_sprites_principal() {
-	// Manejar la imagen y fotograma actual
+function crear_particulas_jugador() {
+	var particula_requerida = particula_boost;	
+	var angulo_rastro = rodear_angulo(floor(direccion_aura_boost));
+	part_type_direction(particula_requerida, angulo_rastro, angulo_rastro, 0, 0);
+	
+	if ((accion == 4) or (accion == 4.5) or (accion == 18) or (instance_exists(obj_efecto_boost))) {
+	     part_particles_create(global.sistema_particulas, x, y, particula_requerida, 2);
+	}
+}
+
+function gestionar_indice_sprites_jugador() {
 	if (image_index > 998) {
 	    image_index = 0;
 	}
@@ -8,16 +17,9 @@ function dibujar_sprites_principal() {
 	    image_index++;
 	    fotograma = 0;
 	}
-	
-	// Dibujar el rastro que deja el personaje al usar el boost
-	var particula_requerida = obj_jugador.particula_boost;	
-	var angulo_rastro = rodear_angulo(floor(direccion_aura_boost));
-	part_type_direction(particula_requerida, angulo_rastro, angulo_rastro, 0, 0);
-	
-	if ((accion == 4) or (accion == 4.5) or (accion == 18) or (instance_exists(obj_efecto_boost))) {
-	     part_particles_create(global.sistema_particulas, x, y, particula_requerida, 2);
-	}
+}
 
+function gestionar_angulo_sprites_jugador() {
 	// Manejar el angulo de la imagen
 	if ((velocidad_horizontal == 0) and (accion <= 0) and tocando_suelo) {
 	    image_angle = 0;

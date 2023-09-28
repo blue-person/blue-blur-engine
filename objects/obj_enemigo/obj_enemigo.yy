@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Otros",
-    "path": "folders/Objetos/Funcionalidades/Objetos padres/Otros.yy",
+    "name": "General",
+    "path": "folders/Objetos/Entidades/Enemigos/General.yy",
   },
   "parentObjectId": {
     "name": "obj_apuntable",
@@ -34,7 +34,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_entidad",
+    "path": "sprites/spr_entidad/spr_entidad.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

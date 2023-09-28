@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Otros",
-    "path": "folders/Scripts/Jugador/Otros.yy",
+    "name": "Gestion de funciones",
+    "path": "folders/Scripts/Jugador/General/Gestion de funciones.yy",
   },
 }

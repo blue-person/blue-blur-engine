@@ -1,11 +1,11 @@
-// Heredar datos del objeto padre
-event_inherited();
-
 // Establecer el sprite por defecto
 if (not permitir_movimiento) {
     sprite_index = spr_shadow_normal;
     exit;
 }
+
+// Heredar datos del objeto padre
+event_inherited();
 
 // Reproducir sonidos de pisadas
 if ((sprite_index == spr_shadow_patinando_a) or (sprite_index == spr_shadow_patinando_b)) {

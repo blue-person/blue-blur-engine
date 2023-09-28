@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "HUD",
-    "path": "folders/Sprites/Personajes/Jugador/Sonic/Interfaz/HUD.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Sonic/Interfaz/HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

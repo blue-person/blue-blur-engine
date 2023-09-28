@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "Boost",
-    "path": "folders/Sprites/Personajes/Jugador/Shadow/Efectos/Boost.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Shadow/Efectos/Boost.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

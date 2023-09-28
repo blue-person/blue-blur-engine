@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Salto",
-    "path": "folders/Objetos/Personajes/Jugador/Efectos/Salto.yy",
+    "path": "folders/Objetos/Entidades/Jugador/Efectos/Salto.yy",
   },
   "parentObjectId": null,
   "persistent": false,

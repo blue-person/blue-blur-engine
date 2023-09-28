@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Pisoton",
-    "path": "folders/Sprites/Personajes/Jugador/Shadow/Efectos/Pisoton.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Shadow/Efectos/Pisoton.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

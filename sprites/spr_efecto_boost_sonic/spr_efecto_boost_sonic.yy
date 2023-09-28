@@ -28,7 +28,7 @@
   "origin": 9,
   "parent": {
     "name": "Boost",
-    "path": "folders/Sprites/Personajes/Jugador/Sonic/Efectos/Boost.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Sonic/Efectos/Boost.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

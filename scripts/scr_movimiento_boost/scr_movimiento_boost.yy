@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Acciones",
-    "path": "folders/Scripts/Jugador/Movimientos/Acciones.yy",
+    "path": "folders/Scripts/Jugador/General/Movimientos/Acciones.yy",
   },
 }

@@ -33,7 +33,7 @@
   "origin": 9,
   "parent": {
     "name": "Koura",
-    "path": "folders/Sprites/Personajes/Enemigos/Koura.yy",
+    "path": "folders/Sprites/Entidades/Enemigos/Koura.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

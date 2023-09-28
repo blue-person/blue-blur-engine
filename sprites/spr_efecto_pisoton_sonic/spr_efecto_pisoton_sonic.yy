@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Pisoton",
-    "path": "folders/Sprites/Personajes/Jugador/Sonic/Efectos/Pisoton.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Sonic/Efectos/Pisoton.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

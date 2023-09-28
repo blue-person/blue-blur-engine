@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Gestor principal",
-    "path": "folders/Scripts/Jugador/Movimientos/Gestor principal.yy",
+    "path": "folders/Scripts/Jugador/General/Movimientos/Gestor principal.yy",
   },
 }

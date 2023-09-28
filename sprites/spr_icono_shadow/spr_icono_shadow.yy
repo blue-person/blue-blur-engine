@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Iconos",
-    "path": "folders/Sprites/Personajes/Jugador/Shadow/Iconos.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Shadow/Iconos.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

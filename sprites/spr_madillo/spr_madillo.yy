@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Otros",
-    "path": "folders/Sprites/Personajes/Enemigos/Otros.yy",
+    "path": "folders/Sprites/Entidades/Enemigos/Otros.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

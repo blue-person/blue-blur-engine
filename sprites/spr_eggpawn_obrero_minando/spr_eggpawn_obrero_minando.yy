@@ -32,7 +32,7 @@
   "origin": 9,
   "parent": {
     "name": "Obrero",
-    "path": "folders/Sprites/Personajes/Enemigos/Egg Pawn/Obrero.yy",
+    "path": "folders/Sprites/Entidades/Enemigos/Egg Pawn/Obrero.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

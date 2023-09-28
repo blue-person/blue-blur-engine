@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Aura",
-    "path": "folders/Objetos/Personajes/Jugador/Efectos/Boost/Aura.yy",
+    "path": "folders/Objetos/Entidades/Jugador/Efectos/Boost/Aura.yy",
   },
   "parentObjectId": null,
   "persistent": false,
