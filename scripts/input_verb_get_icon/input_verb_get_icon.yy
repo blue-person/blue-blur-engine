@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "08  Icons",
-    "path": "folders/Paquetes externos/Input v6.0.4/08  Icons.yy",
+    "path": "folders/Extensiones/Input v6.0.4/08  Icons.yy",
   },
 }

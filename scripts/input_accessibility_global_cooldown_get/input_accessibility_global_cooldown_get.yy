@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "12  Accessibility",
-    "path": "folders/Paquetes externos/Input v6.0.4/12  Accessibility.yy",
+    "path": "folders/Extensiones/Input v6.0.4/12  Accessibility.yy",
   },
 }

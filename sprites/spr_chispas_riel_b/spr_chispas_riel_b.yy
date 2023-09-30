@@ -28,7 +28,7 @@
   "origin": 5,
   "parent": {
     "name": "Riel",
-    "path": "folders/Sprites/Efectos/Jugador/Riel.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Efectos/Riel.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

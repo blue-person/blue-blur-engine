@@ -89,7 +89,7 @@ function refl_catch_draw() {
 	        shader_set_uniform_f(other.uni_uvs2, uvs[0], uvs[1], uvs[2], uvs[3]);
 			
 			if (object_index == obj_jugador) {
-				draw_sprite_ext(sprite_actual, indice_sprite, pos_x, pos_y, direccion_horizontal, 1, angulo_imagen, image_blend, image_alpha);
+				draw_sprite_ext(sprite_index, image_index, pos_x, pos_y, direccion_horizontal, image_yscale, image_angle, image_blend, image_alpha);
 			} else {
 				draw_sprite_ext(sprite_index, image_index, pos_x, pos_y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 			}

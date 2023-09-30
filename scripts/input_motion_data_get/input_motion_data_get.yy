@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "21  Gyro & Motion",
-    "path": "folders/Paquetes externos/Input v6.0.4/21  Gyro & Motion.yy",
+    "path": "folders/Extensiones/Input v6.0.4/21  Gyro & Motion.yy",
   },
 }

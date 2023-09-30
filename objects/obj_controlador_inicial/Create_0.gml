@@ -5,6 +5,7 @@
 #macro OFFSCREEN -50
 #macro PROFUNDIDAD_GESTORES 0
 #macro PROFUNDIDAD_CONTROLADORES 0
+#macro PROFUNDIDAD_PARTICULAS 0
 #macro PROFUNDIDAD_JUGADOR -1
 #macro PROFUNDIDAD_AGUA -200
 #macro PROFUNDIDAD_TRANSICIONES -255
@@ -50,3 +51,7 @@ global.gestor_nivel = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_nivel
 // Controlador del modo debug
 global.controlador_depuracion = crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_controlador_depuracion);
 #macro debug global.controlador_depuracion
+
+// Sistema de particulas
+global.sistema_particulas = crear_sistema_particulas_basico();
+#macro particulas global.sistema_particulas

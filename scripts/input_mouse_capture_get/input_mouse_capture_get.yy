@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "11  Mouse Capture",
-    "path": "folders/Paquetes externos/Input v6.0.4/11  Mouse Capture.yy",
+    "path": "folders/Extensiones/Input v6.0.4/11  Mouse Capture.yy",
   },
 }

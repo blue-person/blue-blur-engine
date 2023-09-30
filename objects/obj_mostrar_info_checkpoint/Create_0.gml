@@ -9,13 +9,5 @@ tiempo_actual = obj_cronometro.obtener_tiempo("texto");
 font_requerida = noone;
 numeros_requeridos = noone;
 
-switch (global.personaje_actual) {
-    case "Sonic":
-        font_requerida = texto.obtener_font_azul();
-		numeros_requeridos = texto.obtener_font_azul();
-        break;
-    case "Shadow":
-        font_requerida = texto.obtener_font_gris();
-		numeros_requeridos = texto.obtener_font_gris();
-        break;
-}
+font_requerida = obj_jugador.font_checkpoint;
+numeros_requeridos = obj_jugador.font_checkpoint;

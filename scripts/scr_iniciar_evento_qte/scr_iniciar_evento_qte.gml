@@ -9,7 +9,7 @@ function determinar_botones_qte() {
 function iniciar_evento_qte(tiempo_reaccion = 60) {
 	obj_jugador.usando_boost = false;
 	obj_jugador.tocando_suelo = false;
-	obj_jugador.indice_sprite = 0;
+	obj_jugador.image_index = 0;
 	obj_jugador.x = self.x;
 	obj_jugador.y = self.y - 20;
 	obj_jugador.direccion_horizontal = self.image_xscale;

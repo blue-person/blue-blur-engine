@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Audios",
-    "path": "folders/Scripts/Jugador/Audios.yy",
+    "name": "Gestion de funciones",
+    "path": "folders/Scripts/Entidades/Jugador/General/Gestion de funciones.yy",
   },
 }

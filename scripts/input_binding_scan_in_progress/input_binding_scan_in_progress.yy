@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "07  Binding Scanner",
-    "path": "folders/Paquetes externos/Input v6.0.4/07  Binding Scanner.yy",
+    "path": "folders/Extensiones/Input v6.0.4/07  Binding Scanner.yy",
   },
 }

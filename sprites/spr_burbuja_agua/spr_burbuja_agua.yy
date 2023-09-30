@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Burbuja bajo el agua",
-    "path": "folders/Sprites/Efectos/Jugador/Burbuja bajo el agua.yy",
+    "path": "folders/Sprites/Entidades/Personajes/Efectos/Burbuja bajo el agua.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

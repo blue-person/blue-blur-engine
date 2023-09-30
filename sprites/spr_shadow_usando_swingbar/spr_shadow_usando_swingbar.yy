@@ -39,8 +39,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Shadow",
-    "path": "folders/Sprites/Entidades/Jugador/Shadow.yy",
+    "name": "Animaciones",
+    "path": "folders/Sprites/Entidades/Personajes/Shadow/Animaciones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

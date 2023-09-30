@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Particulas energia",
-    "path": "folders/Sprites/Efectos/Jugador/Boost/Particulas energia.yy",
+    "name": "Boost",
+    "path": "folders/Sprites/Entidades/Personajes/Efectos/Boost.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

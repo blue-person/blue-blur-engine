@@ -23,7 +23,7 @@ if (evento_finalizado) {
 		// Sonido de triunfo
 		audio.reproducir_audio(snd_triunfar_jump_panel);
     } else if (obj_jugador.jump_panel == 5) {
-		reproducir_sonido_triunfar_qte();
+		audio.reproducir_audio(obj_jugador.audio_festejo);
     }
 } else {
 	obj_jugador.accion = 0;

@@ -7,7 +7,7 @@ if (evento_finalizado) {
         obj_jugador.accion = 15;
         obj_jugador.velocidad_vertical = -8;
         obj_jugador.gravedad = 0.21875;
-        obj_jugador.indice_sprite = 0;
+        obj_jugador.image_index = 0;
 		
 		// Mensaje al completar el QTE
 		var mensaje_triunfo = instance_create_depth(x, y, -100, obj_mensaje_qte_triunfado);
@@ -25,7 +25,7 @@ if (evento_finalizado) {
 		audio.reproducir_audio(snd_triunfar_qte);
 		
 		// Sonido del jugador
-        reproducir_sonido_triunfar_qte();
+        audio.reproducir_audio(obj_jugador.audio_festejo);
     }
 	
     audio.reproducir_audio(snd_triunfar_boton_qte);
@@ -35,7 +35,7 @@ if (evento_finalizado) {
     obj_jugador.velocidad_vertical = -3;
     obj_jugador.velocidad_horizontal = obj_jugador.direccion_horizontal * 3;
     obj_jugador.gravedad = 0.21875;
-	obj_jugador.indice_sprite = 0;
+	obj_jugador.image_index = 0;
 	
 	// Mensaje al fallar el QTE
     instance_create_depth(x, y, -100, obj_mensaje_qte_fallido);

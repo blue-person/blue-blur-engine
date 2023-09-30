@@ -1,9 +1,20 @@
+// Determinar el personaje que se va a usar
+var personaje;
+switch (global.personaje_actual) {
+	case "Sonic":
+		personaje = obj_sonic;
+		break;
+	case "Shadow":
+		personaje = obj_shadow;
+		break;
+}
+
 // Crear jugador
-instance_create_depth(x, y, PROFUNDIDAD_JUGADOR, obj_jugador);
+instance_create_depth(x, y, PROFUNDIDAD_JUGADOR, personaje);
 
 // Crear camara
 instance_create_depth(x, y, PROFUNDIDAD_CONTROLADORES, obj_camara);
-obj_camara.establecer_enfoque(obj_jugador);
+obj_camara.establecer_enfoque(personaje);
 
 // Pantalla de presentacion del nivel
 if (room != rm_hub_world) {

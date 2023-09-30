@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Pisoton",
-    "path": "folders/Objetos/Efectos/Jugador/Pisoton.yy",
+    "path": "folders/Objetos/Entidades/Jugador/Efectos/Pisoton.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "obj_efecto_pisoton_sonic",
-    "path": "sprites/obj_efecto_pisoton_sonic/obj_efecto_pisoton_sonic.yy",
+    "name": "spr_efecto_pisoton_sonic",
+    "path": "sprites/spr_efecto_pisoton_sonic/spr_efecto_pisoton_sonic.yy",
   },
   "spriteMaskId": null,
   "visible": true,

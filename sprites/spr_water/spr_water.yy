@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Paquetes externos/Platformer Water Reflection v1.1.4/Sprites.yy",
+    "path": "folders/Extensiones/Platformer Water Reflection v1.1.4/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

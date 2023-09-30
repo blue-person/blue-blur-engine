@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "(System)",
-    "path": "folders/Paquetes externos/Input v6.0.4/(System).yy",
+    "path": "folders/Extensiones/Input v6.0.4/(System).yy",
   },
   "parentObjectId": null,
   "persistent": true,

@@ -1,3 +1,3 @@
-// Establecer las posiciones para el aura del personaje cuando usa el boost
+// Almacenar la ubicacion al inicio del paso
 x_inicial = x;
 y_inicial = y;

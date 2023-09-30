@@ -1,6 +1,6 @@
 // Variables generales
 camara = noone;
-enfoque_camara = noone;
+objetivo = noone;
 indice_ajuste_posicional = 5;
 modo_seguimiento = "suave";
 
@@ -15,6 +15,8 @@ indice_inclinacion_inferior = 73;
 velocidad_inclinacion_vertical = 3;
 
 permitir_camara_extendida = true;
+mitad_ancho_pantalla = pantalla.obtener_ancho() / 2;
+mitad_altura_pantalla = pantalla.obtener_altura() / 2;
 indice_inclinacion_horizontal = pantalla.obtener_ancho() / 5;
 velocidad_inclinacion_horizontal = 2;
 
@@ -28,7 +30,7 @@ view_xport[0] = 0;
 view_yport[0] = 0;
 view_wport[0] = pantalla.obtener_ancho();
 view_hport[0] = pantalla.obtener_altura() ;
-view_camera[0] = camera_create_view(0, 0, view_wport[0], view_hport[0], 0, enfoque_camara, -1, -1, 32, 32);
+view_camera[0] = camera_create_view(0, 0, view_wport[0], view_hport[0], 0, objetivo, -1, -1, 32, 32);
 
 // Crear la camara del juego
 var valor_min_visibilidad = -255;
@@ -50,15 +52,15 @@ obtener_ubicacion = function() {
 	return ubicacion;
 }
 
-establecer_enfoque = function(enfoque_camara, desplazamiento_x = 0, desplazamiento_y = 0, modo_seguimiento = "suave") {
-	self.enfoque_camara = enfoque_camara;
+establecer_enfoque = function(objetivo, desplazamiento_x = 0, desplazamiento_y = 0, modo_seguimiento = "suave") {
+	self.objetivo = objetivo;
 	self.desplazamiento_x = desplazamiento_x;
 	self.desplazamiento_y = desplazamiento_y;
 	self.modo_seguimiento = modo_seguimiento;
 }
 
 desactivar_enfoque = function() {
-	self.enfoque_camara = noone;
+	self.objetivo = noone;
 }
 
 sacudir_camara = function(duracion_sacudida) {

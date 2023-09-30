@@ -1,14 +1,16 @@
 // Dibujar colisiones del jugador
-if (instance_exists(obj_jugador)) {
-	if (permitir_depuracion and permitir_ver_colisiones) {
-		colision_con_suelo(obj_jugador);
-		colision_con_riel(obj_jugador);
-		colision_lineal_derecha(obj_jugador);
-		colision_lineal_izquierda(obj_jugador);
-		colision_circular_principal(obj_jugador);
-		colision_circular_izquierda(obj_jugador);
-		colision_circular_derecha(obj_jugador);
-		colision_circular_superior(obj_jugador);
-		colision_circular_inferior(obj_jugador);
+if (permitir_depuracion and permitir_ver_colisiones) {
+	if (instance_exists(obj_jugador)) {
+		with (obj_jugador) {
+			colision_con_suelo();
+			colision_con_riel();
+			colision_lineal_derecha();
+			colision_lineal_izquierda();
+			colision_circular_central();
+			colision_circular_izquierda();
+			colision_circular_derecha();
+			colision_circular_superior();
+			colision_circular_inferior();
+		}
 	}
 }

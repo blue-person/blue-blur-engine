@@ -17,17 +17,7 @@ pos_x_boost = 25;
 pos_y_boost = pantalla.obtener_altura()  * 0.85;
 
 // Determinar sprites
-switch (global.personaje_actual) {
-    case "Sonic":
-	    hud_vidas = spr_contador_vidas_sonic;
-	    font_numerica = texto.obtener_font_azul();
-		color_boost_a = COLOR_AZUL_NORMAL;
-		color_boost_b = COLOR_AZUL_CLARO;
-        break;
-    case "Shadow":
-	    hud_vidas = spr_contador_vidas_shadow;
-	    font_numerica = texto.obtener_font_gris();
-		color_boost_a = COLOR_NARANJA_NORMAL;
-		color_boost_b = COLOR_NARANJA_CLARO;
-        break;
-}
+hud_vidas = obj_jugador.sprites_hud.icono_vidas;
+font_numerica = obj_jugador.sprites_hud.font_numeros;
+color_boost_a = obj_jugador.sprites_hud.colores_barra_boost.superior;
+color_boost_b = obj_jugador.sprites_hud.colores_barra_boost.inferior;

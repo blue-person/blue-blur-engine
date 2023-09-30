@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Paquetes externos/Platformer Water Reflection v1.1.4/Objects.yy",
+    "path": "folders/Extensiones/Platformer Water Reflection v1.1.4/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

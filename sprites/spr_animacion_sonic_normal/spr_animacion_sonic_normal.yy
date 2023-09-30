@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Sonic",
-    "path": "folders/Sprites/Interfaz/Diapositivas/Presentacion del nivel/Sonic.yy",
+    "name": "Presentacion del nivel",
+    "path": "folders/Sprites/Entidades/Personajes/Sonic/Interfaz/Presentacion del nivel.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
