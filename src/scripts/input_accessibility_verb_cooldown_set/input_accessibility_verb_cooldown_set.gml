@@ -4,7 +4,7 @@
 
 function input_accessibility_verb_cooldown_set(_verb_name, _state)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     
     if (is_array(_verb_name))
     {
@@ -22,10 +22,10 @@ function input_accessibility_verb_cooldown_set(_verb_name, _state)
     
     if (_state)
     {
-        _global.__cooldown_dict[$ _verb_name] = true;
+        global.__input_cooldown_dict[$ _verb_name] = true;
     }
     else
     {
-        variable_struct_remove(_global.__cooldown_dict, _verb_name);
+        variable_struct_remove(global.__input_cooldown_dict, _verb_name);
     }
 }

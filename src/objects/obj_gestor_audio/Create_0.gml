@@ -26,8 +26,13 @@ reproducir_audio_aislado = function(nombre_audio, permitir_completar_audio, prio
 }
 
 reproducir_audio_aleatorio = function(lista_audios, permitir_completar_audio = noone, prioridad_reproduccion = PRIORIDAD_SONIDOS, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
+	// Obtener un nuevo valor para la aleatoriedad
+	randomize();
+	
 	// Escoger de forma aleatoria un audio
-	var audio_seleccionado = valor_aleatorio(lista_audios);
+	var longitud_lista = array_length(lista_audios);
+	var indice = irandom(longitud_lista - 1);
+	var audio_seleccionado = lista_audios[indice];
 	
 	// Reproducir el audio
 	if (permitir_completar_audio == noone) {
@@ -48,11 +53,6 @@ detener_audio = function(nombre_audio) {
 detener_todo = function() {
 	// Detener todos los sonidos
 	return audio_stop_all();
-}
-
-reanudar_todo = function() {
-	// Reanudar todos los sonidos que esten pausados
-	return audio_resume_all();
 }
 
 pausar_todo = function() {
@@ -84,7 +84,7 @@ reproducir_cancion_bucle = function(nombre_audio, inicio_bucle = 0, final_bucle 
 	return audio_sound_loop(cancion, true);
 }
 
-detener_canciones = function() {
-	// Detener todas las canciones
-	return audio_group_stop_all(grp_canciones);
+detener_cancion = function(nombre_audio) {
+	// Detener la cancion
+	return self.detener_audio(nombre_audio);
 }

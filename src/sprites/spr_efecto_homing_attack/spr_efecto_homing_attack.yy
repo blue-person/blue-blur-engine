@@ -38,7 +38,7 @@
   "origin": 4,
   "parent": {
     "name": "Homing Attack",
-    "path": "folders/Sprites/Entidades/Personajes/Efectos/Homing Attack.yy",
+    "path": "folders/Sprites/Efectos visuales/Jugador/Homing Attack.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

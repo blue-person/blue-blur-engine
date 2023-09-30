@@ -7,7 +7,6 @@
 
 function input_check_double_released(_verb, _player_index = 0, _buffer_duration = 0)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
     __INPUT_VERIFY_PLAYER_INDEX
     
     if (is_array(_verb))
@@ -28,7 +27,7 @@ function input_check_double_released(_verb, _player_index = 0, _buffer_duration 
     
     if (_buffer_duration <= 0)
     {
-        return ((_global.__cleared)? false : _verb_struct.double_release);
+        return ((global.__input_cleared)? false : _verb_struct.double_release);
     }
     else
     {

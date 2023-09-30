@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "12  Accessibility",
-    "path": "folders/Extensiones/Input v6.0.4/12  Accessibility.yy",
+    "name": "Accessibility",
+    "path": "folders/Extensiones/Input v5.6.1/Accessibility.yy",
   },
 }

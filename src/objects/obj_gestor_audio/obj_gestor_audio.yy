@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Audio",
-    "path": "folders/Objetos/Funcionalidades/Gestores/Audio.yy",
+    "path": "folders/Objetos/Gestores/Audio.yy",
   },
   "parentObjectId": null,
   "persistent": true,
@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_funcionalidad",
-    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

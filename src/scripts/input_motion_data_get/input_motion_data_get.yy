@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "21  Gyro & Motion",
-    "path": "folders/Extensiones/Input v6.0.4/21  Gyro & Motion.yy",
+    "name": "Gyro",
+    "path": "folders/Extensiones/Input v5.6.1/Gyro.yy",
   },
 }

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "04  Further Verb Functions",
-    "path": "folders/Extensiones/Input v6.0.4/04  Further Verb Functions.yy",
+    "name": "Extended Verbs",
+    "path": "folders/Extensiones/Input v5.6.1/Extended Verbs.yy",
   },
 }

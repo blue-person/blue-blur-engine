@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Angulos",
-    "path": "folders/Scripts/Entidades/General/Angulos.yy",
+    "name": "Calculos generales",
+    "path": "folders/Scripts/Fisicas/Manejo de colisiones/Calculos generales.yy",
   },
 }

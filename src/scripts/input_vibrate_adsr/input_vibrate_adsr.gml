@@ -13,7 +13,6 @@
 
 function input_vibrate_adsr(_peak_strength, _sustain_level, _pan, _attack, _decay, _sustain, _release, _player_index = 0, _force = false)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
     __INPUT_VERIFY_PLAYER_INDEX
     
     _peak_strength = clamp(_peak_strength, 0, 1);
@@ -24,5 +23,5 @@ function input_vibrate_adsr(_peak_strength, _sustain_level, _pan, _attack, _deca
     _sustain       = max(_sustain, 0);
     _release       = max(_release, 0);
     
-    _global.__players[_player_index].__vibration_add_event(new __input_class_vibration_adsr(_peak_strength, _sustain_level, _pan, _attack, _decay, _sustain, _release, _force));
+    global.__input_players[_player_index].__vibration_add_event(new __input_class_vibration_adsr(_peak_strength, _sustain_level, _pan, _attack, _decay, _sustain, _release, _force));
 }

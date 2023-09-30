@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "26  Keyboard (Direct)",
-    "path": "folders/Extensiones/Input v6.0.4/26  Keyboard (Direct).yy",
+    "name": "Keyboard (Direct)",
+    "path": "folders/Extensiones/Input v5.6.1/Keyboard (Direct).yy",
   },
 }

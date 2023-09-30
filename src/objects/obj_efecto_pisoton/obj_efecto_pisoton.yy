@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_efecto_pisoton_sonic",
-    "path": "sprites/spr_efecto_pisoton_sonic/spr_efecto_pisoton_sonic.yy",
+    "name": "obj_efecto_pisoton_sonic",
+    "path": "sprites/obj_efecto_pisoton_sonic/obj_efecto_pisoton_sonic.yy",
   },
   "spriteMaskId": null,
   "visible": true,

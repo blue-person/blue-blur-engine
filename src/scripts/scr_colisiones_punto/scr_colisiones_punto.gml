@@ -1,4 +1,4 @@
-function colision_punto(pos_x, pos_y, requisitos_colision_riel = false, requisitos_caminar_sobre_agua = false){
+function colision_punto(entidad, pos_x, pos_y, requisitos_colision_riel = false, requisitos_caminar_sobre_agua = false){
 	// Determinar colisiones con superficie
 	var colision_normal_superficie = collision_point(pos_x, pos_y, obj_superficie, true, true);
 	if (colision_normal_superficie) then return true;
@@ -10,7 +10,7 @@ function colision_punto(pos_x, pos_y, requisitos_colision_riel = false, requisit
 	}
 	
 	// Determinar colisiones con superficies, ya sea capa frontal o capa posterior
-	if (capa_actual == "frontal") {
+	if (entidad.capa_actual == "frontal") {
 		// Determinar colisiones con superficie
         var colision_superficie_frontal = collision_point(pos_x, pos_y, obj_superficie_frontal, true, true);
 		if (colision_superficie_frontal) then return true;

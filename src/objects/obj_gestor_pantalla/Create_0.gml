@@ -1,7 +1,6 @@
 // Constantes
 #macro RESOLUCION_HORIZONTAL 456
 #macro RESOLUCION_VERTICAL 256
-#macro VELOCIDAD_JUEGO 60
 #macro FACTOR_ESCALA 2
 
 // Variables
@@ -16,10 +15,6 @@ obtener_altura = function() {
 	return RESOLUCION_VERTICAL;
 }
 
-obtener_velocidad_juego = function() {
-	return VELOCIDAD_JUEGO;
-}
-
 obtener_factor_escala = function() {
 	return FACTOR_ESCALA;
 }
@@ -32,16 +27,6 @@ configurar_graficos = function(nivel_antialiasing, permitir_vsync) {
 	display_reset(nivel_antialiasing, permitir_vsync);
 }
 
-configurar_velocidad = function(velocidad_requerida) {
-	// Variables
-	var velocidad_actual = game_get_speed(gamespeed_fps);
-	
-	// Configurar FPS
-	if (velocidad_actual != velocidad_requerida) {
-	    game_set_speed(velocidad_requerida, gamespeed_fps);
-	}
-}
-
 configuracion_inicial = function() {
 	// Variables
 	var ancho_ventana = RESOLUCION_HORIZONTAL * FACTOR_ESCALA;
@@ -49,10 +34,8 @@ configuracion_inicial = function() {
 	
 	// Configuracion
 	self.configurar_graficos(2, false);
-	self.configurar_velocidad(VELOCIDAD_JUEGO);
 	display_set_gui_size(RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
 	surface_resize(application_surface, RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
-	window_set_caption(TITULO_JUEGO);
 	window_set_size(ancho_ventana, altura_ventana);
 	window_center();
 }

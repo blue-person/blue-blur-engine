@@ -1,68 +1,40 @@
-// Variables generales
+// Variables
 camara = noone;
-objetivo = noone;
-indice_ajuste_posicional = 5;
-modo_seguimiento = "suave";
+pos_x = x;
+pos_y = y;
+objeto_enfocado = noone;
+valor_retraso = 5;
 
-// Variables para inclinar la camara
-desplazamiento_x = 0;
-desplazamiento_y = 0;
-
-tiempo_restante_para_inclinar = 0;
-tiempo_requerido_para_inclinar = 90;
-indice_inclinacion_superior = -83;
-indice_inclinacion_inferior = 73;
-velocidad_inclinacion_vertical = 3;
-
-permitir_camara_extendida = true;
-mitad_ancho_pantalla = pantalla.obtener_ancho() / 2;
-mitad_altura_pantalla = pantalla.obtener_altura() / 2;
-indice_inclinacion_horizontal = pantalla.obtener_ancho() / 5;
-velocidad_inclinacion_horizontal = 2;
-
-// Variables para sacudir la camara
+// Sacudir camara
+permitir_sacudir = false;
 duracion_sacudida = 0;
+magnitud_sacudida = 0;
+sacudida_restante = 0;
 
-// Crear vista de la camara
+// Mirar hacia arriba o hacia abajo
+requisito_elevar_camara = room_speed / 2;
+requisito_bajar_camara = room_speed / 1.25;
+cronometro = 0;
+
+// Crear vista
 view_enabled = true;
 view_visible[0] = true;
 view_xport[0] = 0;
 view_yport[0] = 0;
 view_wport[0] = pantalla.obtener_ancho();
 view_hport[0] = pantalla.obtener_altura() ;
-view_camera[0] = camera_create_view(0, 0, view_wport[0], view_hport[0], 0, objetivo, -1, -1, 32, 32);
+view_camera[0] = camera_create_view(0, 0, view_wport[0], view_hport[0], 0, objeto_enfocado, -1, -1, 32, 32);
 
-// Crear la camara del juego
-var valor_min_visibilidad = -255;
-var valor_max_visibilidad = 255;
-var matriz_visualizacion = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
-var matriz_proyeccion = matrix_build_projection_ortho(pantalla.obtener_ancho(), pantalla.obtener_altura(), valor_min_visibilidad, valor_max_visibilidad);
-
+// Crear camara
 camara = camera_create();
-camera_set_view_mat(camara, matriz_visualizacion);
-camera_set_proj_mat(camara, matriz_proyeccion);
+var pos_min = 1;
+var pos_max = 10000;
+
+camera_set_view_mat(camara, matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0));
+camera_set_proj_mat(camara, matrix_build_projection_ortho(pantalla.obtener_ancho(), pantalla.obtener_altura() , pos_min, pos_max));
 view_camera[0] = camara;
 
-// Metodos
-obtener_ubicacion = function() {
-	var ubicacion = {
-		pos_x: -camera_get_view_mat(camara)[12],
-		pos_y: -camera_get_view_mat(camara)[13]
-	};
-	return ubicacion;
-}
-
-establecer_enfoque = function(objetivo, desplazamiento_x = 0, desplazamiento_y = 0, modo_seguimiento = "suave") {
-	self.objetivo = objetivo;
-	self.desplazamiento_x = desplazamiento_x;
-	self.desplazamiento_y = desplazamiento_y;
-	self.modo_seguimiento = modo_seguimiento;
-}
-
-desactivar_enfoque = function() {
-	self.objetivo = noone;
-}
-
-sacudir_camara = function(duracion_sacudida) {
-	self.duracion_sacudida = duracion_sacudida;
+// Establecer el enfoque de la camara
+if (instance_exists(obj_jugador)) {
+	objeto_enfocado = obj_jugador;
 }

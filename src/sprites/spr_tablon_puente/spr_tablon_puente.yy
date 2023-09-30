@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Puentes",
-    "path": "folders/Sprites/Elementos/Obstaculos/Puentes.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Puentes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

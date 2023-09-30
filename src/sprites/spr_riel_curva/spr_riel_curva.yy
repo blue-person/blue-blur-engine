@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Generico",
-    "path": "folders/Sprites/Texturas/Superficies/Rieles/Normal/Generico.yy",
+    "name": "Normal",
+    "path": "folders/Sprites/Texturas/Superficies/Rieles/Normal.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

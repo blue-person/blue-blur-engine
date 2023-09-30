@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Normal",
-    "path": "folders/Objetos/Funcionalidades/Interfaz/HUD/Normal.yy",
+    "path": "folders/Objetos/Gestores/GUI/HUD/Normal.yy",
   },
   "parentObjectId": null,
   "persistent": false,

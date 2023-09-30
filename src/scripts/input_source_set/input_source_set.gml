@@ -7,27 +7,23 @@
 
 function input_source_set(_source, _player_index = 0, _auto_profile = true, _exclusive = true)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     __INPUT_VERIFY_PLAYER_INDEX
     
     if (_source == all)
     {
         if (_exclusive) input_source_clear(all);
     
-        with(_global.__players[_player_index])
+        with(global.__input_players[_player_index])
         {
-            if (_global.__keyboard_allowed) __source_add(INPUT_KEYBOARD);
-            if (_global.__mouse_allowed)    __source_add(INPUT_MOUSE);
-            if (_global.__touch_allowed)    __source_add(INPUT_TOUCH);
+            __source_add(INPUT_KEYBOARD);
+            __source_add(__INPUT_TOUCH_PRIMARY? INPUT_TOUCH : INPUT_MOUSE);
             
-            if (_global.__gamepad_allowed)
+            var _i = 0;
+            repeat(INPUT_MAX_GAMEPADS)
             {
-                var _i = 0;
-                repeat(INPUT_MAX_GAMEPADS)
-                {
-                    __source_add(INPUT_GAMEPAD[_i]);
-                    ++_i;
-                }
+                __source_add(INPUT_GAMEPAD[_i]);
+                ++_i;
             }
             
             if (_auto_profile) __profile_set_auto();
@@ -40,8 +36,8 @@ function input_source_set(_source, _player_index = 0, _auto_profile = true, _exc
     __INPUT_VERIFY_SOURCE_ASSIGNABLE
     
     if (_exclusive) __input_source_relinquish(_source);
-
-    with(_global.__players[_player_index])
+    
+    with(global.__input_players[_player_index])
     {
         __sources_clear();
         __source_add(_source);

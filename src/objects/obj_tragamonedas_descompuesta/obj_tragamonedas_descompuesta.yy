@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Decoracion",
-    "path": "folders/Objetos/Elementos/Decoracion.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos especificos/Luminous Bingo/Decoracion.yy",
   },
   "parentObjectId": null,
   "persistent": false,

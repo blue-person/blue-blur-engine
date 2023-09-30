@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Trampas",
-    "path": "folders/Objetos/Elementos/Obstaculos/Trampas.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Trampas.yy",
   },
   "parentObjectId": {
     "name": "obj_superficie",

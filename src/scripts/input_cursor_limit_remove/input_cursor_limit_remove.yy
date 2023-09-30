@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "10  Cursor Control",
-    "path": "folders/Extensiones/Input v6.0.4/10  Cursor Control.yy",
+    "name": "Cursor",
+    "path": "folders/Extensiones/Input v5.6.1/Cursor.yy",
   },
 }

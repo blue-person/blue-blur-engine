@@ -10,15 +10,9 @@ function input_binding_gamepad_button(_button)
     {
         __input_error("Extended gamepad binding not permitted\nSet INPUT_SDL2_ALLOW_EXTENDED to <true> to allow binding of extended buttons.");
     }
-    else if (__INPUT_ON_PS 
-         && (_button == gp_touchpad))
+    else
     {
-        _button = gp_select;
-    }
-    else if (!__INPUT_ON_SWITCH
-         && ((_button == gp_shoulderlb) || (_button == gp_shoulderrb)))
-    {
-        return (new __input_class_binding()).__set_gamepad_axis(_button, false);
+        if (__INPUT_ON_PS && (_button == gp_touchpad)) _button = gp_select;
     }
     
     return (new __input_class_binding()).__set_gamepad_button(_button);

@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Plataformas flotantes",
-    "path": "folders/Objetos/Elementos/Obstaculos/Plataformas flotantes.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Plataformas flotantes.yy",
   },
   "parentObjectId": {
     "name": "obj_superficie_posterior",

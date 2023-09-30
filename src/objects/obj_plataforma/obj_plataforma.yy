@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Plataformas flotantes",
-    "path": "folders/Objetos/Funcionalidades/Objetos padres/Plataformas/Plataformas flotantes.yy",
+    "path": "folders/Objetos/Gestores/Objetos padres/Plataformas/Plataformas flotantes.yy",
   },
   "parentObjectId": {
     "name": "obj_superficie",

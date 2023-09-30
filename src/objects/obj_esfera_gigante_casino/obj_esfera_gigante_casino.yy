@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Trampas",
-    "path": "folders/Objetos/Elementos/Obstaculos/Trampas.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos especificos/Luminous Bingo/Trampas.yy",
   },
   "parentObjectId": null,
   "persistent": false,

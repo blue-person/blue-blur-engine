@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Acrobacias aereas",
-    "path": "folders/Objetos/Elementos/Obstaculos/Acrobacias aereas.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Acrobacias aereas.yy",
   },
   "parentObjectId": null,
   "persistent": false,

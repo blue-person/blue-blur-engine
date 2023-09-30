@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Plataformas flotantes",
-    "path": "folders/Objetos/Elementos/Obstaculos/Plataformas flotantes.yy",
+    "name": "Plataformas",
+    "path": "folders/Objetos/Elementos/Obstaculos especificos/Luminous Bingo/Plataformas.yy",
   },
   "parentObjectId": {
     "name": "obj_piso_flotante_vertical",

@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Canones",
-    "path": "folders/Objetos/Elementos/Obstaculos/Canones.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos especificos/Luminous Bingo/Canones.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -4,18 +4,15 @@
 
 function input_gamepad_check_pressed(_index, _gm)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-        
-    if ((!INPUT_ALLOW_OUT_OF_FOCUS && !_global.__window_focus)
-    ||  _global.__cleared
+    if (global.__input_cleared
     ||  (_index == undefined)
     ||  (_index < 0)
-    ||  (_index >= array_length(_global.__gamepads)))
+    ||  (_index >= array_length(global.__input_gamepads)))
     {
         return false;
     }
     
-    var _gamepad = _global.__gamepads[_index];
+    var _gamepad = global.__input_gamepads[_index];
     if (!is_struct(_gamepad)) return false;
     return _gamepad.get_pressed(_gm);
 }

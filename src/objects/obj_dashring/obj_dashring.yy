@@ -5,14 +5,13 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_sonic","path":"objects/obj_sonic/obj_sonic.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_jugador","path":"objects/obj_jugador/obj_jugador.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Normal",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Rings/Normal.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Dash Rings/Normal.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Tunel automatico",
-    "path": "folders/Objetos/Elementos/Obstaculos/Tunel automatico.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Tunel automatico.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "Salto",
-    "path": "folders/Sprites/Entidades/Personajes/Sonic/Efectos/Salto.yy",
+    "path": "folders/Sprites/Efectos visuales/Jugador/Salto.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

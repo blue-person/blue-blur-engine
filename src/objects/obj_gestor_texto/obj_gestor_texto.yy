@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Texto",
-    "path": "folders/Objetos/Funcionalidades/Gestores/Texto.yy",
+    "path": "folders/Objetos/Gestores/Texto.yy",
   },
   "parentObjectId": null,
   "persistent": true,
@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_funcionalidad",
-    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

@@ -26,10 +26,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8d207666-83db-4725-9b3b-4e5062cb1f60","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Checkpoint",
-    "path": "folders/Sprites/Elementos/Obstaculos/Checkpoint.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Checkpoint.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -66,7 +66,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 15,
-    "yorigin": 39,
+    "yorigin": 23,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

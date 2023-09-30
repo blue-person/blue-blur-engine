@@ -10,7 +10,6 @@
 
 function input_vibrate_pulse(_strength, _pan, _repeats, _duration, _player_index = 0, _force = false)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
     __INPUT_VERIFY_PLAYER_INDEX
     
     _strength = clamp(_strength, 0, 1);
@@ -18,5 +17,5 @@ function input_vibrate_pulse(_strength, _pan, _repeats, _duration, _player_index
     _repeats  = max(_repeats, 0);
     _duration = max(_duration, 0);
     
-    _global.__players[_player_index].__vibration_add_event(new __input_class_vibration_pulse(_strength, _pan, _repeats, _duration, _force));
+    global.__input_players[_player_index].__vibration_add_event(new __input_class_vibration_pulse(_strength, _pan, _repeats, _duration, _force));
 }

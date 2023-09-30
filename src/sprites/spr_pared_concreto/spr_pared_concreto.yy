@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Quebrantables",
-    "path": "folders/Sprites/Elementos/Obstaculos/Quebrantables.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Quebrantables.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

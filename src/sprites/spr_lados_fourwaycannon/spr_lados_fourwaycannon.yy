@@ -42,7 +42,7 @@
   "origin": 4,
   "parent": {
     "name": "Four Way Cannon",
-    "path": "folders/Sprites/Elementos/Obstaculos/Four Way Cannon.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Four Way Cannon.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

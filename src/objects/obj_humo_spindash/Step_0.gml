@@ -3,4 +3,4 @@ if (obj_jugador.accion != -2) {
 }
     
 x = obj_jugador.x;
-y = obj_jugador.y - obj_jugador.pos_y_efectos;
+y = obj_jugador.y - obj_jugador.dibujar_y_post;

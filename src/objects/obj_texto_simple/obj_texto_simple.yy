@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Otros",
-    "path": "folders/Objetos/Funcionalidades/Otros.yy",
+    "path": "folders/Objetos/Gestores/Otros.yy",
   },
   "parentObjectId": null,
   "persistent": false,

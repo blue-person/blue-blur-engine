@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Keyboard and Mouse",
-    "path": "folders/Extensiones/Input v6.0.4/(System)/Keyboard and Mouse.yy",
+    "name": "(System)",
+    "path": "folders/Extensiones/Input v5.6.1/(System).yy",
   },
 }

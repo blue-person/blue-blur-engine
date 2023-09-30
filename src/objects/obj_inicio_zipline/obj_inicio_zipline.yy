@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Zipline",
-    "path": "folders/Objetos/Elementos/Obstaculos/Zipline.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Zipline.yy",
   },
   "parentObjectId": null,
   "persistent": false,

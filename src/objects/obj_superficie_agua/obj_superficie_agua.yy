@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Agua",
-    "path": "folders/Objetos/Niveles/Superficies/Agua.yy",
+    "name": "No usar",
+    "path": "folders/Objetos/Niveles/Superficies/Agua/No usar.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -32,5 +32,5 @@
     "path": "sprites/spr_superficie_agua/spr_superficie_agua.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

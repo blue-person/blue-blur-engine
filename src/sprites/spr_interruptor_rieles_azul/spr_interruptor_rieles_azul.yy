@@ -41,7 +41,7 @@
   "origin": 4,
   "parent": {
     "name": "Interruptor",
-    "path": "folders/Sprites/Elementos/Obstaculos/Interruptor.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Groovy Badlands/Interruptor.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

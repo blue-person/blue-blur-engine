@@ -26,7 +26,7 @@
   "origin": 3,
   "parent": {
     "name": "Canones",
-    "path": "folders/Sprites/Elementos/Obstaculos/Canones.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Luminous Bingo/Canones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

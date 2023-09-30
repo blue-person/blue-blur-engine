@@ -1,22 +1,20 @@
 function __input_mouse_button()
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
-    if (!_global.__mouse_allowed || _global.__window_focus_block_mouse)
+    if (!global.__input_mouse_allowed_on_platform || global.__input_window_focus_block_mouse)
     {
         //Mouse not alllowed
         return mb_none;
     }
     
-    if (_global.__pointer_index > 0)
+    if (global.__input_pointer_index > 0)
     {
-        if (device_mouse_check_button(_global.__pointer_index, mb_left))
+        if (device_mouse_check_button(global.__input_pointer_index, mb_left))
         {
             //Touch
             return mb_left;
         }
     }
-    else if (INPUT_ON_PC && !INPUT_ON_WEB)
+    else if (__INPUT_ON_DESKTOP && !__INPUT_ON_WEB)
     {
         //Desktop native
         if (mouse_button != mb_none)
@@ -25,7 +23,7 @@ function __input_mouse_button()
             return mouse_button;
         }
 
-        if (_global.__tap_click)
+        if (global.__input_tap_click)
         {
             //Trackpad
             return mb_left;

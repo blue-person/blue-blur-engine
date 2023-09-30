@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Puentes",
-    "path": "folders/Objetos/Elementos/Obstaculos/Puentes.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Puentes.yy",
   },
   "parentObjectId": {
     "name": "obj_puente",

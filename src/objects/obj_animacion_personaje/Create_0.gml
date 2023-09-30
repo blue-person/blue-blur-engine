@@ -2,12 +2,23 @@
 animacion_actual = 1;
 
 // Determinar variables segun el personaje
-var animacion_presentacion = obj_jugador.animacion_presentacion;
-
-if (nivel.obtener_permiso_reaparicion()) {
-	sprite_index = animacion_presentacion.normal.sprite;
-	image_speed = animacion_presentacion.normal.velocidad;
-} else {
-	sprite_index = animacion_presentacion.corriendo.sprite;
-	image_speed = animacion_presentacion.corriendo.velocidad;
+switch (global.personaje_actual) {
+    case "Sonic":
+		if (reaparicion.obtener_permiso_reaparicion()) {
+			sprite_index = spr_animacion_sonic_normal;
+			image_speed = 0.20
+		} else {
+			sprite_index = spr_animacion_sonic_corriendo;
+			image_speed = 0.45;
+		}
+        break;
+    case "Shadow":
+		if (reaparicion.obtener_permiso_reaparicion()) {
+			sprite_index = spr_animacion_shadow_inmovil;
+			image_speed = 0.20
+		} else {
+			sprite_index = spr_animacion_shadow_corriendo;
+			image_speed = 0.75;
+		}
+        break;
 }

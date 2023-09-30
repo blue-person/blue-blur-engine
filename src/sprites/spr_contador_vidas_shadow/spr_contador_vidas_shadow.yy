@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/Entidades/Personajes/Shadow/Interfaz/HUD.yy",
+    "name": "Shadow",
+    "path": "folders/Sprites/GUI/HUD/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

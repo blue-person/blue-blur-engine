@@ -7,7 +7,7 @@ with (obj_jugador) {
 	tocando_suelo = true;
 	permitir_movimiento = true;
 	
-    if (not nivel.obtener_permiso_reaparicion()) {
+    if (!reaparicion.obtener_permiso_reaparicion()) {
 		velocidad_horizontal = 9;
         direccion_horizontal = 1;
     }

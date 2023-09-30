@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Teclado",
-    "path": "folders/Sprites/Interfaz/Controles/Teclado.yy",
+    "path": "folders/Sprites/GUI/Controles/Teclado.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -3,16 +3,14 @@
 
 function input_gamepad_get_type(_index)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
     if ((_index == undefined)
     ||  (_index < 0)
-    ||  (_index >= array_length(_global.__gamepads)))
+    ||  (_index >= array_length(global.__input_gamepads)))
     {
-        return INPUT_GAMEPAD_TYPE_UNKNOWN;
+        return "unknown";
     }
     
-    var _gamepad = _global.__gamepads[_index];
-    if (!is_struct(_gamepad)) return INPUT_GAMEPAD_TYPE_UNKNOWN;
+    var _gamepad = global.__input_gamepads[_index];
+    if (!is_struct(_gamepad)) return "unknown";
     return _gamepad.simple_type;
 }

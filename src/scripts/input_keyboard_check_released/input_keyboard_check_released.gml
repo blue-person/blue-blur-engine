@@ -3,9 +3,7 @@
 
 function input_keyboard_check_released(_binding)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
-    if (!_global.__keyboard_allowed || _global.__cleared)
+    if (!global.__input_keyboard_allowed || global.__input_cleared)
     {
         return false;
     }

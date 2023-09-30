@@ -28,10 +28,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0ffcc349-ef3f-4d6f-af57-f1b063a4fc84","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
-    "name": "Animaciones",
-    "path": "folders/Sprites/Entidades/Personajes/Sonic/Animaciones.yy",
+    "name": "Sonic",
+    "path": "folders/Sprites/Entidades/Jugador/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -70,7 +70,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 18,
-    "yorigin": 18,
+    "yorigin": 17,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

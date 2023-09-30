@@ -1,5 +1,13 @@
 if (activar_efecto) {
-	sprite_index = obj_jugador.sprite_efecto_boost;
+	switch (global.personaje_actual) {
+	    case "Sonic":
+	        sprite_index = spr_efecto_boost_sonic;
+	        break;
+		case "Shadow":
+	        sprite_index = spr_efecto_boost_shadow;
+	        break;
+	}
+	
     obj_jugador.cantidad_boost -= 0.2;
 
     if (!obj_jugador.tocando_suelo) {

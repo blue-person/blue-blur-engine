@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Polea",
-    "path": "folders/Objetos/Elementos/Obstaculos/Polea.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Polea.yy",
   },
   "parentObjectId": null,
   "persistent": false,

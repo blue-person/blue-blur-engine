@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/Entidades/Personajes/Sonic/Interfaz/HUD.yy",
+    "name": "Sonic",
+    "path": "folders/Sprites/GUI/HUD/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

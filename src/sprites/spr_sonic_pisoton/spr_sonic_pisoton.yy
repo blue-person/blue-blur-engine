@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Animaciones",
-    "path": "folders/Sprites/Entidades/Personajes/Sonic/Animaciones.yy",
+    "name": "Sonic",
+    "path": "folders/Sprites/Entidades/Jugador/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,2 +1,2 @@
 mostrar_en_pantalla = true;
-obj_cronometro.iniciar_cronometro();
+obj_cronometro.permitir_medir_tiempo = true;

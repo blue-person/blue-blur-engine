@@ -40,7 +40,7 @@
   "origin": 4,
   "parent": {
     "name": "Dash Ramps",
-    "path": "folders/Sprites/Elementos/Obstaculos/Dash Ramps.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Dash Ramps.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

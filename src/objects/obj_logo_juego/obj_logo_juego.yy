@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Pantalla de titulo",
-    "path": "folders/Objetos/Funcionalidades/Interfaz/Diapositivas/Pantalla de titulo.yy",
+    "path": "folders/Objetos/Gestores/GUI/Diapositivas/Pantalla de titulo.yy",
   },
   "parentObjectId": null,
   "persistent": false,

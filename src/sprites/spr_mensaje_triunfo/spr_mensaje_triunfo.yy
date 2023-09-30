@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Quick Time Events",
-    "path": "folders/Sprites/Interfaz/Quick Time Events.yy",
+    "path": "folders/Sprites/GUI/Quick Time Events.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

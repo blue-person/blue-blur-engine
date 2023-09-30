@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Zipline",
-    "path": "folders/Sprites/Elementos/Obstaculos/Zipline.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Zipline.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

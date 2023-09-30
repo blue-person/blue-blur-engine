@@ -4,8 +4,8 @@
 
 function input_profile_auto(_player_index = 0)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     __INPUT_VERIFY_PLAYER_INDEX
     
-    return _global.__players[_player_index].__profile_set_auto();
+    return global.__input_players[_player_index].__profile_set_auto();
 }

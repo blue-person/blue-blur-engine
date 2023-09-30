@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Efectos generales",
-    "path": "folders/Sprites/Efectos generales.yy",
+    "name": "Generales",
+    "path": "folders/Sprites/Efectos visuales/Generales.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

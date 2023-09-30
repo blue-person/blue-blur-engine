@@ -1,15 +1,15 @@
-if (image_index > 998) {
-    image_index = 0;
+if (indice_sprite > 998) {
+    indice_sprite = 0;
 }
 
 if (fotograma >= 1) {
     fotograma = 0;
-    image_index++;
+    indice_sprite++;
 }
 
 if (fotograma <= -1) {
     fotograma = 0;
-    image_index--;
+    indice_sprite--;
 }
 
-draw_sprite_ext(spr_lados_fourwaycannon, image_index, x, y, 1, 1, 0, c_white, image_alpha);
+draw_sprite_ext(spr_lados_fourwaycannon, indice_sprite, x, y, 1, 1, 0, c_white, image_alpha);

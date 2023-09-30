@@ -1,9 +1,18 @@
-// Controlar la cantidad de boost
-if (room == rm_hub_world) {
-	cantidad_boost = 100;
-} else {
-	cantidad_boost = clamp(cantidad_boost, 0, 100);
+// Determinar el sprite
+if (!permitir_movimiento) {
+    switch (global.personaje_actual) {
+        case "Sonic":
+            sprite_actual = spr_sonic_normal
+            break;
+        case "Shadow":
+            sprite_actual = spr_shadow_normal;
+            break;
+    }
+    exit;
 }
+
+// Dar boost infinito cuando se esta en el hub
+if (room == rm_hub_world) then cantidad_boost = 100;
 
 // Manejar las alarmas personalizadas
 if (alarma_0 > 0) {
@@ -38,16 +47,49 @@ if (alarma_3 > 0) {
     alarma_3--;
 	
     if (alarma_3 == 1) {
-        room_persistent = false;
 		if (global.vidas_restantes > 0) {
 			global.vidas_restantes--;
-			transicion.iniciar_efecto_intraniveles("morado", 0.025, room);
+			iniciar_transicion_niveles(room, "negro", 0.025);
 		} else {
 			global.vidas_restantes = 3;
-			transicion.iniciar_efecto_intraniveles("morado", 0.0095, rm_hub_world);
+			iniciar_transicion_niveles(rm_hub_world, "negro", 0.0095);
 		}
     }
 }
+
+if (alarma_4 > 0) {
+	alarma_4--;
+	
+    if (!instance_exists(obj_invertir_colores)) {
+		instance_create_depth(0, 0, -16000, obj_invertir_colores);
+	}
+	
+    if (alarma_4 == 1) {
+        instance_destroy(obj_invertir_colores);
+        room_speed = 60;
+        alarma_4--;
+    }
+}
+
+if (alarma_5 > 0) {
+    alarma_5--;
+    if (alarm == 1) {
+        hspeed = 0;
+        vspeed = 0;
+		
+        var canon_mas_cercano = instance_nearest(x, y, obj_canon);
+		var angulo_canon = canon_mas_cercano.angulo_conducto;
+		var fuerza_canon = canon_mas_cercano.cantidad_fuerza;
+		
+		accion = 35.2;
+		velocidad_horizontal = dcos(angulo_canon) * fuerza_canon;
+        velocidad_vertical = dsin(angulo_canon) * fuerza_canon;
+    }
+}
+
+// Controlar la cantidad de boost
+if (cantidad_boost > 100) then cantidad_boost = 100;
+if (cantidad_boost < 0) then cantidad_boost = 0;
 
 // Hacer un rastro que sigue al personaje cuando usa el boost
 if (instance_exists(obj_efecto_boost) or ((global.personaje_actual == "Shadow") and (accion == 4.5))) {
@@ -86,22 +128,30 @@ if (sumergido_agua and (random(1) < 0.0115)) {
 	instance_create_depth(pos_x, pos_y, -2, obj_burbuja_agua);
 }
 
-// Fisicas dentro del agua
-gestion_fisicas_agua_entidad();
-
 // Ejecutar scripts esenciales
-gestion_fisicas_entidad();
+gestor_principal_fisicas(self);
+
+if (not zona_superada) {
+	movimiento_jugador();
+} else {
+    accion = 0;
+    direccion_horizontal = 1;
+	
+    if (abs(velocidad_horizontal) < 9) {
+		velocidad_horizontal += aceleracion;
+	}
+}
 
 // Cambiar la capa del nivel. Se hace cuando el personaje pasa por un loop, por ejemplo
-if (collision_circle(x, y, mascara_colision, obj_capa_posterior, true, true)) {
+if (collision_circle(x, y, 16, obj_capa_posterior, true, true)) {
     capa_actual = "posterior";
 }
 
-if (collision_circle(x, y, mascara_colision, obj_capa_frontal, true, true)) {
+if (collision_circle(x, y, 16, obj_capa_frontal, true, true)) {
     capa_actual = "frontal";
 }
 
-if (collision_circle(x, y, mascara_colision, obj_cambiar_capa_pf, true, true)) {
+if (collision_circle(x, y, 16, obj_cambiar_capa_pf, true, true)) {
 	if (tocando_suelo) {
 		if (velocidad_horizontal > 0) {
 			capa_actual = "posterior";
@@ -112,7 +162,7 @@ if (collision_circle(x, y, mascara_colision, obj_cambiar_capa_pf, true, true)) {
 	}
 }
 
-if (collision_circle(x, y, mascara_colision, obj_cambiar_capa_fp, true, true)) {
+if (collision_circle(x, y, 16, obj_cambiar_capa_fp, true, true)) {
 	if (tocando_suelo) {
 		if (velocidad_horizontal > 0) {
 			capa_actual = "frontal";
@@ -152,6 +202,17 @@ if (tocando_suelo) {
     }
 }
 
+if ((global.personaje_actual == "Shadow") and ((sprite_actual == spr_shadow_patinando_a) or (sprite_actual == spr_shadow_patinando_b))) {
+    sonido_pisada_a = snd_propulsores_a;
+    sonido_pisada_b = snd_propulsores_b;
+}
+
+if ((accion == 0) and (sprite_actual != spr_sonic_normal) and (sprite_actual != spr_shadow_normal) and tocando_suelo and !zona_superada and !((global.personaje_actual == "Shadow") and ((sprite_actual == spr_shadow_patinando_b) or (sprite_actual == spr_shadow_patinando_a) or (sprite_actual == spr_shadow_volando)))) {
+    sonido_pisadas_general(sonido_pisada_a, sonido_pisada_b);
+} else if (global.personaje_actual == "Shadow") {
+	sonido_pisadas_shadow(sonido_pisada_a, sonido_pisada_b);
+}
+
 // Permitir invencibilidad al personaje de manera temporal despues de ser herido
 if (tiempo_invencibilidad > 0) {
     tiempo_invencibilidad--;
@@ -159,11 +220,4 @@ if (tiempo_invencibilidad > 0) {
     if (tiempo_invencibilidad == 1) {
 		permitir_ser_apuntado = true;
 	}
-}
-
-// Gestionar el tiempo en el aire
-if (not tocando_suelo) {
-	tiempo_aire++;
-} else {
-	tiempo_aire = 0;
 }

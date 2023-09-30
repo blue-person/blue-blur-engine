@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Boost",
-    "path": "folders/Sprites/Entidades/Personajes/Sonic/Efectos/Boost.yy",
+    "name": "Sonic",
+    "path": "folders/Sprites/Efectos visuales/Jugador/Boost/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

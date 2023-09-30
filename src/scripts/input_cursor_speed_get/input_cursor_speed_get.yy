@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "09  Cursor",
-    "path": "folders/Extensiones/Input v6.0.4/09  Cursor.yy",
+    "name": "Cursor",
+    "path": "folders/Extensiones/Input v5.6.1/Cursor.yy",
   },
 }

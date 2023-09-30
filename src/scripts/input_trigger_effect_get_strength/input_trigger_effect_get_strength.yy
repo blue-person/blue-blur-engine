@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "22  Trigger Effects",
-    "path": "folders/Extensiones/Input v6.0.4/22  Trigger Effects.yy",
+    "name": "Trigger Effects",
+    "path": "folders/Extensiones/Input v5.6.1/Trigger Effects.yy",
   },
 }

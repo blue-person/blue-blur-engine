@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Plataformas flotantes",
-    "path": "folders/Sprites/Elementos/Obstaculos/Plataformas flotantes.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Plataformas flotantes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

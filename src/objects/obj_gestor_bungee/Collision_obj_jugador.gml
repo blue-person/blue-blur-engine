@@ -4,7 +4,7 @@ if (activar_evento and (other.tocando_suelo) and (other.velocidad_horizontal >= 
     other.tocando_suelo = false;
     other.x = x + image_xscale * 2;
     other.y = y + 15;
-    other.image_index = 0;
+    other.indice_sprite = 0;
     audio.reproducir_audio(snd_agarrar_objeto);
     other.direccion_horizontal = image_xscale;
     alarm[0] = 15;

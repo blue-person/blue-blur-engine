@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "11  Mouse Capture",
-    "path": "folders/Extensiones/Input v6.0.4/11  Mouse Capture.yy",
+    "name": "Mouse (Direct)",
+    "path": "folders/Extensiones/Input v5.6.1/Mouse (Direct).yy",
   },
 }

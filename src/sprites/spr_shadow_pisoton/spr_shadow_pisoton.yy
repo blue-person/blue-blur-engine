@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_shadow_pisoton",
   "bbox_bottom": 35,
-  "bbox_left": 0,
-  "bbox_right": 28,
+  "bbox_left": 4,
+  "bbox_right": 32,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Animaciones",
-    "path": "folders/Sprites/Entidades/Personajes/Shadow/Animaciones.yy",
+    "name": "Shadow",
+    "path": "folders/Sprites/Entidades/Jugador/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -63,7 +63,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 14,
+    "xorigin": 18,
     "yorigin": 18,
   },
   "swatchColours": null,
@@ -74,5 +74,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 29,
+  "width": 36,
 }

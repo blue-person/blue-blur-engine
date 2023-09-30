@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Monedas",
-    "path": "folders/Objetos/Elementos/Items/Monedas.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos especificos/Luminous Bingo/Monedas.yy",
   },
   "parentObjectId": null,
   "persistent": false,

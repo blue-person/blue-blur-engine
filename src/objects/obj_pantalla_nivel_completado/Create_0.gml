@@ -35,8 +35,20 @@ pos_x_puntaje_rings = 534;
 pos_x_puntaje_cool = 534;
 
 // Definir sprites y colores en base al personaje
-indice = obj_jugador.parametros_titlecard.indice;
-color = obj_jugador.parametros_titlecard.color;
+switch (global.personaje_actual) {
+    case "Sonic":
+        indice = 0;
+        color = make_colour_rgb(27, 54, 166);
+        break;
+    case "Shadow":
+        indice = 1;
+        color = make_colour_rgb(137, 27, 41);
+        break;
+	default:
+		indice = 0;
+        color = make_colour_rgb(155, 155, 155);
+		break;
+}
 
 // Cancion inicial de nivel completado
 audio.reproducir_cancion(msc_nivel_completado);

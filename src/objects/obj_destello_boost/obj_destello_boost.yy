@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_destello_boost_sonic",
-    "path": "sprites/spr_destello_boost_sonic/spr_destello_boost_sonic.yy",
+    "name": "obj_destello_boost_sonic",
+    "path": "sprites/obj_destello_boost_sonic/obj_destello_boost_sonic.yy",
   },
   "spriteMaskId": null,
   "visible": true,

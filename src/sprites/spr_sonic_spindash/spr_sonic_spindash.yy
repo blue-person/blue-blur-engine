@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Animaciones",
-    "path": "folders/Sprites/Entidades/Personajes/Sonic/Animaciones.yy",
+    "name": "Sonic",
+    "path": "folders/Sprites/Entidades/Jugador/Sonic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -74,7 +74,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 10,
-    "yorigin": 10,
+    "yorigin": 9,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

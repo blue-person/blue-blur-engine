@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.071814,
   "parent": {
-    "name": "Menus",
-    "path": "folders/Sonidos/Efectos de sonido/Menus.yy",
+    "name": "Menu de pausa",
+    "path": "folders/Sonidos/Efectos de sonido/Diapositivas/Menu de pausa.yy",
   },
   "preload": true,
   "sampleRate": 44100,

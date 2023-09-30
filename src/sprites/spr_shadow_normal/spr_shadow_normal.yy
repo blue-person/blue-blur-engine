@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Animaciones",
-    "path": "folders/Sprites/Entidades/Personajes/Shadow/Animaciones.yy",
+    "name": "Shadow",
+    "path": "folders/Sprites/Entidades/Jugador/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -69,7 +69,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 16,
+    "xorigin": 14,
     "yorigin": 20,
   },
   "swatchColours": null,

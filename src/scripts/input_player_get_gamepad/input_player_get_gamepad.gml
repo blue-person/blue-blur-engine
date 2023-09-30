@@ -5,11 +5,11 @@
 
 function input_player_get_gamepad(_player_index = 0, _binding = undefined)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     __INPUT_VERIFY_PLAYER_INDEX
     
     //If we're not in multidevice mode then ignore the binding argument
-    if (_global.__source_mode == INPUT_SOURCE_MODE.MULTIDEVICE)
+    if (global.__input_source_mode == INPUT_SOURCE_MODE.MULTIDEVICE)
     {
         _binding = undefined;
     }
@@ -34,5 +34,5 @@ function input_player_get_gamepad(_player_index = 0, _binding = undefined)
         }
     }
     
-    return _global.__players[_player_index].__source_get_gamepad();
+    return global.__input_players[_player_index].__source_get_gamepad();
 }

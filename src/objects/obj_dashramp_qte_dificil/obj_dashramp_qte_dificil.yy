@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dificultades",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/Dificultades.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Dash Ramps/Dificultades.yy",
   },
   "parentObjectId": {
     "name": "obj_dashramp_qte_generico",

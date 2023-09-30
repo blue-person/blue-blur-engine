@@ -17,8 +17,16 @@ velocidad_presentacion = 10;
 angulo_salida = 80;
 
 // Determinar variables segun el personaje
-indice = obj_jugador.parametros_titlecard.indice;
-color = obj_jugador.parametros_titlecard.color;
+switch (global.personaje_actual) {
+    case "Sonic":
+        indice = 0;
+		color = make_colour_rgb(27, 54, 166);
+        break;
+    case "Shadow":
+        indice = 1;
+		color = make_colour_rgb(137, 27, 41);
+        break;
+}
 
 // Evitar que el jugador se pueda mover durante la presentacion del nivel
 obj_jugador.permitir_movimiento = false;

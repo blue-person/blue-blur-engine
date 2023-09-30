@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cronometro",
-    "path": "folders/Objetos/Funcionalidades/Controladores/Cronometro.yy",
+    "path": "folders/Objetos/Controladores/Cronometro.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_funcionalidad",
-    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

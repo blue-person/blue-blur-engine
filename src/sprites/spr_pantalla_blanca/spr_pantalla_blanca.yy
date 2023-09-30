@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Transiciones",
-    "path": "folders/Sprites/Interfaz/Diapositivas/Transiciones.yy",
+    "path": "folders/Sprites/GUI/Diapositivas/Transiciones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

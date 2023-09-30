@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Item Box",
-    "path": "folders/Objetos/Funcionalidades/Objetos padres/Item Box.yy",
+    "path": "folders/Objetos/Gestores/Objetos padres/Item Box.yy",
   },
   "parentObjectId": {
     "name": "obj_apuntable",

@@ -1,33 +1,34 @@
-// Heredar datos del objeto padre
+// Importar todos los eventos de Platform Water Reflection 
 event_inherited();
 
-// Ajustar la profundidad
-depth = PROFUNDIDAD_AGUA;
+// Hacer que la profundidad de la capa sea -100,
+// esto permite que todos los objetos queden "dentro" del agua
+depth = -100;
 
 // Determina que fondos se veran reflejados
-back_layers = [];
-var propiedades_fondo = nivel.obtener_propiedades_fondo();
-if (array_length(propiedades_fondo) > 0) {
-	for (var i = 0; i < array_length(propiedades_fondo); i++) {
-		if (propiedades_fondo[i].permitir_reflexion_agua) {
-			array_push(back_layers, propiedades_fondo[i].capa);
+var estructura_fondos = obj_fondo_escenario.estructura_fondos;
+if (array_length(estructura_fondos) > 0) {
+	back_layers = [];
+	for (var n = 0; n < array_length(estructura_fondos); n++) {
+		if (estructura_fondos[n].permitir_reflexion_agua) {
+			array_push(back_layers, estructura_fondos[n].capa);
 		}
 	}
 }
 
 // Determina que tilesets se veran reflejados
-tile_layers = [];
-var propiedades_tilesets = nivel.obtener_propiedades_tilesets();
-var longitud_lista = array_length(propiedades_tilesets);
-if (longitud_lista > 0) {
-	for (var i = 0; i < longitud_lista; i++) {
-		if (propiedades_tilesets[i].permitir_reflexion_agua) {
-			array_push(tile_layers, propiedades_tilesets[i].capa);
+var estructura_tilesets = obj_fondo_escenario.estructura_tilesets;
+if (array_length(estructura_tilesets) > 0) {
+	tile_layers = [];
+	for (var n = 0; n < array_length(estructura_tilesets); n++) {
+		if (estructura_tilesets[n].permitir_reflexion_agua) {
+			array_push(tile_layers, estructura_tilesets[n].capa);
 		}
 	}
 }
 
 // Crear superficie y que tenga el mismo largo pero un menor ancho que este objeto
-superficie_agua = instance_create_depth(x, y, PROFUNDIDAD_AGUA, obj_superficie_agua);
+superficie_agua = instance_create_depth(x, y, depth, obj_superficie_agua);
+superficie_agua.visible = false;
 superficie_agua.image_xscale = sprite_width / superficie_agua.sprite_width;
 superficie_agua.image_yscale = sprite_height / (superficie_agua.sprite_height * 16);

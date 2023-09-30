@@ -53,8 +53,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Presentacion del nivel",
-    "path": "folders/Sprites/Entidades/Personajes/Shadow/Interfaz/Presentacion del nivel.yy",
+    "name": "Shadow",
+    "path": "folders/Sprites/GUI/Diapositivas/Presentacion del nivel/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Debug",
-    "path": "folders/Objetos/Funcionalidades/Controladores/Debug.yy",
+    "path": "folders/Objetos/Controladores/Debug.yy",
   },
   "parentObjectId": null,
   "persistent": true,
@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_funcionalidad",
-    "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

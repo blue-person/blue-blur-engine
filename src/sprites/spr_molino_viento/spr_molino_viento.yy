@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Decoracion",
-    "path": "folders/Sprites/Elementos/Decoracion.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos especificos/Groovy Badlands/Decoracion.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

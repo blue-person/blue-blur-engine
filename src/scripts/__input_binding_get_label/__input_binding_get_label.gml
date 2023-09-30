@@ -1,6 +1,6 @@
 function __input_binding_get_label(_type, _value, _axis_negative)
 {
-    if (!INPUT_ON_PC)
+    if (__INPUT_TOUCH_SUPPORT && (os_type != os_windows))
     {
         //Touch bindings
         if (__INPUT_ON_PS)
@@ -56,6 +56,7 @@ function __input_binding_get_label(_type, _value, _axis_negative)
                 case gp_shoulderr:  return "gamepad shoulder r";         break;
                 case gp_shoulderlb: return "gamepad trigger l";          break;
                 case gp_shoulderrb: return "gamepad trigger r";          break;
+                case gp_select:     return "gamepad select";             break;
                 case gp_start:      return "gamepad start";              break;
                 case gp_stickl:     return "gamepad thumbstick l click"; break;
                 case gp_stickr:     return "gamepad thumbstick r click"; break;
@@ -75,9 +76,7 @@ function __input_binding_get_label(_type, _value, _axis_negative)
                 case gp_axislh: return _axis_negative? "gamepad thumbstick l left" : "gamepad thumbstick l right"; break;
                 case gp_axislv: return _axis_negative? "gamepad thumbstick l up"   : "gamepad thumbstick l down";  break;
                 case gp_axisrh: return _axis_negative? "gamepad thumbstick r left" : "gamepad thumbstick r right"; break;
-                case gp_axisrv: return _axis_negative? "gamepad thumbstick r up"   : "gamepad thumbstick r down";  break;                
-                
-                case gp_select: return (__INPUT_ON_PS? "gamepad touchpad click" : "gamepad select"); break;
+                case gp_axisrv: return _axis_negative? "gamepad thumbstick r up"   : "gamepad thumbstick r down";  break;
                 
                 default: return "gamepad input unknown"; break;
             }

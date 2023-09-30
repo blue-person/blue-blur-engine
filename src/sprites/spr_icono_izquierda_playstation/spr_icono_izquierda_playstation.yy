@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Playstation",
-    "path": "folders/Sprites/Interfaz/Controles/Playstation.yy",
+    "path": "folders/Sprites/GUI/Controles/Playstation.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

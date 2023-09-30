@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "03  Advanced Checkers",
-    "path": "folders/Extensiones/Input v6.0.4/03  Advanced Checkers.yy",
+    "name": "Checkers",
+    "path": "folders/Extensiones/Input v5.6.1/Checkers.yy",
   },
 }

@@ -1,15 +1,15 @@
 if (place_meeting(x, y, obj_jugador)) {
+    obj_jugador.angulo = 0;
+    
     if (control.boton_mantenido("boton_arriba") and (abs(obj_jugador.velocidad_horizontal) < 3)) {
         if ((nombre_nivel != -1) and !seleccionar_nivel) {
+            obj_jugador.x = x;
             obj_jugador.permitir_movimiento = false;
             obj_jugador.velocidad_horizontal = 0;
             obj_jugador.accion = 0;
 			
-			if (room_exists(nombre_nivel)) {
-				seleccionar_nivel = true;
-				nivel.establecer_aparicion_hubworld(x, y - obj_jugador.mascara_colision, nombre_nivel);
-			}
-        }
+			if (room_exists(nombre_nivel)) then seleccionar_nivel = true;
+        }   
     }
 	
     if (transparencia_titulo < 1) then transparencia_titulo += 0.2;
@@ -20,5 +20,7 @@ if (place_meeting(x, y, obj_jugador)) {
 if (seleccionar_nivel) {
 	seleccionar_nivel = false;
 	audio.detener_todo();
-	transicion.iniciar_efecto_intraniveles("morado", 0.05, nombre_nivel);
+	
+	iniciar_transicion_niveles(nombre_nivel, "negro", 0.05);
+	alarm[0] = 40;
 }

@@ -5,24 +5,7 @@ tiempo_en_texto = ["", "", ""];
 valores_cronometro = "";
 
 // Determinar el tiempo inicial en caso de checkpoint
-if (nivel.obtener_permiso_reaparicion()) {
-	var tiempo_registrado = nivel.obtener_tiempo_checkpoint();
-	tiempo_en_numeros = copiar_lista(tiempo_registrado);
-}
-
-// Metodos
-obtener_tiempo  = function(modo_presentacion) {
-	if (modo_presentacion == "numerico") {
-		return tiempo_en_numeros;
-	} else if (modo_presentacion == "texto") {
-		return valores_cronometro;
-	}
-}
-
-iniciar_cronometro = function() {
-	permitir_medir_tiempo = true;
-}
-
-detener_cronometro = function() {
-	permitir_medir_tiempo = false;
+if (reaparicion.obtener_permiso_reaparicion()) {
+	var tiempo_registrado = reaparicion.obtener_tiempo_registrado();
+	copiar_lista(tiempo_registrado, tiempo_en_numeros);
 }

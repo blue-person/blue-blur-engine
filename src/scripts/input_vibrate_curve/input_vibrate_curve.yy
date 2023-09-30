@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "19  Vibration",
-    "path": "folders/Extensiones/Input v6.0.4/19  Vibration.yy",
+    "name": "Vibration",
+    "path": "folders/Extensiones/Input v5.6.1/Vibration.yy",
   },
 }

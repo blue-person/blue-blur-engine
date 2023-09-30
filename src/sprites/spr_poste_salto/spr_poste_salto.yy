@@ -28,7 +28,7 @@
   "origin": 9,
   "parent": {
     "name": "Postes",
-    "path": "folders/Sprites/Elementos/Obstaculos/Postes.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Postes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

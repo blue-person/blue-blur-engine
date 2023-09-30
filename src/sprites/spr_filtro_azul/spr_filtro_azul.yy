@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Pantalla de titulo",
-    "path": "folders/Sprites/Interfaz/Diapositivas/Pantalla de titulo.yy",
+    "path": "folders/Sprites/GUI/Diapositivas/Pantalla de titulo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Xbox",
-    "path": "folders/Sprites/Interfaz/Controles/Xbox.yy",
+    "path": "folders/Sprites/GUI/Controles/Xbox.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

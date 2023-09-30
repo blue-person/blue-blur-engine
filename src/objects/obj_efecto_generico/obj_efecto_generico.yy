@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Efectos generales",
-    "path": "folders/Objetos/Efectos generales.yy",
+    "name": "Efectos",
+    "path": "folders/Objetos/Efectos.yy",
   },
   "parentObjectId": null,
   "persistent": false,

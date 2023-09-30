@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Tunel automatico",
-    "path": "folders/Sprites/Elementos/Obstaculos/Tunel automatico.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Tunel automatico.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

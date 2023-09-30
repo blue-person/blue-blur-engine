@@ -56,10 +56,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c8191ffc-d5f1-45d9-9026-c02f6166a6e9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
-    "name": "Animaciones",
-    "path": "folders/Sprites/Entidades/Personajes/Shadow/Animaciones.yy",
+    "name": "Shadow",
+    "path": "folders/Sprites/Entidades/Jugador/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -126,7 +126,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 25,
-    "yorigin": 18,
+    "yorigin": 19,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

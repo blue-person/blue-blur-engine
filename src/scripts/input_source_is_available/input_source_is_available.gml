@@ -3,12 +3,12 @@
 
 function input_source_is_available(_source)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     
     var _p = 0;
     repeat(INPUT_MAX_PLAYERS)
     {
-        if (_global.__players[_p].__source_contains(_source)) return false;
+        if (global.__input_players[_p].__source_contains(_source)) return false;
         ++_p;
     }
     

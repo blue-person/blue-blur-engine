@@ -3,16 +3,14 @@
 
 function input_gamepad_get_map(_index)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
     if ((_index == undefined)
     ||  (_index < 0)
-    ||  (_index >= array_length(_global.__gamepads)))
+    ||  (_index >= array_length(global.__input_gamepads)))
     {
         return [];
     }
     
-    var _gamepad = _global.__gamepads[_index];
+    var _gamepad = global.__input_gamepads[_index];
     if (!is_struct(_gamepad)) return [];
     
     with(_gamepad)
@@ -21,15 +19,11 @@ function input_gamepad_get_map(_index)
         {
             //If we have no mapping then guess at what's available
             //This should only happen when we can't find an SDL map for the gamepad and we're not using a hard-coded map (e.g. for console)
-            var _mappings = [gp_face1, gp_face2, gp_face3, gp_face4,
-                             gp_padd, gp_padu, gp_padl, gp_padr,
-                             gp_shoulderl, gp_shoulderr, gp_shoulderlb, gp_shoulderrb,
-                             gp_axislh, gp_axislv, gp_axisrh, gp_axisrv,
-                             gp_start, gp_stickl, gp_stickr];
-                            
-            if (!__INPUT_ON_PS || !INPUT_PS_TOUCHPAD_ALLOWED) array_push(_mappings, gp_select);
-            
-            return _mappings;
+            return [gp_face1, gp_face2, gp_face3, gp_face4,
+                    gp_padd, gp_padu, gp_padl, gp_padr,
+                    gp_shoulderl, gp_shoulderr, gp_shoulderlb, gp_shoulderrb,
+                    gp_axislh, gp_axislv, gp_axisrh, gp_axisrv,
+                    gp_start, gp_select, gp_stickl, gp_stickr];
         }
         
         //Otherwise build an array to return based on the mapping in use

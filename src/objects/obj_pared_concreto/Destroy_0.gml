@@ -6,4 +6,4 @@ audio.reproducir_audio(snd_romper_concreto);
 
 efecto_haptico_colision();
 
-nivel.aumentar_puntaje_cool(5);
+global.puntaje_cool += 5;

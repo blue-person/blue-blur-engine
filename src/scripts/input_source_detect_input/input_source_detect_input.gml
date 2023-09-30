@@ -6,8 +6,6 @@
 
 function input_source_detect_input(_source, _available_only = true)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
     if (_source == all)
     {
         return input_source_detect_input([INPUT_KEYBOARD, INPUT_MOUSE, INPUT_TOUCH, INPUT_GAMEPAD], _available_only);
@@ -28,7 +26,7 @@ function input_source_detect_input(_source, _available_only = true)
     switch(_source.__source)
     {
         case __INPUT_SOURCE.KEYBOARD:
-            if (_global.__keyboard_allowed && _global.__any_keyboard_binding_defined
+            if (global.__input_any_keyboard_binding_defined
             &&  (!_available_only || input_source_is_available(_source))
             &&  keyboard_check_pressed(vk_anykey)
             &&  !__input_key_is_ignored(__input_keyboard_key())) //Ensure that this key isn't one we're trying to ignore
@@ -38,8 +36,7 @@ function input_source_detect_input(_source, _available_only = true)
             
             if (INPUT_ASSIGN_KEYBOARD_AND_MOUSE_TOGETHER)
             {
-                if (_global.__mouse_allowed
-                &&  (!_available_only || input_source_is_available(_source))
+                if ((!_available_only || input_source_is_available(_source))
                 &&  (input_mouse_check(mb_any) || mouse_wheel_up() || mouse_wheel_down()))
                 {
                     return true;
@@ -48,8 +45,7 @@ function input_source_detect_input(_source, _available_only = true)
         break;
         
         case __INPUT_SOURCE.MOUSE:
-            if (_global.__mouse_allowed
-            &&  (!_available_only || input_source_is_available(_source))
+            if ((!_available_only || input_source_is_available(_source))
             &&  (input_mouse_check(mb_any) || mouse_wheel_up() || mouse_wheel_down()))
             {
                 return true;
@@ -57,16 +53,15 @@ function input_source_detect_input(_source, _available_only = true)
         break;
         
         case __INPUT_SOURCE.TOUCH:
-            if (_global.__touch_allowed
-            &&  (!_available_only || input_source_is_available(_source))
-            &&  device_mouse_check_button(_global.__pointer_index, mb_left))
+            if ((!_available_only || input_source_is_available(_source))
+            &&  input_mouse_check(mb_any))
             {
                 return true;
             }
         break;
         
         case __INPUT_SOURCE.GAMEPAD:
-            if (_global.__gamepad_allowed && _global.__any_gamepad_binding_defined)
+            if (global.__input_any_gamepad_binding_defined)
             {
                 var _gamepad = _source.__gamepad;
                 if (input_gamepad_is_connected(_gamepad)

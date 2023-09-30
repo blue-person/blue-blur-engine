@@ -2,11 +2,10 @@
 
 function input_mouse_capture_get()
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     
     return {
-        capture:     _global.__mouse_capture,
-        sensitivity: _global.__mouse_capture_sensitivity,
-        blocked:     _global.__mouse_capture_blocked,
+        capture:     global.__input_mouse_capture,
+        sensitivity: global.__input_mouse_capture_sensitivity,
     }
 }

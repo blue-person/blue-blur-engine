@@ -30,7 +30,7 @@
   "origin": 4,
   "parent": {
     "name": "Rainbow",
-    "path": "folders/Sprites/Elementos/Obstaculos/Dash Rings/Rainbow.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Dash Rings/Rainbow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,1 +1,1 @@
-nivel.aumentar_puntaje_cool(1000);
+global.puntaje_cool += 1000;

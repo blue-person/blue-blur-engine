@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "07  Binding Scanner",
-    "path": "folders/Extensiones/Input v6.0.4/07  Binding Scanner.yy",
+    "name": "Binding Creators",
+    "path": "folders/Extensiones/Input v5.6.1/Binding Creators.yy",
   },
 }

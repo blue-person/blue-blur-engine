@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Four Way Cannon",
-    "path": "folders/Objetos/Elementos/Obstaculos/Four Way Cannon.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos  normales/Four Way Cannon.yy",
   },
   "parentObjectId": null,
   "persistent": false,

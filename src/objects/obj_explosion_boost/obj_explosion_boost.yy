@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_explosion_boost_sonic",
-    "path": "sprites/spr_explosion_boost_sonic/spr_explosion_boost_sonic.yy",
+    "name": "obj_explosion_boost_sonic",
+    "path": "sprites/obj_explosion_boost_sonic/obj_explosion_boost_sonic.yy",
   },
   "spriteMaskId": null,
   "visible": true,

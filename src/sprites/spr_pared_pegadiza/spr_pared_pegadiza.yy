@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Paredes pegadizas",
-    "path": "folders/Sprites/Elementos/Obstaculos/Paredes pegadizas.yy",
+    "path": "folders/Sprites/Elementos/Obstaculos/Obstaculos normales/Paredes pegadizas.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

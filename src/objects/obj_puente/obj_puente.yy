@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Puentes",
-    "path": "folders/Objetos/Funcionalidades/Objetos padres/Plataformas/Puentes.yy",
+    "path": "folders/Objetos/Gestores/Objetos padres/Plataformas/Puentes.yy",
   },
   "parentObjectId": null,
   "persistent": false,

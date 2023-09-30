@@ -8,12 +8,12 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Agua",
-    "path": "folders/Objetos/Niveles/Superficies/Agua.yy",
+    "name": "Usar",
+    "path": "folders/Objetos/Niveles/Superficies/Agua/Usar.yy",
   },
   "parentObjectId": {
-    "name": "obj_water",
-    "path": "objects/obj_water/obj_water.yy",
+    "name": "obj_profundidad_agua",
+    "path": "objects/obj_profundidad_agua/obj_profundidad_agua.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
