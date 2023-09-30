@@ -64,3 +64,8 @@ velocidad_homing_attack = 12;
 audio_festejo = snd_festejo_shadow;
 
 audio_muerte = snd_muerte_shadow;
+
+parametros_titlecard = {
+	indice: 1,
+	color: make_colour_rgb(137, 27, 41)
+}

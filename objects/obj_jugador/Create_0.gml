@@ -134,3 +134,8 @@ audio_festejo = noone;
 audio_muerte = noone;
 
 direccion_aura_boost = 0;
+
+parametros_titlecard = {
+	indice: 0,
+	color: make_colour_rgb(155, 155, 155)
+}
