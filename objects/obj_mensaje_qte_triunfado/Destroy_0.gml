@@ -1,1 +1,0 @@
-global.puntaje_cool += 1000;

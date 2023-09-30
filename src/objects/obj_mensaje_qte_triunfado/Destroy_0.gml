@@ -1,0 +1,1 @@
+nivel.aumentar_puntaje_cool(1000);
