@@ -86,6 +86,9 @@ if (sumergido_agua and (random(1) < 0.0115)) {
 	instance_create_depth(pos_x, pos_y, -2, obj_burbuja_agua);
 }
 
+// Fisicas dentro del agua
+gestion_fisicas_agua_entidad();
+
 // Ejecutar scripts esenciales
 gestion_fisicas_entidad();
 

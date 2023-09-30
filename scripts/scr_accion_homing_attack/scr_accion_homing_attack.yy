@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Acciones",
-    "path": "folders/Scripts/Entidades/Jugador/General/Movimientos/Acciones.yy",
+    "name": "Habilidades",
+    "path": "folders/Scripts/Entidades/Jugador/General/Movimientos/Acciones/Habilidades.yy",
   },
 }
