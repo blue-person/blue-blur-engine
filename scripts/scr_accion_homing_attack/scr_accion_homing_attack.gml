@@ -68,7 +68,6 @@ function gestion_homing_attack(){
 			direccion_horizontal = -1;
 		}
 		
-		var velocidad_homing_attack = obj_jugador.velocidad_homing_attack;
 		velocidad_horizontal = direccion_horizontal * velocidad_homing_attack;
         velocidad_vertical = 0;
 		control.inhabilitar_lectura(2);
@@ -86,5 +85,5 @@ function gestion_homing_attack(){
         accion = 0;
     }
     // Luego del homing attack, el personaje realiza una acrobacia en el aire, lo cual es la accion 10.
-    // La acrobacia en el aire y el air dash se controla en el codigo de la funcion dibujar_sprites_sonic.
+    // La acrobacia en el aire y el air dash se controla en el codigo de la funcion gestion_animaciones_sonic.
 }

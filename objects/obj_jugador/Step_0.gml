@@ -92,17 +92,6 @@ gestion_fisicas_agua_entidad();
 // Ejecutar scripts esenciales
 gestion_fisicas_entidad();
 
-if (not zona_superada) {
-	gestion_movimiento_jugador();
-} else {
-    accion = 0;
-    direccion_horizontal = 1;
-	
-    if (abs(velocidad_horizontal) < 9) {
-		velocidad_horizontal += aceleracion;
-	}
-}
-
 // Cambiar la capa del nivel. Se hace cuando el personaje pasa por un loop, por ejemplo
 if (collision_circle(x, y, mascara_colision, obj_capa_posterior, true, true)) {
     capa_actual = "posterior";

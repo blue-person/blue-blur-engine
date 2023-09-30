@@ -2,4 +2,4 @@
 event_inherited();
 
 // Determinar que sprites usar en base a la accion
-dibujar_sprites_shadow();
+gestion_animaciones_shadow();

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Basicas",
-    "path": "folders/Scripts/Entidades/Jugador/General/Movimientos/Acciones/Basicas.yy",
+    "name": "Acciones basicas",
+    "path": "folders/Scripts/Entidades/Jugador/General/Movimientos/Acciones basicas.yy",
   },
 }

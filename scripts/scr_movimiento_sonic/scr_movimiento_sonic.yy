@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Movimientos",
-    "path": "folders/Scripts/Entidades/Jugador/Sonic/Movimientos.yy",
+    "name": "Gestor",
+    "path": "folders/Scripts/Entidades/Jugador/Sonic/Movimientos/Gestor.yy",
   },
 }

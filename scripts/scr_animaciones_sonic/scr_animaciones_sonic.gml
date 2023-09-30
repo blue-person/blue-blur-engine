@@ -1,4 +1,4 @@
-function dibujar_sprites_sonic() {
+function gestion_animaciones_sonic() {
 	// Estando de pie
 	if ((velocidad_horizontal == 0) and tocando_suelo and (accion == 0)) {
 	    sprite_index = spr_sonic_normal;

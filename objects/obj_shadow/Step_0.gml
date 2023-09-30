@@ -18,3 +18,15 @@ if ((accion == 0) and (sprite_index != spr_shadow_normal) and (tocando_suelo) an
 } else {
     sonido_pisadas_shadow(sonido_pisada_a, sonido_pisada_b);
 }
+
+// Gestionar los movimientos del personaje
+if (not zona_superada) {
+	gestion_movimiento_shadow();
+} else {
+    accion = 0;
+    direccion_horizontal = 1;
+	
+    if (abs(velocidad_horizontal) < 9) {
+		velocidad_horizontal += aceleracion;
+	}
+}

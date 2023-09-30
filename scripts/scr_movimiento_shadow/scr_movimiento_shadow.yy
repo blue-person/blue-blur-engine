@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Movimientos",
-    "path": "folders/Scripts/Entidades/Jugador/Shadow/Movimientos.yy",
+    "name": "Gestor",
+    "path": "folders/Scripts/Entidades/Jugador/Shadow/Movimientos/Gestor.yy",
   },
 }
