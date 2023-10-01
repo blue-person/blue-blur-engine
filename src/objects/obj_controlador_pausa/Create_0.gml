@@ -7,8 +7,8 @@ boton_necesario_presionado = false;
 imagen_fondo = noone;
 archivo_pantallazo = "escenario_actual.png";
 
-pos_x = pantalla.obtener_ancho() / 2;
-pos_y = pantalla.obtener_altura() / 2;
+pos_x = graficos.obtener_ancho() / 2;
+pos_y = graficos.obtener_altura() / 2;
 
 // Establecer estados de los botones
 opciones_menu = [{

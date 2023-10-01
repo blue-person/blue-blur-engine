@@ -4,7 +4,7 @@ function gestion_accion_walljump() {
         velocidad_vertical = 0;
         velocidad_horizontal = 0;
 
-        if (control.boton_presionado("boton_salto")) {
+        if (controles.boton_presionado("boton_salto")) {
             alarm[2] = 0;
             direccion_horizontal = -direccion_horizontal;
             accion = 20;

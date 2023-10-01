@@ -8,7 +8,7 @@ if (limite_tiempo > 0) {
 	    var transparencia = opcion_actual.transparencia;
 		
 		var boton_aleatorio = lista_botones[opcion_actual.indice_boton];
-		var icono_boton = control.obtener_icono_boton(boton_aleatorio);
+		var icono_boton = controles.obtener_icono_boton(boton_aleatorio);
 		
 		draw_sprite_ext(icono_boton, 0, pos_x, pos_y, escala_x, escala_y, 0, c_white, transparencia);
 	}

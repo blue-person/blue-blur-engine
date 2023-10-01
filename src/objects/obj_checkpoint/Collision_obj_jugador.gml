@@ -4,7 +4,7 @@ if ((estado_animacion == 1) and (other.accion != 26)) {
 	estado_animacion = 2;
     image_index = 0;
 			
-	// Establecer el punto de control
+	// Establecer el punto de controles
 	nivel.establecer_punto_control(x, y - obj_jugador.mascara_colision, tiempo_punto_control);
 	
 	// Reproducir sonido

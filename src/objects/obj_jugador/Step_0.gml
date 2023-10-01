@@ -41,10 +41,10 @@ if (alarma_3 > 0) {
         room_persistent = false;
 		if (global.vidas_restantes > 0) {
 			global.vidas_restantes--;
-			transicion.iniciar_efecto_intraniveles("morado", 0.025, room);
+			transiciones.iniciar_efecto_intraniveles("morado", 0.025, room);
 		} else {
 			global.vidas_restantes = 3;
-			transicion.iniciar_efecto_intraniveles("morado", 0.0095, rm_hub_world);
+			transiciones.iniciar_efecto_intraniveles("morado", 0.0095, rm_hub_world);
 		}
     }
 }

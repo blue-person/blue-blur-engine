@@ -4,7 +4,7 @@
 ///          
 ///          This function, in contrast to input_binding_set(), will try to automatically
 ///          resolve conflicts based on verb groups defined in __input_config_verb_groups().
-///          This function is effective for simple control schemes but may fail in more complex
+///          This function is effective for simple controles schemes but may fail in more complex
 ///          situations; in these cases, you’ll need to handle conflict resolution yourself.
 ///          
 /// @param   verb

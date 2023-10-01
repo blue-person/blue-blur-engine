@@ -1,5 +1,5 @@
 function determinar_botones_qte() {
-	if (control.obtener_tipo_controles() == "teclado") {
+	if (controles.obtener_tipo_controles() == "teclado") {
 		return ["boton_izquierda", "boton_abajo", "boton_arriba", "boton_derecha"];
 	} else {
 		return ["boton_salto", "boton_boost", "boton_ataque", "boton_especial"];
@@ -19,7 +19,7 @@ function iniciar_evento_qte(tiempo_reaccion = 60) {
 	
 	audio.reproducir_audio_aislado(snd_dashramp, false);
 
-	control.inhabilitar_lectura(2);
+	controles.inhabilitar_lectura(2);
 	activar_evento = false;
 	alarm[0] = tiempo_reaccion;
 }

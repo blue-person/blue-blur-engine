@@ -1,7 +1,7 @@
 if (pausar_juego) {
 	// Variables
-	var boton_abajo_presionado = control.boton_presionado("boton_abajo");
-	var boton_arriba_presionado = control.boton_presionado("boton_arriba");
+	var boton_abajo_presionado = controles.boton_presionado("boton_abajo");
+	var boton_arriba_presionado = controles.boton_presionado("boton_arriba");
 	
 	// Reproducir audio
 	if (boton_abajo_presionado or boton_arriba_presionado) {
@@ -13,7 +13,7 @@ if (pausar_juego) {
 	opcion_seleccionada = (opcion_seleccionada + cantidad_opciones) % cantidad_opciones;
 
 	// 
-	var boton_necesario_presionado = (control.boton_presionado("boton_entrada") or control.boton_presionado("boton_salto"));
+	var boton_necesario_presionado = (controles.boton_presionado("boton_entrada") or controles.boton_presionado("boton_salto"));
 	if (boton_necesario_presionado) {
 		if (opciones_menu[opcion_seleccionada].estado == 3) {
 			// Reproducir audio de negacion
@@ -49,7 +49,7 @@ if (pausar_juego) {
 		}
 	}
 } else {
-	var boton_necesario_presionado = (control.boton_presionado("boton_entrada") or os_is_paused());
+	var boton_necesario_presionado = (controles.boton_presionado("boton_entrada") or os_is_paused());
 	var no_presentando_nivel = not instance_exists(obj_presentacion_nivel);
 	var no_transicionando_entre_niveles = not instance_exists(obj_transicion_intraniveles);
 

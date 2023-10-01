@@ -12,7 +12,7 @@ function __input_keyboard_key()
                 //Android UTF8
                 if (keyboard_check(ord(keyboard_lastchar))) return ord(keyboard_lastchar);
 
-                //Android control
+                //Android controles
                 if (keyboard_check(vk_left     )) return vk_left;
                 if (keyboard_check(vk_up       )) return vk_up;
                 if (keyboard_check(vk_down     )) return vk_down;
@@ -28,7 +28,7 @@ function __input_keyboard_key()
                 //Switch UTF8
                 if (keyboard_check(ord(keyboard_lastchar))) return ord(keyboard_lastchar);
                 
-                //Switch control
+                //Switch controles
                 var _i = 254;
                 repeat(248)
                 {

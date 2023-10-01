@@ -7,6 +7,7 @@
 #macro PROFUNDIDAD_CONTROLADORES 0
 #macro PROFUNDIDAD_PARTICULAS 0
 #macro PROFUNDIDAD_JUGADOR -1
+#macro PROFUNDIDAD_INTERFAZ -100
 #macro PROFUNDIDAD_AGUA -200
 #macro PROFUNDIDAD_TRANSICIONES -255
 
@@ -25,8 +26,8 @@
 depth = PROFUNDIDAD_CONTROLADORES;
 
 // Gestor de pantalla
-global.gestor_pantalla = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_pantalla);
-#macro pantalla global.gestor_pantalla
+global.gestor_graficos = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_graficos);
+#macro graficos global.gestor_graficos
 
 // Gestor de audio
 global.gestor_audio = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_audio);
@@ -34,15 +35,15 @@ global.gestor_audio = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_audio
 
 // Gestor de controles
 global.gestor_controles = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_controles);
-#macro control global.gestor_controles
+#macro controles global.gestor_controles
 
-// Gestor de texto
+// Gestor de textos
 global.gestor_texto = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_texto);
-#macro texto global.gestor_texto
+#macro textos global.gestor_texto
 
 // Gestor de transiciones
 global.gestor_transiciones = crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_gestor_transiciones);
-#macro transicion global.gestor_transiciones
+#macro transiciones global.gestor_transiciones
 
 // Gestor del nivel actual
 global.gestor_nivel = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_nivel);
@@ -55,3 +56,13 @@ global.controlador_depuracion = crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, o
 // Sistema de particulas
 global.sistema_particulas = crear_sistema_particulas_basico();
 #macro particulas global.sistema_particulas
+
+// Establecer del jugador
+global.personaje_actual = obj_sonic;
+global.vidas_restantes = 3;
+
+// Creacion de seudonimos
+#macro hud instance_find(obj_hud, 0)
+#macro camara instance_find(obj_camara, 0)
+#macro cronometro instance_find(obj_cronometro, 0)
+#macro jugador instance_find(global.personaje_actual, 0)

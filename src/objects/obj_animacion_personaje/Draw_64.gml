@@ -1,5 +1,5 @@
-var mitad_ancho_resolucion = pantalla.obtener_ancho() / 2;
-var mitad_altura_resolucion = pantalla.obtener_altura()  / 2;
+var mitad_ancho_resolucion = graficos.obtener_ancho() / 2;
+var mitad_altura_resolucion = graficos.obtener_altura()  / 2;
 
 switch (animacion_actual) {
     case 1:
@@ -20,7 +20,7 @@ switch (animacion_actual) {
 	        animacion_actual = 3;
 		
 			if (!alarm[0]) {
-				alarm[0] = room_speed;
+				alarm[0] = graficos.obtener_velocidad_juego();
 			}
 	    }
 	

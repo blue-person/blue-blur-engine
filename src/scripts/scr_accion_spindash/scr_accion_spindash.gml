@@ -7,19 +7,19 @@ function gestion_spindash() {
         velocidad_spindash = 192;
     }
 
-    if ((accion == -2) and control.boton_presionado("boton_salto")) {
+    if ((accion == -2) and controles.boton_presionado("boton_salto")) {
         velocidad_spindash += 8;
         audio.reproducir_audio(snd_cargar_spindash);
     }
 
-    if ((accion == -2) and !control.boton_mantenido("boton_abajo")) {
+    if ((accion == -2) and !controles.boton_mantenido("boton_abajo")) {
         velocidad_horizontal = direccion_horizontal * 9 + (direccion_horizontal * floor(velocidad_spindash) / 8);
         accion = 2;
         velocidad_spindash = 0;
         audio.reproducir_audio(snd_soltar_spindash);
     }
 
-    if ((accion == -1) and control.boton_presionado("boton_salto")) {
+    if ((accion == -1) and controles.boton_presionado("boton_salto")) {
         velocidad_spindash = 0;
         accion = -2;
         image_index = 0;

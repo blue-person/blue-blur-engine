@@ -31,6 +31,13 @@ function normalizar_angulo(angulo) {
 	return angulo;
 }
 
+function numero_a_texto(numero, cantidad_ceros) {
+	var numero_en_texto = string(numero);
+	var longitud_numero = string_length(numero_en_texto);
+	var ceros_faltantes = cantidad_ceros - longitud_numero;
+	return string_repeat("0", ceros_faltantes) + numero_en_texto;
+}
+
 function division_segura(valor_a, valor_b) {
 	return (valor_b == 0.0) ? 0.0 : (valor_a / valor_b);
 }

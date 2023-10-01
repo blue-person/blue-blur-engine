@@ -1,4 +1,4 @@
-//Verbs that control motion of Input's device-agnostic cursor
+//Verbs that controles motion of Input's device-agnostic cursor
 //This is primarily used for gamepad input but can also be used for keyboard input too
 #macro INPUT_CURSOR_VERB_UP     "aim_up"
 #macro INPUT_CURSOR_VERB_DOWN   "aim_down"

@@ -1,7 +1,7 @@
 function gestion_boost() {
-	if (control.boton_presionado("boton_boost")) {
+	if (controles.boton_presionado("boton_boost")) {
         usando_boost = true;
-    } else if (control.boton_liberado("boton_boost")) {
+    } else if (controles.boton_liberado("boton_boost")) {
         usando_boost = false;
     }
 	

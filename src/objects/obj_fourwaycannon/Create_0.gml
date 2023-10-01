@@ -3,8 +3,8 @@ depth = -10;
 image_speed = 0;
 activar_evento = false;
 realizar_animacion = true;
-cronometro = 0;
-tiempo_cronometro = 200;
+tiempo_transcurrido = 0;
+tiempo_maximo = 200;
 puede_usarse = true;
 
 // Establecer variables de los lados del objeto

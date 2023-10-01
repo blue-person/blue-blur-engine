@@ -4,7 +4,7 @@
 //Whether to allow keyboard input on Switch platform
 #macro INPUT_SWITCH_KEYBOARD_ALLOWED  false
 
-//Whether to merge control keys, for example Left Shift and Right Shift upon user rebind
+//Whether to merge controles keys, for example Left Shift and Right Shift upon user rebind
 #macro INPUT_MERGE_CONTROL_KEYS  false
 
 //The following macro controls default key filtering behaviour on platforms supporting keyboard

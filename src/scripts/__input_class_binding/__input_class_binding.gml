@@ -262,7 +262,7 @@ function __input_class_binding() constructor
             {
                 switch(_key)
                 {
-                    //Combine player-bound control keys
+                    //Combine player-bound controles keys
                     case vk_lcontrol: case vk_rcontrol:  _key = vk_control; break;
                     case vk_lalt:     case vk_ralt:      _key = vk_alt;     break;
                     case vk_lshift:   case vk_rshift:    _key = vk_shift;   break;

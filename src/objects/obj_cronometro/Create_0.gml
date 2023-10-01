@@ -14,7 +14,7 @@ if (nivel.obtener_permiso_reaparicion()) {
 obtener_tiempo  = function(modo_presentacion) {
 	if (modo_presentacion == "numerico") {
 		return tiempo_en_numeros;
-	} else if (modo_presentacion == "texto") {
+	} else if (modo_presentacion == "textos") {
 		return valores_cronometro;
 	}
 }

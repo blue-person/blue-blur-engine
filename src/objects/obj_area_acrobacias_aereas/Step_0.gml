@@ -4,7 +4,7 @@ if (activar_efecto) {
 	
     if (jugador_vivo and colision_con_jugador) {
 		var jugador_saltando = (obj_jugador.accion == 4) or (obj_jugador.accion == 4.5);
-		var jugador_intentando_saltar = control.boton_presionado("boton_salto") and (not obj_jugador.tocando_suelo);
+		var jugador_intentando_saltar = controles.boton_presionado("boton_salto") and (not obj_jugador.tocando_suelo);
 		
 		if (jugador_saltando or jugador_intentando_saltar) {
 	        obj_jugador.accion = 15;

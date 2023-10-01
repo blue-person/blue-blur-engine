@@ -24,8 +24,8 @@ obtener_font_dorado = function() {
 	return font_dorado;
 }
 
-graficacion_simple = function(pos_x, pos_y, mensaje, font = -1, alineacion_hor = fa_left, alineacion_ver = fa_top, transparencia = 1) {
-	// Graficar el texto solicitado
+escritura_simple = function(pos_x, pos_y, mensaje, font = -1, alineacion_hor = fa_left, alineacion_ver = fa_top, transparencia = 1) {
+	// Graficar el textos solicitado
 	draw_set_font(font);
 	draw_set_halign(alineacion_hor);
 	draw_set_valign(alineacion_ver);
@@ -37,7 +37,7 @@ graficacion_simple = function(pos_x, pos_y, mensaje, font = -1, alineacion_hor =
 	draw_set_valign(fa_top);
 }
 
-graficacion_avanzada = function(pos_x_1, pos_y_1, mensaje, magnitud_mensaje, color_bordes, color_texto, escala_x, escala_y) {
+escritura_avanzada = function(pos_x_1, pos_y_1, mensaje, magnitud_mensaje, color_bordes, color_texto, escala_x, escala_y) {
 	// Variables
 	var color_inicial_dibujo = draw_get_color();
 	var pos_x_2 = -magnitud_mensaje;
@@ -61,15 +61,15 @@ graficacion_avanzada = function(pos_x_1, pos_y_1, mensaje, magnitud_mensaje, col
       pos_y_2++;
 	}
 	
-	// Graficar el texto
+	// Graficar el textos
 	draw_set_color(color_inicial_dibujo);
 	draw_text_transformed_color(pos_x_1, pos_y_1, string_hash_to_newline(mensaje), escala_x, escala_y, 0, color_texto, color_texto, color_texto, color_texto, 1);
 }
 
-graficacion_sombreada = function(pos_x, pos_y, mensaje, magnitud_sombreado = 1, color_bordes = c_white, color_texto = c_white, escala_x = 1, escala_y = 1) {
-	// Graficar la sombra del texto
-	self.graficacion_avanzada(pos_x + 2,  pos_y + 2, mensaje, magnitud_sombreado, c_black, c_black, escala_x, escala_y);
+escritura_sombreada = function(pos_x, pos_y, mensaje, magnitud_sombreado = 1, color_bordes = c_white, color_texto = c_white, escala_x = 1, escala_y = 1) {
+	// Graficar la sombra del textos
+	self.escritura_avanzada(pos_x + 2,  pos_y + 2, mensaje, magnitud_sombreado, c_black, c_black, escala_x, escala_y);
 	
-	// Graficar el texto
-	self.graficacion_avanzada(pos_x,  pos_y, mensaje, magnitud_sombreado, color_bordes, color_texto, escala_x, escala_y);
+	// Graficar el textos
+	self.escritura_avanzada(pos_x,  pos_y, mensaje, magnitud_sombreado, color_bordes, color_texto, escala_x, escala_y);
 }

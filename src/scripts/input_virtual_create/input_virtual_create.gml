@@ -1,4 +1,4 @@
-/// @desc    Creates a new virtual button that allows for touchscreen input to control verbs
+/// @desc    Creates a new virtual button that allows for touchscreen input to controles verbs
 /// 
 /// Virtual buttons are returned as structs which can controlled by calling methods. For example,
 /// the two following functions destroy and draw the button:

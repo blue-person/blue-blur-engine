@@ -18,5 +18,5 @@ if (activar_evento and (other.accion != 26)) {
 	activar_evento = false;
     audio.reproducir_audio_aislado(snd_dashramp, false);
 	
-	control.inhabilitar_lectura(2);
+	controles.inhabilitar_lectura(2);
 }

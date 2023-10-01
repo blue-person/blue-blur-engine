@@ -2,7 +2,7 @@ function gestion_lightdash() {
 	var light_ring_cercano = instance_nearest(x, y, obj_lightdash_ring);
 	var distancia_light_ring = distance_to_object(light_ring_cercano);
 	
-    if ((distancia_light_ring <= 25) and control.boton_mantenido("boton_especial")) {
+    if ((distancia_light_ring <= 25) and controles.boton_mantenido("boton_especial")) {
 		var apuntando_derecha = ((light_ring_cercano.x > x) and (direccion_horizontal == 1));
 		var apuntando_izquierda = ((light_ring_cercano.x < x) and (direccion_horizontal == -1));
 		if (apuntando_derecha or apuntando_izquierda) then accion = 23;

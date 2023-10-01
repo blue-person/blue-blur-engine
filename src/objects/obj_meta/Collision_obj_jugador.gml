@@ -1,5 +1,5 @@
 other.zona_superada = true;
-obj_hud_normal.mostrar_en_pantalla = false;
+hud.ocultar();
 obj_cronometro.detener_cronometro();
 obj_camara.establecer_enfoque(self);
 

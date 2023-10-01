@@ -50,7 +50,7 @@ switch (fase_animacion) {
 	    }
         break;
     case 9:
-		if (control.boton_presionado("boton_salto") or control.boton_presionado("boton_entrada")) {
+		if (controles.boton_presionado("boton_salto") or controles.boton_presionado("boton_entrada")) {
 			nivel.calcular_puntaje_final("automatico");
 		} else {
 			nivel.calcular_puntaje_final("incremental");
@@ -79,12 +79,12 @@ switch (fase_animacion) {
 		   }
 	    }
 
-	    if (permitir_transicion and control.boton_presionado("boton_salto")) {
+	    if (permitir_transicion and controles.boton_presionado("boton_salto")) {
 			permitir_transicion = false;
 			
 			audio.detener_canciones();
 	        audio.reproducir_audio(snd_confirmar_opcion);
-			transicion.iniciar_efecto_intraniveles("morado", 0.015, rm_hub_world);
+			transiciones.iniciar_efecto_intraniveles("morado", 0.015, rm_hub_world);
 	    }
         break;
 }

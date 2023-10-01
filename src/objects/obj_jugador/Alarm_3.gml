@@ -1,1 +1,1 @@
-control.habilitar_lectura()
+controles.habilitar_lectura()

@@ -5,7 +5,7 @@ velocidad_animacion = 0.1;
 
 // Variables del dibujo
 mensaje = "checkpoint";
-tiempo_actual = obj_cronometro.obtener_tiempo("texto");
+tiempo_actual = obj_cronometro.obtener_tiempo("textos");
 font_requerida = noone;
 numeros_requeridos = noone;
 

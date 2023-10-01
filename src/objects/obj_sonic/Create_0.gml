@@ -33,14 +33,14 @@ audios_acrobacia = [snd_ataque_sonic_a, snd_ataque_sonic_b, snd_ataque_sonic_c];
 
 sprites_hud = {
 	icono_vidas: spr_contador_vidas_sonic,
-	font_numeros: texto.obtener_font_azul(),
+	font_numeros: textos.obtener_font_azul(),
 	colores_barra_boost: { 
 		superior: COLOR_AZUL_NORMAL,
 		inferior: COLOR_AZUL_CLARO
 	}
 }
 
-font_checkpoint = texto.obtener_font_azul();
+font_checkpoint = textos.obtener_font_azul();
 
 particulas_rastro = part_type_create();
 part_type_shape(particulas_rastro, pt_shape_flare);

@@ -1,5 +1,5 @@
 if (place_meeting(x, y, obj_jugador)) {
-    if (control.boton_mantenido("boton_arriba") and (abs(obj_jugador.velocidad_horizontal) < 3)) {
+    if (controles.boton_mantenido("boton_arriba") and (abs(obj_jugador.velocidad_horizontal) < 3)) {
         if ((nombre_nivel != -1) and !seleccionar_nivel) {
             obj_jugador.permitir_movimiento = false;
             obj_jugador.velocidad_horizontal = 0;
@@ -20,5 +20,5 @@ if (place_meeting(x, y, obj_jugador)) {
 if (seleccionar_nivel) {
 	seleccionar_nivel = false;
 	audio.detener_todo();
-	transicion.iniciar_efecto_intraniveles("morado", 0.05, nombre_nivel);
+	transiciones.iniciar_efecto_intraniveles("morado", 0.05, nombre_nivel);
 }

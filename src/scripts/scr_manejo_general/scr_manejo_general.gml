@@ -22,7 +22,7 @@ function herir_jugador() {
 	    other.accion = 26;
 	    other.alarma_3 = 120;
 		
-	    if (instance_exists(obj_hud_normal)) then obj_hud_normal.mostrar_en_pantalla = false;
+	    if (instance_exists(hud)) then hud.ocultar();
 	    if (instance_exists(obj_controlador_pausa)) then instance_destroy(obj_controlador_pausa);
 		
 		audio.reproducir_audio(other.audio_muerte);

@@ -369,7 +369,7 @@ function __input_system_tick()
                 }
             break;                
             case os_macosx:
-                //Unstick doubled-up control keys
+                //Unstick doubled-up controles keys
                 if (keyboard_check_released(vk_control))
                 {
                     keyboard_key_release(vk_lcontrol);

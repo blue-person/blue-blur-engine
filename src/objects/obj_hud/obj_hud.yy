@@ -1,18 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_gestor_pantalla",
+  "name": "obj_hud",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pantalla",
-    "path": "folders/Objetos/Funcionalidades/Gestores/Pantalla.yy",
+    "name": "HUD",
+    "path": "folders/Objetos/Funcionalidades/Controladores/HUD.yy",
   },
   "parentObjectId": null,
-  "persistent": true,
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -32,5 +33,5 @@
     "path": "sprites/spr_funcionalidad/spr_funcionalidad.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

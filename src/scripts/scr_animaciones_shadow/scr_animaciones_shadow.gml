@@ -10,7 +10,7 @@ function gestion_animaciones_shadow() {
     if (accion == -1) {
         sprite_index = spr_shadow_agachandose;
 
-        if (control.boton_mantenido("boton_abajo") and (image_index == 3)) {
+        if (controles.boton_mantenido("boton_abajo") and (image_index == 3)) {
             fotograma = 0;
         }
         else {
@@ -22,7 +22,7 @@ function gestion_animaciones_shadow() {
     if (accion == -3) {
         sprite_index = spr_shadow_mirar_arriba;
 
-        if (control.boton_mantenido("boton_arriba") and (image_index == 2)) {
+        if (controles.boton_mantenido("boton_arriba") and (image_index == 2)) {
             fotograma = 0;
         }
         else {
@@ -127,7 +127,7 @@ function gestion_animaciones_shadow() {
             image_index = 0;
         }
 
-        if (control.boton_presionado("boton_salto")) {
+        if (controles.boton_presionado("boton_salto")) {
             image_index = 4;
         }
     }

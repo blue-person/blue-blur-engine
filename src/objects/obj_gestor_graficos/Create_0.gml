@@ -1,27 +1,21 @@
-// Constantes
-#macro RESOLUCION_HORIZONTAL 456
-#macro RESOLUCION_VERTICAL 256
-#macro VELOCIDAD_JUEGO 60
-#macro FACTOR_ESCALA 2
-
 // Variables
 modo_pantalla = "ventana";
+resolucion_horizontal = 456;
+resolucion_vertical = 256;
+velocidad_juego = 60;
+factor_escala = 2;
 
 // Metodos
 obtener_ancho = function() {
-	return RESOLUCION_HORIZONTAL;
+	return resolucion_horizontal;
 }
 
 obtener_altura = function() {
-	return RESOLUCION_VERTICAL;
+	return resolucion_vertical;
 }
 
 obtener_velocidad_juego = function() {
-	return VELOCIDAD_JUEGO;
-}
-
-obtener_factor_escala = function() {
-	return FACTOR_ESCALA;
+	return velocidad_juego;
 }
 
 obtener_modo_pantalla = function() {
@@ -44,14 +38,14 @@ configurar_velocidad = function(velocidad_requerida) {
 
 configuracion_inicial = function() {
 	// Variables
-	var ancho_ventana = RESOLUCION_HORIZONTAL * FACTOR_ESCALA;
-	var altura_ventana = RESOLUCION_VERTICAL * FACTOR_ESCALA;
+	var ancho_ventana = resolucion_horizontal * factor_escala;
+	var altura_ventana = resolucion_vertical * factor_escala;
 	
 	// Configuracion
 	self.configurar_graficos(2, false);
-	self.configurar_velocidad(VELOCIDAD_JUEGO);
-	display_set_gui_size(RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
-	surface_resize(application_surface, RESOLUCION_HORIZONTAL, RESOLUCION_VERTICAL);
+	self.configurar_velocidad(velocidad_juego);
+	display_set_gui_size(resolucion_horizontal, resolucion_vertical);
+	surface_resize(application_surface, resolucion_horizontal, resolucion_vertical);
 	window_set_caption(TITULO_JUEGO);
 	window_set_size(ancho_ventana, altura_ventana);
 	window_center();
@@ -69,8 +63,8 @@ cambiar_modo_pantalla = function(modo_pantalla, mostrar_bordes, simbolo_cursor, 
 }
 
 iniciar_modo_ventana = function() {
-	var ancho_ventana = RESOLUCION_HORIZONTAL * FACTOR_ESCALA;
-	var altura_ventana = RESOLUCION_VERTICAL * FACTOR_ESCALA;
+	var ancho_ventana = resolucion_horizontal * factor_escala;
+	var altura_ventana = resolucion_vertical * factor_escala;
 	self.cambiar_modo_pantalla("ventana", true, cr_default, ancho_ventana, altura_ventana);
 }
 

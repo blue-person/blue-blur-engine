@@ -1,30 +1,20 @@
-// Determinar el personaje que se va a usar
-var personaje;
-switch (global.personaje_actual) {
-	case "Sonic":
-		personaje = obj_sonic;
-		break;
-	case "Shadow":
-		personaje = obj_shadow;
-		break;
-}
-
 // Crear jugador
-instance_create_depth(x, y, PROFUNDIDAD_JUGADOR, personaje);
+instance_create_depth(x, y, PROFUNDIDAD_JUGADOR, global.personaje_actual);
 
 // Crear camara
 instance_create_depth(x, y, PROFUNDIDAD_CONTROLADORES, obj_camara);
-obj_camara.establecer_enfoque(personaje);
+camara.establecer_enfoque(jugador);
 
-// Pantalla de presentacion del nivel
-if (room != rm_hub_world) {
-	instance_create_depth(0, 0, -100, obj_presentacion_nivel);
-	// La HUD normal se crea al momento de finalizar la presentacion del nivel.
-	// Especificamente, se hace en obj_animacion_personaje
-}
+// Mostrar el Stage Title Card
+instance_create_depth(0, 0, PROFUNDIDAD_INTERFAZ, obj_presentacion_nivel);
 
 // Iniciar controladores esenciales
 crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_cronometro);
+
+// Ocultar el HUD mientras se realiza la animacion del nivel
+instance_create_depth(0, 0, PROFUNDIDAD_INTERFAZ, obj_hud);
+hud.establecer_visibilidad_elementos(true, true, true, true);
+hud.ocultar();
 
 // Configurar el nivel actual
 switch (room) {
