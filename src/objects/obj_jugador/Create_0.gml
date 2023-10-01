@@ -92,7 +92,18 @@ if (nivel.obtener_permiso_reaparicion()) {
 	y = ubicacion_reaparicion.pos_y;
 }
 
-// tmp
+// Parametros externos
+parametros_hud = {
+	font: noone,
+	vidas: { icono: noone },
+	boost: { colores: [noone, noone] }
+}
+
+parametros_titlecard = {
+	color_font: make_colour_rgb(155, 155, 155),
+	barra_diagonal: spr_barra_diagonal_blanca
+}
+
 animacion_presentacion = {
 	normal: { sprite: noone, velocidad: 0 },
 	corriendo: { sprite: noone, velocidad: 0 }
@@ -110,14 +121,7 @@ sprite_efecto_salto = { sprite_aura: noone, sprite_aterrizar: noone }
 sprites_acrobacia = [];
 audios_acrobacia = [];
 
-sprites_hud = {
-	icono_vidas: noone,
-	font_numeros: noone,
-	colores_barra_boost: {
-		superior: noone,
-		inferior: noone
-	}
-}
+
 
 font_checkpoint = noone;
 
@@ -135,7 +139,3 @@ audio_muerte = noone;
 
 direccion_aura_boost = 0;
 
-parametros_titlecard = {
-	indice: 0,
-	color: make_colour_rgb(155, 155, 155)
-}

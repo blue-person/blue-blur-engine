@@ -1,5 +1,5 @@
 // Cargar los audios del juegos
-audio.cargar_audios();
+audio.cargar_audios_en_memoria();
 
 // Configurar la pantalla
 graficos.configuracion_inicial();

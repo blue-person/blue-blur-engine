@@ -1,6 +1,7 @@
 // Variables
+var parametros = jugador.parametros_hud;
+font = parametros.font;
 transparencia = 1;
-font = obj_jugador.sprites_hud.font_numeros;
 
 // Parametros del tiempo
 parametros_tiempo = {
@@ -37,7 +38,7 @@ parametros_vidas = {
     icono: {
         pos_x: 364.8,
         pos_y: 20,
-        sprite: obj_jugador.sprites_hud.icono_vidas
+        sprite: parametros.vidas.icono
     },
     info: {
         pos_x: 394.8,
@@ -63,7 +64,7 @@ parametros_boost = {
 	        pos_x: 33,
 	        pos_y: 226.1
 	    },
-		colores: [obj_jugador.sprites_hud.colores_barra_boost.superior, obj_jugador.sprites_hud.colores_barra_boost.inferior]	
+		colores: parametros.boost.colores
 	},
 	transparencia: 1,
 	mostrar_en_pantalla: true

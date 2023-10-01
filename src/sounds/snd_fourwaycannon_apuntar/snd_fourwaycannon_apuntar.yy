@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.438857,
+  "duration": 0.438866,
   "parent": {
     "name": "Four Way Cannon",
     "path": "folders/Sonidos/Efectos de sonido/Elementos de niveles/Four Way Cannon.yy",

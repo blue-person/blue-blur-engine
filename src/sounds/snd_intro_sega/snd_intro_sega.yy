@@ -8,9 +8,9 @@
   },
   "bitDepth": 1,
   "bitRate": 320,
-  "compression": 0,
+  "compression": 1,
   "conversionMode": 0,
-  "duration": 2.528062,
+  "duration": 2.263968,
   "parent": {
     "name": "Pantalla de titulo",
     "path": "folders/Sonidos/Efectos de sonido/Diapositivas/Pantalla de titulo.yy",

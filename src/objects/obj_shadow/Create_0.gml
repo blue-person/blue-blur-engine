@@ -4,7 +4,18 @@ event_inherited();
 // Establecer el sprite por defecto
 sprite_index = spr_shadow_normal;
 
-// tmp
+// Parametros externos
+parametros_hud = {
+	font:  textos.obtener_font_gris(),
+	vidas: { icono: spr_contador_vidas_shadow },
+	boost: { colores: [COLOR_NARANJA_NORMAL, COLOR_NARANJA_CLARO] }
+}
+
+parametros_titlecard = {
+	color_font: make_colour_rgb(137, 27, 41),
+	barra_diagonal: spr_barra_diagonal_roja
+}
+
 animacion_presentacion = {
 	normal: {
 		sprite: spr_animacion_shadow_normal,
@@ -31,14 +42,7 @@ sprite_efecto_salto = {
 sprites_acrobacia = [spr_shadow_saltando];
 audios_acrobacia = [snd_ataque_shadow_a, snd_ataque_shadow_b, snd_ataque_shadow_c];
 
-sprites_hud = {
-	icono_vidas: spr_contador_vidas_shadow,
-	font_numeros: textos.obtener_font_gris(),
-	colores_barra_boost: { 
-		superior: COLOR_NARANJA_NORMAL,
-		inferior: COLOR_NARANJA_CLARO
-	}
-}
+
 
 font_checkpoint = textos.obtener_font_gris();
 
@@ -64,8 +68,3 @@ velocidad_homing_attack = 12;
 audio_festejo = snd_festejo_shadow;
 
 audio_muerte = snd_muerte_shadow;
-
-parametros_titlecard = {
-	indice: 1,
-	color: make_colour_rgb(137, 27, 41)
-}

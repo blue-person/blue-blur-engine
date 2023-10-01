@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.169955,
+  "duration": 0.099705,
   "parent": {
     "name": "Agarrar objeto",
     "path": "folders/Sonidos/Efectos de sonido/Jugador/Agarrar objeto.yy",

@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.024,
+  "duration": 1.023991,
   "parent": {
     "name": "Trampolines",
     "path": "folders/Sonidos/Efectos de sonido/Elementos de niveles/Trampolines.yy",

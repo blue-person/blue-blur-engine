@@ -8,9 +8,9 @@
   },
   "bitDepth": 1,
   "bitRate": 320,
-  "compression": 0,
+  "compression": 1,
   "conversionMode": 0,
-  "duration": 13.536,
+  "duration": 13.536009,
   "parent": {
     "name": "Pisoton",
     "path": "folders/Sonidos/Efectos de sonido/Jugador/Pisoton.yy",

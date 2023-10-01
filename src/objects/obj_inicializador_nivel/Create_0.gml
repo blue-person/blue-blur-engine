@@ -5,17 +5,6 @@ instance_create_depth(x, y, PROFUNDIDAD_JUGADOR, global.personaje_actual);
 instance_create_depth(x, y, PROFUNDIDAD_CONTROLADORES, obj_camara);
 camara.establecer_enfoque(jugador);
 
-// Mostrar el Stage Title Card
-instance_create_depth(0, 0, PROFUNDIDAD_INTERFAZ, obj_presentacion_nivel);
-
-// Iniciar controladores esenciales
-crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_cronometro);
-
-// Ocultar el HUD mientras se realiza la animacion del nivel
-instance_create_depth(0, 0, PROFUNDIDAD_INTERFAZ, obj_hud);
-hud.establecer_visibilidad_elementos(true, true, true, true);
-hud.ocultar();
-
 // Configurar el nivel actual
 switch (room) {
 	case rm_practice_zone:
@@ -34,3 +23,14 @@ switch (room) {
 		configuracion_mining_mayhem();
 		break;
 }
+
+// Mostrar el Stage Title Card
+crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_stage_title_card);
+
+// Iniciar controladores esenciales
+crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_cronometro);
+
+// Ocultar el HUD mientras se realiza la animacion del nivel
+crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_hud);
+hud.establecer_visibilidad_elementos(true, true, true, true);
+hud.ocultar();

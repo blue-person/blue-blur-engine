@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.818059,
+  "duration": 0.81805,
   "parent": {
     "name": "Quickstep",
     "path": "folders/Sonidos/Efectos de sonido/Jugador/Quickstep.yy",

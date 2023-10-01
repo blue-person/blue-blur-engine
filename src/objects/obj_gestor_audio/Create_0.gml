@@ -1,6 +1,5 @@
 // Metodos
-cargar_audios = function() {
-	audio_group_load(grp_canciones);
+cargar_audios_en_memoria = function() {
 	audio_group_load(grp_efectos_sonido);
 	audio_group_load(grp_voces);
 }

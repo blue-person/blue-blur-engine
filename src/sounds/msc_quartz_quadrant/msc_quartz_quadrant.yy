@@ -3,12 +3,12 @@
   "resourceVersion": "1.0",
   "name": "msc_quartz_quadrant",
   "audioGroupId": {
-    "name": "grp_canciones",
-    "path": "audiogroups/grp_canciones",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
   "bitRate": 320,
-  "compression": 0,
+  "compression": 3,
   "conversionMode": 0,
   "duration": 130.98376,
   "parent": {

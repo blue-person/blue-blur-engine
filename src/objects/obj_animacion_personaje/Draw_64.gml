@@ -7,7 +7,7 @@ switch (animacion_actual) {
 		y = 35;
 		draw_self();
 		
-		if ((obj_presentacion_nivel.animacion_actual == 2) and (obj_presentacion_nivel.transparencia_barra < 0.7)) {
+		if ((obj_stage_title_card.animacion_actual == 2) and (obj_stage_title_card.transparencia_marcos < 0.7)) {
 		    animacion_actual = 2;
 		}
 		

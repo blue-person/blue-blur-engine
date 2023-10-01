@@ -1,5 +1,5 @@
 // Cambiar la animacion de la presentacion principal
-obj_presentacion_nivel.animacion_actual = 3;
+obj_stage_title_card.animacion_actual = 3;
 
 // Mostrar el HUD despues de un breve periodo
 alarm[1] = graficos.obtener_velocidad_juego() / 2;
