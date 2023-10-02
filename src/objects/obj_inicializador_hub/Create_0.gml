@@ -6,7 +6,7 @@ instance_create_depth(x, y, PROFUNDIDAD_CONTROLADORES, obj_camara);
 camara.establecer_enfoque(jugador);
 
 // Crear HUD
-instance_create_depth(0, 0, PROFUNDIDAD_INTERFAZ, obj_hud);
+crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_hud);
 hud.establecer_visibilidad_elementos(false, false, true, false);
 
 // Establecer datos de inicio

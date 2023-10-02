@@ -2,7 +2,6 @@
 modo_pantalla = "ventana";
 resolucion_horizontal = 456;
 resolucion_vertical = 256;
-velocidad_juego = 60;
 factor_escala = 2;
 
 // Metodos
@@ -14,26 +13,12 @@ obtener_altura = function() {
 	return resolucion_vertical;
 }
 
-obtener_velocidad_juego = function() {
-	return velocidad_juego;
-}
-
 obtener_modo_pantalla = function() {
 	return modo_pantalla;
 }
 
 configurar_graficos = function(nivel_antialiasing, permitir_vsync) {
 	display_reset(nivel_antialiasing, permitir_vsync);
-}
-
-configurar_velocidad = function(velocidad_requerida) {
-	// Variables
-	var velocidad_actual = game_get_speed(gamespeed_fps);
-	
-	// Configurar FPS
-	if (velocidad_actual != velocidad_requerida) {
-	    game_set_speed(velocidad_requerida, gamespeed_fps);
-	}
 }
 
 configuracion_inicial = function() {
@@ -43,7 +28,6 @@ configuracion_inicial = function() {
 	
 	// Configuracion
 	self.configurar_graficos(2, false);
-	self.configurar_velocidad(velocidad_juego);
 	display_set_gui_size(resolucion_horizontal, resolucion_vertical);
 	surface_resize(application_surface, resolucion_horizontal, resolucion_vertical);
 	window_set_caption(TITULO_JUEGO);

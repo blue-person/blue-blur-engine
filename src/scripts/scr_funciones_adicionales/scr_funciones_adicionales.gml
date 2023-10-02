@@ -47,8 +47,8 @@ function calcular_fotograma(valor_calculo, valor_comparacion) {
 	return (1 / valor_maximo);
 }
 
-function calcular_interpolacion_lineal(punto_a, punto_b, incremento) {
-	return punto_a + (punto_b - punto_a) * incremento;
+function interpolacion_lineal(punto_inicial, punto_final, incremento) {
+	return (punto_final - punto_inicial) / incremento;
 }
 
 function copiar_lista(lista_fuente) {

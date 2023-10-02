@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "HUD",
-    "path": "folders/Objetos/Funcionalidades/Controladores/HUD.yy",
+    "path": "folders/Objetos/Funcionalidades/Interfaz/HUD.yy",
   },
   "parentObjectId": null,
   "persistent": false,

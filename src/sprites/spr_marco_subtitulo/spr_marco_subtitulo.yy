@@ -4,7 +4,7 @@
   "name": "spr_marco_subtitulo",
   "bbox_bottom": 29,
   "bbox_left": 0,
-  "bbox_right": 452,
+  "bbox_right": 455,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 453,
+  "width": 456,
 }

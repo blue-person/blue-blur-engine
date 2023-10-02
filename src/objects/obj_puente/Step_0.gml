@@ -50,5 +50,5 @@ if (instance_exists(obj_jugador)) {
 
 // Cambiar altura de los tablones
 for (var n = 0; n < cantidad_tablones; n++) {
-    tablones[n].y = calcular_interpolacion_lineal(tablones[n].y, y + pesos_tablones[n], 0.2);
+    tablones[n].y += interpolacion_lineal(tablones[n].y, y + pesos_tablones[n], 0.2);
 }

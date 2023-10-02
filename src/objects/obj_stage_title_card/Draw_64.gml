@@ -30,11 +30,7 @@ draw_sprite_ext(transicion_negra.sprite, 0, parametros_transiciones.pos_x, param
 
 // Animacion del personaje
 if (animacion_personaje > 0) {
-	if (nivel.obtener_permiso_reaparicion()) {
-		parametros_personaje.indice_actual += parametros_personaje.animacion_normal.velocidad;
-		draw_sprite(parametros_personaje.animacion_normal.sprite, parametros_personaje.indice_actual, parametros_personaje.pos_actual.pos_x, parametros_personaje.pos_actual.pos_y);
-	} else {
-		parametros_personaje.indice_actual += parametros_personaje.animacion_corriendo.velocidad;
-		draw_sprite(parametros_personaje.animacion_corriendo.sprite, parametros_personaje.indice_actual, parametros_personaje.pos_actual.pos_x, parametros_personaje.pos_actual.pos_y);
-	} 
+	var tipo_animacion = nivel.obtener_permiso_reaparicion() ? parametros_personaje.animacion_normal : parametros_personaje.animacion_corriendo;
+	parametros_personaje.indice_actual += tipo_animacion.velocidad;
+	draw_sprite_ext(tipo_animacion.sprite, parametros_personaje.indice_actual, parametros_personaje.pos_x_actual, parametros_personaje.pos_y_actual, 1, 1, 0, c_white, transicion_morada.transparencia);
 }

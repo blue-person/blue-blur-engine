@@ -62,8 +62,8 @@ if (objetivo != noone) {
         x = pos_x_objetivo;
         y = pos_y_objetivo;
     } else if (modo_seguimiento == "suave") {
-        x += (pos_x_objetivo - x) / indice_ajuste_posicional;
-        y += (pos_y_objetivo - y) / indice_ajuste_posicional;
+        x += interpolacion_lineal(x, pos_x_objetivo, indice_ajuste_posicional);
+        y += interpolacion_lineal(y, pos_y_objetivo, indice_ajuste_posicional);
     }
 	
 	// Sacudir camara

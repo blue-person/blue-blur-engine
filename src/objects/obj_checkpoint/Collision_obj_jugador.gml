@@ -1,11 +1,11 @@
 if ((estado_animacion == 1) and (other.accion != 26)) {
     // Variables
-	var tiempo_punto_control = obj_cronometro.obtener_tiempo("numerico");
+	var tiempo_punto_control = cronometro.obtener_tiempo("numerico");
 	estado_animacion = 2;
     image_index = 0;
 			
 	// Establecer el punto de controles
-	nivel.establecer_punto_control(x, y - obj_jugador.mascara_colision, tiempo_punto_control);
+	nivel.establecer_punto_control(x, y - other.mascara_colision, tiempo_punto_control);
 	
 	// Reproducir sonido
     if ((other.sprite_index != spr_sonic_normal) and (other.sprite_index != spr_shadow_normal)) {

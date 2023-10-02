@@ -144,7 +144,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Camara","folderPath":"folders/Objetos/Funcionalidades/Controladores/Camara.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cronometro","folderPath":"folders/Objetos/Funcionalidades/Controladores/Cronometro.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Debug","folderPath":"folders/Objetos/Funcionalidades/Controladores/Debug.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"HUD","folderPath":"folders/Objetos/Funcionalidades/Controladores/HUD.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pausa","folderPath":"folders/Objetos/Funcionalidades/Controladores/Pausa.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Principal","folderPath":"folders/Objetos/Funcionalidades/Controladores/Principal.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Transiciones","folderPath":"folders/Objetos/Funcionalidades/Controladores/Transiciones.yy",},
@@ -160,7 +159,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Diapositivas","folderPath":"folders/Objetos/Funcionalidades/Interfaz/Diapositivas.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pantalla de resultados","folderPath":"folders/Objetos/Funcionalidades/Interfaz/Diapositivas/Pantalla de resultados.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pantalla de titulo","folderPath":"folders/Objetos/Funcionalidades/Interfaz/Diapositivas/Pantalla de titulo.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Presentacion de nivel","folderPath":"folders/Objetos/Funcionalidades/Interfaz/Diapositivas/Presentacion de nivel.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stage Title Card","folderPath":"folders/Objetos/Funcionalidades/Interfaz/Stage Title Card.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objetos padres","folderPath":"folders/Objetos/Funcionalidades/Objetos padres.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item Box","folderPath":"folders/Objetos/Funcionalidades/Objetos padres/Item Box.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Muros","folderPath":"folders/Objetos/Funcionalidades/Objetos padres/Muros.yy",},
@@ -462,6 +461,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Funcionalidades","folderPath":"folders/Sprites/Uso interno/Funcionalidades.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Inicializadores","folderPath":"folders/Sprites/Uso interno/Inicializadores.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Otros","folderPath":"folders/Sprites/Uso interno/Otros.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"HUD","folderPath":"folders/Objetos/Funcionalidades/Interfaz/HUD.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles/lib/input",},
@@ -1456,7 +1456,6 @@
     {"id":{"name":"obj_efecto_salto","path":"objects/obj_efecto_salto/obj_efecto_salto.yy",},},
     {"id":{"name":"obj_efecto_boost","path":"objects/obj_efecto_boost/obj_efecto_boost.yy",},},
     {"id":{"name":"obj_enfoque_homing","path":"objects/obj_enfoque_homing/obj_enfoque_homing.yy",},},
-    {"id":{"name":"obj_animacion_personaje","path":"objects/obj_animacion_personaje/obj_animacion_personaje.yy",},},
     {"id":{"name":"obj_rastro","path":"objects/obj_rastro/obj_rastro.yy",},},
     {"id":{"name":"obj_efecto_pisoton","path":"objects/obj_efecto_pisoton/obj_efecto_pisoton.yy",},},
     {"id":{"name":"obj_explosion_boost","path":"objects/obj_explosion_boost/obj_explosion_boost.yy",},},
@@ -1659,7 +1658,6 @@
     {"children":[
         {"roomId":{"name":"rm_gestor_inicio","path":"rooms/rm_gestor_inicio/rm_gestor_inicio.yy",},},
       ],"groupName":"Iniciadores",},
-    {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
     {"children":[
         {"roomId":{"name":"rm_titulo_juego","path":"rooms/rm_titulo_juego/rm_titulo_juego.yy",},},
       ],"groupName":"Pantallas de titulo",},
@@ -1671,6 +1669,7 @@
         {"roomId":{"name":"rm_groovy_badlands","path":"rooms/rm_groovy_badlands/rm_groovy_badlands.yy",},},
         {"roomId":{"name":"rm_luminous_bingo","path":"rooms/rm_luminous_bingo/rm_luminous_bingo.yy",},},
         {"roomId":{"name":"rm_mining_mayhem","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},},
+        {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
       ],"groupName":"Niveles",},
     {"children":[
         {"roomId":{"name":"rm_pausa","path":"rooms/rm_pausa/rm_pausa.yy",},},

@@ -66,14 +66,10 @@ parametros_objetivo_nivel = {
 
 parametros_personaje = {
 	indice_actual: 0,
-    pos_actual: {
-        pos_x: 410,
-        pos_y: 35
-    },
-    pos_final: {
-        pos_x: mitad_ancho_pantalla,
-        pos_y: mitad_altura_pantalla
-    },
+	pos_x_actual: 410,
+	pos_y_actual: 35,
+	pos_x_final: mitad_ancho_pantalla,
+	pos_y_final: mitad_altura_pantalla,
     animacion_normal: {
         sprite:  obj_jugador.animacion_presentacion.normal.sprite,
         velocidad: obj_jugador.animacion_presentacion.normal.velocidad
