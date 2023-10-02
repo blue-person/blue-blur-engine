@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Transiciones",
-    "path": "folders/Sprites/Interfaz/Diapositivas/Presentacion del nivel/Transiciones.yy",
+    "name": "Stage Title Card",
+    "path": "folders/Sprites/Interfaz/Stage Title Card.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

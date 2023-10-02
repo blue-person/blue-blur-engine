@@ -35,8 +35,8 @@ pos_x_puntaje_rings = 534;
 pos_x_puntaje_cool = 534;
 
 // Definir sprites y colores en base al personaje
-indice = obj_jugador.parametros_titlecard.indice;
-color = obj_jugador.parametros_titlecard.color;
+sprite = jugador.parametros_resultados.bandas;
+color = jugador.parametros_resultados.color_font;
 
 // Cancion inicial de nivel completado
 audio.reproducir_cancion(msc_nivel_completado);

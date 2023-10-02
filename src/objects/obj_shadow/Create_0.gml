@@ -13,17 +13,24 @@ parametros_hud = {
 
 parametros_titlecard = {
 	color_font: make_colour_rgb(137, 27, 41),
-	barra_diagonal: spr_barra_diagonal_roja
+	barra_diagonal: spr_barra_diagonal_roja,
+	animaciones: {
+		normal: {
+			sprite: spr_animacion_shadow_normal,
+			velocidad: 0.20
+		},
+		corriendo: {
+			sprite: spr_animacion_shadow_corriendo,
+			velocidad: 0.75
+		}
+	}
 }
 
-animacion_presentacion = {
-	normal: {
-		sprite: spr_animacion_shadow_normal,
-		velocidad: 0.20
-	},
-	corriendo: {
-		sprite: spr_animacion_shadow_corriendo,
-		velocidad: 0.75
+parametros_resultados = {
+	color_font: make_colour_rgb(137, 27, 41),
+	bandas: {
+		superior: spr_banda_superior_roja,
+		inferior: spr_banda_inferior_roja
 	}
 }
 

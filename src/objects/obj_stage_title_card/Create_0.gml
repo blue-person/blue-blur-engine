@@ -71,11 +71,11 @@ parametros_personaje = {
 	pos_x_final: mitad_ancho_pantalla,
 	pos_y_final: mitad_altura_pantalla,
     animacion_normal: {
-        sprite:  obj_jugador.animacion_presentacion.normal.sprite,
-        velocidad: obj_jugador.animacion_presentacion.normal.velocidad
+        sprite:  parametros_interfaz.animaciones.normal.sprite,
+        velocidad:  parametros_interfaz.animaciones.normal.velocidad
     },
     animacion_corriendo: {
-        sprite: obj_jugador.animacion_presentacion.corriendo.sprite,
-        velocidad: obj_jugador.animacion_presentacion.corriendo.velocidad
+        sprite: parametros_interfaz.animaciones.corriendo.sprite,
+        velocidad:  parametros_interfaz.animaciones.corriendo.velocidad
     }
 }

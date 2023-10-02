@@ -101,12 +101,16 @@ parametros_hud = {
 
 parametros_titlecard = {
 	color_font: make_colour_rgb(155, 155, 155),
-	barra_diagonal: spr_barra_diagonal_blanca
+	barra_diagonal: spr_barra_diagonal_blanca,
+	animaciones: {
+		normal: { sprite: noone, velocidad: 0 },
+		corriendo: { sprite: noone, velocidad: 0 }
+	}
 }
 
-animacion_presentacion = {
-	normal: { sprite: noone, velocidad: 0 },
-	corriendo: { sprite: noone, velocidad: 0 }
+parametros_resultados = {
+	color_font: make_colour_rgb(155, 155, 155),
+	bandas: { superior: noone, inferior: noone }
 }
 
 audios_grito_boost = [];

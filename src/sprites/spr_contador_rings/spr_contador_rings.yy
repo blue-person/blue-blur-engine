@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "General",
-    "path": "folders/Sprites/Interfaz/HUD/General.yy",
+    "name": "HUD",
+    "path": "folders/Sprites/Interfaz/HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
