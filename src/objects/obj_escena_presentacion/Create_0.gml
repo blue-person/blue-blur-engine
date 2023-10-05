@@ -1,9 +1,9 @@
-// Evitar que el jugador se pueda mover durante la presentacion del nivel
+// Evitar que el jugador se pueda mover
 jugador.permitir_movimiento = false;
 
 // Variables
-animacion_presentacion = 1;
-animacion_personaje = 0;
+fase_presentacion = 1;
+fase_personaje = 0;
 velocidad_presentacion = 10;
 transparencia_marcos = 0;
 duracion_primera_fase = 120;
@@ -66,8 +66,8 @@ parametros_objetivo_nivel = {
 
 parametros_personaje = {
 	indice_actual: 0,
-	pos_x_actual: 410,
-	pos_y_actual: 35,
+	pos_x: 410,
+	pos_y: 35,
 	pos_x_final: mitad_ancho_pantalla,
 	pos_y_final: mitad_altura_pantalla,
     animacion_normal: {

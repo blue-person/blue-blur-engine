@@ -33,4 +33,4 @@ switch (room) {
 }
 
 // Mostrar el Stage Title Card
-crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_stage_title_card);
+crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_escena_presentacion);

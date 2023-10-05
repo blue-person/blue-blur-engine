@@ -50,7 +50,7 @@ if (pausar_juego) {
 	}
 } else {
 	var boton_necesario_presionado = (controles.boton_presionado("boton_entrada") or os_is_paused());
-	var no_presentando_nivel = not instance_exists(obj_stage_title_card);
+	var no_presentando_nivel = not instance_exists(obj_escena_presentacion);
 	var no_transicionando_entre_niveles = not instance_exists(obj_transicion_intraniveles);
 
 	if (boton_necesario_presionado and no_presentando_nivel and no_transicionando_entre_niveles) {

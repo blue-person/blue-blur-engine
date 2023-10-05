@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Stage Title Card",
-    "path": "folders/Sprites/Interfaz/Stage Title Card.yy",
+    "name": "Marcos",
+    "path": "folders/Sprites/Interfaz/Escenas de los niveles/Escena de presentacion/Marcos.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

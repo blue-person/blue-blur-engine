@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 6,
   "parent": {
-    "name": "Pantalla de resultados",
-    "path": "folders/Sprites/Interfaz/Diapositivas/Pantalla de resultados.yy",
+    "name": "Bandas azules",
+    "path": "folders/Sprites/Interfaz/Escenas de los niveles/Escena de resultados/Bandas azules.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

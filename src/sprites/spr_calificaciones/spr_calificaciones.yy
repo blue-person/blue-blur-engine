@@ -29,8 +29,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Pantalla de resultados",
-    "path": "folders/Sprites/Interfaz/Diapositivas/Pantalla de resultados.yy",
+    "name": "Calificaciones",
+    "path": "folders/Sprites/Interfaz/Escenas de los niveles/Escena de resultados/Calificaciones.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

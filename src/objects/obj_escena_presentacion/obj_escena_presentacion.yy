@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_stage_title_card",
+  "name": "obj_escena_presentacion",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Stage Title Card",
-    "path": "folders/Objetos/Funcionalidades/Interfaz/Stage Title Card.yy",
+    "name": "Escena de presentacion",
+    "path": "folders/Objetos/Funcionalidades/Interfaz/Escenas de los niveles/Escena de presentacion.yy",
   },
   "parentObjectId": null,
   "persistent": false,

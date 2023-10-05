@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Stage Title Card",
-    "path": "folders/Sprites/Interfaz/Stage Title Card.yy",
+    "name": "Barras diagonales",
+    "path": "folders/Sprites/Interfaz/Escenas de los niveles/Escena de presentacion/Barras diagonales.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

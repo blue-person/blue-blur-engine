@@ -32,5 +32,5 @@ draw_sprite_ext(transicion_negra.sprite, 0, parametros_transiciones.pos_x, param
 if (animacion_personaje > 0) {
 	var tipo_animacion = nivel.obtener_permiso_reaparicion() ? parametros_personaje.animacion_normal : parametros_personaje.animacion_corriendo;
 	parametros_personaje.indice_actual += tipo_animacion.velocidad;
-	draw_sprite_ext(tipo_animacion.sprite, parametros_personaje.indice_actual, parametros_personaje.pos_x_actual, parametros_personaje.pos_y_actual, 1, 1, 0, c_white, transicion_morada.transparencia);
+	draw_sprite_ext(tipo_animacion.sprite, parametros_personaje.indice_actual, parametros_personaje.pos_x, parametros_personaje.pos_y, 1, 1, 0, c_white, transicion_morada.transparencia);
 }

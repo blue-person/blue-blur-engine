@@ -5,11 +5,11 @@ if (parametros_transiciones.negra.transparencia > 0) {
 
 // Cambiar la animación del personaje si la transparencia es 0.05
 if (parametros_transiciones.negra.transparencia == 0.05) {
-    animacion_personaje = 1;
+    fase_personaje = 1;
 }
 
 // Control de la animación de presentación
-switch (animacion_presentacion) {
+switch (fase_presentacion) {
     case 1:
         // Reducir la velocidad de presentación y ajustar la barra diagonal
         if (velocidad_presentacion < 9) {
@@ -60,19 +60,19 @@ switch (animacion_presentacion) {
 }
 
 // Control de la animación del personaje
-if (animacion_personaje == 1) {
-    if ((animacion_presentacion == 2) and (transparencia_marcos < 0.7)) {
-        animacion_personaje = 2;
+if (fase_personaje == 1) {
+    if ((fase_presentacion == 2) and (transparencia_marcos < 0.7)) {
+        fase_personaje = 2;
     }
-} else if (animacion_personaje == 2) {
+} else if (fase_personaje == 2) {
     // Interpolación lineal de la posición del personaje
-    parametros_personaje.pos_x_actual += interpolacion_lineal(parametros_personaje.pos_x_actual, parametros_personaje.pos_x_final, 15);
-    parametros_personaje.pos_y_actual += interpolacion_lineal(parametros_personaje.pos_y_actual, parametros_personaje.pos_y_final, 15);
+    parametros_personaje.pos_x += interpolacion_lineal(parametros_personaje.pos_x, parametros_personaje.pos_x_final, 15);
+    parametros_personaje.pos_y += interpolacion_lineal(parametros_personaje.pos_y, parametros_personaje.pos_y_final, 15);
     
     // Cambiar la animación de presentación si la posición se acerca
-    var diferencia_posicion = abs(parametros_personaje.pos_x_final - parametros_personaje.pos_x_actual);
+    var diferencia_posicion = abs(parametros_personaje.pos_x_final - parametros_personaje.pos_x);
     if (diferencia_posicion <= 0.1) {
-        animacion_presentacion = 3;
+        fase_presentacion = 3;
     }
 }
 
