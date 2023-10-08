@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Item Box",
-    "path": "folders/Objetos/Funcionalidades/Objetos padres/Item Box.yy",
+    "path": "folders/Objetos/Objetos padres/Item Box.yy",
   },
   "parentObjectId": null,
   "persistent": false,

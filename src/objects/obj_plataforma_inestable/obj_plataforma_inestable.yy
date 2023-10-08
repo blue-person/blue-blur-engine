@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Plataformas flotantes",
-    "path": "folders/Objetos/Funcionalidades/Objetos padres/Plataformas/Plataformas flotantes.yy",
+    "path": "folders/Objetos/Objetos padres/Plataformas/Plataformas flotantes.yy",
   },
   "parentObjectId": null,
   "persistent": false,
