@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Otros",
-    "path": "folders/Objetos/Objetos padres/Otros.yy",
+    "name": "Efectos",
+    "path": "folders/Objetos/Objetos padres/Efectos.yy",
   },
   "parentObjectId": null,
   "persistent": false,

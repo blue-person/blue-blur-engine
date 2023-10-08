@@ -1,6 +1,6 @@
 if (controles.boton_presionado("boton_entrada")) {
 	// Aumentar la velocidad del efecto
-	valor_aumento_transparencia = 0.1;
+	velocidad_efecto = 0.1;
 	
 	// Continuar al juego
 	if (permitir_transicion) {
@@ -15,13 +15,13 @@ if (controles.boton_presionado("boton_entrada")) {
 		if (transparencia >= 1) {
 			estado_animacion = 1;
 		} else {
-			transparencia += valor_aumento_transparencia;
+			transparencia += velocidad_efecto;
 		}
 	} else {
 		if (transparencia <= 0) {
 			estado_animacion = 0;
 		} else {
-			transparencia -= valor_aumento_transparencia;
+			transparencia -= velocidad_efecto;
 		}
 	}
 }

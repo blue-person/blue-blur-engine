@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_puente",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_riel_curva",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Puentes",
-    "path": "folders/Objetos/Objetos padres/Plataformas/Puentes.yy",
+    "name": "Generico",
+    "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Generico.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_riel",
+    "path": "objects/obj_riel/obj_riel.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_riel_curva",
+    "path": "sprites/spr_riel_curva/spr_riel_curva.yy",
+  },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

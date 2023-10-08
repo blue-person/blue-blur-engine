@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_baranda_curva",
+  "name": "obj_riel_diagonal",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_riel_curva",
-    "path": "sprites/spr_riel_curva/spr_riel_curva.yy",
+    "name": "spr_riel_diagonal",
+    "path": "sprites/spr_riel_diagonal/spr_riel_diagonal.yy",
   },
   "spriteMaskId": null,
   "visible": false,

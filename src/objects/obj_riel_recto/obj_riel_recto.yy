@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_baranda",
+  "name": "obj_riel_recto",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

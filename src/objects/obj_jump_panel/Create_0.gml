@@ -1,2 +1,2 @@
-depth = 0;
+depth = PROFUNDIDAD_OBJETOS;
 activar_evento = true;

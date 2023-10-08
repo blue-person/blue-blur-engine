@@ -1,1 +1,1 @@
-image_xscale = obj_jugador.direccion_horizontal;
+image_xscale = jugador.direccion_horizontal;

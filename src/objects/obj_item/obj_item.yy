@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Item Box",
-    "path": "folders/Objetos/Objetos padres/Item Box.yy",
+    "name": "Base",
+    "path": "folders/Objetos/Elementos/Items/Item Boxes/Base.yy",
   },
   "parentObjectId": null,
   "persistent": false,
