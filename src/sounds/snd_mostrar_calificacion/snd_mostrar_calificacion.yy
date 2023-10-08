@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.430726,
   "parent": {
-    "name": "Pantalla de resultados",
-    "path": "folders/Sonidos/Efectos de sonido/Diapositivas/Pantalla de resultados.yy",
+    "name": "Escena de resultados",
+    "path": "folders/Sonidos/Efectos de sonido/Escena de resultados.yy",
   },
   "preload": true,
   "sampleRate": 44100,

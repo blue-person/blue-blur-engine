@@ -6,7 +6,6 @@ fase_presentacion = 1;
 fase_personaje = 0;
 velocidad_presentacion = 10;
 transparencia_marcos = 0;
-duracion_primera_fase = 120;
 
 // Parametros
 var descripcion_nivel = nivel.obtener_descripcion();

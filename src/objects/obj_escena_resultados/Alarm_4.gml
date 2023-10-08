@@ -1,1 +1,1 @@
-fase_animacion = 11;
+fase_animacion = 13;

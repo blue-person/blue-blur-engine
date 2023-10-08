@@ -1,11 +1,11 @@
 // Reducir la transparencia si es mayor a 0
 if (parametros_transiciones.negra.transparencia > 0) {
     parametros_transiciones.negra.transparencia -= 0.05;
-}
-
-// Cambiar la animación del personaje si la transparencia es 0.05
-if (parametros_transiciones.negra.transparencia == 0.05) {
-    fase_personaje = 1;
+	
+	// Cambiar la fase de animación del personaje
+	if (parametros_transiciones.negra.transparencia == 0.05) {
+	    fase_personaje = 1;
+	}
 }
 
 // Control de la animación de presentación
@@ -17,7 +17,7 @@ switch (fase_presentacion) {
                 parametros_barra_diagonal.angulo -= 2;
             } else {
                 parametros_barra_diagonal.angulo = 0;
-                if (not alarm[0]) then alarm[0] = duracion_primera_fase;
+                if (not alarm[0]) then alarm[0] = 120;
             }
         }
 		

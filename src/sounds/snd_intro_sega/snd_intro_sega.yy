@@ -13,7 +13,7 @@
   "duration": 2.263968,
   "parent": {
     "name": "Pantalla de titulo",
-    "path": "folders/Sonidos/Efectos de sonido/Diapositivas/Pantalla de titulo.yy",
+    "path": "folders/Sonidos/Efectos de sonido/Pantalla de titulo.yy",
   },
   "preload": true,
   "sampleRate": 44100,

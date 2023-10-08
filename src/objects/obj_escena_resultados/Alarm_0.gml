@@ -1,1 +1,1 @@
-fase_animacion = 3;
+audio.reproducir_cancion(msc_cosmic_eternity);

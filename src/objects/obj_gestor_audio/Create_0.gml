@@ -44,6 +44,11 @@ detener_audio = function(nombre_audio) {
 	return noone;
 }
 
+detener_canciones = function() {
+	// Detener todas las canciones
+	return audio_group_stop_all(audiogroup_default);
+}
+
 detener_todo = function() {
 	// Detener todos los sonidos
 	return audio_stop_all();
@@ -81,9 +86,4 @@ reproducir_cancion_bucle = function(nombre_audio, inicio_bucle = 0, final_bucle 
 	
 	// Reproducir cancion en bucle
 	return audio_sound_loop(cancion, true);
-}
-
-detener_canciones = function() {
-	// Detener todas las canciones
-	return audio_group_stop_all(grp_canciones);
 }

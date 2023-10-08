@@ -1,40 +1,54 @@
-// Mostrar banda superior
-draw_sprite_ext(sprite.superior, 0, 0, pos_y_barra_superior, 1, 1, 0, c_white, 1);
+// Banda superior
+var banda_superior = parametros_bandas.superior;
+draw_sprite_ext(banda_superior.sprite, 0, banda_superior.pos_x, banda_superior.pos_y, 1, 1, 0, c_white, 1);
 
-// Mostrar banda inferior
-draw_sprite_ext(sprite.inferior, 0, 0, pos_y_barra_inferior, 1, 1, 0, c_white, 1);
+// Banda inferior
+var banda_inferior = parametros_bandas.inferior;
+draw_sprite_ext(banda_inferior.sprite, 0, banda_inferior.pos_x, banda_inferior.pos_y, 1, 1, 0, c_white, 1);
 
-// Mostrar el marco de Stage Clear
-draw_sprite_ext(spr_marco_titulo, 0, 0, pos_y_titulo + 7, 1, 0.6, 0, c_white, parametros_bandas.transparencia);
+// Titulo
+var marco_titulo = parametros_titulo.marco;
+var texto_titulo = parametros_titulo.texto;
+draw_sprite_ext(marco_titulo.sprite, 0, marco_titulo.pos_x, marco_titulo.pos_y, 1, 0.6, 0, c_white, marco_titulo.transparencia);
+draw_set_font(font_titulos);
+textos.escritura_sombreada(texto_titulo.pos_x, texto_titulo.pos_y, texto_titulo.contenido, 2, texto_titulo.color);
 
-// Mostrar el textos de Stage Clear
-draw_set_font(font_principal_cursiva);
-textos.escritura_sombreada(pos_x_titulo, pos_y_titulo + 3.5, "Stage  Clear", 2, color_font);
+// Definir la font para los subtitulos
+draw_set_font(font_subtitulos);
 
-// Estipular el font para todos los demas textos
-draw_set_font(font_principal_normal);
+// Tiempo
+var subtitulo_tiempo = parametros_tiempo.titulo;
+var texto_tiempo = parametros_tiempo.texto;
+textos.escritura_sombreada(subtitulo_tiempo.pos_x, subtitulo_tiempo.pos_y, subtitulo_tiempo.contenido, 1, subtitulo_tiempo.color);
+textos.escritura_sombreada(texto_tiempo.pos_x, texto_tiempo.pos_y, nivel.puntaje.tiempo, 1, texto_tiempo.color);
 
-// Mostrar el 
-textos.escritura_sombreada(pos_x_texto_tiempo, pos_y_texto_tiempo, "Time Bonus", 1, color_font);
-textos.escritura_sombreada(pos_x_puntaje_tiempo, pos_y_texto_tiempo, nivel.puntaje.tiempo, 1, color_font);
+// Rings
+var subtitulo_rings = parametros_rings.titulo;
+var texto_rings = parametros_rings.texto;
+textos.escritura_sombreada(subtitulo_rings.pos_x, subtitulo_rings.pos_y, subtitulo_rings.contenido, 1, subtitulo_rings.color);
+textos.escritura_sombreada(texto_rings.pos_x, texto_rings.pos_y, nivel.puntaje.rings, 1, texto_rings.color);
 
-textos.escritura_sombreada(pos_x_texto_rings, pos_y_texto_rings, "Ring Bonus", 1, color_font);
-textos.escritura_sombreada(pos_x_puntaje_rings, pos_y_texto_rings, nivel.puntaje.rings, 1, color_font);
+// Cool
+var subtitulo_cool = parametros_cool.titulo;
+var texto_cool = parametros_cool.texto;
+textos.escritura_sombreada(subtitulo_cool.pos_x, subtitulo_cool.pos_y, subtitulo_cool.contenido, 1, subtitulo_cool.color);
+textos.escritura_sombreada(texto_cool.pos_x, texto_cool.pos_y, nivel.puntaje.cool, 1, texto_cool.color);
 
-textos.escritura_sombreada(pos_x_texto_cool, pos_y_texto_cool, "Cool Bonus", 1, color_font);
-textos.escritura_sombreada(pos_x_puntaje_cool, pos_y_texto_cool, nivel.puntaje.cool, 1, color_font);
+// Puntaje final
+var subtitulo_final = parametros_final.titulo;
+var texto_final = parametros_final.texto;
+textos.escritura_sombreada(subtitulo_final.pos_x, subtitulo_final.pos_y, subtitulo_final.contenido, 1, subtitulo_final.color);
 
-// Mostrar el puntaje final
-var texto_puntaje_final = "";
-if (nivel.obtener_puntaje_final() < puntaje_maximo) {
-	texto_puntaje_final = string(nivel.obtener_puntaje_final());
-} else {
-	texto_puntaje_final = string(puntaje_maximo);
+var puntaje_final = clamp(nivel.obtener_puntaje_final(), texto_final.puntaje_min, texto_final.puntaje_max);
+if (puntaje_final > 0) {
+	var contenido_texto_final = string(puntaje_final);
+	textos.escritura_sombreada(texto_final.pos_x, texto_final.pos_y, contenido_texto_final, 1, texto_final.color);
 }
-textos.escritura_sombreada(pos_x_puntaje_final, pos_y_puntaje_final, ("Score   " + texto_puntaje_final), 1, color_font);
 
-// Mostrar el boton para terminar la pantalla de nivel completado
-if (fase_animacion == 11) {
-	var icono_boton = controles.obtener_icono_boton("boton_salto");
-	draw_sprite_ext(icono_boton, 0, 428, 222, 1, 1, 0, c_white, transparencia_boton_continuar);
-}
+// Calificacion
+var calificacion = parametros_calificacion;
+draw_sprite_ext(calificacion.sprite, 0, calificacion.pos_x, calificacion.pos_y, calificacion.escala_x, calificacion.escala_y, 0, c_white, calificacion.transparencia);
+
+// Boton para continuar
+var icono_boton = controles.obtener_icono_boton("boton_salto");
+draw_sprite_ext(icono_boton, 0, parametros_boton.pos_x, parametros_boton.pos_y, 1, 1, 0, c_white, parametros_boton.transparencia);
