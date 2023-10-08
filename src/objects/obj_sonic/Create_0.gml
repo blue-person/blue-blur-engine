@@ -34,6 +34,11 @@ parametros_resultados = {
 	}
 }
 
+parametros_checkpoint = {
+	animacion_normal: spr_sonic_normal,
+	font: textos.obtener_font_azul()
+}
+
 audios_grito_boost = [snd_boost_sonic_a, snd_boost_sonic_b, snd_boost_sonic_c];
 sprite_explosion_boost = spr_explosion_boost_sonic;
 sprite_efecto_boost = spr_efecto_boost_sonic;
@@ -48,9 +53,6 @@ sprite_efecto_salto = {
 
 sprites_acrobacia = [spr_sonic_acrobacia_a, spr_sonic_acrobacia_a, spr_sonic_acrobacia_c];
 audios_acrobacia = [snd_ataque_sonic_a, snd_ataque_sonic_b, snd_ataque_sonic_c];
-
-
-font_checkpoint = textos.obtener_font_azul();
 
 particulas_rastro = part_type_create();
 part_type_shape(particulas_rastro, pt_shape_flare);

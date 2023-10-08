@@ -1,1 +1,1 @@
-depth = -20;
+depth = PROFUNDIDAD_DECORACION;

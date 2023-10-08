@@ -1,5 +1,5 @@
 // Modificar los valores en base a la posicion del jugador
-if (jugador != noone) {
+if (jugador_existe) {
 	// Calcular el punto de tension del puente y sus gradientes
 	var pos_x_1 = x;
 	var pos_y_1 = y - 2;

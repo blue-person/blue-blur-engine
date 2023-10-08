@@ -1,3 +1,3 @@
-depth = PROFUNDIDAD_JUGADOR + 2;
+depth = PROFUNDIDAD_OBJ_CERCANO;
 image_speed = 0.25;
-estado_animacion = 1;
+fase_animacion = 1;

@@ -104,17 +104,15 @@ switch (fase_animacion) {
 	    } else {
 			// Determinar transparencia del boton de continuar
 			if (parametros_boton.estado == 0) {
+				parametros_boton.transparencia += 0.05;
 		        if (parametros_boton.transparencia >= 1) {
 					parametros_boton.estado = 1;
-				} else {
-					parametros_boton.transparencia += 0.05;
 				}
 		    } else {
-		       if (parametros_boton.transparencia <= 0) {
-				   parametros_boton.estado = 0;
-			   } else {
-				   parametros_boton.transparencia -= 0.05;
-			   }
+				parametros_boton.transparencia -= 0.05;
+				if (parametros_boton.transparencia <= 0) {
+					parametros_boton.estado = 0;	
+				}
 		    }
 		}
         break;

@@ -113,6 +113,8 @@ parametros_resultados = {
 	bandas: { superior: noone, inferior: noone }
 }
 
+parametros_checkpoint = { animacion_normal: noone, font: noone }
+
 audios_grito_boost = [];
 sprite_explosion_boost = noone;
 sprite_efecto_boost = noone;
@@ -124,10 +126,6 @@ sprite_efecto_salto = { sprite_aura: noone, sprite_aterrizar: noone }
 
 sprites_acrobacia = [];
 audios_acrobacia = [];
-
-
-
-font_checkpoint = noone;
 
 particulas_rastro = noone;
 

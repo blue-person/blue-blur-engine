@@ -6,8 +6,10 @@
 #macro PROFUNDIDAD_GESTORES 0
 #macro PROFUNDIDAD_CONTROLADORES 0
 #macro PROFUNDIDAD_PARTICULAS 0
+#macro PROFUNDIDAD_OBJ_CERCANO 1
 #macro PROFUNDIDAD_JUGADOR -1
-#macro PROFUNDIDAD_OBJETOS 0
+#macro PROFUNDIDAD_OBJ_LEJANO 0
+#macro PROFUNDIDAD_DECORACION -50
 #macro PROFUNDIDAD_INTERFAZ -100
 #macro PROFUNDIDAD_AGUA -200
 #macro PROFUNDIDAD_TRANSICIONES -255
@@ -67,3 +69,4 @@ global.vidas_restantes = 3;
 #macro camara instance_find(obj_camara, 0)
 #macro cronometro instance_find(obj_cronometro, 0)
 #macro jugador instance_find(global.personaje_actual, 0)
+#macro jugador_existe instance_find(global.personaje_actual, 0) != noone

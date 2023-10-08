@@ -1332,7 +1332,7 @@
     {"id":{"name":"obj_cronometro","path":"objects/obj_cronometro/obj_cronometro.yy",},},
     {"id":{"name":"input_binding_test_collisions","path":"scripts/input_binding_test_collisions/input_binding_test_collisions.yy",},},
     {"id":{"name":"obj_gestor_nivel","path":"objects/obj_gestor_nivel/obj_gestor_nivel.yy",},},
-    {"id":{"name":"obj_mostrar_info_checkpoint","path":"objects/obj_mostrar_info_checkpoint/obj_mostrar_info_checkpoint.yy",},},
+    {"id":{"name":"obj_mensaje_checkpoint","path":"objects/obj_mensaje_checkpoint/obj_mensaje_checkpoint.yy",},},
     {"id":{"name":"input_cursor_limit_boundary","path":"scripts/input_cursor_limit_boundary/input_cursor_limit_boundary.yy",},},
     {"id":{"name":"snd_pisada_piedra_a","path":"sounds/snd_pisada_piedra_a/snd_pisada_piedra_a.yy",},},
     {"id":{"name":"obj_escena_resultados","path":"objects/obj_escena_resultados/obj_escena_resultados.yy",},},

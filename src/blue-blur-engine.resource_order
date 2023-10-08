@@ -980,7 +980,7 @@
     {"name":"spr_superficie_agua","order":3,"path":"sprites/spr_superficie_agua/spr_superficie_agua.yy",},
     {"name":"obj_qte_multiple_dificil","order":1,"path":"objects/obj_qte_multiple_dificil/obj_qte_multiple_dificil.yy",},
     {"name":"input_binding_test_collisions","order":11,"path":"scripts/input_binding_test_collisions/input_binding_test_collisions.yy",},
-    {"name":"obj_mostrar_info_checkpoint","order":1,"path":"objects/obj_mostrar_info_checkpoint/obj_mostrar_info_checkpoint.yy",},
+    {"name":"obj_mensaje_checkpoint","order":1,"path":"objects/obj_mensaje_checkpoint/obj_mensaje_checkpoint.yy",},
     {"name":"input_cursor_limit_boundary","order":4,"path":"scripts/input_cursor_limit_boundary/input_cursor_limit_boundary.yy",},
     {"name":"snd_pisada_piedra_a","order":22,"path":"sounds/snd_pisada_piedra_a/snd_pisada_piedra_a.yy",},
     {"name":"input_xy","order":4,"path":"scripts/input_xy/input_xy.yy",},

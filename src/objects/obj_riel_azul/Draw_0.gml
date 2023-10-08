@@ -1,4 +1,4 @@
-if (jugador != noone) {
+if (jugador_existe) {
     if (jugador.capa_actual == "posterior") {
         gpu_set_blendmode(bm_max);
         draw_self();
