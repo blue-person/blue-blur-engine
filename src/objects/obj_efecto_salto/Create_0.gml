@@ -1,4 +1,4 @@
-depth = PROFUNDIDAD_JUGADOR - 1;
+depth = Profundidades.Jugador - 1;
 image_xscale = obj_jugador.direccion_horizontal;
 image_alpha = 0.75;
 

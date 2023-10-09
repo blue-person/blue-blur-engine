@@ -1,2 +1,2 @@
-depth = PROFUNDIDAD_OBJ_LEJANO;
+depth = Profundidades.Backstage;
 activar_evento = true;

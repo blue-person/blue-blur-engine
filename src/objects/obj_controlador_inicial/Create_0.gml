@@ -1,59 +1,56 @@
 // Informacion general
 #macro TITULO_JUEGO "Blue Blur Engine"
+#macro OFFSCREEN -50
 
 // Profundidades de dibujado
-#macro OFFSCREEN -50
-#macro PROFUNDIDAD_GESTORES 0
-#macro PROFUNDIDAD_CONTROLADORES 0
-#macro PROFUNDIDAD_PARTICULAS 0
-#macro PROFUNDIDAD_OBJ_CERCANO 1
-#macro PROFUNDIDAD_JUGADOR -1
-#macro PROFUNDIDAD_OBJ_LEJANO 0
-#macro PROFUNDIDAD_DECORACION -50
-#macro PROFUNDIDAD_INTERFAZ -100
-#macro PROFUNDIDAD_AGUA -200
-#macro PROFUNDIDAD_TRANSICIONES -255
+enum Profundidades {
+    Gestores = 0,
+    Controladores = 0,
+    Particulas = 0,
+    Backstage = 1,
+    Jugador = -1,
+    Efectos = -2,
+    Frontstage = -2,
+    Interfaz = -100,
+    Agua = -200,
+    Transiciones = -255
+}
 
-// Prioridades de sonidos
-#macro PRIORIDAD_CANCIONES 0
-#macro PRIORIDAD_SONIDOS 1
-
-// Colores
-#macro COLOR_BLANCO make_color_rgb(255, 255, 255)
-#macro COLOR_AZUL_CLARO make_color_rgb(78, 194, 252)
-#macro COLOR_AZUL_NORMAL make_color_rgb(33, 74, 223)
-#macro COLOR_NARANJA_CLARO make_color_rgb(255, 160, 64)
-#macro COLOR_NARANJA_NORMAL make_color_rgb(218, 84, 69)
+// Prioridades de audios
+enum Prioridades {
+	Canciones = 0,
+	Sonidos = 1
+}
 
 // Configurar la profundidad del objeto
-depth = PROFUNDIDAD_CONTROLADORES;
+depth = Profundidades.Controladores;
 
 // Gestor de pantalla
-global.gestor_graficos = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_graficos);
+global.gestor_graficos = crear_funcionalidad(Profundidades.Gestores, obj_gestor_graficos);
 #macro graficos global.gestor_graficos
 
 // Gestor de audio
-global.gestor_audio = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_audio);
+global.gestor_audio = crear_funcionalidad(Profundidades.Gestores, obj_gestor_audio);
 #macro audio global.gestor_audio
 
 // Gestor de controles
-global.gestor_controles = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_controles);
+global.gestor_controles = crear_funcionalidad(Profundidades.Gestores, obj_gestor_controles);
 #macro controles global.gestor_controles
 
 // Gestor de textos
-global.gestor_texto = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_texto);
+global.gestor_texto = crear_funcionalidad(Profundidades.Gestores, obj_gestor_texto);
 #macro textos global.gestor_texto
 
 // Gestor de transiciones
-global.gestor_transiciones = crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_gestor_transiciones);
+global.gestor_transiciones = crear_funcionalidad(Profundidades.Controladores, obj_gestor_transiciones);
 #macro transiciones global.gestor_transiciones
 
 // Gestor del nivel actual
-global.gestor_nivel = crear_funcionalidad(PROFUNDIDAD_GESTORES, obj_gestor_nivel);
+global.gestor_nivel = crear_funcionalidad(Profundidades.Gestores, obj_gestor_nivel);
 #macro nivel global.gestor_nivel
 
 // Controlador del modo debug
-global.controlador_depuracion = crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_controlador_depuracion);
+global.controlador_depuracion = crear_funcionalidad(Profundidades.Controladores, obj_controlador_depuracion);
 #macro debug global.controlador_depuracion
 
 // Sistema de particulas

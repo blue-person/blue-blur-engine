@@ -1,12 +1,12 @@
 // Crear jugador
-instance_create_depth(x, y, PROFUNDIDAD_JUGADOR, global.personaje_actual);
+instance_create_depth(x, y, Profundidades.Jugador, global.personaje_actual);
 
 // Crear camara
-instance_create_depth(x, y, PROFUNDIDAD_CONTROLADORES, obj_camara);
+instance_create_depth(x, y, Profundidades.Controladores, obj_camara);
 camara.establecer_enfoque(jugador);
 
 // Crear HUD
-crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_hud);
+crear_funcionalidad(Profundidades.Interfaz, obj_hud);
 hud.establecer_visibilidad_elementos(false, false, true, false);
 
 // Establecer datos de inicio

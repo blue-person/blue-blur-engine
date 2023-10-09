@@ -7,6 +7,6 @@ maxima_tension_puente = cantidad_tablones;
 // Ajustar pesos
 for (var i = 0; i < cantidad_tablones; i++) {
 	var pos_x = x + i * 16;
-	tablones[i] = instance_create_depth(pos_x, y, PROFUNDIDAD_OBJ_LEJANO, obj_tablon_puente);
+	tablones[i] = instance_create_depth(pos_x, y, Profundidades.Backstage, obj_tablon_puente);
 	pesos_tablones[i] = 0;
 }

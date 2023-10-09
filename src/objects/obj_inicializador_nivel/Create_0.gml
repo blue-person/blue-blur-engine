@@ -1,15 +1,15 @@
 // Crear jugador
-instance_create_depth(x, y, PROFUNDIDAD_JUGADOR, global.personaje_actual);
+instance_create_depth(x, y, Profundidades.Jugador, global.personaje_actual);
 
 // Crear camara
-instance_create_depth(x, y, PROFUNDIDAD_CONTROLADORES, obj_camara);
+instance_create_depth(x, y, Profundidades.Controladores, obj_camara);
 camara.establecer_enfoque(jugador);
 
 // Iniciar controladores esenciales
-crear_funcionalidad(PROFUNDIDAD_CONTROLADORES, obj_cronometro);
+crear_funcionalidad(Profundidades.Controladores, obj_cronometro);
 
 // Ocultar el HUD mientras se realiza la animacion del nivel
-crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_hud);
+crear_funcionalidad(Profundidades.Interfaz, obj_hud);
 hud.establecer_visibilidad_elementos(true, true, true, true);
 hud.ocultar();
 
@@ -33,4 +33,4 @@ switch (room) {
 }
 
 // Mostrar el Stage Title Card
-crear_funcionalidad(PROFUNDIDAD_INTERFAZ, obj_escena_presentacion);
+crear_funcionalidad(Profundidades.Interfaz, obj_escena_presentacion);

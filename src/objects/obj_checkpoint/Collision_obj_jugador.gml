@@ -12,6 +12,6 @@ if ((fase_animacion == 1) and (other.accion != 26)) {
 	var parametros = other.parametros_checkpoint;
     if (other.sprite_index != parametros.animacion_normal) {
         audio.reproducir_audio(snd_checkpoint);
-        instance_create_depth(x, y, PROFUNDIDAD_INTERFAZ, obj_mensaje_checkpoint);
+        instance_create_depth(x, y, Profundidades.Interfaz, obj_mensaje_checkpoint);
     }
 }

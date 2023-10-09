@@ -4,12 +4,12 @@ cargar_audios_en_memoria = function() {
 	audio_group_load(grp_voces);
 }
 
-reproducir_audio = function(nombre_audio, prioridad_reproduccion = PRIORIDAD_SONIDOS, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
+reproducir_audio = function(nombre_audio, prioridad_reproduccion = Prioridades.Sonidos, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
 	// Reproducir audio
 	return audio_play_sound(nombre_audio, prioridad_reproduccion, reproducir_en_bucle, volumen, 0, tonalidad);
 }
 
-reproducir_audio_aislado = function(nombre_audio, permitir_completar_audio, prioridad_reproduccion = PRIORIDAD_SONIDOS, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
+reproducir_audio_aislado = function(nombre_audio, permitir_completar_audio, prioridad_reproduccion = Prioridades.Sonidos, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
 	if (permitir_completar_audio) {
 		// Permitir que el audio acabe antes de reproducirlo nuevamente
 		if (not audio_is_playing(nombre_audio)) {
@@ -24,7 +24,7 @@ reproducir_audio_aislado = function(nombre_audio, permitir_completar_audio, prio
 	}
 }
 
-reproducir_audio_aleatorio = function(lista_audios, permitir_completar_audio = noone, prioridad_reproduccion = PRIORIDAD_SONIDOS, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
+reproducir_audio_aleatorio = function(lista_audios, permitir_completar_audio = noone, prioridad_reproduccion = Prioridades.Sonidos, reproducir_en_bucle = false, volumen = 1, tonalidad = 1) {
 	// Escoger de forma aleatoria un audio
 	var audio_seleccionado = valor_aleatorio(lista_audios);
 	
@@ -66,19 +66,19 @@ pausar_todo = function() {
 
 reproducir_cancion = function(nombre_audio) {
 	// Reproducir cancion
-	return self.reproducir_audio_aislado(nombre_audio, true, PRIORIDAD_CANCIONES);
+	return self.reproducir_audio_aislado(nombre_audio, true, Prioridades.Canciones);
 }
 
 reproducir_cancion_bucle = function(nombre_audio, inicio_bucle = 0, final_bucle = noone) {
 	// Gestionar parametros vacios 
 	if ((inicio_bucle == 0) and (final_bucle == noone)) {
-		return self.reproducir_audio_aislado(nombre_audio, true, PRIORIDAD_CANCIONES, true);
+		return self.reproducir_audio_aislado(nombre_audio, true, Prioridades.Canciones, true);
 	} else if (final_bucle == noone) {
 		final_bucle = audio_sound_length(nombre_audio);
 	}
 	
 	// Declarar variables
-	var cancion = self.reproducir_audio_aislado(nombre_audio, true, PRIORIDAD_CANCIONES, true);
+	var cancion = self.reproducir_audio_aislado(nombre_audio, true, Prioridades.Canciones, true);
 	
 	// Establecer puntos de inicio y del final del bucle
 	audio_sound_loop_start(nombre_audio, inicio_bucle);

@@ -81,6 +81,7 @@ function gestion_animaciones_sonic() {
 	}
 
 	// Frenar en el suelo
+	
 	if (accion == -4) {
 	    if ((sprite_index != spr_sonic_frenando_a) and (sprite_index != spr_sonic_frenando_b)) {
 	        if (abs(velocidad_horizontal) > 7) {

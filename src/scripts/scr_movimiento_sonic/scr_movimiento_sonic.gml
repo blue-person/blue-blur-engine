@@ -2,11 +2,11 @@ function gestion_movimiento_sonic() {
     // Gestionar el boost
     gestion_boost();
 	
-    // Movimiento basico
-    gestion_movimiento_basico();
-	
     // Frenar al cambiar de direccion
     gestion_accion_frenar();
+	
+	// Movimiento basico
+    gestion_movimiento_basico();
 
     // Gestion del salto
     gestion_accion_salto();

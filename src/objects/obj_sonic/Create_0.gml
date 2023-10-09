@@ -8,7 +8,11 @@ sprite_index = spr_sonic_normal;
 parametros_hud = {
 	font:  textos.obtener_font_azul(),
 	vidas: { icono: spr_contador_vidas_sonic },
-	boost: { colores: [COLOR_AZUL_NORMAL, COLOR_AZUL_CLARO] }
+	boost: { colores: [
+		make_color_rgb(33, 74, 223),
+		make_color_rgb(78, 194, 252)
+		]
+	}
 }
 
 parametros_titlecard = {
@@ -62,7 +66,7 @@ part_type_speed(particulas_rastro, -2.5, -2.5, 0.15, 0);
 part_type_direction(particulas_rastro, 0, 0, 0, 0);
 part_type_gravity(particulas_rastro, 0, 270);
 part_type_orientation(particulas_rastro, 0, 0, 0, 0, true);
-part_type_color1(particulas_rastro, COLOR_AZUL_CLARO);
+part_type_color1(particulas_rastro, make_color_rgb(78, 194, 252));
 part_type_alpha2(particulas_rastro, 0.6, 0);
 part_type_blend(particulas_rastro, true);
 part_type_life(particulas_rastro, 12, 12);

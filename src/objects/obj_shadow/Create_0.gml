@@ -8,7 +8,11 @@ sprite_index = spr_shadow_normal;
 parametros_hud = {
 	font:  textos.obtener_font_gris(),
 	vidas: { icono: spr_contador_vidas_shadow },
-	boost: { colores: [COLOR_NARANJA_NORMAL, COLOR_NARANJA_CLARO] }
+	boost: { colores: [
+		make_color_rgb(218, 84, 69),
+		make_color_rgb(255, 160, 64)
+		]
+	}
 }
 
 parametros_titlecard = {
@@ -62,7 +66,7 @@ part_type_speed(particulas_rastro, -2.5, -2.5, 0.15, 0);
 part_type_direction(particulas_rastro, 0, 0, 0, 0);
 part_type_gravity(particulas_rastro, 0, 270);
 part_type_orientation(particulas_rastro, 0, 0, 0, 0, true);
-part_type_color1(particulas_rastro, COLOR_NARANJA_CLARO);
+part_type_color1(particulas_rastro, make_color_rgb(255, 160, 64));
 part_type_alpha2(particulas_rastro, 0.6, 0);
 part_type_blend(particulas_rastro, true);
 part_type_life(particulas_rastro, 12, 12);;

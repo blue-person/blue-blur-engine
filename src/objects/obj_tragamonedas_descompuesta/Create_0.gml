@@ -1,2 +1,2 @@
-depth = PROFUNDIDAD_DECORACION;
+depth = Profundidades.Backstage;
 image_speed = 0.2;

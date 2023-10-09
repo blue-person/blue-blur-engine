@@ -1,13 +1,13 @@
-var efecto = instance_create_depth(x, y, -10, obj_efecto_generico)
-with (efecto) {
-    permitir_combinar_imagen = false;
-    sprite_index = spr_explosion_itembox;
-    image_speed = 0.5;
-    depth = -2;
-}
-
+// Crear el item
 if (item != noone) {
-	instance_create_depth(x, y, 0, item);
+	instance_create_depth(x, y, Profundidades.Interfaz, item);
 }
 
-audio.reproducir_audio(snd_explosion_itembox);
+// Crear una explosion sencilla
+var efecto = instance_create_depth(x, y, Profundidades.Efectos, obj_efecto_generico);
+with (efecto) {
+    image_speed = 0.5;
+    sprite_index = spr_explosion_itembox;
+	audio.reproducir_audio(snd_explosion_itembox);
+	permitir_combinar_imagen = false;
+}

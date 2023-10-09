@@ -5,6 +5,6 @@ if ((other.accion == 24) and activar_evento) {
 	
 	// Gestionar efectos
 	activar_evento = false;
-	instance_create_depth(x, y, PROFUNDIDAD_INTERFAZ, obj_qte_jump_panel);
+	instance_create_depth(x, y, Profundidades.Interfaz, obj_qte_jump_panel);
     audio.reproducir_audio(snd_tocar_jump_panel);
 }
