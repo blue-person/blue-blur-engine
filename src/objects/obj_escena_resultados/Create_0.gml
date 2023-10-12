@@ -56,7 +56,8 @@ parametros_tiempo = {
     texto: {
         pos_x: 534,
         pos_y: 90,
-        color: color_font
+        color: color_font,
+		contenido: nivel.obtener_puntaje_tiempo()
     }
 }
 
@@ -71,7 +72,8 @@ parametros_rings = {
     texto: {
         pos_x: 534,
         pos_y: 120,
-        color: color_font
+        color: color_font,
+		contenido: nivel.obtener_puntaje_rings()
     }
 }
 
@@ -86,7 +88,8 @@ parametros_cool = {
     texto: {
         pos_x: 534,
         pos_y: 150,
-        color: color_font
+        color: color_font,
+		contenido: nivel.obtener_puntaje_cool()
     }
 }
 
@@ -102,6 +105,7 @@ parametros_final = {
         pos_x: 113,
         pos_y: 210,
         color: color_font,
+		contenido: 0,
         puntaje_min: 0,
         puntaje_max: 99999
     }

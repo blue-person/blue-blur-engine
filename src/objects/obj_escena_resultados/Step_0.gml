@@ -68,13 +68,38 @@ switch (fase_animacion) {
     case 9:
 		// Determinar puntaje final
 		if (controles.boton_presionado("boton_salto") or controles.boton_presionado("boton_entrada")) {
-			nivel.calcular_puntaje_final("automatico");
+			// Calcular el puntaje automaticamente
+			parametros_final.texto.contenido += parametros_tiempo.texto.contenido;
+			parametros_tiempo.texto.contenido = 0;
+			
+			parametros_final.texto.contenido += parametros_rings.texto.contenido;
+			parametros_rings.texto.contenido = 0;
+			
+			parametros_final.texto.contenido += parametros_cool.texto.contenido;
+			parametros_cool.texto.contenido = 0;
 		} else {
-			nivel.calcular_puntaje_final("incremental");
+			// Calcular el puntaje de manera incremental
+			var velocidad_calculo = 100;
+			var valor_incremento_tiempo = min(velocidad_calculo, parametros_tiempo.texto.contenido);
+			var valor_incremento_rings = min(velocidad_calculo, parametros_rings.texto.contenido);
+			var valor_incremento_cool = min(velocidad_calculo, parametros_cool.texto.contenido);
+			
+			parametros_final.texto.contenido += valor_incremento_tiempo;
+			parametros_tiempo.texto.contenido -= valor_incremento_tiempo;
+			
+			parametros_final.texto.contenido += valor_incremento_rings;
+			parametros_rings.texto.contenido -= valor_incremento_rings;
+			
+			parametros_final.texto.contenido += valor_incremento_cool;
+			parametros_cool.texto.contenido -= valor_incremento_cool;
 		}
+	
+		// Ajustar fase
+		var tiempo_esta_vacio = (parametros_tiempo.texto.contenido == 0);
+		var rings_esta_vacio = (parametros_rings.texto.contenido == 0);
+		var cool_esta_vacio = (parametros_cool.texto.contenido == 0);
 		
-		// Cambiar de fase
-	    if (nivel.comprobar_puntaje_vacio()) {
+	    if (tiempo_esta_vacio and rings_esta_vacio and cool_esta_vacio) {
 	        audio.reproducir_audio(snd_registrar_puntaje);
 			fase_animacion = 10;
 	        if (not alarm[3]) then alarm[3] = 180;

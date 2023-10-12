@@ -2,7 +2,7 @@
 if (not alarm[4]) then alarm[4] = 180;
 
 // Determianr la calificacion
-var puntaje_final = nivel.obtener_puntaje_final();
+var puntaje_final = parametros_final.texto.contenido;
 for (var i = 0; i < array_length(calificaciones); ++i) {
 	var calificacion = calificaciones[i];
     if (puntaje_final >= calificacion.requisito) {

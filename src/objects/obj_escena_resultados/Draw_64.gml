@@ -20,26 +20,26 @@ draw_set_font(font_subtitulos);
 var subtitulo_tiempo = parametros_tiempo.titulo;
 var texto_tiempo = parametros_tiempo.texto;
 textos.escritura_sombreada(subtitulo_tiempo.pos_x, subtitulo_tiempo.pos_y, subtitulo_tiempo.contenido, 1, subtitulo_tiempo.color);
-textos.escritura_sombreada(texto_tiempo.pos_x, texto_tiempo.pos_y, nivel.puntaje.tiempo, 1, texto_tiempo.color);
+textos.escritura_sombreada(texto_tiempo.pos_x, texto_tiempo.pos_y, texto_tiempo.contenido, 1, texto_tiempo.color);
 
 // Rings
 var subtitulo_rings = parametros_rings.titulo;
 var texto_rings = parametros_rings.texto;
 textos.escritura_sombreada(subtitulo_rings.pos_x, subtitulo_rings.pos_y, subtitulo_rings.contenido, 1, subtitulo_rings.color);
-textos.escritura_sombreada(texto_rings.pos_x, texto_rings.pos_y, nivel.puntaje.rings, 1, texto_rings.color);
+textos.escritura_sombreada(texto_rings.pos_x, texto_rings.pos_y, texto_rings.contenido, 1, texto_rings.color);
 
 // Cool
 var subtitulo_cool = parametros_cool.titulo;
 var texto_cool = parametros_cool.texto;
 textos.escritura_sombreada(subtitulo_cool.pos_x, subtitulo_cool.pos_y, subtitulo_cool.contenido, 1, subtitulo_cool.color);
-textos.escritura_sombreada(texto_cool.pos_x, texto_cool.pos_y, nivel.puntaje.cool, 1, texto_cool.color);
+textos.escritura_sombreada(texto_cool.pos_x, texto_cool.pos_y, texto_cool.contenido, 1, texto_cool.color);
 
 // Puntaje final
 var subtitulo_final = parametros_final.titulo;
 var texto_final = parametros_final.texto;
 textos.escritura_sombreada(subtitulo_final.pos_x, subtitulo_final.pos_y, subtitulo_final.contenido, 1, subtitulo_final.color);
 
-var puntaje_final = clamp(nivel.obtener_puntaje_final(), texto_final.puntaje_min, texto_final.puntaje_max);
+var puntaje_final = clamp(texto_final.contenido, texto_final.puntaje_min, texto_final.puntaje_max);
 if (puntaje_final > 0) {
 	var contenido_texto_final = string(puntaje_final);
 	textos.escritura_sombreada(texto_final.pos_x, texto_final.pos_y, contenido_texto_final, 1, texto_final.color);

@@ -5,7 +5,7 @@ info = {
 };
 
 // Estructura con la informacion del puntaje
-puntaje = { tiempo: 0, rings: 0, cool: 0, final: 0 };
+puntaje = { tiempo: 0, rings: 0, cool: 0 };
 
 // Estructura con la informacion del checkpoint
 checkpoint = {
@@ -51,18 +51,6 @@ establecer_punto_control = function(pos_reaparicion_x, pos_reaparicion_y, tiempo
 	self.checkpoint.ubicacion_reaparicion.pos_x = pos_reaparicion_x;
 	self.checkpoint.ubicacion_reaparicion.pos_y = pos_reaparicion_y;
 	self.checkpoint.tiempo_registrado = copiar_lista(tiempo_ha_registrar);
-}
-
-establecer_puntaje_tiempo = function(valor) {
-	self.puntaje.tiempo = valor;
-}
-
-establecer_puntaje_rings = function(valor) {
-	self.puntaje.rings = valor;
-}
-
-aumentar_puntaje_cool = function(valor) {
-	self.puntaje.cool += valor;
 }
 
 establecer_propiedades_fondo = function(estructura) {
@@ -111,30 +99,55 @@ obtener_propiedades_tilesets = function() {
 	return copiar_lista(propiedades_tilesets);
 }
 
-calcular_puntaje_final = function(metodo, valor_incremento = 100) {
-	if (metodo == "automatico") {
-		self.puntaje.final += puntaje.tiempo + puntaje.rings + puntaje.cool;
-		self.puntaje.tiempo = 0;
-		self.puntaje.rings = 0;
-		self.puntaje.cool = 0;
-	} else if (metodo == "incremental") {
-		var decremento_tiempo = min(valor_incremento, puntaje.tiempo);
-	    var decremento_rings = min(valor_incremento, puntaje.rings);
-	    var decremento_cool = min(valor_incremento, puntaje.cool);
+obtener_puntaje_tiempo = function() {
+	return self.puntaje.tiempo;
+}
+
+obtener_puntaje_rings = function() {
+	return self.puntaje.rings;
+}
+
+obtener_puntaje_cool = function() {
+	return self.puntaje.cool;
+}
+
+calcular_puntaje_tiempo = function() {
+	// Variables
+	var tiempo = cronometro.obtener_tiempo("numerico");
+	var cantidad_minutos = tiempo[0];
+	var cantidad_segundos = tiempo[1];
 	
-	    self.puntaje.tiempo -= decremento_tiempo;
-	    self.puntaje.final += decremento_tiempo;
-
-	    self.puntaje.rings -= decremento_rings;
-	    self.puntaje.final += decremento_rings;
-
-	    self.puntaje.cool -= decremento_cool;
-	    self.puntaje.final += decremento_cool;
+	// Determinar puntaje
+	switch (cantidad_minutos) {
+	    case 0:
+			if (cantidad_segundos <= 30) {
+				self.puntaje.tiempo = 50000;
+			} else {
+	            self.puntaje.tiempo = 10000;
+			}
+	        break;
+		case 1:
+	        self.puntaje.tiempo = 5000;
+	        break;
+		case 2:
+	        if (cantidad_segundos <= 30) {
+				self.puntaje.tiempo = 2500;
+			} else {
+				self.puntaje.tiempo = 1250;
+			}
+	        break;
+	    default:
+	        self.puntaje.tiempo = 1000;
+	        break;
 	}
 }
 
-comprobar_puntaje_vacio = function() {
-	return ((puntaje.tiempo == 0) and (puntaje.rings == 0) and (puntaje.cool == 0));
+calcular_puntaje_rings = function() {
+	self.puntaje.rings = jugador.rings * 100;
+}
+
+aumentar_puntaje_cool = function(valor) {
+	self.puntaje.cool += valor;
 }
 
 eliminar_punto_control = function() {
@@ -148,7 +161,6 @@ eliminar_puntaje = function() {
 	self.puntaje.tiempo = 0;
 	self.puntaje.rings = 0;
 	self.puntaje.cool = 0;
-	self.puntaje.final = 0;
 }
 
 eliminar_propiedades_fondo = function() {
