@@ -1,7 +1,9 @@
-titulo_nivel = ["", ""];
-nombre_nivel = room;
-depth = Profundidades.Jugador + 2;
+// Ajustar profundidad
+depth = Profundidades.Backstage;
 
-seleccionar_nivel = false;
-font_requerida = textos.obtener_font_dorado();
+// Variables
+titulo_nivel = ["", ""];
+nombre_nivel = noone;
+font = textos.obtener_font_dorado();
 transparencia_titulo = 0;
+permmitir_seleccion_nivel = false;
