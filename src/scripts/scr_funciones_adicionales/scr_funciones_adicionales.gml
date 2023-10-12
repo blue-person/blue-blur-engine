@@ -1,13 +1,3 @@
-function crear_funcionalidad(profundidad, funcionalidad) {
-	return instance_create_depth(OFFSCREEN, OFFSCREEN, profundidad, funcionalidad);
-}
-
-function crear_sistema_particulas_basico() {
-	var sistema_particulas = part_system_create_layer(layer, true);
-	part_system_depth(sistema_particulas, Profundidades.Particulas);
-	return sistema_particulas;
-}
-
 function redondear_valor(valor) {
 	var signo_valor = sign(valor);
 	var parte_fraccional = frac(valor);
