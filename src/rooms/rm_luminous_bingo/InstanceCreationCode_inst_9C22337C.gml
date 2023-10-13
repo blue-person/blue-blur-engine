@@ -1,2 +1,2 @@
-angulo_conducto = 90
+angulo_disparo = 90
 cantidad_fuerza = 10

@@ -1,4 +1,4 @@
-if ((angulo_conducto <= 90) and (angulo_conducto >= -90)) {
+if ((angulo_disparo <= 90) and (angulo_disparo >= -90)) {
     obj_jugador.direccion_horizontal = 1;
 } else {
     obj_jugador.direccion_horizontal = -1;

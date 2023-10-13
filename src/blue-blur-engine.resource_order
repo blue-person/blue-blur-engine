@@ -1124,7 +1124,7 @@
     {"name":"obj_jump_panel_4","order":7,"path":"objects/obj_jump_panel_4/obj_jump_panel_4.yy",},
     {"name":"obj_jump_panel_final","order":9,"path":"objects/obj_jump_panel_final/obj_jump_panel_final.yy",},
     {"name":"obj_compuerta","order":1,"path":"objects/obj_compuerta/obj_compuerta.yy",},
-    {"name":"obj_canon","order":1,"path":"objects/obj_canon/obj_canon.yy",},
+    {"name":"obj_jump_launcher","order":1,"path":"objects/obj_jump_launcher/obj_jump_launcher.yy",},
     {"name":"__input_gm_runtime_version","order":16,"path":"scripts/__input_gm_runtime_version/__input_gm_runtime_version.yy",},
     {"name":"obj_esfera_gigante_casino","order":4,"path":"objects/obj_esfera_gigante_casino/obj_esfera_gigante_casino.yy",},
     {"name":"input_cursor_speed_set","order":9,"path":"scripts/input_cursor_speed_set/input_cursor_speed_set.yy",},

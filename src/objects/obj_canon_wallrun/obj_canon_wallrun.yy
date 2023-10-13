@@ -14,8 +14,8 @@
     "path": "folders/Objetos/Elementos/Obstaculos/Canones.yy",
   },
   "parentObjectId": {
-    "name": "obj_canon",
-    "path": "objects/obj_canon/obj_canon.yy",
+    "name": "obj_jump_launcher",
+    "path": "objects/obj_jump_launcher/obj_jump_launcher.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

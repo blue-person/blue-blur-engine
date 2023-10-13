@@ -472,7 +472,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.800.0.406",
   },
   "resources": [
     {"id":{"name":"spr_capa_posterior","path":"sprites/spr_capa_posterior/spr_capa_posterior.yy",},},
@@ -1526,7 +1526,7 @@
     {"id":{"name":"obj_jump_panel_4","path":"objects/obj_jump_panel_4/obj_jump_panel_4.yy",},},
     {"id":{"name":"obj_jump_panel_final","path":"objects/obj_jump_panel_final/obj_jump_panel_final.yy",},},
     {"id":{"name":"obj_compuerta","path":"objects/obj_compuerta/obj_compuerta.yy",},},
-    {"id":{"name":"obj_canon","path":"objects/obj_canon/obj_canon.yy",},},
+    {"id":{"name":"obj_jump_launcher","path":"objects/obj_jump_launcher/obj_jump_launcher.yy",},},
     {"id":{"name":"__input_gm_runtime_version","path":"scripts/__input_gm_runtime_version/__input_gm_runtime_version.yy",},},
     {"id":{"name":"obj_gestor_graficos","path":"objects/obj_gestor_graficos/obj_gestor_graficos.yy",},},
     {"id":{"name":"obj_canon_wallrun","path":"objects/obj_canon_wallrun/obj_canon_wallrun.yy",},},
@@ -1657,6 +1657,7 @@
     {"children":[
         {"roomId":{"name":"rm_gestor_inicio","path":"rooms/rm_gestor_inicio/rm_gestor_inicio.yy",},},
       ],"groupName":"Iniciadores",},
+    {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
     {"children":[
         {"roomId":{"name":"rm_titulo_juego","path":"rooms/rm_titulo_juego/rm_titulo_juego.yy",},},
       ],"groupName":"Pantallas de titulo",},
@@ -1668,7 +1669,6 @@
         {"roomId":{"name":"rm_groovy_badlands","path":"rooms/rm_groovy_badlands/rm_groovy_badlands.yy",},},
         {"roomId":{"name":"rm_luminous_bingo","path":"rooms/rm_luminous_bingo/rm_luminous_bingo.yy",},},
         {"roomId":{"name":"rm_mining_mayhem","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},},
-        {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
       ],"groupName":"Niveles",},
     {"children":[
         {"roomId":{"name":"rm_pausa","path":"rooms/rm_pausa/rm_pausa.yy",},},

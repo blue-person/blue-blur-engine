@@ -1,2 +1,2 @@
 event_inherited();
-angulo_conducto = 0;
+angulo_disparo = 0;

@@ -33,7 +33,9 @@
     {"name":"inst_5A4CDC00","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},
     {"name":"inst_8CAD7F6","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},
     {"name":"inst_31D223CD","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},
-    {"name":"inst_40961F21","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},
+    {"name":"inst_7E9303C6","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},
+    {"name":"inst_6CCD42F5","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},
+    {"name":"inst_59698EB0","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -66,7 +68,9 @@
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4074D438","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_plataforma_concreto","path":"objects/obj_plataforma_concreto/obj_plataforma_concreto.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":535.0,"y":504.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D8B31","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_plataforma_concreto","path":"objects/obj_plataforma_concreto/obj_plataforma_concreto.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":621.0,"y":454.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1E517689","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_area_acrobacias_aereas","path":"objects/obj_area_acrobacias_aereas/obj_area_acrobacias_aereas.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":128.0,},
-            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40961F21","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_fourwaycannon","path":"objects/obj_fourwaycannon/obj_fourwaycannon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1054.0,"y":274.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E9303C6","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_jump_launcher","path":"objects/obj_jump_launcher/obj_jump_launcher.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1056.0,"y":288.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6CCD42F5","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_jump_launcher","path":"objects/obj_jump_launcher/obj_jump_launcher.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":480.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59698EB0","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_jump_launcher","path":"objects/obj_jump_launcher/obj_jump_launcher.yy",},"properties":[],"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":480.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
       ],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"nivel","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
