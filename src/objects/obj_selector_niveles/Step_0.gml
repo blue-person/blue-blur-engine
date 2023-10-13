@@ -1,7 +1,7 @@
 // Gestionar interaccion con el jugador
 if (place_meeting(x, y, jugador)) {
 	var velocidad_requerida = abs(jugador.velocidad_horizontal) < 3;
-    if (controles.boton_mantenido("boton_arriba") and velocidad_requerida) {
+    if (controles.boton_mantenido("boton_especial") and velocidad_requerida) {
         if (not permmitir_seleccion_nivel and (nombre_nivel != noone)) {
 			// Ajustar los parametros del jugador
             jugador.accion = 0;
@@ -20,10 +20,10 @@ if (place_meeting(x, y, jugador)) {
     }
 	
 	// Ajustar transparencia del titulo
-    if (transparencia_titulo < 1) then transparencia_titulo += 0.2;
+    if (transparencia_iconos < 1) then transparencia_iconos += 0.2;
 } else {
 	// Ajustar transparencia del titulo
-    if (transparencia_titulo > 0) then transparencia_titulo -= 0.2;
+    if (transparencia_iconos >= 0) then transparencia_iconos -= 0.2;
 }
 
 // AJustar efectos

@@ -2,7 +2,6 @@
 pausar_juego = false;
 nivel_pausado = noone;
 opcion_seleccionada = 0;
-boton_necesario_presionado = false;
 
 imagen_fondo = noone;
 archivo_pantallazo = "escenario_actual.png";

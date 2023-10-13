@@ -12,7 +12,7 @@ if (pausar_juego) {
 	opcion_seleccionada += (boton_abajo_presionado - boton_arriba_presionado);
 	opcion_seleccionada = (opcion_seleccionada + cantidad_opciones) % cantidad_opciones;
 
-	// 
+	// Gestionar pausa
 	var boton_necesario_presionado = (controles.boton_presionado("boton_entrada") or controles.boton_presionado("boton_salto"));
 	if (boton_necesario_presionado) {
 		if (opciones_menu[opcion_seleccionada].estado == 3) {
@@ -50,10 +50,11 @@ if (pausar_juego) {
 	}
 } else {
 	var boton_necesario_presionado = (controles.boton_presionado("boton_entrada") or os_is_paused());
+	var jugador_vivo = jugador.accion != 26;
 	var no_presentando_nivel = not instance_exists(obj_escena_presentacion);
 	var no_transicionando_entre_niveles = not instance_exists(obj_transicion_intraniveles);
 
-	if (boton_necesario_presionado and no_presentando_nivel and no_transicionando_entre_niveles) {
+	if (boton_necesario_presionado and jugador_vivo and no_presentando_nivel and no_transicionando_entre_niveles) {
 		// Gestionar variables
 		pausar_juego = true;
 		opcion_seleccionada = 0;

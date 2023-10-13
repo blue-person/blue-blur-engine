@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Carteles",
-    "path": "folders/Objetos/Elementos/Obstaculos/Carteles.yy",
+    "name": "Decoracion",
+    "path": "folders/Objetos/Elementos/Decoracion.yy",
   },
   "parentObjectId": null,
   "persistent": false,

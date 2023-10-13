@@ -1,32 +1,39 @@
 if (activar_efecto and jugador_existe) {
-	var jugador_esta_vivo = jugador.accion != 26;
-	var colision_con_jugador = collision_circle(x, y, 35, jugador, true, true);
-	
-    if (jugador_esta_vivo and colision_con_jugador) {
-		var jugador_saltando = (jugador.accion == 4) or (jugador.accion == 4.5);
-		var jugador_intentando_saltar = controles.boton_presionado("boton_salto") and (not jugador.tocando_suelo);
-		
-		if (jugador_saltando or jugador_intentando_saltar) {
-	        jugador.accion = 15;
-	        jugador.velocidad_vertical = -cantidad_fuerza;
-	        jugador.image_index = 0;
-		
-	        audio.reproducir_audio(snd_acrobacia_aerea);
-	        audio.reproducir_audio(snd_rainbowring);
-	        dibujar_efectos(spr_efecto_acrobacias_aereas);
-
-			activar_efecto = false;
-	    }
-		
-		if (transparencia_icono < 1) then transparencia_icono += 0.2;
-	} else if (not colision_con_jugador) {
-		if (transparencia_icono > 0) then transparencia_icono -= 0.2;
+    if (jugador.accion != 26) {
+		// Determinar si se esta cerca del objeto
+		if (distance_to_object(jugador) <= 115) {
+			// Determinar si se desea interactuar
+			var colisionando_con_jugador = place_meeting(x, y, jugador);
+			var presionando_boton = controles.boton_presionado("boton_especial");
+			var jugador_volando = not jugador.tocando_suelo;
+			
+			if (colisionando_con_jugador and presionando_boton and jugador_volando) {
+				// Ajustar efectos
+				activar_efecto = false;
+				audio.reproducir_audio(snd_acrobacia_aerea);
+				audio.reproducir_audio(snd_rainbowring);
+				dibujar_efectos(spr_efecto_acrobacias_aereas);
+				
+				// Cambiar parametros del jugador
+				jugador.accion = 15;
+			    jugador.velocidad_vertical = -cantidad_fuerza;
+				jugador.image_index = 0;
+			}
+			
+			// Ajustar transparencia del boton
+			if (boton.transparencia < 1) then boton.transparencia += 0.2;
+		} else {
+			// Ajustar transparencia del boton
+			if (boton.transparencia >= 0) then boton.transparencia -= 0.2;
+		}
 	}
-} else {
+} else if (not activar_efecto) {
+	// Disminuir visibilidad
     image_xscale -= 0.1;
     image_yscale -= 0.1;
     image_alpha -= 0.1;
     
+	// Destruir
     if (image_alpha <= 0) {
 		instance_destroy();
 	}

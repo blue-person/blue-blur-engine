@@ -91,7 +91,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Acrobacias aereas","folderPath":"folders/Objetos/Elementos/Obstaculos/Acrobacias aereas.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bungee","folderPath":"folders/Objetos/Elementos/Obstaculos/Bungee.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Canones","folderPath":"folders/Objetos/Elementos/Obstaculos/Canones.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Carteles","folderPath":"folders/Objetos/Elementos/Obstaculos/Carteles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cinta de Moebius","folderPath":"folders/Objetos/Elementos/Obstaculos/Cinta de Moebius.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dash Ramps","folderPath":"folders/Objetos/Elementos/Obstaculos/Dash Ramps.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dificultades","folderPath":"folders/Objetos/Elementos/Obstaculos/Dash Ramps/Dificultades.yy",},
@@ -473,7 +472,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.800.0.406",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"spr_capa_posterior","path":"sprites/spr_capa_posterior/spr_capa_posterior.yy",},},
