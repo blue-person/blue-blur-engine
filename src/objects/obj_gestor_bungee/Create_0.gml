@@ -1,4 +1,3 @@
-depth = -2;
-
-activar_evento = true;
+depth = Profundidades.Frontstage;
+activar_evento = false;
 permitir_salto = false;

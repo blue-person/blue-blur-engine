@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_gestor_bungee",
-    "path": "sprites/spr_gestor_bungee/spr_gestor_bungee.yy",
+    "name": "spr_resorte_bungee",
+    "path": "sprites/spr_resorte_bungee/spr_resorte_bungee.yy",
   },
   "spriteMaskId": null,
   "visible": true,
