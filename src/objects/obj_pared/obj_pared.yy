@@ -30,5 +30,5 @@
     "path": "sprites/spr_pared/spr_pared.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

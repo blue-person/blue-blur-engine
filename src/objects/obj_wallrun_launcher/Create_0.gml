@@ -1,5 +1,6 @@
 // Heredar datos del objeto padre
 event_inherited();
 
-// Establecer el angulo de disparo
+// Modificar variables
+cantidad_fuerza = 10;
 angulo_disparo = 0;

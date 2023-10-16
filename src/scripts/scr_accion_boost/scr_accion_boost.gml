@@ -1,19 +1,19 @@
 function gestion_boost() {
 	// Variables
-	var boton_presionado = controles.boton_presionado("boton_boost");
-	var boton_liberado = controles.boton_liberado("boton_boost");
+	var presionando_boton = controles.boton_presionado("boton_boost");
+	var soltando_boton = controles.boton_liberado("boton_boost");
 	var energia_disponible = cantidad_boost > 0;
 	var efecto_boost = instance_find(obj_efecto_boost, 0);
 	
 	// Determinar valor de la bandera
-	if (boton_presionado and energia_disponible) {
+	if (presionando_boton and energia_disponible) {
 		var accion_valida_suelo = tocando_suelo and ((accion == 0) or (accion == 11));
 		var accion_valida_aire = (accion == 1) or (accion == 16);
 		
 		if (accion_valida_suelo or accion_valida_aire) {
 			permitir_uso_boost = true;
 		}
-    } else if (boton_liberado or not energia_disponible) {
+    } else if (soltando_boton or not energia_disponible) {
         permitir_uso_boost = false;
     }
 	

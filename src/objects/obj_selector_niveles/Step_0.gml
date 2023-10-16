@@ -1,7 +1,10 @@
 // Gestionar interaccion con el jugador
 if (place_meeting(x, y, jugador)) {
+	// Determinar si se desea interactuar
+	var manteniendo_boton = controles.boton_mantenido("boton_especial");
 	var velocidad_requerida = abs(jugador.velocidad_horizontal) < 3;
-    if (controles.boton_mantenido("boton_especial") and velocidad_requerida) {
+	
+    if (manteniendo_boton and velocidad_requerida) {
         if (not permmitir_seleccion_nivel and (nombre_nivel != noone)) {
 			// Ajustar los parametros del jugador
             jugador.accion = 0;
