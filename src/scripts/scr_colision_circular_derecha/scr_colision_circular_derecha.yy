@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Colisiones circulares",
-    "path": "folders/Scripts/Entidades/General/Colisiones/Colisiones circulares.yy",
+    "path": "folders/Scripts/Entidades/Jugador/General/Colisiones/Colisiones circulares.yy",
   },
 }

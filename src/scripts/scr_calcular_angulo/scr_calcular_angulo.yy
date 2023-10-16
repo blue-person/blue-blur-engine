@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Angulos",
-    "path": "folders/Scripts/Entidades/General/Angulos.yy",
+    "path": "folders/Scripts/Entidades/Jugador/General/Angulos.yy",
   },
 }

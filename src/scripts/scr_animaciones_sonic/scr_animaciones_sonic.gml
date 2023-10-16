@@ -379,9 +379,7 @@ function gestion_animaciones_sonic() {
 	if ((accion == 35) or (accion == 35.1)) {
 	    sprite_index = spr_sonic_rodando_a;
 	    fotograma += 0.5;
-	}
-
-	if (accion == 35.2) {
+	} else if (accion == 35.2) {
 	    sprite_index = spr_sonic_rotate_jump_launcher;
 	    fotograma += 0.5;
 

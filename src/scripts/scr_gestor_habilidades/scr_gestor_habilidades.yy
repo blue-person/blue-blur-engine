@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_gestor_fisicas_agua",
+  "name": "scr_gestor_habilidades",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

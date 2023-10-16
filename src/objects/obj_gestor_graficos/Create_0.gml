@@ -17,19 +17,19 @@ obtener_modo_pantalla = function() {
 	return modo_pantalla;
 }
 
-configurar_graficos = function(nivel_antialiasing, permitir_vsync) {
-	display_reset(nivel_antialiasing, permitir_vsync);
-}
-
 configuracion_inicial = function() {
 	// Variables
 	var ancho_ventana = resolucion_horizontal * factor_escala;
 	var altura_ventana = resolucion_vertical * factor_escala;
 	
-	// Configuracion
-	self.configurar_graficos(2, false);
+	// Configuracion grafica
+	display_reset(2, true);
+	
+	// Configuracion de la GUI
 	display_set_gui_size(resolucion_horizontal, resolucion_vertical);
 	surface_resize(application_surface, resolucion_horizontal, resolucion_vertical);
+	
+	// Configuracion de la ventana
 	window_set_caption(TITULO_JUEGO);
 	window_set_size(ancho_ventana, altura_ventana);
 	window_center();

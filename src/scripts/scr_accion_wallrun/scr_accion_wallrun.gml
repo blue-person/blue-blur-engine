@@ -1,5 +1,6 @@
 function gestion_accion_wallrun() {
-	if (accion == 36) {
+	var colision_con_pared = place_meeting(x, y, obj_pared);
+	if (accion == 36 and colision_con_pared) {
         velocidad_horizontal = 10;
         velocidad_vertical = 0;
         tocando_suelo = false;
@@ -12,5 +13,7 @@ function gestion_accion_wallrun() {
             y += distancia;
             audio.reproducir_audio(snd_quickstep);
         }
-    }
+    } else if (not colision_con_pared and accion == 36) {
+		accion = 0;
+	}
 }

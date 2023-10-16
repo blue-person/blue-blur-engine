@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_base_canon_curvo_casino",
-    "path": "sprites/spr_base_canon_curvo_casino/spr_base_canon_curvo_casino.yy",
+    "name": "spr_base_canon",
+    "path": "sprites/spr_base_canon/spr_base_canon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

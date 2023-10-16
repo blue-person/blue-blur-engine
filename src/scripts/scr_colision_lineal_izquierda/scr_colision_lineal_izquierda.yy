@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Colisiones lineales",
-    "path": "folders/Scripts/Entidades/General/Colisiones/Colisiones lineales.yy",
+    "path": "folders/Scripts/Entidades/Jugador/General/Colisiones/Colisiones lineales.yy",
   },
 }

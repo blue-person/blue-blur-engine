@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Fisicas",
-    "path": "folders/Scripts/Entidades/General/Fisicas.yy",
+    "path": "folders/Scripts/Entidades/Jugador/General/Fisicas.yy",
   },
 }
