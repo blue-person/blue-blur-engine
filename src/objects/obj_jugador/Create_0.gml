@@ -3,8 +3,8 @@ mascara_colision = 16;
 velocidad_horizontal = 0;
 velocidad_vertical = 0;
 limite_velocidad_vertical = 16;
-limite_velocidad_horizontal = 13;
-velocidad_horizontal_normal = 12;
+limite_velocidad_maxima = 13;
+limite_velocidad_normal = 12;
 altura_salto = -6.5;
 altura_salto_minima = -4;
 
@@ -26,7 +26,7 @@ limite_velocidad_actual = 0;
 
 // Variables para el manejo del boost
 cantidad_boost = 100;
-usando_boost = false;
+permitir_uso_boost = false;
 valor_incremento_rastro = 0;
 
 // Variables para el manejo del spindash

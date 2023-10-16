@@ -50,7 +50,7 @@ if (alarma_3 > 0) {
 }
 
 // Hacer un rastro que sigue al personaje cuando usa el boost
-if (instance_exists(obj_efecto_boost) or ((global.personaje_actual == "Shadow") and (accion == 4.5))) {
+if (permitir_uso_boost or ((global.personaje_actual == "Shadow") and (accion == 4.5))) {
     valor_incremento_rastro += 1;
 	
     if (valor_incremento_rastro >= 7) {

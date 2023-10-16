@@ -1,5 +1,5 @@
 if (activar_evento and (other.accion == 11) and (other.accion != 26)) {
-    other.velocidad_horizontal = image_xscale * other.limite_velocidad_horizontal;
+    other.velocidad_horizontal = image_xscale * other.limite_velocidad_maxima;
     other.direccion_horizontal = image_xscale;
     other.tocando_suelo = true;
     activar_evento = false;

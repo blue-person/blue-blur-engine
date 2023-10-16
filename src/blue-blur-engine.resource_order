@@ -701,7 +701,6 @@
     {"name":"spr_contador_rings","order":3,"path":"sprites/spr_contador_rings/spr_contador_rings.yy",},
     {"name":"scr_sonido_pisadas","order":2,"path":"scripts/scr_sonido_pisadas/scr_sonido_pisadas.yy",},
     {"name":"spr_contador_tiempo","order":4,"path":"sprites/spr_contador_tiempo/spr_contador_tiempo.yy",},
-    {"name":"scr_gestor_habilidades","order":2,"path":"scripts/scr_gestor_habilidades/scr_gestor_habilidades.yy",},
     {"name":"spr_barra_boost","order":1,"path":"sprites/spr_barra_boost/spr_barra_boost.yy",},
     {"name":"__input_class_icon_category","order":7,"path":"scripts/__input_class_icon_category/__input_class_icon_category.yy",},
     {"name":"input_gamepad_check_pressed","order":1,"path":"scripts/input_gamepad_check_pressed/input_gamepad_check_pressed.yy",},

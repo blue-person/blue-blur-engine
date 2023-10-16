@@ -15,7 +15,7 @@ function gestion_fisicas_agua_entidad() {
 			velocidad_vertical *= 0.25;
 			velocidad_horizontal *= 0.5;
 			limite_velocidad_vertical = 3.5;
-			limite_velocidad_horizontal = 8;
+			limite_velocidad_maxima = 8;
 			altura_salto = -3.5;
 			altura_salto_minima = -2;
 		}
@@ -32,8 +32,8 @@ function gestion_fisicas_agua_entidad() {
 			
 			// Movimiento al salir del agua
 			limite_velocidad_vertical = 16;
-			limite_velocidad_horizontal = 13;
-			velocidad_horizontal_normal = 12;
+			limite_velocidad_maxima = 13;
+			limite_velocidad_normal = 12;
 			altura_salto = -6.5;
 			altura_salto_minima = -4;
 			

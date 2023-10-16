@@ -2,7 +2,7 @@ if (activar_evento) {
     gestor_principal_fisicas(self);
 	
     if (tocando_suelo) {
-        velocidad_horizontal = limite_velocidad_horizontal * image_xscale;
+        velocidad_horizontal = limite_velocidad_maxima * image_xscale;
         image_angle -= image_xscale * 20;
 		
         if (collision_line(x, y, x + acos * 55, y + asin * 55, obj_superficie, true, true)) {

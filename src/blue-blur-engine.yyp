@@ -943,7 +943,6 @@
     {"id":{"name":"spr_contador_vidas_shadow","path":"sprites/spr_contador_vidas_shadow/spr_contador_vidas_shadow.yy",},},
     {"id":{"name":"scr_sonido_pisadas","path":"scripts/scr_sonido_pisadas/scr_sonido_pisadas.yy",},},
     {"id":{"name":"spr_contador_tiempo","path":"sprites/spr_contador_tiempo/spr_contador_tiempo.yy",},},
-    {"id":{"name":"scr_gestor_habilidades","path":"scripts/scr_gestor_habilidades/scr_gestor_habilidades.yy",},},
     {"id":{"name":"spr_barra_boost","path":"sprites/spr_barra_boost/spr_barra_boost.yy",},},
     {"id":{"name":"spr_calificacion_s","path":"sprites/spr_calificacion_s/spr_calificacion_s.yy",},},
     {"id":{"name":"__input_class_icon_category","path":"scripts/__input_class_icon_category/__input_class_icon_category.yy",},},

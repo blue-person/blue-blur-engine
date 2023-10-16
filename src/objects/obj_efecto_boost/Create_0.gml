@@ -13,7 +13,7 @@ tiempo_impulso_aereo = 240;
 activar_efecto = true;
 
 // Gestion de la velocidad
-obj_jugador.velocidad_horizontal = obj_jugador.limite_velocidad_horizontal * obj_jugador.direccion_horizontal;
+obj_jugador.velocidad_horizontal = obj_jugador.limite_velocidad_maxima * obj_jugador.direccion_horizontal;
 
 // Crear los efectos visuales y de sonido
 instance_create_depth(obj_jugador.x, obj_jugador.y, -2, obj_explosion_boost);

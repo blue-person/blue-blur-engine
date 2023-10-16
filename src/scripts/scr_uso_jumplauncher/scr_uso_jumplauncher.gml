@@ -6,10 +6,10 @@ function gestion_uso_jumplauncher() {
     if (accion == 35) {
         // Ajustar parametros
         angulo = 0;
-		usando_boost = false;
         tocando_suelo = false;
 		velocidad_vertical = 0;
         velocidad_horizontal = 0;
+		permitir_uso_boost = false;
 
         // Mover hacia el jump launcher
         move_towards_point(jump_launcher.x, jump_launcher.y, 3);

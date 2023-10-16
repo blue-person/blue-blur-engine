@@ -16,7 +16,7 @@ if (objetivo != noone) {
                 modo_seguimiento = "suave";
 
                 // Determinar si realizar el desplazamiento
-                var velocidad_objetivo_requerida = abs(objetivo.velocidad_horizontal) >= (objetivo.limite_velocidad_horizontal / 2);
+                var velocidad_objetivo_requerida = abs(objetivo.velocidad_horizontal) >= (objetivo.limite_velocidad_maxima / 2);
                 var permitir_inclinar_horizontalmente = abs(desplazamiento_x) <= indice_inclinacion_horizontal;
 
                 if (permitir_inclinar_horizontalmente and velocidad_objetivo_requerida) {

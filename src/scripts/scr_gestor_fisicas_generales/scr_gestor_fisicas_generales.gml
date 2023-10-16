@@ -3,13 +3,8 @@ function gestion_fisicas_entidad() {
     var pendiente = 0;
 
     // Establecer los límites de velocidad del movimiento de la entidad
-    if (abs(velocidad_horizontal) > limite_velocidad_horizontal) {
-        velocidad_horizontal = sign(velocidad_horizontal) * limite_velocidad_horizontal;
-    }
-
-    if (abs(velocidad_vertical) > limite_velocidad_vertical) {
-        velocidad_vertical = sign(velocidad_vertical) * limite_velocidad_vertical;
-    }
+	velocidad_horizontal = clamp(velocidad_horizontal, -limite_velocidad_maxima, limite_velocidad_maxima);
+    velocidad_vertical = clamp(velocidad_vertical, -limite_velocidad_vertical, limite_velocidad_vertical);
 
     // Velocidad horizontal
     if (velocidad_horizontal > 0) {
@@ -129,7 +124,7 @@ function gestion_fisicas_entidad() {
         }
     }
 
-    if ((accion >= 0) and (abs(velocidad_horizontal) < limite_velocidad_horizontal)) {
+    if ((accion >= 0) and (abs(velocidad_horizontal) < limite_velocidad_maxima)) {
         velocidad_horizontal -= pendiente * asin;
     }
 

@@ -14,12 +14,12 @@ function gestion_uso_zipline() {
         var final_zipline_cercano = instance_nearest(x, y, obj_final_zipline);
         move_towards_point(final_zipline_cercano.x, final_zipline_cercano.y - 12, velocidad_zipline);
 
-        if (velocidad_zipline < limite_velocidad_horizontal) {
+        if (velocidad_zipline < limite_velocidad_maxima) {
             velocidad_zipline += 0.125;
         }
 
         if (instance_exists(obj_efecto_boost)) {
-            velocidad_zipline = limite_velocidad_horizontal;
+            velocidad_zipline = limite_velocidad_maxima;
         }
     }
 }

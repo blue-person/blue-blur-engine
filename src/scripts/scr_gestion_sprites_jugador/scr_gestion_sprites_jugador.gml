@@ -1,5 +1,5 @@
 function crear_particulas_jugador() {
-	if ((accion == 4) or (accion == 4.5) or (accion == 18) or instance_exists(obj_efecto_boost)) {
+	if (permitir_uso_boost or (accion == 4) or (accion == 4.5) or (accion == 18)) {
 		// Ajustar la direccion de las particulas
 		var direccion_jugador = floor(point_direction(x_inicial, y_inicial, x, y));
 		var angulo_rastro = normalizar_angulo(direccion_jugador);

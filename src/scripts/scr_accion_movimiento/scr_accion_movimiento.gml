@@ -158,14 +158,14 @@ function gestion_movimiento_basico() {
         } else {
             if (controles.boton_mantenido("boton_derecha")) {
                 if (velocidad_horizontal >= 0) {
-                    if (velocidad_horizontal < velocidad_horizontal_normal) {
+                    if (velocidad_horizontal < limite_velocidad_normal) {
                         velocidad_horizontal += aceleracion * 2;
                     }
                 }
             }
             if (controles.boton_mantenido("boton_izquierda")) {
                 if (velocidad_horizontal <= 0) {
-                    if (velocidad_horizontal > -velocidad_horizontal_normal) {
+                    if (velocidad_horizontal > -limite_velocidad_normal) {
                         velocidad_horizontal -= aceleracion * 2;
                         velocidad_horizontal -= aceleracion * 2;
                     }
