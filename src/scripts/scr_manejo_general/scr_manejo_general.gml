@@ -70,7 +70,7 @@ function disperar_rings() {
 	audio.reproducir_audio(snd_perder_rings);
 }
 
-function herir_jugador() {
+function herir_jugador(permitir_perder_rings = true) {
 	// Variables
 	jugador.image_index = 0;
 	jugador.tocando_suelo = false;
@@ -79,26 +79,32 @@ function herir_jugador() {
 	jugador.permitir_ser_apuntado = false;
 	
 	// Gestionar la perdida de rings
-	if (jugador.rings > 0) {
-		// Ajustar parametros
-	    jugador.accion = 22;
-	    jugador.tiempo_invencibilidad = 240;
-		audio.reproducir_audio(jugador.audio_quejido);
+	if (permitir_perder_rings) {
+		if (jugador.rings > 0) {
+			// Ajustar parametros
+		    jugador.accion = 22;
+		    jugador.tiempo_invencibilidad = 240;
+			audio.reproducir_audio(jugador.audio_quejido);
 
-		// Dispersar rings
-	    disperar_rings();
+			// Dispersar rings
+		    disperar_rings();
+		} else {
+			// Matar al jugador
+		    jugador.accion = 26;
+		    jugador.alarma_3 = 120;
+			audio.reproducir_audio(jugador.audio_muerte);
+
+			// Desactivar HUD
+		    if (instance_exists(hud)) then hud.ocultar();
+
+			// Desactivar el controlador de pausa
+		    if (instance_exists(obj_controlador_pausa)) {
+				instance_destroy(obj_controlador_pausa);
+			} 
+		}
 	} else {
-		// Matar al jugador
-	    jugador.accion = 26;
-	    jugador.alarma_3 = 120;
-		audio.reproducir_audio(jugador.audio_muerte);
-
-		// Desactivar HUD
-	    if (instance_exists(hud)) then hud.ocultar();
-
-		// Desactivar el controlador de pausa
-	    if (instance_exists(obj_controlador_pausa)) {
-			instance_destroy(obj_controlador_pausa);
-		} 
+		// Herir al jugador pero sin penalizarlo
+		jugador.accion = 22;
+		audio.reproducir_audio(jugador.audio_quejido);
 	}
 }

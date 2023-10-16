@@ -30,7 +30,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"17aa5c1d-23f8-439e-9f46-eeedd3eefe44","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Animaciones",
     "path": "folders/Sprites/Entidades/Personajes/Sonic/Animaciones.yy",
@@ -74,7 +74,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 16,
-    "yorigin": 18,
+    "yorigin": 31,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

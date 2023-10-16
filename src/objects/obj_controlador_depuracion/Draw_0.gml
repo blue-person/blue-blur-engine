@@ -1,7 +1,7 @@
 // Dibujar colisiones del jugador
-if (permitir_depuracion and permitir_ver_colisiones) {
-	if (instance_exists(obj_jugador)) {
-		with (obj_jugador) {
+if (permitir_ver_colisiones) {
+	if (jugador_existe) {
+		with (jugador) {
 			colision_con_suelo();
 			colision_con_riel();
 			colision_lineal_derecha();
