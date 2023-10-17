@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "26  Keyboard (Direct)",
-    "path": "folders/Extensiones/Input v6.0.4/26  Keyboard (Direct).yy",
+    "path": "folders/Extensiones/Input v6.2.0/26  Keyboard (Direct).yy",
   },
 }

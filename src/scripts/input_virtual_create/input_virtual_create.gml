@@ -1,4 +1,5 @@
-/// @desc    Creates a new virtual button that allows for touchscreen input to controles verbs
+// Feather disable all
+/// @desc    Creates a new virtual button that allows for touchscreen input to control verbs
 /// 
 /// Virtual buttons are returned as structs which can controlled by calling methods. For example,
 /// the two following functions destroy and draw the button:
@@ -15,6 +16,7 @@
 /// .button(clickVerb)
 /// .dpad(clickVerb, leftVerb, rightVerb, upVerb, downVerb, [4dir])
 /// .thumbstick(clickVerb, leftVerb, rightVerb, upVerb, downVerb)
+/// .touchpad(clickVerb, leftVerb, rightVerb, upVerb, downVerb, sensitivity)
 /// .get_type()
 /// .get_verbs()
 /// .threshold(min, max)

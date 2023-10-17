@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Deprecated",
-    "path": "folders/Extensiones/Input v6.0.4/(System)/Deprecated.yy",
+    "path": "folders/Extensiones/Input v6.2.0/(System)/Deprecated.yy",
   },
 }

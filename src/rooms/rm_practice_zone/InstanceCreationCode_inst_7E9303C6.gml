@@ -1,2 +1,2 @@
-cantidad_fuerza = 80;
-angulo_disparo = 0;
+cantidad_fuerza = 10;
+angulo_disparo = 45;

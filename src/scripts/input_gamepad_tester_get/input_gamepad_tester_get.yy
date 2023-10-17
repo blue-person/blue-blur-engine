@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "__input_restart_set",
+  "name": "input_gamepad_tester_get",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "(System)",
-    "path": "folders/Extensiones/Input v6.0.4/(System).yy",
+    "name": "23  Other",
+    "path": "folders/Extensiones/Input v6.2.0/23  Other.yy",
   },
 }

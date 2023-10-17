@@ -1,3 +1,4 @@
+// Feather disable all
 /// @param index
 function __input_class_gamepad(_index) constructor
 {
@@ -104,6 +105,45 @@ function __input_class_gamepad(_index) constructor
         if (__global.__gamepad_motion_support) __motion = new __input_class_gamepad_motion(index);
         if (!__INPUT_SILENT)__input_trace("Gamepad ", index, " discovered, type = \"", simple_type, "\" (", raw_type, ", guessed=", guessed_type, "), description = \"", description, "\" (vendor=", vendor, ", product=", product, ")");
     }
+
+    static __get_any_pressed = function()
+    {
+        if (get_pressed(gp_face1)
+        ||  get_pressed(gp_face2)
+        ||  get_pressed(gp_face3)
+        ||  get_pressed(gp_face4)
+        ||  get_pressed(gp_padu)
+        ||  get_pressed(gp_padd)
+        ||  get_pressed(gp_padl)
+        ||  get_pressed(gp_padr)
+        ||  get_pressed(gp_shoulderl)
+        ||  get_pressed(gp_shoulderr)
+        ||  get_pressed(gp_start)
+        ||  get_pressed(gp_select)
+        ||  get_pressed(gp_stickl)
+        ||  get_pressed(gp_stickr)
+        ||  (!is_axis(gp_shoulderlb) && get_pressed(gp_shoulderlb))
+        ||  (!is_axis(gp_shoulderrb) && get_pressed(gp_shoulderrb)))
+        {
+            return true;
+        }
+
+        if (INPUT_SDL2_ALLOW_EXTENDED)
+        {
+            if (get_pressed(gp_guide)
+            ||  get_pressed(gp_misc1)
+            ||  get_pressed(gp_touchpad)
+            ||  get_pressed(gp_paddle1)
+            ||  get_pressed(gp_paddle2)
+            ||  get_pressed(gp_paddle3)
+            ||  get_pressed(gp_paddle4))
+            {
+                return true;
+            }
+        }
+        
+        return false;
+    }
     
     /// @param GMconstant
     static get_held = function(_gm)
@@ -139,7 +179,7 @@ function __input_class_gamepad(_index) constructor
         {
             if ((_gm == gp_axislh) || (_gm == gp_axislv) || (_gm == gp_axisrh) || (_gm == gp_axisrv))
             {
-                return gamepad_axis_value(index, _gm);
+                return clamp(gamepad_axis_value(index, _gm), -1.0, 1.0);
             }
             else
             {
@@ -168,7 +208,7 @@ function __input_class_gamepad(_index) constructor
         {
             if ((_gm == gp_shoulderlb) || (_gm == gp_shoulderrb))
             {
-                return (!__INPUT_ON_SWITCH);
+                return !__INPUT_DIGITAL_TRIGGER;
             }
             else
             {
@@ -277,7 +317,7 @@ function __input_class_gamepad(_index) constructor
         
         if (__vibration_support)
         {
-            if (__vibration_received_this_frame && input_window_has_focus())
+            if (__vibration_received_this_frame && input_game_has_focus())
             {
                 var _vibration_low  = __vibration_scale * __vibration_left;
                 var _vibration_high = __vibration_scale * __vibration_right;

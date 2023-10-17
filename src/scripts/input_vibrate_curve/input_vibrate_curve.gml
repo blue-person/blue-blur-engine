@@ -1,4 +1,5 @@
-/// @desc    Vibrates a player's gamepad using an animation curve to controles the strength
+// Feather disable all
+/// @desc    Vibrates a player's gamepad using an animation curve to control the strength
 ///          Units for the vibration duration are determined by INPUT_TIMER_MILLISECONDS
 ///          If the curve has one channel, that channel controls both left and right motors
 ///          If the curve has two (or more) channels then the first two channels from left

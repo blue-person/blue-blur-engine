@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Keyboard and Mouse",
-    "path": "folders/Extensiones/Input v6.0.4/(System)/Keyboard and Mouse.yy",
+    "path": "folders/Extensiones/Input v6.2.0/(System)/Keyboard and Mouse.yy",
   },
 }

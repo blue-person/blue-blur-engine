@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "22  Trigger Effects",
-    "path": "folders/Extensiones/Input v6.0.4/22  Trigger Effects.yy",
+    "path": "folders/Extensiones/Input v6.2.0/22  Trigger Effects.yy",
   },
 }
