@@ -282,17 +282,13 @@ function gestion_animaciones_sonic() {
 	// Correr por una cinta de mobius (Corkscrew)
 	if (accion == 16) {
 	    sprite_index = spr_sonic_cinta_moebius;
-	}
-
-	if (accion == 16.5) {
+	} else if (accion == 16.5) {
 	    if (direccion_horizontal == 1) {
 			sprite_index = spr_sonic_cinta_moebius_riel_a;
 		} else {
 	        sprite_index = spr_sonic_cinta_moebius_riel_b;
 		}
-	}
-
-	if (accion == 17) {
+	} else if (accion == 17) {
 	    sprite_index = spr_sonic_rodando_a;
 	    fotograma += calcular_fotograma(2, 1);
 	}

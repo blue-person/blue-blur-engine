@@ -1,5 +1,5 @@
 if (activar_evento and (other.accion != 26)) {
-	obj_jugador.permitir_uso_boost = false;
+	other.permitir_uso_boost = false;
     other.tocando_suelo = false;
     other.accion = 7;
     other.image_index = 0;
