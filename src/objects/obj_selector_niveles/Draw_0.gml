@@ -9,5 +9,5 @@ var segundo_parrafo = titulo_nivel.segundo_parrafo;
 textos.escritura_simple(x, segundo_parrafo.pos_y, segundo_parrafo.contenido, font, fa_middle, fa_top, transparencia_iconos);
 
 // Mostrar el icono del control
-var boton = controles.obtener_icono_boton("boton_especial");
-draw_sprite_ext(boton, 0, x, pos_y_boton, 1, 1, 0, c_white, transparencia_iconos - 0.1);
+var icono_boton = controles.obtener_icono_boton("boton_especial");
+draw_sprite_ext(icono_boton, 0, x, pos_y_boton, 1, 1, 0, c_white, transparencia_iconos - 0.1);

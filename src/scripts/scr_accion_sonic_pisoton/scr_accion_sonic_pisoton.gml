@@ -1,12 +1,11 @@
 function gestion_accion_sonic_pisoton() {
-	var boton_oprimido = controles.boton_presionado("boton_ataque");
 	var acciones_validas = ((accion == 0) or (accion == 1)) and permitir_pisoton;
 	var requisitos = !tocando_suelo and (tiempo_aire >= 10);
 	var validacion_permiso_pisoton = (!permitir_pisoton and tocando_suelo);
 	
 	if (validacion_permiso_pisoton) then permitir_pisoton = true;
 	
-    if (boton_oprimido and acciones_validas and requisitos) {
+    if (controles.boton_presionado("boton_ataque") and acciones_validas and requisitos) {
         velocidad_horizontal = 0;
 		accion = 18;
 		audio.reproducir_audio(snd_ataque_sonic_c);

@@ -1,19 +1,13 @@
 function gestion_boost() {
-	// Variables
-	var presionando_boton = controles.boton_presionado("boton_boost");
-	var soltando_boton = controles.boton_liberado("boton_boost");
-	var energia_disponible = cantidad_boost > 0;
-	var efecto_boost = instance_find(obj_efecto_boost, 0);
-	
 	// Determinar valor de la bandera
-	if (presionando_boton and energia_disponible) {
+	if (controles.boton_presionado("boton_boost")) {
 		var accion_valida_suelo = tocando_suelo and ((accion == 0) or (accion == 11));
 		var accion_valida_aire = (accion == 1) or (accion == 16);
 		
 		if (accion_valida_suelo or accion_valida_aire) {
 			permitir_uso_boost = true;
 		}
-    } else if (soltando_boton or not energia_disponible) {
+    } else if (controles.boton_liberado("boton_boost")) {
         permitir_uso_boost = false;
     }
 	
@@ -24,7 +18,7 @@ function gestion_boost() {
         limite_velocidad_actual = limite_velocidad_maxima;
 		
 		// Crear efecto visual
-		if (efecto_boost == noone) {
+		if (not instance_exists(obj_efecto_boost) and (cantidad_boost > 0)) {
 			instance_create_depth(x, y, Profundidades.Efectos, obj_efecto_boost);
 		}
     } else {
@@ -38,10 +32,5 @@ function gestion_boost() {
         } else {
             velocidad_horizontal = clamp(velocidad_horizontal, -limite_velocidad_normal, limite_velocidad_normal);
         }
-		
-		// Eliminar efecto visual
-		if (efecto_boost != noone) {
-			instance_destroy(efecto_boost);
-		}
     }
 }

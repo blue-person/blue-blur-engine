@@ -6,8 +6,6 @@ function gestion_accion_wallrun() {
 		
 		if (ruta_despejada and colisionando_con_pared) {
 			// Variables
-			var presionando_arriba = controles.boton_presionado("boton_arriba");
-			var presionando_abajo = controles.boton_presionado("boton_abajo");
 	        var distancia_quickstep = 56;
 			var arriba_esta_libre = not collision_point(x, y - distancia_quickstep, obj_superficie, false, true);
 			var abajo_esta_libre = not collision_point(x, y + distancia_quickstep, obj_superficie, false, true);
@@ -17,10 +15,10 @@ function gestion_accion_wallrun() {
 			velocidad_vertical = 0;
 			
 			// Determinar movimiento
-			if (presionando_arriba and arriba_esta_libre) {
+			if (controles.boton_presionado("boton_arriba") and arriba_esta_libre) {
 				audio.reproducir_audio(snd_quickstep);
 				y -= distancia_quickstep;
-			} else if (presionando_abajo and abajo_esta_libre) {
+			} else if (controles.boton_presionado("boton_abajo") and abajo_esta_libre) {
 				audio.reproducir_audio(snd_quickstep);
 				y += distancia_quickstep;
 			}

@@ -1,15 +1,11 @@
 if (pausar_juego) {
-	// Variables
-	var boton_abajo_presionado = controles.boton_presionado("boton_abajo");
-	var boton_arriba_presionado = controles.boton_presionado("boton_arriba");
-	
 	// Reproducir audio
-	if (boton_abajo_presionado or boton_arriba_presionado) {
+	if (controles.boton_presionado("boton_abajo") or controles.boton_presionado("boton_arriba")) {
 		audio.reproducir_audio(snd_escoger_opcion);
 	}
 	
 	// Determinar opcion seleccionada
-	opcion_seleccionada += (boton_abajo_presionado - boton_arriba_presionado);
+	opcion_seleccionada += (controles.boton_presionado("boton_abajo") - controles.boton_presionado("boton_arriba"));
 	opcion_seleccionada = (opcion_seleccionada + cantidad_opciones) % cantidad_opciones;
 
 	// Gestionar pausa

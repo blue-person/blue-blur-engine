@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_cinta_moebius_inicio",
+  "name": "spr_cinta_moebius",
   "bbox_bottom": 103,
   "bbox_left": 0,
   "bbox_right": 287,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_cinta_moebius_inicio",
+    "name": "spr_cinta_moebius",
     "autoRecord": true,
     "backdropHeight": 1080,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6473677f-d856-494f-9775-ed334951224c","path":"sprites/spr_cinta_moebius_inicio/spr_cinta_moebius_inicio.yy",},},},"Disabled":false,"id":"8269ec77-a9bb-4bd6-ace5-4182c5bf1bb9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6473677f-d856-494f-9775-ed334951224c","path":"sprites/spr_cinta_moebius/spr_cinta_moebius.yy",},},},"Disabled":false,"id":"50315a51-3519-4bff-8bcb-3464c5091376","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

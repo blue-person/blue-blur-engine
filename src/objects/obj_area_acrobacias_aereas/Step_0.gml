@@ -4,10 +4,9 @@ if (activar_efecto and jugador_existe) {
 		if (distance_to_object(jugador) <= 115) {
 			// Determinar si se desea interactuar
 			var colisionando_con_jugador = place_meeting(x, y, jugador);
-			var presionando_boton = controles.boton_presionado("boton_especial");
 			var jugador_volando = not jugador.tocando_suelo;
 			
-			if (colisionando_con_jugador and presionando_boton and jugador_volando) {
+			if (colisionando_con_jugador and jugador_volando and controles.boton_presionado("boton_especial")) {
 				// Ajustar efectos
 				activar_efecto = false;
 				audio.reproducir_audio(snd_acrobacia_aerea);

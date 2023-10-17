@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_cinta_moebius",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_cinta_moebius_inicio",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,9 +26,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cinta_moebius",
-    "path": "sprites/spr_cinta_moebius/spr_cinta_moebius.yy",
+    "name": "spr_cinta_moebius_inicio",
+    "path": "sprites/spr_cinta_moebius_inicio/spr_cinta_moebius_inicio.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
