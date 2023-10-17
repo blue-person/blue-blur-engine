@@ -1,7 +1,7 @@
 function gestion_movimiento_shadow() {
     // Gestionar el boost
     gestion_boost();
-	
+
     // Frenar al cambiar de direccion
     gestion_accion_frenar();
 	

@@ -1,30 +1,46 @@
 function gestion_boost() {
+	// Variables
+	var efecto_boost = instance_find(obj_efecto_boost, 0);
+	var energia_disponible = cantidad_boost > 0;
+	
 	// Determinar valor de la bandera
-	if (controles.boton_presionado("boton_boost")) {
-		var accion_valida_suelo = tocando_suelo and ((accion == 0) or (accion == 11));
+	if (energia_disponible and controles.boton_presionado("boton_boost")) {
+		// Variables
+		var accion_valida_suelo = tocando_suelo and ((accion == 0) or (accion == 8) or (accion == 11));
 		var accion_valida_aire = (accion == 1) or (accion == 16);
 		
-		if (accion_valida_suelo or accion_valida_aire) {
-			permitir_uso_boost = true;
-		}
-    } else if (controles.boton_liberado("boton_boost")) {
-        permitir_uso_boost = false;
+		// Ajustar bandera
+		if (accion_valida_suelo or accion_valida_aire) then permitir_uso_boost = true;
+    } else if (not energia_disponible or controles.boton_liberado("boton_boost")) {
+		// Ajustar bandera
+		permitir_uso_boost = false;
     }
 	
-	// Gestionar comportamiento
 	if (permitir_uso_boost) {
 		// Ajustar parametros
-        aceleracion = (tocando_suelo) ? 1 : 0.0625;
-        limite_velocidad_actual = limite_velocidad_maxima;
-		
-		// Crear efecto visual
-		if (not instance_exists(obj_efecto_boost) and (cantidad_boost > 0)) {
+		aceleracion = (tocando_suelo) ? 1 : 0.0625;
+		limite_velocidad_actual = limite_velocidad_maxima;
+
+		// Gestionar el efecto visual
+		if (efecto_boost == noone) {
+			// Crear efecto visual
 			instance_create_depth(x, y, Profundidades.Efectos, obj_efecto_boost);
+		} else {
+			// Determinar direccion horizontal
+			if (velocidad_horizontal > 0) {
+				direccion_horizontal = 1;
+			} else if (velocidad_horizontal < 0) {
+				direccion_horizontal = -1;
+			}
 		}
-    } else {
-		// Ajustar parametros
+	} else {
         aceleracion = 0.0625;
         limite_velocidad_actual = limite_velocidad_normal;
+		
+		// Eliminar efecto visual
+		if (efecto_boost != noone) {
+			instance_destroy(efecto_boost);
+		}
 		
 		// Ajustar parametros en base a la accion
         if (accion == 2) {
@@ -32,5 +48,5 @@ function gestion_boost() {
         } else {
             velocidad_horizontal = clamp(velocidad_horizontal, -limite_velocidad_normal, limite_velocidad_normal);
         }
-    }
+	}
 }

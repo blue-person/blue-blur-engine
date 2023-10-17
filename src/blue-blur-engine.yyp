@@ -872,7 +872,6 @@
     {"id":{"name":"input_vibrate_adsr","path":"scripts/input_vibrate_adsr/input_vibrate_adsr.yy",},},
     {"id":{"name":"spr_baranda_curva_posterior_a","path":"sprites/spr_baranda_curva_posterior_a/spr_baranda_curva_posterior_a.yy",},},
     {"id":{"name":"spr_baranda_curva_frontal_b","path":"sprites/spr_baranda_curva_frontal_b/spr_baranda_curva_frontal_b.yy",},},
-    {"id":{"name":"scr_accion_movimiento","path":"scripts/scr_accion_movimiento/scr_accion_movimiento.yy",},},
     {"id":{"name":"spr_baranda_curva_posterior_b","path":"sprites/spr_baranda_curva_posterior_b/spr_baranda_curva_posterior_b.yy",},},
     {"id":{"name":"spr_cinta_moebius","path":"sprites/spr_cinta_moebius/spr_cinta_moebius.yy",},},
     {"id":{"name":"__input_gamepad_tester_init","path":"scripts/__input_gamepad_tester_init/__input_gamepad_tester_init.yy",},},
@@ -1052,6 +1051,7 @@
     {"id":{"name":"snd_particula_boost","path":"sounds/snd_particula_boost/snd_particula_boost.yy",},},
     {"id":{"name":"snd_inicio_boost","path":"sounds/snd_inicio_boost/snd_inicio_boost.yy",},},
     {"id":{"name":"snd_iniciar_boton_qte","path":"sounds/snd_iniciar_boton_qte/snd_iniciar_boton_qte.yy",},},
+    {"id":{"name":"scr_accion_movimiento","path":"scripts/scr_accion_movimiento/scr_accion_movimiento.yy",},},
     {"id":{"name":"input_cursor_set","path":"scripts/input_cursor_set/input_cursor_set.yy",},},
     {"id":{"name":"snd_bucle_boost","path":"sounds/snd_bucle_boost/snd_bucle_boost.yy",},},
     {"id":{"name":"snd_salto","path":"sounds/snd_salto/snd_salto.yy",},},
@@ -1684,7 +1684,6 @@
     {"children":[
         {"roomId":{"name":"rm_gestor_inicio","path":"rooms/rm_gestor_inicio/rm_gestor_inicio.yy",},},
       ],"groupName":"Iniciadores",},
-    {"roomId":{"name":"rm_mining_mayhem","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},},
     {"children":[
         {"roomId":{"name":"rm_titulo_juego","path":"rooms/rm_titulo_juego/rm_titulo_juego.yy",},},
       ],"groupName":"Pantallas de titulo",},
@@ -1695,6 +1694,7 @@
         {"roomId":{"name":"rm_emerald_valley","path":"rooms/rm_emerald_valley/rm_emerald_valley.yy",},},
         {"roomId":{"name":"rm_groovy_badlands","path":"rooms/rm_groovy_badlands/rm_groovy_badlands.yy",},},
         {"roomId":{"name":"rm_luminous_bingo","path":"rooms/rm_luminous_bingo/rm_luminous_bingo.yy",},},
+        {"roomId":{"name":"rm_mining_mayhem","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},},
         {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
       ],"groupName":"Niveles",},
     {"children":[
