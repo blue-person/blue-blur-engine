@@ -1,18 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_tablon_puente",
-  "eventList": [],
+  "name": "obj_puente",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Puentes",
     "path": "folders/Objetos/Elementos/Obstaculos/Puentes.yy",
   },
-  "parentObjectId": {
-    "name": "obj_material_madera",
-    "path": "objects/obj_material_madera/obj_material_madera.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_tablon_puente",
-    "path": "sprites/spr_tablon_puente/spr_tablon_puente.yy",
+    "name": "spr_puente",
+    "path": "sprites/spr_puente/spr_puente.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
