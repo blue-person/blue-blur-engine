@@ -56,7 +56,7 @@ function disperar_rings() {
 	velocidad = 15.5;
 
     while (contador < primer_conjunto) {
-        var ring_requerido = instance_create_depth(x, y, Profundidades.Interfaz, obj_ring_dispersado_pantalla);
+        var ring_requerido = crear_elemento_gui(x, y, obj_ring_dispersado_pantalla);
         ring_requerido.vspeed = -sin(angulo) * velocidad;
         ring_requerido.hspeed = -jugador.direccion_horizontal * cos(angulo) * velocidad;
         ring_requerido.image_xscale = 1.2;

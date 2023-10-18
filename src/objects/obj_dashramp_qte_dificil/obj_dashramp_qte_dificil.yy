@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dashramp_qte_c",
-    "path": "sprites/spr_dashramp_qte_c/spr_dashramp_qte_c.yy",
+    "name": "spr_dashramp_verde",
+    "path": "sprites/spr_dashramp_verde/spr_dashramp_verde.yy",
   },
   "spriteMaskId": null,
   "visible": true,

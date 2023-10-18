@@ -43,6 +43,12 @@ parametros_checkpoint = {
 	font: textos.obtener_font_gris()
 }
 
+animaciones_dashring = {
+	girando: spr_shadow_cinta_moebius,
+	impulsandose: spr_shadow_impulsarse_pared,
+	saltando: spr_shadow_saltando
+}
+
 audios_grito_boost = [snd_boost_shadow_a, snd_boost_shadow_b, snd_boost_shadow_c];
 sprite_explosion_boost = spr_explosion_boost_shadow;
 sprite_efecto_boost = spr_efecto_boost_shadow;

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Genericos",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/QTE/Genericos.yy",
+    "name": "Sencillos",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/QTE/Sencillos.yy",
   },
   "parentObjectId": {
     "name": "obj_dashramp",
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dashramp_qte_a",
-    "path": "sprites/spr_dashramp_qte_a/spr_dashramp_qte_a.yy",
+    "name": "spr_dashramp_amarilla",
+    "path": "sprites/spr_dashramp_amarilla/spr_dashramp_amarilla.yy",
   },
   "spriteMaskId": null,
   "visible": true,

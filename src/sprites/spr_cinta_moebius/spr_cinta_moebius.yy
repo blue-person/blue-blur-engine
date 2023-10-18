@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Cinta de Moebius",
-    "path": "folders/Sprites/Elementos/Obstaculos/Cinta de Moebius.yy",
+    "name": "Normal",
+    "path": "folders/Sprites/Elementos/Obstaculos/Cinta de Moebius/Normal.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

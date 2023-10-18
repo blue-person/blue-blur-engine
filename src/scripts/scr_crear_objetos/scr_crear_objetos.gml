@@ -3,7 +3,11 @@ function crear_funcionalidad(profundidad, funcionalidad) {
 }
 
 function crear_efecto(pos_x, pos_y, efecto) {
-	return instance_create_depth(pos_x, pos_y, Profundidades.Efectos, efecto)
+	return instance_create_depth(pos_x, pos_y, Profundidades.Efectos, efecto);
+}
+
+function crear_elemento_gui(pos_x, pos_y, efecto) {
+	return instance_create_depth(pos_x, pos_y, Profundidades.Interfaz, efecto);
 }
 
 function crear_sistema_particulas_basico() {

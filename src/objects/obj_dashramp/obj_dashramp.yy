@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dashramp",
-    "path": "sprites/spr_dashramp/spr_dashramp.yy",
+    "name": "spr_dashramp_roja",
+    "path": "sprites/spr_dashramp_roja/spr_dashramp_roja.yy",
   },
   "spriteMaskId": null,
   "visible": true,

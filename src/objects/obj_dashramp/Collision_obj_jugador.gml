@@ -14,8 +14,8 @@ if (activar_evento and (other.accion != 26)) {
 		tocando_suelo = false;
 		permitir_uso_boost = false;
 		direccion_horizontal = direccion_disparo;
-		velocidad_horizontal = direccion_disparo * fuerza_horizontal;
-		velocidad_vertical = -fuerza_vertical;	
+		velocidad_horizontal = direccion_disparo * other.fuerza_horizontal;
+		velocidad_vertical = other.fuerza_vertical;	
 	}
 	
 	// Gestionar efectos

@@ -4,17 +4,17 @@
   "name": "obj_rainbowring",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_sonic","path":"objects/obj_sonic/obj_sonic.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Rainbow",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Rings/Rainbow.yy",
+    "name": "Objeto",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Rings/Rainbow/Objeto.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_dashring",
+    "path": "objects/obj_dashring/obj_dashring.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -35,5 +35,5 @@
     "path": "sprites/spr_rainbowring/spr_rainbowring.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

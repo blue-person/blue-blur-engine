@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Normal",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Rings/Normal.yy",
+    "name": "Efectos",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Rings/Normal/Efectos.yy",
   },
   "parentObjectId": null,
   "persistent": false,

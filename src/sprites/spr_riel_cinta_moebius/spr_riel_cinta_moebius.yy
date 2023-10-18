@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Cinta de Moebius",
-    "path": "folders/Sprites/Texturas/Superficies/Rieles/Normal/Cinta de Moebius.yy",
+    "name": "Rieles",
+    "path": "folders/Sprites/Elementos/Obstaculos/Cinta de Moebius/Rieles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

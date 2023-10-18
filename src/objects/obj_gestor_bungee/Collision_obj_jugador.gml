@@ -9,6 +9,8 @@ if (not activar_evento and jugador_tocando_suelo and velocidad_rapida) {
 	// Modificar parametros
     activar_evento = true;
 	if (not alarm[0]) then alarm[0] = 15;
+	
+	// Reproducir efecto de sonido
 	audio.reproducir_audio(snd_agarrar_objeto);
 	
 	// Modificar parametros del jugador
@@ -16,7 +18,7 @@ if (not activar_evento and jugador_tocando_suelo and velocidad_rapida) {
 	    image_index = 0;
 	    x = other.x + other.image_xscale * 2;
 	    y = other.y + 15;
-	    direccion_horizontal = other.image_xscale;
+	    direccion_horizontal = sign(other.image_xscale);
 	    velocidad_horizontal = 0;
 	    velocidad_vertical = 7;
 	    tocando_suelo = false;

@@ -115,6 +115,8 @@ parametros_resultados = {
 
 parametros_checkpoint = { animacion_normal: noone, font: noone }
 
+animaciones_dashring = { girando: noone, impulsandose: noone, saltando: noone }
+
 audios_grito_boost = [];
 sprite_explosion_boost = noone;
 sprite_efecto_boost = noone;

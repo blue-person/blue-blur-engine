@@ -1,3 +1,5 @@
-if (!place_meeting(x, y, obj_jugador)) {
-	activar_evento = true;
+if (not activar_evento and jugador_existe) {
+	if (not place_meeting(x, y, jugador)) {
+		activar_evento = true;
+	}
 }

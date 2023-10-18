@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_riel_cinta_moebius_final",
-    "path": "sprites/spr_riel_cinta_moebius_final/spr_riel_cinta_moebius_final.yy",
+    "name": "spr_riel_cinta_moebius_frontal",
+    "path": "sprites/spr_riel_cinta_moebius_frontal/spr_riel_cinta_moebius_frontal.yy",
   },
   "spriteMaskId": null,
   "visible": true,

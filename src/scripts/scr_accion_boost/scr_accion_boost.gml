@@ -24,7 +24,7 @@ function gestion_boost() {
 		// Gestionar el efecto visual
 		if (efecto_boost == noone) {
 			// Crear efecto visual
-			instance_create_depth(x, y, Profundidades.Efectos, obj_efecto_boost);
+			crear_efecto(x, y, obj_efecto_boost);
 		} else {
 			// Determinar direccion horizontal
 			if (velocidad_horizontal > 0) {

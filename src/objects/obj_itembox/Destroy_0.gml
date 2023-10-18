@@ -1,10 +1,10 @@
 // Crear el item
 if (item != noone) {
-	instance_create_depth(x, y, Profundidades.Interfaz, item);
+	crear_elemento_gui(x, y, item);
 }
 
 // Crear una explosion sencilla
-var efecto = instance_create_depth(x, y, Profundidades.Efectos, obj_efecto_generico);
+var efecto = crear_efecto(x, y, obj_efecto_generico);
 with (efecto) {
     image_speed = 0.5;
     sprite_index = spr_explosion_itembox;

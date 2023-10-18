@@ -1,6 +1,6 @@
 // Variables
-var requisitos_corriendo = ((other.accion == 0) and other.tocando_suelo) or(other.accion == 16);
-var requisitos_rodando = ((other.accion == 2) and other.tocando_suelo) or(other.accion == 17);
+var requisitos_corriendo = ((other.accion == 0) and other.tocando_suelo) or (other.accion == 16);
+var requisitos_rodando = ((other.accion == 2) and other.tocando_suelo) or (other.accion == 17);
 var velocidad_requerida = abs(other.velocidad_horizontal) >= 4;
 
 // Gestionar cuando el other esta corriendo

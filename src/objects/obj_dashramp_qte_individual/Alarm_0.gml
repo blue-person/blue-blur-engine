@@ -1,1 +1,1 @@
-instance_create_depth(x, y, Profundidades.Interfaz, tipo_qte);
+crear_elemento_gui(x, y, tipo_qte);

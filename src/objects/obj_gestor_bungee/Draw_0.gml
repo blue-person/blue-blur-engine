@@ -1,4 +1,4 @@
-if (activar_evento) {
+if (activar_evento and jugador_existe) {
 	// Variables
     var pos_x_inicial = jugador.x + jugador.direccion_horizontal * 5;
     var pos_y_inicial = jugador.y;
