@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Normales",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/Normales.yy",
+    "name": "Normal",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/Normal.yy",
   },
   "parentObjectId": null,
   "persistent": false,

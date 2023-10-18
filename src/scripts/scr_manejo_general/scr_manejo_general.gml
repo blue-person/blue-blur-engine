@@ -31,7 +31,7 @@ function disperar_rings() {
 
 	// Dispersar los rings en el suelo
     while (contador < jugador.rings) {
-        var ring_requerido = instance_create_depth(x, y, Profundidades.Jugador, obj_ring_dispersado_suelo);
+        var ring_requerido = instance_create_depth(x, y, Profundidades.Backstage, obj_ring_dispersado_suelo);
         ring_requerido.vspeed = -sin(angulo) * velocidad;
         ring_requerido.hspeed = -jugador.direccion_horizontal * cos(angulo) * velocidad;
 

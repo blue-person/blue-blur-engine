@@ -1,20 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_dashramp_qte_generico",
+  "name": "obj_dashramp_qte_individual",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_jugador","path":"objects/obj_jugador/obj_jugador.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Normales",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/Normales.yy",
+    "name": "Genericos",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/QTE/Genericos.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_dashramp",
+    "path": "objects/obj_dashramp/obj_dashramp.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

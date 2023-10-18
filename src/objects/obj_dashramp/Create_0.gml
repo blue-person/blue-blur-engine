@@ -1,3 +1,5 @@
-activar_evento = true;
+depth = Profundidades.Backstage;
 image_speed = 0.5;
-cantidad_fuerza = 6;
+activar_evento = true;
+fuerza_horizontal = 12;
+fuerza_vertical = 6;

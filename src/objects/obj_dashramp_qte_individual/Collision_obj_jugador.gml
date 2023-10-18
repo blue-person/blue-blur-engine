@@ -3,19 +3,20 @@ if (activar_evento and (other.accion != 26)) {
 	var direccion_disparo = sign(image_xscale);
 	
 	// Ajustar parametros del objeto
-	activar_evento = false;
+    activar_evento = false;
+	if not (alarm[0]) then alarm[0] = tiempo_espera;
 	
 	// Ajustar parametros del jugador
 	with (jugador) {
 		image_index = 0;
 		x = other.x;
 		y = other.y - 20;
-		accion = 7;
+		accion = 14;
 		tocando_suelo = false;
 		permitir_uso_boost = false;
 		direccion_horizontal = direccion_disparo;
 		velocidad_horizontal = direccion_disparo * fuerza_horizontal;
-		velocidad_vertical = -fuerza_vertical;	
+		velocidad_vertical = -fuerza_vertical;
 	}
 	
 	// Gestionar efectos
@@ -23,9 +24,5 @@ if (activar_evento and (other.accion != 26)) {
 	controles.inhabilitar_lectura(2);
 	
 	// Dibujar efectos visuales
-	if (direccion_disparo == 1) {
-		dibujar_efectos(spr_efecto_velocidad, 30, 1, 1, true);
-	} else {
-		dibujar_efectos(spr_efecto_velocidad, -30, -1, 1, true);
-	}
+	dibujar_efectos(spr_efecto_rainbowring);
 }

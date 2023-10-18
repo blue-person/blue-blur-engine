@@ -3,17 +3,17 @@
   "resourceVersion": "1.0",
   "name": "obj_dashramp_qte_experto",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Dificultades",
-    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/Dificultades.yy",
+    "path": "folders/Objetos/Elementos/Obstaculos/Dash Ramps/QTE/Dificultades.yy",
   },
   "parentObjectId": {
-    "name": "obj_dashramp_qte_generico",
-    "path": "objects/obj_dashramp_qte_generico/obj_dashramp_qte_generico.yy",
+    "name": "obj_dashramp_qte_individual",
+    "path": "objects/obj_dashramp_qte_individual/obj_dashramp_qte_individual.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

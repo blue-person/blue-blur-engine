@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_iniciar_evento_qte",
+  "name": "scr_configuracion_qte",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

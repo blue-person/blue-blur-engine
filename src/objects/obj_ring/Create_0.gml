@@ -1,3 +1,4 @@
+depth = Profundidades.Backstage;
 image_speed = 0.3;
 valor_aumento_rings = 1;
 efecto_visual = obj_efecto_destello_ring;
