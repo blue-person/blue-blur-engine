@@ -1,8 +1,8 @@
 function colision_circular_inferior() {
 	// Declaracion de valores
+	var radio_circulo = 8;
 	var pos_x = x + (asin * mascara_colision);
 	var pos_y = y + (acos * mascara_colision);
-	var radio_circulo = 8;
 	
 	// Declaracion de requisitos de colision
 	var requisitos_colision_riel = permitir_grinding;

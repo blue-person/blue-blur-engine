@@ -1,16 +1,3 @@
-function redondear_valor(valor) {
-	var signo_valor = sign(valor);
-	var parte_fraccional = frac(valor);
-	var es_positivo = (signo_valor >= 0) and (parte_fraccional == 1);
-	var es_negativo = (signo_valor < 0) and (parte_fraccional == 0);
-	
-	if (es_positivo or es_negativo) {
-	    return ceil(valor);
-	} else {
-	    return floor(valor);
-	}
-}
-
 function normalizar_angulo(angulo) {
 	while (angulo < 0) {
 		angulo += 360;

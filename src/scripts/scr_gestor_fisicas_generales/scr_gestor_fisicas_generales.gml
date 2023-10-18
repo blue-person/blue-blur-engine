@@ -138,13 +138,11 @@ function gestion_fisicas_entidad() {
         if ((verificar_angulo >= 135) and (verificar_angulo <= 170)) {
             velocidad_horizontal = -velocidad_vertical;
             velocidad_vertical = 0;
-
             angulo = verificar_angulo;
             accion = 0;
         } else if ((verificar_angulo >= 190) and (verificar_angulo <= 235)) {
             velocidad_horizontal = velocidad_vertical;
             velocidad_vertical = 0;
-
             angulo = verificar_angulo;
             accion = 0;
         } else {
@@ -156,6 +154,4 @@ function gestion_fisicas_entidad() {
     // Estandarizar valores esenciales
     acos = dcos(angulo);
     asin = dsin(angulo);
-    x = redondear_valor(x);
-    y = redondear_valor(y);
 }

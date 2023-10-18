@@ -1,10 +1,10 @@
 function colision_lineal_izquierda() {
 	// Declaracion de valores
-	var valor_auxiliar_distancia = mascara_colision * 3.5;
+	var valor_auxiliar = floor(mascara_colision * 3.5);
 	var mascara_por_acos = acos * mascara_colision;
 	var mascara_por_asin = asin * mascara_colision;
-	var distancia_por_acos = acos * valor_auxiliar_distancia;
-	var distancia_por_asin = asin * valor_auxiliar_distancia;
+	var distancia_por_acos = acos * valor_auxiliar;
+	var distancia_por_asin = asin * valor_auxiliar;
 	
 	var pos_x_1 = x - mascara_por_acos + mascara_por_asin;
 	var pos_y_1 = y + mascara_por_asin + mascara_por_acos;

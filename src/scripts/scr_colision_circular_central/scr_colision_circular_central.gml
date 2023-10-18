@@ -1,8 +1,8 @@
 function colision_circular_central() {
 	// Declaracion de valores
+	var radio_circulo = mascara_colision;
 	var pos_x = x;
 	var pos_y = y;
-	var radio_circulo = mascara_colision;
 	
 	// Declaracion de requisitos de colision
 	var requisitos_colision_riel = permitir_grinding;
