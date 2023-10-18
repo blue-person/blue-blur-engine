@@ -1,6 +1,6 @@
 function colision_lineal_derecha() {
 	// Declaracion de valores
-	var valor_auxiliar_distancia = floor(mascara_colision * 3.5);
+	var valor_auxiliar_distancia = mascara_colision * 2;
 	var mascara_por_acos = acos * mascara_colision;
 	var mascara_por_asin = asin * mascara_colision;
 	var distancia_por_acos = acos * valor_auxiliar_distancia;
@@ -16,7 +16,7 @@ function colision_lineal_derecha() {
 	var requisitos_caminar_sobre_agua = caminar_sobre_agua and not sumergido_agua;
 	
 	// Determinar si se debe mostrar la colision
-	if (debug.permitir_depuracion) then draw_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2);
+	if (debug.permitir_ver_colisiones) then draw_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2);
 	
 	// Devolver resultado
 	return colision_lineal_general(pos_x_1, pos_y_1, pos_x_2, pos_y_2, requisitos_colision_riel, requisitos_caminar_sobre_agua);

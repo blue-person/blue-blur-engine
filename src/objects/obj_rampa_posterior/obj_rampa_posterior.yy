@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_rampa_metal_posterior",
+  "name": "obj_rampa_posterior",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,8 +10,8 @@
     "path": "folders/Objetos/Niveles/Superficies/Rampas/Capas/Posterior.yy",
   },
   "parentObjectId": {
-    "name": "obj_muro_metal_posterior",
-    "path": "objects/obj_muro_metal_posterior/obj_muro_metal_posterior.yy",
+    "name": "obj_muro_posterior",
+    "path": "objects/obj_muro_posterior/obj_muro_posterior.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
