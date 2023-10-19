@@ -391,7 +391,6 @@
     {"name":"spr_sonic_agachandose","order":6,"path":"sprites/spr_sonic_agachandose/spr_sonic_agachandose.yy",},
     {"name":"spr_sonic_jump_panel","order":7,"path":"sprites/spr_sonic_jump_panel/spr_sonic_jump_panel.yy",},
     {"name":"input_combo_get_phase","order":4,"path":"scripts/input_combo_get_phase/input_combo_get_phase.yy",},
-    {"name":"scr_uso_dashpad","order":12,"path":"scripts/scr_uso_dashpad/scr_uso_dashpad.yy",},
     {"name":"spr_sonic_spindash","order":32,"path":"sprites/spr_sonic_spindash/spr_sonic_spindash.yy",},
     {"name":"spr_sonic_pisoton","order":34,"path":"sprites/spr_sonic_pisoton/spr_sonic_pisoton.yy",},
     {"name":"scr_gestion_emerald_valley","order":6,"path":"scripts/scr_gestion_emerald_valley/scr_gestion_emerald_valley.yy",},

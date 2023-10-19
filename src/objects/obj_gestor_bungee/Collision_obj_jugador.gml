@@ -8,7 +8,7 @@ var velocidad_lenta = (other.velocidad_vertical < 0);
 if (not activar_evento and jugador_tocando_suelo and velocidad_rapida) {
 	// Modificar parametros
     activar_evento = true;
-	if (not alarm[0]) then alarm[0] = 15;
+	iniciar_alarma(0, 15);
 	
 	// Reproducir efecto de sonido
 	audio.reproducir_audio(snd_agarrar_objeto);

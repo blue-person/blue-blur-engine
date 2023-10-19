@@ -4,23 +4,6 @@ if (not permitir_movimiento) {
     exit;
 }
 
-// Manejar las alarmas personalizadas
-if (alarma_0 > 0) {
-    alarma_0--;
-	
-    if (alarma_0 == 1) {
-		gravedad = 0.21875;
-	}
-}
-
-if (alarma_1 > 0) {
-    alarma_1--;
-	
-    if ((alarma_1 == 1) and (accion = 8)) {
-		accion = 0;
-	}
-}
-
 // Homing Attack
 if (alarma_2 > 0) {
     alarma_2--;

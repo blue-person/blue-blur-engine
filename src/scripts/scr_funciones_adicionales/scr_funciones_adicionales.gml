@@ -8,6 +8,12 @@ function normalizar_angulo(angulo) {
 	return angulo;
 }
 
+function iniciar_alarma(indice, tiempo_espera) {
+	if (alarm[indice] == -1) {
+		alarm[indice] = tiempo_espera;
+	}
+}
+
 function numero_a_texto(numero, cantidad_ceros) {
 	var numero_en_texto = string(numero);
 	var longitud_numero = string_length(numero_en_texto);

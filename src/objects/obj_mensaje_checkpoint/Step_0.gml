@@ -3,7 +3,7 @@ if ((fase_animacion == 1) and (image_alpha < 1)) {
 	image_alpha += velocidad_animacion;
 	if (image_alpha >= 1) {
 		fase_animacion = 2;
-		if (not alarm[0]) then alarm[0] = 180;
+		iniciar_alarma(0, 180);
 	}
 }
 

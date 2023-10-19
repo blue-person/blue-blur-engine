@@ -11,8 +11,11 @@ if (activar_evento and (other.accion != 26)) {
 	
 	// Ajustar parametros del jugador
 	with (jugador) {
+		// Iniciar alarma
+		iniciar_alarma(1, 30);
+		
+		// Establecer parametros
 		accion = 8;
-		alarma_1 = 20;
 		tocando_suelo = true;
 		direccion_horizontal = direccion_disparo;
 		velocidad_horizontal = direccion_disparo * limite_velocidad_maxima;

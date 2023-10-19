@@ -17,7 +17,7 @@ switch (fase_presentacion) {
                 parametros_barra_diagonal.angulo -= 2;
             } else {
                 parametros_barra_diagonal.angulo = 0;
-                if (not alarm[0]) then alarm[0] = 120;
+                iniciar_alarma(0, 120);
             }
         }
 		

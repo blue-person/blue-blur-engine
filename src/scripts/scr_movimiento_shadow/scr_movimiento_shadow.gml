@@ -35,9 +35,6 @@ function gestion_movimiento_shadow() {
     // Dash ramp
     gestion_uso_dashramp();
 
-    // Dash pad
-    gestion_uso_dashpad();
-
     // Deslizarse por el suelo
 	gestion_accion_shadow_deslizarse();
 	

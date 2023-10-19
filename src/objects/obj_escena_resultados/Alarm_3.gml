@@ -1,5 +1,5 @@
 // Iniciar el conteo de la alarma
-if (not alarm[4]) then alarm[4] = 180;
+iniciar_alarma(4, 180);
 
 // Determianr la calificacion
 var puntaje_final = parametros_final.texto.contenido;

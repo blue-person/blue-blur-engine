@@ -12,13 +12,13 @@ function gestion_uso_fourwaycannon() {
                 accion = 0;
                 permitir_disparo = true;
             } else if (controles.boton_mantenido("boton_derecha")) {
-                alarma_0 = 30;
+                alarm[0] = 30;
                 gravedad = 0;
                 velocidad_horizontal = potencia_disparo;
                 accion = 6;
                 permitir_disparo = true;
             } else if (controles.boton_mantenido("boton_izquierda")) {
-                alarma_0 = 30;
+                alarm[0] = 30;
                 gravedad = 0;
                 velocidad_horizontal = -potencia_disparo;
                 accion = 6;

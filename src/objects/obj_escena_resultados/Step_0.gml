@@ -12,7 +12,7 @@ switch (fase_animacion) {
 		// Cambiar de fase
 		if (parametros_titulo.texto.pos_x >= parametros_titulo.texto.pos_x_final) {
 			fase_animacion = 2;
-			if (not alarm[1]) then alarm[1] = 120;
+			iniciar_alarma(1, 120);
 		}
         break;
 	case 3:
@@ -62,7 +62,7 @@ switch (fase_animacion) {
 		// Cambiar de fase
 	    if (parametros_final.titulo.pos_x >= parametros_final.titulo.pos_x_final) {
 			fase_animacion = 8;
-			if (not alarm[2]) then alarm[2] = 60;
+			iniciar_alarma(2, 60);
 		}
         break;
     case 9:
@@ -102,7 +102,7 @@ switch (fase_animacion) {
 	    if (tiempo_esta_vacio and rings_esta_vacio and cool_esta_vacio) {
 	        audio.reproducir_audio(snd_registrar_puntaje);
 			fase_animacion = 10;
-	        if (not alarm[3]) then alarm[3] = 180;
+	        iniciar_alarma(3, 180);
 	    } else {
 			audio.reproducir_audio_aislado(snd_agregar_puntos, true);
 		}

@@ -43,7 +43,7 @@ if (activar_evento and (other.accion != 26)) {
 		if ((angulo_disparo == 0) or (angulo_disparo == 180)) {
 			accion = 6;
 			gravedad = 0;
-			alarma_0 = other.tiempo_espera;
+			alarm[0] = other.tiempo_espera;
 		} else if ((angulo_disparo == 45) or (angulo_disparo == 135)) {
 			accion = 5;
 			image_index = 0;

@@ -63,4 +63,7 @@ function ajustes_comunes_sprites_jugador() {
 		var panel_mas_cercano = instance_nearest(x, y, obj_jump_panel);
 	    image_angle = panel_mas_cercano.image_angle;
 	}
+
+	// Ajustar la escala de la imagen en base a la direccion horizontal
+	image_xscale = direccion_horizontal;
 }
