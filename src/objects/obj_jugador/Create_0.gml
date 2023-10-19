@@ -75,8 +75,6 @@ pos_y_efectos = 0;
 ultima_accion_realizada = 0;
 
 // Creacion de alarmas personalizadas para tener mas controles sobre los ticks
-alarma_0 = 0;
-alarma_1 = 0;
 alarma_2 = 0;
 alarma_3 = 0;
 alarma_4 = 0;

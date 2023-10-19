@@ -7,7 +7,6 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_7CE63876","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
     {"name":"inst_B319FD11","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
     {"name":"inst_D5765574","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
     {"name":"inst_C3558F79","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
@@ -703,12 +702,13 @@
     {"name":"inst_73B6D642","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
     {"name":"inst_21C38CBB","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
     {"name":"inst_1267F6E0","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
+    {"name":"inst_7CE63876","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"funcionalidades","depth":-902,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"inicializadores","depth":-802,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7CE63876","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inicializador_nivel","path":"objects/obj_inicializador_nivel/obj_inicializador_nivel.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2064.0,"y":2398.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7CE63876","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inicializador_nivel","path":"objects/obj_inicializador_nivel/obj_inicializador_nivel.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":344.0,"y":746.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
       ],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"entidades","depth":-702,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
