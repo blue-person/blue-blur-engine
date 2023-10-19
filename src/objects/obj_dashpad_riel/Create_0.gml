@@ -1,2 +1,5 @@
-image_speed = 1;
-activar_evento = true;
+// Heredar datos del objeto padre
+event_inherited();
+
+// Ajustar parametros
+depth = Profundidades.Backstage;

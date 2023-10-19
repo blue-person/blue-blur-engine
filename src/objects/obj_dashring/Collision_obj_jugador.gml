@@ -1,4 +1,7 @@
 if (activar_evento and (other.accion != 26)) {
+	// Variables
+	var angulo_disparo = image_angle;
+
 	// Ajustar parametros del objeto
 	activar_evento = false;
 	
@@ -13,10 +16,6 @@ if (activar_evento and (other.accion != 26)) {
 	
 	// Ajustar parametros del jugador
 	with (jugador) {
-		// Variables
-		var fuerza_disparo = other.cantidad_fuerza;
-		var angulo_disparo = other.image_angle;
-		
 		// Ajustar parametros
 		angulo = 0;
 		tocando_suelo = false;
@@ -24,8 +23,8 @@ if (activar_evento and (other.accion != 26)) {
 		x = other.x;
 		y = other.y;
 		cantidad_boost += other.cantidad_energia;
-		velocidad_horizontal = dcos(angulo_disparo) * fuerza_disparo;
-		velocidad_vertical = -dsin(angulo_disparo) * fuerza_disparo;
+		velocidad_horizontal = dcos(angulo_disparo) * other.cantidad_fuerza;
+		velocidad_vertical = -dsin(angulo_disparo) * other.cantidad_fuerza;
 		
 		// Gestionar direccion del jugador
 		var angulo_mayor_270 = (angulo_disparo > 270) or (angulo_disparo > -90);
