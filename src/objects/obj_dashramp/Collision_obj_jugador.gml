@@ -2,10 +2,10 @@ if (activar_evento and (other.accion != 26)) {
 	// Variables
 	var direccion_disparo = sign(image_xscale);
 	
-	// Ajustar parametros del objeto
+	// Ajustar variables del objeto
 	activar_evento = false;
 	
-	// Ajustar parametros del jugador
+	// Ajustar variables del jugador
 	with (jugador) {
 		image_index = 0;
 		x = other.x;

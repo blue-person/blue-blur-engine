@@ -1,4 +1,4 @@
-// Ajustar profundidad
+// Parametros del objeto
 depth = Profundidades.Backstage;
 
 // Variables

@@ -4,7 +4,7 @@ function gestion_uso_jumplauncher() {
 
     // Gestionar la accion inicial
     if (accion == 35) {
-        // Ajustar parametros
+        // Ajustar variables
         angulo = 0;
         tocando_suelo = false;
 		velocidad_vertical = 0;
@@ -14,7 +14,7 @@ function gestion_uso_jumplauncher() {
         // Mover hacia el jump launcher
         move_towards_point(jump_launcher.x, jump_launcher.y, 3);
 
-        // Ajustar parametros al estar cerca
+        // Ajustar variables al estar cerca
         var distancia_al_launcher = distance_to_point(jump_launcher.x, jump_launcher.y);
         if (distancia_al_launcher <= 2) {
             accion = 35.1;

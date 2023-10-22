@@ -81,7 +81,7 @@ function herir_jugador(permitir_perder_rings = true) {
 	// Gestionar la perdida de rings
 	if (permitir_perder_rings) {
 		if (jugador.rings > 0) {
-			// Ajustar parametros
+			// Ajustar variables
 		    jugador.accion = 22;
 		    jugador.tiempo_invencibilidad = 240;
 			audio.reproducir_audio(jugador.audio_quejido);

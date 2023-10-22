@@ -1,6 +1,8 @@
-// Declarar variables
-depth = -10;
+// Parametros del objeto
+depth = Profundidades.Frontstage;
 image_speed = 0;
+
+// Variables
 activar_evento = false;
 realizar_animacion = true;
 tiempo_transcurrido = 0;

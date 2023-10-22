@@ -2,7 +2,7 @@ if (activar_evento and (other.accion != 26)) {
 	// Variables
 	var angulo_disparo = image_angle;
 
-	// Ajustar parametros del objeto
+	// Ajustar variables del objeto
 	activar_evento = false;
 	
 	// Crear efecto visual
@@ -10,13 +10,13 @@ if (activar_evento and (other.accion != 26)) {
 	efecto.image_angle = image_angle;
     dibujar_efectos(efecto_visual);
 	
-	// Ajustar parametros
+	// Ajustar variables
     nivel.aumentar_puntaje_cool(cantidad_puntos);
     audio.reproducir_audio_aislado(efecto_sonido, false);
 	
-	// Ajustar parametros del jugador
+	// Ajustar variables del jugador
 	with (jugador) {
-		// Ajustar parametros
+		// Ajustar variables
 		angulo = 0;
 		tocando_suelo = false;
 		image_index = 0;

@@ -11,7 +11,7 @@ if (requisitos_corriendo and velocidad_requerida) {
     var indice_img_jugador = abs((angulo / 360 * 11) % 12);
     var pos_y = y + 8 + (1 + dcos(angulo)) * (65 * 0.5);
 
-    // Ajustar parametros del other
+    // Ajustar variables del jugador
     with (other) {
         accion = 16;
         tocando_suelo = false;
@@ -24,7 +24,7 @@ if (requisitos_corriendo and velocidad_requerida) {
     var angulo = (pos_x / 288) * 360;
     var pos_y = y + 8 + (1 + dcos(angulo)) * (65 * 0.5);
 
-    // Ajustar parametros del other
+    // Ajustar variables del jugador
     with (other) {
         accion = 17;
         tocando_suelo = false;

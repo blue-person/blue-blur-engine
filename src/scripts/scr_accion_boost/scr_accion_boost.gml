@@ -17,7 +17,7 @@ function gestion_boost() {
     }
 	
 	if (permitir_uso_boost) {
-		// Ajustar parametros
+		// Ajustar variables
 		aceleracion = (tocando_suelo) ? 1 : 0.0625;
 		limite_velocidad_actual = limite_velocidad_maxima;
 
@@ -42,7 +42,7 @@ function gestion_boost() {
 			instance_destroy(efecto_boost);
 		}
 		
-		// Ajustar parametros en base a la accion
+		// Ajustar variables en base a la accion
         if (accion == 2) {
 			velocidad_horizontal = clamp(velocidad_horizontal, -limite_velocidad_maxima, limite_velocidad_maxima);
         } else {

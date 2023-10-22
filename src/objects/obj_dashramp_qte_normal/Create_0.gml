@@ -1,5 +1,5 @@
 // Heredar datos del objeto padre
 event_inherited();
 
-// Ajustar parametros
+// Ajustar variables
 tipo_qte = obj_qte_multiple_normal;
