@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_lados_fourwaycannon",
+  "name": "obj_tubos_fourwaycannon",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lados_fourwaycannon",
-    "path": "sprites/spr_lados_fourwaycannon/spr_lados_fourwaycannon.yy",
+    "name": "spr_tubos_fourwaycannon",
+    "path": "sprites/spr_tubos_fourwaycannon/spr_tubos_fourwaycannon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

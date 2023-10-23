@@ -555,7 +555,7 @@
     {"name":"__input_gamepad_set_description","order":4,"path":"scripts/__input_gamepad_set_description/__input_gamepad_set_description.yy",},
     {"name":"obj_rainbowring_posterior","order":2,"path":"objects/obj_rainbowring_posterior/obj_rainbowring_posterior.yy",},
     {"name":"input_value","order":4,"path":"scripts/input_value/input_value.yy",},
-    {"name":"spr_lados_fourwaycannon","order":5,"path":"sprites/spr_lados_fourwaycannon/spr_lados_fourwaycannon.yy",},
+    {"name":"spr_tubos_fourwaycannon","order":5,"path":"sprites/spr_tubos_fourwaycannon/spr_tubos_fourwaycannon.yy",},
     {"name":"spr_aros_derecha_fourwaycannon","order":3,"path":"sprites/spr_aros_derecha_fourwaycannon/spr_aros_derecha_fourwaycannon.yy",},
     {"name":"spr_aros_arriba_fourwaycannon","order":4,"path":"sprites/spr_aros_arriba_fourwaycannon/spr_aros_arriba_fourwaycannon.yy",},
     {"name":"spr_aros_abajo_fourwaycannon","order":1,"path":"sprites/spr_aros_abajo_fourwaycannon/spr_aros_abajo_fourwaycannon.yy",},
