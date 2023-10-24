@@ -18,62 +18,50 @@ if (jugador_existe) {
 	        audio.reproducir_audio(snd_fourwaycannon_cargando);
 			
 			// Ajustar variables
+			alarm[0] = -1;
 			puede_usarse = false;
 	        activar_evento = true;
 	        realizar_animacion = true;
-	        tiempo_transcurrido = tiempo_maximo;
 			
 			// Ajustar accion del jugador
 			jugador.accion = 21;
 	    }   
-	} else if (activar_evento and (jugador.accion == 21)) {
-		// Comprobar bandera
-	    if (realizar_animacion) {
-			// Ajustar animacion
-	        if (controles.boton_mantenido("boton_arriba")) {
-				self.ajustar_animacion(5, 8, 0);
-	        } else if (controles.boton_mantenido("boton_abajo")) {
-				self.ajustar_animacion(13, 16, 180);
-	        } else if (controles.boton_mantenido("boton_derecha")) {
-				self.ajustar_animacion(1, 4, 270);
-	        } else if (controles.boton_mantenido("boton_izquierda")) {
-				self.ajustar_animacion(9, 12, 90);
-	        }
-			
-			// Ajustar bandera
-			var soltar_parte_vertical = controles.boton_liberado("boton_arriba") or controles.boton_liberado("boton_abajo")
-			var soltar_parte_horizontal = controles.boton_liberado("boton_derecha") or controles.boton_liberado("boton_izquierda");
-			if (soltar_parte_vertical or soltar_parte_horizontal) { 
-				realizar_animacion = false;
-			}
-	    } else {
-			// Ajustar indice
-			if (valor_en_lista(tubos.image_index, direcciones_apuntado)) {
-				realizar_animacion = true;
-	            tubos.image_index = 0;
-			}
-			
-			// Ajustar fotograma
-			tubos.fotograma -= 0.5;
-	    }
-		
-		// Comprobar el tiempo transcurrido
-		tiempo_transcurrido--;
-		if (tiempo_transcurrido <= 0) {
-			// Reproducir sonido
-	        audio.reproducir_audio(snd_fourwaycannon_timeout);
-			
-			// Ajustar variables
-	        activar_evento = false;
-	        jugador.accion = 0;
-	    }
-		
+	} else if (jugador.accion == 21) {
 		// Ajustar parametros del objeto
 		image_speed += 0.5;
+		iniciar_alarma(0, tiempo_espera);
 		
 		// Ajustar parametros del jugador
 	    jugador.x = x;
 	    jugador.y = y;
+		
+		// Comprobar bandera
+	    if (realizar_animacion) {
+			// Ajustar animacion en base al boton que se oprime
+			var botones_liberados = controles.boton_liberado("boton_arriba") or controles.boton_liberado("boton_abajo") or controles.boton_liberado("boton_derecha") or controles.boton_liberado("boton_izquierda");
+			if (not botones_liberados) {
+			    if (controles.boton_mantenido("boton_derecha")) {
+			        self.ajustar_animacion(1, 4, 270)
+			    } else if (controles.boton_mantenido("boton_arriba")) {
+			        self.ajustar_animacion(5, 8, 0)
+			    } else if (controles.boton_mantenido("boton_izquierda")) {
+			        self.ajustar_animacion(9, 12, 90)
+			    } else if (controles.boton_mantenido("boton_abajo")) {
+			        self.ajustar_animacion(13, 16, 180)
+			    } else if (tubos.image_index != 0) {
+			        realizar_animacion = false
+			    }
+			}
+	    } else {
+			// Ajustar fotograma
+			tubos.fotograma -= 0.5;
+			
+			// Ajustar indice
+			if (array_contains(indices_validos, tubos.image_index)) {
+				realizar_animacion = true;
+	            tubos.image_index = 0;
+			}
+	    }
 	}
 	
 	// Determinar cuando se deja de interactuar con el objeto
@@ -87,10 +75,7 @@ if (jugador_existe) {
 	    realizar_animacion = true;
 		
 		// Ajustar variables de los tubos
-	    angulo_tubos = 0;
-	    direccion_apuntado = 0;
-
-		// Ajustar parametros del jugador
-		jugador.visible = true;
+	    indice_imagen = 0;
+	    angulo_imagen = 0;
 	}
 }

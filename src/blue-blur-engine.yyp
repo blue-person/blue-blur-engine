@@ -1698,6 +1698,7 @@
     {"children":[
         {"roomId":{"name":"rm_gestor_inicio","path":"rooms/rm_gestor_inicio/rm_gestor_inicio.yy",},},
       ],"groupName":"Iniciadores",},
+    {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
     {"children":[
         {"roomId":{"name":"rm_titulo_juego","path":"rooms/rm_titulo_juego/rm_titulo_juego.yy",},},
       ],"groupName":"Pantallas de titulo",},
@@ -1709,7 +1710,6 @@
         {"roomId":{"name":"rm_groovy_badlands","path":"rooms/rm_groovy_badlands/rm_groovy_badlands.yy",},},
         {"roomId":{"name":"rm_luminous_bingo","path":"rooms/rm_luminous_bingo/rm_luminous_bingo.yy",},},
         {"roomId":{"name":"rm_mining_mayhem","path":"rooms/rm_mining_mayhem/rm_mining_mayhem.yy",},},
-        {"roomId":{"name":"rm_practice_zone","path":"rooms/rm_practice_zone/rm_practice_zone.yy",},},
       ],"groupName":"Niveles",},
     {"children":[
         {"roomId":{"name":"rm_pausa","path":"rooms/rm_pausa/rm_pausa.yy",},},

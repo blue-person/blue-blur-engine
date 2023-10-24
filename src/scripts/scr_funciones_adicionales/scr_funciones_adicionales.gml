@@ -26,7 +26,7 @@ function division_segura(valor_a, valor_b) {
 }
 
 function calcular_fotograma(valor_calculo, valor_comparacion) {
-	var valor_maximo = max(valor_calculo - abs(self.velocidad_horizontal), valor_comparacion);
+	var valor_maximo = max(valor_calculo - abs(velocidad_horizontal), valor_comparacion);
 	return (1 / valor_maximo);
 }
 
@@ -36,18 +36,9 @@ function interpolacion_lineal(punto_inicial, punto_final, incremento) {
 
 function copiar_lista(lista_fuente) {
 	var lista_destino = [];
-	array_copy(lista_destino, 0, lista_fuente, 0, array_length(lista_fuente));
+	var cantidad_elementos = array_length(lista_fuente);
+	array_copy(lista_destino, 0, lista_fuente, 0, cantidad_elementos);
 	return lista_destino;
-}
-
-function valor_en_lista(valor, lista) {
-	// Buscar el valor en la lista
-	for (var i = 0; i < array_length(lista); i++) {
-	   if (lista[i] == valor) then return true;
-	}
-	
-	// En caso de no encontrar el valor, regresa falso
-	return false;
 }
 
 function valor_aleatorio(lista) {
@@ -55,8 +46,8 @@ function valor_aleatorio(lista) {
 	randomize();
 	
 	// Escoger de forma aleatoria un elemento de la lista
-	var longitud_lista = array_length(lista);
-	var indice = irandom(longitud_lista - 1);
+	var cantidad_elementos = array_length(lista);
+	var indice = irandom(cantidad_elementos - 1);
 	var valor_escogido = lista[indice];
 	
 	// Regresar un valor aleatorio
