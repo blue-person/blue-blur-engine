@@ -39,13 +39,13 @@ function gestion_homing_attack(){
             }
 
             accion = 4.5;
-            alarma_2 = 15;
+            alarm[3] = 15;
             permitir_homing_attack = true;
             permitir_air_dash = false;
             image_index = 0;
         } else if ((accion == 4.5) and tocando_suelo) {
             accion = 0;
-            alarma_2 = 0;
+            alarm[3] = -1;
             permitir_homing_attack = false;
             permitir_air_dash = false;
             gravedad = 0.21875;
@@ -71,7 +71,6 @@ function gestion_homing_attack(){
 		velocidad_horizontal = direccion_horizontal * velocidad_homing_attack;
         velocidad_vertical = 0;
 		controles.inhabilitar_lectura(2);
-		//alarm[3] = 2;
     }
 
     if ((accion == 4) and instance_exists(obj_enfoque_homing)) {
