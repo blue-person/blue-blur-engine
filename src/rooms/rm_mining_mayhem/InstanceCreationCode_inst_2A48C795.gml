@@ -1,1 +1,1 @@
-compuerta = obj_compuerta;
+dispositivo_conectado = inst_413CA4B0;

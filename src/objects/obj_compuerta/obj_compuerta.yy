@@ -13,8 +13,8 @@
     "path": "folders/Objetos/Elementos/Obstaculos/Interruptor.yy",
   },
   "parentObjectId": {
-    "name": "obj_superficie_compuerta",
-    "path": "objects/obj_superficie_compuerta/obj_superficie_compuerta.yy",
+    "name": "obj_superficie",
+    "path": "objects/obj_superficie/obj_superficie.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

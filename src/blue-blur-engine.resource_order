@@ -962,7 +962,6 @@
     {"name":"spr_banda_superior_azul","order":1,"path":"sprites/spr_banda_superior_azul/spr_banda_superior_azul.yy",},
     {"name":"input_y","order":5,"path":"scripts/input_y/input_y.yy",},
     {"name":"obj_superficie","order":3,"path":"objects/obj_superficie/obj_superficie.yy",},
-    {"name":"obj_superficie_compuerta","order":2,"path":"objects/obj_superficie_compuerta/obj_superficie_compuerta.yy",},
     {"name":"msc_stardust_speedway","order":7,"path":"sounds/msc_stardust_speedway/msc_stardust_speedway.yy",},
     {"name":"obj_superficie_frontal","order":1,"path":"objects/obj_superficie_frontal/obj_superficie_frontal.yy",},
     {"name":"obj_material_piedra","order":1,"path":"objects/obj_material_piedra/obj_material_piedra.yy",},

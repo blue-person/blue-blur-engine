@@ -1,7 +1,11 @@
-if (activar_evento and !evento_finalizado) {
-    vspeed = -velocidad_movimiento_abrir;
+if (activar_evento) {
+    // Modificar la ubicacion de la compuerta
+	vspeed = -velocidad_apertura;
 	
-    if (y <= ubicacion_vertical_final) {
-		evento_finalizado = true;
+	// Gestionar variables
+	if (y == ubicacion_inicial) {
+		audio.reproducir_audio(snd_abrir_compuerta);
+	} else if (y <= ubicacion_final) {
+		activar_evento = false;
 	}
 }
