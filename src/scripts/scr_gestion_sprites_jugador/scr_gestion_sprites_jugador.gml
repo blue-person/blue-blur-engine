@@ -11,13 +11,13 @@ function crear_particulas_jugador() {
 }
 
 function gestion_indice_sprites_jugador() {
-	if (image_index > 998) {
+	if (image_index >= 999) {
 	    image_index = 0;
 	}
 
 	if (fotograma >= 1) {
-	    image_index++;
 	    fotograma = 0;
+	    image_index++;
 	}
 }
 

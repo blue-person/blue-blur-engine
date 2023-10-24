@@ -3,6 +3,7 @@ function gestion_uso_fourwaycannon() {
         // Ajustar la velocidad de movimiento
         velocidad_vertical = 0;
         velocidad_horizontal = 0;
+		permitir_pisoton = true;
 
         // Determinar si se ha pulsado el boton de disparo
         if (controles.boton_presionado("boton_salto")) {
@@ -11,25 +12,25 @@ function gestion_uso_fourwaycannon() {
 			
             // Determinar la direccion del disparo
             if (controles.boton_mantenido("boton_arriba")) {
-                accion = 0;
                 permitir_disparo = true;
+                alarm[1] = 1;
                 velocidad_vertical = -potencia_disparo;
             } else if (controles.boton_mantenido("boton_abajo")) {
-                accion = 0;
                 permitir_disparo = true;
+                alarm[1] = 1;
                 velocidad_vertical = potencia_disparo;
             } else if (controles.boton_mantenido("boton_derecha")) {
+                permitir_disparo = true;
+                alarm[0] = 30;
                 accion = 6;
                 gravedad = 0;
-                alarm[0] = 30;
-                permitir_disparo = true;
                 direccion_horizontal = 1;
                 velocidad_horizontal = potencia_disparo;
             } else if (controles.boton_mantenido("boton_izquierda")) {
+				permitir_disparo = true;
+                alarm[0] = 30;
                 accion = 6;
                 gravedad = 0;
-                alarm[0] = 30;
-                permitir_disparo = true;
                 direccion_horizontal = -1;
                 velocidad_horizontal = -potencia_disparo;
             }
