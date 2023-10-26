@@ -10,8 +10,8 @@
     "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Azul.yy",
   },
   "parentObjectId": {
-    "name": "obj_riel_azul",
-    "path": "objects/obj_riel_azul/obj_riel_azul.yy",
+    "name": "obj_riel_azul_recto",
+    "path": "objects/obj_riel_azul_recto/obj_riel_azul_recto.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,9 +32,6 @@
     "name": "spr_riel_azul_diagonal",
     "path": "sprites/spr_riel_azul_diagonal/spr_riel_azul_diagonal.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_mascara_riel",
-    "path": "sprites/spr_mascara_riel/spr_mascara_riel.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

@@ -2,17 +2,16 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_riel_rojo_recto",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Rojo",
     "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Rojo.yy",
   },
-  "parentObjectId": {
-    "name": "obj_riel_rojo",
-    "path": "objects/obj_riel_rojo/obj_riel_rojo.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

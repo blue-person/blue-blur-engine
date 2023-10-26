@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_riel_rojo_diagonal",
-  "bbox_bottom": 53,
+  "bbox_bottom": 40,
   "bbox_left": 0,
-  "bbox_right": 95,
+  "bbox_right": 63,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 4,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6184ab6a-ba89-44a6-a080-94c2122d0162",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"307e0324-96c8-489b-a63f-301df9eaf96c",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 54,
+  "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"266a7114-4fdf-4fab-a6d0-027ee56c3ff9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7f6f65a8-d156-45ff-bddc-5c8d7596b0d3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6184ab6a-ba89-44a6-a080-94c2122d0162","path":"sprites/spr_riel_rojo_diagonal/spr_riel_rojo_diagonal.yy",},},},"Disabled":false,"id":"439c52ca-69a1-48b4-bad2-0dd8b0d213c3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"307e0324-96c8-489b-a63f-301df9eaf96c","path":"sprites/spr_riel_rojo_diagonal/spr_riel_rojo_diagonal.yy",},},},"Disabled":false,"id":"dcfc47d9-cc41-49d9-b142-301ae32119ef","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 96,
+  "width": 64,
 }

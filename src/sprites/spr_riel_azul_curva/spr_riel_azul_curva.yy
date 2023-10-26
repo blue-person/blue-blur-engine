@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_riel_azul_curva",
-  "bbox_bottom": 91,
+  "bbox_bottom": 63,
   "bbox_left": 0,
-  "bbox_right": 91,
+  "bbox_right": 63,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 4,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"78236d12-d662-404b-a92a-119aecffcc45",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d787343-458e-4f17-9d49-740d9b60e4d8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 92,
+  "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4fd577d2-37bc-4ae9-bb22-04c410f92b3b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e2396637-6ef3-4d63-9962-b1495ff355a9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"78236d12-d662-404b-a92a-119aecffcc45","path":"sprites/spr_riel_azul_curva/spr_riel_azul_curva.yy",},},},"Disabled":false,"id":"ba800566-1c75-4370-8fd4-3458a78b9e93","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1d787343-458e-4f17-9d49-740d9b60e4d8","path":"sprites/spr_riel_azul_curva/spr_riel_azul_curva.yy",},},},"Disabled":false,"id":"e7f37fc7-ba5a-41e2-8899-451ab85348e4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 92,
+  "width": 64,
 }

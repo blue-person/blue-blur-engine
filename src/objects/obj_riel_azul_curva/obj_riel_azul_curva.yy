@@ -10,8 +10,8 @@
     "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Azul.yy",
   },
   "parentObjectId": {
-    "name": "obj_riel_azul",
-    "path": "objects/obj_riel_azul/obj_riel_azul.yy",
+    "name": "obj_riel_azul_recto",
+    "path": "objects/obj_riel_azul_recto/obj_riel_azul_recto.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

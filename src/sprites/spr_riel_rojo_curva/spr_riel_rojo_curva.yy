@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_riel_rojo_curva",
-  "bbox_bottom": 91,
+  "bbox_bottom": 63,
   "bbox_left": 0,
-  "bbox_right": 91,
+  "bbox_right": 63,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 4,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9d5ad3f-80cd-4215-a676-bd3522116fdc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32feb1be-7efa-41bb-b532-73b383b4ab92",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 92,
+  "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"00cb92c4-7642-4a34-9e5b-9177bacf2499","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4a4b0c6f-84b0-4ec4-917b-d2a65d6bccfd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c9d5ad3f-80cd-4215-a676-bd3522116fdc","path":"sprites/spr_riel_rojo_curva/spr_riel_rojo_curva.yy",},},},"Disabled":false,"id":"d211b675-23ca-4aff-ba4e-2b5ed9e47e69","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"32feb1be-7efa-41bb-b532-73b383b4ab92","path":"sprites/spr_riel_rojo_curva/spr_riel_rojo_curva.yy",},},},"Disabled":false,"id":"41a1a362-19b1-4771-8f2a-f106ce8006c0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 92,
+  "width": 64,
 }

@@ -10,8 +10,8 @@
     "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Rojo.yy",
   },
   "parentObjectId": {
-    "name": "obj_riel_rojo",
-    "path": "objects/obj_riel_rojo/obj_riel_rojo.yy",
+    "name": "obj_riel_rojo_recto",
+    "path": "objects/obj_riel_rojo_recto/obj_riel_rojo_recto.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
