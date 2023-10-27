@@ -1,45 +1,40 @@
 function gestion_uso_jumplauncher() {
-	// Determinar si el nivel tiene jump launchers
-	var objeto_existe = instance_exists(obj_jump_launcher);
-    if (objeto_existe) {
-		// Variables
-		var jump_launcher = instance_nearest(x, y, obj_jump_launcher);
-		
-		// Gestionar la accion inicial
-		if (accion == 35) {
-	        // Ajustar variables
-	        angulo = 0;
-	        tocando_suelo = false;
-			velocidad_vertical = 0;
-	        velocidad_horizontal = 0;
-			permitir_uso_boost = false;
+    // Variables
+    var jump_launcher = instance_nearest(x, y, obj_jump_launcher);
 
-	        // Mover hacia el jump launcher
-	        move_towards_point(jump_launcher.x, jump_launcher.y, 3);
+    // Gestionar la accion inicial
+    if (accion == 35) {
+        // Ajustar variables
+        angulo = 0;
+        tocando_suelo = false;
+        velocidad_vertical = 0;
+        velocidad_horizontal = 0;
+        permitir_uso_boost = false;
 
-	        // Ajustar variables al estar cerca
-	        var distancia_al_launcher = distance_to_point(jump_launcher.x, jump_launcher.y);
-	        if (distancia_al_launcher <= 2) {
-	            accion = 35.1;
-	            jump_launcher.alarm[0] = 60;	
-	        }
-		
-			// Salir del evento
-			exit;
-	    } else if (accion == 35.1) {
-			// Ajustar posicion
-	        x = jump_launcher.x;
-	        y = jump_launcher.y;
-		
-			// Salir del evento
-			exit;
-	    } else if ((accion == 35.2) and (tocando_suelo or (velocidad_vertical >= 2))) {
-			// Modificar accion
-	        accion = 0;
-		
-			// Salir del evento
-			exit;
-	    }
-	}
+        // Mover hacia el jump launcher
+        move_towards_point(jump_launcher.x, jump_launcher.y, 3);
 
+        // Ajustar variables al estar cerca
+        var distancia_al_launcher = distance_to_point(jump_launcher.x, jump_launcher.y);
+        if (distancia_al_launcher <= 2) {
+            accion = 35.1;
+            jump_launcher.alarm[0] = 60;
+        }
+
+        // Salir del evento
+        exit;
+    } else if (accion == 35.1) {
+        // Ajustar posicion
+        x = jump_launcher.x;
+        y = jump_launcher.y;
+
+        // Salir del evento
+        exit;
+    } else if ((accion == 35.2) and(tocando_suelo or(velocidad_vertical >= 2))) {
+        // Modificar accion
+        accion = 0;
+
+        // Salir del evento
+        exit;
+    }
 }
