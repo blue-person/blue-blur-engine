@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Dibujar elementos",
-    "path": "folders/Scripts/Dibujar elementos.yy",
+    "path": "folders/Scripts/Funcionalidades/Dibujar elementos.yy",
   },
 }

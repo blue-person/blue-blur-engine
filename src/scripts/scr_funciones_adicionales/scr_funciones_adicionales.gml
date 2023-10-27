@@ -42,14 +42,9 @@ function copiar_lista(lista_fuente) {
 }
 
 function valor_aleatorio(lista) {
-	// Obtener un nuevo valor para la aleatoriedad
 	randomize();
-	
-	// Escoger de forma aleatoria un elemento de la lista
 	var cantidad_elementos = array_length(lista);
 	var indice = irandom(cantidad_elementos - 1);
 	var valor_escogido = lista[indice];
-	
-	// Regresar un valor aleatorio
 	return valor_escogido
 }
