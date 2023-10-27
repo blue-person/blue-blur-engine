@@ -1,7 +1,7 @@
 // Parametros del objeto
 depth = Profundidades.Backstage;
 
-// Variables del objeto
+// Variables
 activar_evento = false;
 velocidad_apertura = 5;
 ubicacion_inicial = y;

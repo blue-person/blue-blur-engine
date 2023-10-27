@@ -47,7 +47,7 @@ permitir_pisoton = false;
 
 // Variables para el manejo de los eventos Quick Time Events
 cantidad_eventos_qte = 1;  
-jump_panel = 1
+jump_panel_actual = 0;
 
 // Variables de otros casos
 sumergido_agua = false;

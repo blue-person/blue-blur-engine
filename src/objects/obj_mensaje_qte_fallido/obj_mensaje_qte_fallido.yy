@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Terminar QTE",
-    "path": "folders/Objetos/Elementos/Obstaculos/Quick Time Events/Terminar QTE.yy",
+    "name": "Mensajes",
+    "path": "folders/Objetos/Elementos/Obstaculos/Quick Time Events/Mensajes.yy",
   },
   "parentObjectId": null,
   "persistent": false,

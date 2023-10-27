@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Jump Panel",
-    "path": "folders/Objetos/Objetos padres/Plataformas/Jump Panel.yy",
+    "name": "Paneles",
+    "path": "folders/Objetos/Elementos/Obstaculos/Jump Panel/Paneles.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_jump_panel",
+    "path": "sprites/spr_jump_panel/spr_jump_panel.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

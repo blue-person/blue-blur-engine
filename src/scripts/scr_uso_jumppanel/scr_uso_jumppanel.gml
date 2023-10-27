@@ -1,54 +1,53 @@
 function gestion_uso_jumppanel() {
-	// Impulsar hacia jump panel
-    if (accion == 24) {
-        var velocidad_impulso = 15;
-        var jump_panel_requerido;
+	// Determinar si el nivel tiene jump panels
+	var objeto_existe = instance_exists(obj_jump_panel);
+	if (objeto_existe) {
+		if (accion == 24) {
+			// Mover hacia el jump panel necesario
+			for (var i = 0; i < instance_number(obj_jump_panel); ++i) {
+			    var jump_panel = instance_find(obj_jump_panel, i);
+				if (jump_panel.indice == jump_panel_actual) {
+					// Ajustar variables
+					velocidad_horizontal = 0;
+					velocidad_vertical = 0;
+					
+					// Ajustar direccion
+			        if (x < jump_panel.x) {
+			            direccion_horizontal = 1;
+			        } else if (x > jump_panel.x) {
+			            direccion_horizontal = -1;
+			        }
+					
+					// Mover hacia el jump panel
+					move_towards_point(jump_panel.x, jump_panel.y, 15);
 
-        velocidad_horizontal = 0;
-        velocidad_vertical = 0;
-
-        switch (jump_panel) {
-            case 1:
-                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_1);
-                break;
-            case 2:
-                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_2);
-                break;
-            case 3:
-                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_3);
-                break;
-            case 4:
-                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_4);
-                break;
-            case 5:
-                jump_panel_requerido = instance_nearest(x, y, obj_jump_panel_final);
-                break;
-        }
-
-        move_towards_point(jump_panel_requerido.x, jump_panel_requerido.y, velocidad_impulso);
-        if (x > jump_panel_requerido.x) {
-            direccion_horizontal = -1;
-        } else if (x < jump_panel_requerido.x) {
-            direccion_horizontal = 1;
-        }
-
-        if (tocando_suelo or place_meeting(x, y, obj_jump_panel_final)) {
-            accion = 0;
-            velocidad_horizontal = direccion_horizontal * 5;
-            jump_panel = 1;
-        }
-    }
-
-    // Mantener pegado al jump panel
-    if (accion == 25) {
-        hspeed = 0;
-        vspeed = 0;
-
-        velocidad_horizontal = 0;
-        velocidad_vertical = 0;
-
-        var jump_panel_cercano = instance_nearest(x, y, obj_jump_panel);
-        x = jump_panel_cercano.x - dsin(jump_panel_cercano.image_angle) * 4;
-        y = jump_panel_cercano.y - dcos(jump_panel_cercano.image_angle) * 4;
-    }
+					// Determinar si terminar la accion
+				    if (tocando_suelo or place_meeting(x, y, obj_final_jump_panel)) {
+						audio.reproducir_audio(audio_festejo);
+						accion = 0;
+						jump_panel_actual = 0;
+						velocidad_horizontal = sign(direccion_horizontal) * 5;
+				    }
+					
+					// Salir del evento
+					exit;
+				}
+			}
+		} else if (accion == 25) {
+			// Ajustar velocidad
+	        hspeed = 0;
+	        vspeed = 0;
+	        velocidad_horizontal = 0;
+	        velocidad_vertical = 0;
+			
+			// Ajustar ubicacion
+	        var jump_panel = instance_nearest(x, y, obj_jump_panel);
+			var angulo_imagen = jump_panel.image_angle;
+	        x = jump_panel.x - dsin(angulo_imagen) * 4;
+	        y = jump_panel.y - dcos(angulo_imagen) * 4;
+			
+			// Salir del evento
+			exit;
+	    }
+	}
 }

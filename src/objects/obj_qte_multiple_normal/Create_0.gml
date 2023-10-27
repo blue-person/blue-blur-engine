@@ -1,4 +1,4 @@
-// Variables del objeto
+// Variables
 limite_tiempo = 100;
 incremento_tiempo = 0.75;
 tiempo_restante = 0;

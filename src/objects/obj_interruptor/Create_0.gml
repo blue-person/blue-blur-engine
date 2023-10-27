@@ -2,6 +2,6 @@
 depth = Profundidades.Backstage;
 image_speed = 0;
 
-// Variables del objeto
+// Variables
 activar_evento = false;
 dispositivo_conectado = noone;

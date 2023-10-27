@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Jump Panel",
-    "path": "folders/Objetos/Elementos/Obstaculos/Quick Time Events/Jump Panel.yy",
+    "name": "QTE",
+    "path": "folders/Objetos/Elementos/Obstaculos/Jump Panel/QTE.yy",
   },
   "parentObjectId": {
     "name": "obj_qte_individual",
@@ -31,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_qte",
+    "path": "sprites/spr_qte/spr_qte.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

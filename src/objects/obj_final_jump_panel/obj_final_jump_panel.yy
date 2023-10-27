@@ -1,22 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_trampolin_jump_panel",
+  "name": "obj_final_jump_panel",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_sonic","path":"objects/obj_sonic/obj_sonic.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_jugador","path":"objects/obj_jugador/obj_jugador.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Trampolin",
-    "path": "folders/Objetos/Elementos/Obstaculos/Jump Panel/Trampolin.yy",
+    "name": "Paneles",
+    "path": "folders/Objetos/Elementos/Obstaculos/Jump Panel/Paneles.yy",
   },
   "parentObjectId": {
-    "name": "obj_trampolin",
-    "path": "objects/obj_trampolin/obj_trampolin.yy",
+    "name": "obj_jump_panel",
+    "path": "objects/obj_jump_panel/obj_jump_panel.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -34,9 +33,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_trampolin_jump_panel",
-    "path": "sprites/spr_trampolin_jump_panel/spr_trampolin_jump_panel.yy",
+    "name": "spr_final_jump_panel",
+    "path": "sprites/spr_final_jump_panel/spr_final_jump_panel.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
