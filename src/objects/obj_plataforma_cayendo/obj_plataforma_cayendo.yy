@@ -4,20 +4,15 @@
   "name": "obj_plataforma_cayendo",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_jugador","path":"objects/obj_jugador/obj_jugador.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Plataformas flotantes",
-    "path": "folders/Objetos/Objetos padres/Plataformas/Plataformas flotantes.yy",
+    "name": "Insegura",
+    "path": "folders/Objetos/Niveles/Superficies/Plataformas/Insegura.yy",
   },
-  "parentObjectId": {
-    "name": "obj_plataforma",
-    "path": "objects/obj_plataforma/obj_plataforma.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_plataforma_insegura",
+    "path": "sprites/spr_plataforma_insegura/spr_plataforma_insegura.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

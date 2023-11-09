@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"90b0af72-fd16-4cd4-991f-0d7c43307e8e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 1,
+  "origin": 4,
   "parent": {
     "name": "Plataformas",
     "path": "folders/Sprites/Texturas/Superficies/Plataformas.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 32,
-    "yorigin": 0,
+    "yorigin": 16,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

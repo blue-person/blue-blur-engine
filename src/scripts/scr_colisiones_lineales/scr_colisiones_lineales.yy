@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Calculos generales",
-    "path": "folders/Scripts/Entidades/Jugador/General/Colisiones/Calculos generales.yy",
+    "name": "Funciones",
+    "path": "folders/Scripts/Entidades/Jugador/General/Colisiones/Funciones.yy",
   },
 }

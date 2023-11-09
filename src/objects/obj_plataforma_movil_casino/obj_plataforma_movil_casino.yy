@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_piso_flotante_vertical",
+  "name": "obj_plataforma_movil_casino",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,8 +12,8 @@
     "path": "folders/Objetos/Elementos/Obstaculos/Plataformas flotantes.yy",
   },
   "parentObjectId": {
-    "name": "obj_superficie_posterior",
-    "path": "objects/obj_superficie_posterior/obj_superficie_posterior.yy",
+    "name": "obj_plataforma_movil",
+    "path": "objects/obj_plataforma_movil/obj_plataforma_movil.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_plataforma_flotante_pasto",
-    "path": "sprites/spr_plataforma_flotante_pasto/spr_plataforma_flotante_pasto.yy",
+    "name": "spr_plataforma_flotante_casino",
+    "path": "sprites/spr_plataforma_flotante_casino/spr_plataforma_flotante_casino.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -2,12 +2,14 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_plataforma_flotante",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Plataformas",
-    "path": "folders/Objetos/Niveles/Superficies/Plataformas.yy",
+    "name": "Normal",
+    "path": "folders/Objetos/Niveles/Superficies/Plataformas/Normal.yy",
   },
   "parentObjectId": {
     "name": "obj_plataforma",
