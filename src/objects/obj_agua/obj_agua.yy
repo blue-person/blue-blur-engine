@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Agua",
-    "path": "folders/Objetos/Niveles/Superficies/Agua.yy",
+    "path": "folders/Objetos/Niveles/Agua.yy",
   },
   "parentObjectId": {
     "name": "obj_water",

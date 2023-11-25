@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Insegura",
-    "path": "folders/Objetos/Niveles/Superficies/Plataformas/Insegura.yy",
+    "path": "folders/Objetos/Niveles/Plataformas/Insegura.yy",
   },
   "parentObjectId": {
     "name": "obj_plataforma",

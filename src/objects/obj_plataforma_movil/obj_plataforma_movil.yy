@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Movil",
-    "path": "folders/Objetos/Niveles/Superficies/Plataformas/Movil.yy",
+    "path": "folders/Objetos/Niveles/Plataformas/Movil.yy",
   },
   "parentObjectId": {
     "name": "obj_plataforma",

@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Generico",
-    "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Generico.yy",
+    "path": "folders/Objetos/Niveles/Rieles/Normal/Generico.yy",
   },
   "parentObjectId": {
     "name": "obj_riel",

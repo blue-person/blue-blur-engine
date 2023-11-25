@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Azul",
-    "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Azul.yy",
+    "path": "folders/Objetos/Niveles/Rieles/Normal/Azul.yy",
   },
   "parentObjectId": {
     "name": "obj_riel_azul_recto",

@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Posterior",
-    "path": "folders/Objetos/Niveles/Superficies/Rieles/Capas/Posterior.yy",
+    "path": "folders/Objetos/Niveles/Rieles/Capas/Posterior.yy",
   },
   "parentObjectId": {
     "name": "obj_riel_posterior",

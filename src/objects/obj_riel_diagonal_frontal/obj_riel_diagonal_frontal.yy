@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Frontal",
-    "path": "folders/Objetos/Niveles/Superficies/Rieles/Capas/Frontal.yy",
+    "path": "folders/Objetos/Niveles/Rieles/Capas/Frontal.yy",
   },
   "parentObjectId": {
     "name": "obj_riel_frontal",

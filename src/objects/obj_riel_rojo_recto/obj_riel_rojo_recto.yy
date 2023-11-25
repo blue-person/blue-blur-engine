@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Rojo",
-    "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Rojo.yy",
+    "path": "folders/Objetos/Niveles/Rieles/Normal/Rojo.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cinta de Moebius",
-    "path": "folders/Objetos/Niveles/Superficies/Rieles/Normal/Cinta de Moebius.yy",
+    "path": "folders/Objetos/Niveles/Rieles/Normal/Cinta de Moebius.yy",
   },
   "parentObjectId": null,
   "persistent": false,

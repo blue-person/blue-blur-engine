@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Normal",
-    "path": "folders/Objetos/Niveles/Superficies/Plataformas/Normal.yy",
+    "path": "folders/Objetos/Niveles/Plataformas/Normal.yy",
   },
   "parentObjectId": {
     "name": "obj_plataforma",
