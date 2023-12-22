@@ -8,4 +8,4 @@ depth = Profundidades.Backstage;
 posicion_inicial = y;
 activar_evento = false;
 cantidad_fuerza = 8;
-motor_polea = instance_nearest(x, y, obj_motor_polea);
+motor_polea = noone;
