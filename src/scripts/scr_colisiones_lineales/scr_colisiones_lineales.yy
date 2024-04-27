@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_colisiones_lineales",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Funciones",
-    "path": "folders/Scripts/Entidades/Jugador/General/Colisiones/Funciones.yy",
+  "$GMScript":"",
+  "%Name":"scr_colisiones_lineales",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_colisiones_lineales",
+  "parent":{
+    "name":"Funciones",
+    "path":"folders/Scripts/Entidades/Jugador/General/Colisiones/Funciones.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
