@@ -17,12 +17,12 @@ function gestion_homing_attack(){
         }
     }
 
-    if (((accion == 1) and permitir_homing_attack and control.boton_liberado("boton_salto")) or ((accion == 0) and !tocando_suelo) or (accion == 5)) {
+    if (((accion == 1) and permitir_homing_attack and controles.boton_liberado("boton_salto")) or ((accion == 0) and !tocando_suelo) or (accion == 5)) {
         permitir_homing_attack = false;
     }
 
     if (instance_exists(obj_enfoque_homing)) {
-        if (control.boton_presionado("boton_salto") and !permitir_homing_attack) {
+        if (controles.boton_presionado("boton_salto") and !permitir_homing_attack) {
             if (accion != 4) {
                 audio.reproducir_audio(snd_homing_attack);
             }
@@ -33,19 +33,19 @@ function gestion_homing_attack(){
             move_towards_point(obj_enfoque_homing.x, obj_enfoque_homing.y, 20);
         }
     } else {
-        if (control.boton_presionado("boton_salto") and !tocando_suelo and ((accion == 1) or (accion == 0)) and !permitir_homing_attack and permitir_air_dash) {
+        if (controles.boton_presionado("boton_salto") and !tocando_suelo and ((accion == 1) or (accion == 0)) and !permitir_homing_attack and permitir_air_dash) {
             if (accion != 4.5) {
                 audio.reproducir_audio(audio_homing_dash);
             }
 
             accion = 4.5;
-            alarma_2 = 15;
+            alarm[3] = 15;
             permitir_homing_attack = true;
             permitir_air_dash = false;
             image_index = 0;
         } else if ((accion == 4.5) and tocando_suelo) {
             accion = 0;
-            alarma_2 = 0;
+            alarm[3] = -1;
             permitir_homing_attack = false;
             permitir_air_dash = false;
             gravedad = 0.21875;
@@ -61,17 +61,16 @@ function gestion_homing_attack(){
     }
 
     if (accion == 4.5) {
-		if (control.boton_mantenido("boton_derecha")) {
+		if (controles.boton_mantenido("boton_derecha")) {
 			direccion_horizontal = 1;
 		} 
-		else if (control.boton_mantenido("boton_izquierda")) {
+		else if (controles.boton_mantenido("boton_izquierda")) {
 			direccion_horizontal = -1;
 		}
 		
 		velocidad_horizontal = direccion_horizontal * velocidad_homing_attack;
         velocidad_vertical = 0;
-		control.inhabilitar_lectura(2);
-		//alarm[3] = 2;
+		controles.inhabilitar_lectura(2);
     }
 
     if ((accion == 4) and instance_exists(obj_enfoque_homing)) {

@@ -10,7 +10,7 @@ function gestion_animaciones_sonic() {
 	if (accion == -1) {
 	    sprite_index = spr_sonic_agachandose;
 
-	    if (control.boton_mantenido("boton_abajo") and (image_index == 3)) {
+	    if (controles.boton_mantenido("boton_abajo") and (image_index == 3)) {
 	        fotograma = 0;
 		} else {
 			fotograma += 0.5;
@@ -21,7 +21,7 @@ function gestion_animaciones_sonic() {
 	if (accion == -3) {
 	    sprite_index = spr_sonic_mirar_arriba;
     
-	    if (control.boton_mantenido("boton_arriba") and (image_index == 2)) {
+	    if (controles.boton_mantenido("boton_arriba") and (image_index == 2)) {
 			fotograma = 0;
 		} else {
 			fotograma += 0.25;
@@ -81,6 +81,7 @@ function gestion_animaciones_sonic() {
 	}
 
 	// Frenar en el suelo
+	
 	if (accion == -4) {
 	    if ((sprite_index != spr_sonic_frenando_a) and (sprite_index != spr_sonic_frenando_b)) {
 	        if (abs(velocidad_horizontal) > 7) {
@@ -132,7 +133,7 @@ function gestion_animaciones_sonic() {
 	        image_index = 0;
 		}
 
-	    if (control.boton_presionado("boton_salto")) {
+	    if (controles.boton_presionado("boton_salto")) {
 			image_index = 4;
 		}
 	}
@@ -281,17 +282,13 @@ function gestion_animaciones_sonic() {
 	// Correr por una cinta de mobius (Corkscrew)
 	if (accion == 16) {
 	    sprite_index = spr_sonic_cinta_moebius;
-	}
-
-	if (accion == 16.5) {
+	} else if (accion == 16.5) {
 	    if (direccion_horizontal == 1) {
 			sprite_index = spr_sonic_cinta_moebius_riel_a;
 		} else {
 	        sprite_index = spr_sonic_cinta_moebius_riel_b;
 		}
-	}
-
-	if (accion == 17) {
+	} else if (accion == 17) {
 	    sprite_index = spr_sonic_rodando_a;
 	    fotograma += calcular_fotograma(2, 1);
 	}
@@ -378,9 +375,7 @@ function gestion_animaciones_sonic() {
 	if ((accion == 35) or (accion == 35.1)) {
 	    sprite_index = spr_sonic_rodando_a;
 	    fotograma += 0.5;
-	}
-
-	if (accion == 35.2) {
+	} else if (accion == 35.2) {
 	    sprite_index = spr_sonic_rotate_jump_launcher;
 	    fotograma += 0.5;
 

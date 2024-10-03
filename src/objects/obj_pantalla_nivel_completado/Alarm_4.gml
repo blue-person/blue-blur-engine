@@ -1,1 +1,0 @@
-fase_animacion = 11;

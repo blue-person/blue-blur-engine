@@ -1,1 +1,0 @@
-activar_evento = false;

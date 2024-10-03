@@ -1,97 +1,81 @@
-if (!activar_evento) {
-    lados.image_index = 0;
-    image_speed = 0;
-    image_index = 0;
+if (jugador_existe) {
+	// Variables
+	var jugador_esta_colisionando = place_meeting(x, y, jugador);
 	
-    if (puede_usarse and (obj_jugador.accion != 26) and place_meeting(x, y, obj_jugador)) {
-		obj_jugador.accion = 21;
+	// Determinar si el evento esta activo
+	if (not activar_evento) {
+	    // Ajustar parametros del objeto
+	    image_index = 0;
+	    image_speed = 0;
 		
-        cronometro = tiempo_cronometro;
-        activar_evento = true;
-        realizar_animacion = true;
-		puede_usarse = false;
+		// Ajustar parametros de los tubos
+		tubos.image_index = 0;
 		
-        audio.reproducir_audio(snd_fourwaycannon_encender);
-        audio.reproducir_audio(snd_fourwaycannon_cargando);
-    }   
-} else if (activar_evento and (obj_jugador.accion == 21)) {
-    if (realizar_animacion) {
-        if (control.boton_mantenido("boton_arriba")) {
-            if (lados.image_index == 0) {
-                lados.image_index = 5;
-                audio.reproducir_audio(snd_fourwaycannon_apuntar);
-            }
+		// Comprobrar condiciones
+	    if (jugador_esta_colisionando and puede_usarse and (jugador.accion != 26)) {
+			// Reproducir sonidos
+	        audio.reproducir_audio(snd_fourwaycannon_encender);
+	        audio.reproducir_audio(snd_fourwaycannon_cargando);
 			
-            if ((lados.image_index < 8) and (lados.image_index >= 5)) {
-                lados.fotograma += 0.5;
-			}
+			// Ajustar variables
+			alarm[0] = -1;
+			puede_usarse = false;
+	        activar_evento = true;
+	        realizar_animacion = true;
 			
-            angulo_lados = 0;
-        } else if (control.boton_mantenido("boton_derecha")) {
-            if (lados.image_index == 0) {
-                lados.image_index = 1;
-                audio.reproducir_audio(snd_fourwaycannon_apuntar);
-            }
-			
-            if ((lados.image_index < 4) and (lados.image_index >= 1)) {
-				lados.fotograma += 0.5;
-			}
-			
-            angulo_lados = 270;
-        } else if (control.boton_mantenido("boton_izquierda")) {
-            if (lados.image_index == 0) {
-                lados.image_index = 9;
-                audio.reproducir_audio(snd_fourwaycannon_apuntar);
-            }
-			
-            if ((lados.image_index < 12) and (lados.image_index >= 9)) {
-                lados.fotograma += 0.5;
-			}
-			
-            angulo_lados = 90;
-        } else if (control.boton_mantenido("boton_abajo")) {
-            if (lados.image_index == 0) {    
-                lados.image_index = 13;
-                audio.reproducir_audio(snd_fourwaycannon_apuntar);
-            }
-			
-            if ((lados.image_index < 16) and (lados.image_index >= 13)) {
-				lados.fotograma += 0.5;
-			}
-			
-            angulo_lados = 180;
-        }
+			// Ajustar accion del jugador
+			jugador.accion = 21;
+	    }   
+	} else if (jugador.accion == 21) {
+		// Ajustar parametros del objeto
+		image_speed += 0.5;
+		iniciar_alarma(0, tiempo_espera);
 		
-		if (control.boton_liberado("boton_arriba") or control.boton_liberado("boton_abajo") or control.boton_liberado("boton_derecha") or control.boton_liberado("boton_izquierda")) { 
-			realizar_animacion = false;
-		}
-    } else {
-        lados.fotograma -= 0.5;
+		// Ajustar parametros del jugador
+	    jugador.x = x;
+	    jugador.y = y;
 		
-        if ((lados.image_index == 1) or (lados.image_index == 5) or (lados.image_index == 9) or (lados.image_index == 13)) {   
-            realizar_animacion = true;
-            lados.image_index = 0;
-        }
-    }
-    
-    obj_jugador.x = x;
-    obj_jugador.y = y;
+		// Comprobar bandera
+	    if (realizar_animacion) {
+			// Ajustar animacion en base al boton que se oprime
+			var botones_liberados = controles.boton_liberado("boton_arriba") or controles.boton_liberado("boton_abajo") or controles.boton_liberado("boton_derecha") or controles.boton_liberado("boton_izquierda");
+			if (not botones_liberados) {
+			    if (controles.boton_mantenido("boton_derecha")) {
+			        self.ajustar_animacion(1, 4, 270)
+			    } else if (controles.boton_mantenido("boton_arriba")) {
+			        self.ajustar_animacion(5, 8, 0)
+			    } else if (controles.boton_mantenido("boton_izquierda")) {
+			        self.ajustar_animacion(9, 12, 90)
+			    } else if (controles.boton_mantenido("boton_abajo")) {
+			        self.ajustar_animacion(13, 16, 180)
+			    } else if (tubos.image_index != 0) {
+			        realizar_animacion = false
+			    }
+			}
+	    } else {
+			// Ajustar fotograma
+			tubos.fotograma -= 0.5;
+			
+			// Ajustar indice
+			if (array_contains(indices_validos, tubos.image_index)) {
+				realizar_animacion = true;
+	            tubos.image_index = 0;
+			}
+	    }
+	}
 	
-    image_speed += 0.5;
-    cronometro--;
-    if (cronometro <= 0) {
-        activar_evento = false;
-        obj_jugador.accion = 0;
-        audio.reproducir_audio(snd_fourwaycannon_timeout);
-    }
-}
-
-if (!place_meeting(x, y, obj_jugador) and (obj_jugador.accion != 21)) {
-    audio.detener_audio(snd_fourwaycannon_cargando);
-	
-	puede_usarse = true;
-    activar_evento = false;
-    angulo_lados = 0;
-    direccion_imagen = 0;
-    realizar_animacion = true;
+	// Determinar cuando se deja de interactuar con el objeto
+	if (not jugador_esta_colisionando and (jugador.accion != 21)) {
+		// Detener sonido
+	    audio.detener_audio(snd_fourwaycannon_cargando);
+		
+		// Ajustar variables del objeto
+		puede_usarse = true;
+	    activar_evento = false;
+	    realizar_animacion = true;
+		
+		// Ajustar variables de los tubos
+	    indice_imagen = 0;
+	    angulo_imagen = 0;
+	}
 }

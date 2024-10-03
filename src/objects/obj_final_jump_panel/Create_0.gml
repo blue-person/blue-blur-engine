@@ -1,0 +1,1 @@
+indice = instance_number(obj_jump_panel) - 1;

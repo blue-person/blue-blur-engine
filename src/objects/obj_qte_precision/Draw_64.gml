@@ -1,5 +1,5 @@
-x = pantalla.obtener_ancho() / 2;
-y = pantalla.obtener_altura()  / 2;
+x = graficos.obtener_ancho() / 2;
+y = graficos.obtener_altura()  / 2;
 
 // Dibujar ciculos limite
 draw_set_circle_precision(64);

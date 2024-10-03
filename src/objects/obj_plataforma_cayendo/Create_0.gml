@@ -1,8 +1,2 @@
-sprite = sprite_index;
-sprite_index = -1;
-mask_index = -1;
-
-tiempo_alarma = 70;
-activar_evento = false;
-x_inicial = x;
-y_inicial = y;
+// Reproducir sonido
+audio.reproducir_audio(snd_plataforma_cayendose);

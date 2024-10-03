@@ -1,3 +1,5 @@
+// Feather disable all
+
 /// This script contains mappings from binding labels - a combination of keyboard key names, mouse button
 /// names, and abstract gamepad names - to more friendly terms that you can show a player. Typically you'd
 /// set up this function to return sprites such that you can draw gamepad icons as visual icons.
@@ -9,11 +11,14 @@
 
 
 //Special case: When a non-binding value is being evaluated
-//      This should only happen if Input is given an invalid input argument
+//              This should only happen if Input is given an invalid input argument
 input_icon_not_a_binding("Not a binding");
 
 //Special case: When an empty binding is being evaluated
 input_icon_empty("Empty");
+
+//Special case: When a touch binding (virtual button) is being evaluated
+input_icon_touch("Virtual button");
 
 
 

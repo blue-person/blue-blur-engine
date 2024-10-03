@@ -1,3 +1,8 @@
-activar_evento = true;
+// Parametros del objeto
+depth = Profundidades.Backstage;
 image_speed = 0.5;
-cantidad_fuerza = 6;
+
+// Variables
+activar_evento = true;
+fuerza_horizontal = 12;
+fuerza_vertical = -6;

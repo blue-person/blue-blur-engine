@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_animaciones_shadow",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Animaciones",
-    "path": "folders/Scripts/Entidades/Jugador/Shadow/Animaciones.yy",
+  "$GMScript":"",
+  "%Name":"scr_animaciones_shadow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_animaciones_shadow",
+  "parent":{
+    "name":"Animaciones",
+    "path":"folders/Scripts/Entidades/Jugador/Shadow/Animaciones.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

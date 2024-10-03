@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "input_gamepad_delta",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "25  Gamepads (Direct)",
-    "path": "folders/Extensiones/Input v6.0.4/25  Gamepads (Direct).yy",
+  "$GMScript":"",
+  "%Name":"input_gamepad_delta",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"input_gamepad_delta",
+  "parent":{
+    "name":"25  Gamepads (Direct)",
+    "path":"folders/Extensiones/Input v6.2.0/25  Gamepads (Direct).yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

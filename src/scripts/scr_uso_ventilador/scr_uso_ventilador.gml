@@ -15,7 +15,7 @@ function gestion_uso_ventilador() {
             }
         }
 
-        if (control.boton_mantenido("boton_derecha")) {
+        if (controles.boton_mantenido("boton_derecha")) {
             if (velocidad_horizontal > 0) {
                 if (velocidad_horizontal < limite_velocidad_actual) {
                     velocidad_horizontal += aceleracion;
@@ -25,7 +25,7 @@ function gestion_uso_ventilador() {
             }
         }
 
-        if (control.boton_mantenido("boton_izquierda")) {
+        if (controles.boton_mantenido("boton_izquierda")) {
             if (velocidad_horizontal < 0) {
                 if (velocidad_horizontal > -limite_velocidad_actual) {
                     velocidad_horizontal -= aceleracion;
@@ -35,7 +35,7 @@ function gestion_uso_ventilador() {
             }
         }
 
-        if (!control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
+        if (!controles.boton_mantenido("boton_derecha") and !controles.boton_mantenido("boton_izquierda")) {
             if (velocidad_horizontal > 0) {
                 velocidad_horizontal -= friccion;
             }
@@ -49,13 +49,13 @@ function gestion_uso_ventilador() {
             }
         }
 
-        if (control.boton_mantenido("boton_derecha") and control.boton_mantenido("boton_izquierda")) {
+        if (controles.boton_mantenido("boton_derecha") and controles.boton_mantenido("boton_izquierda")) {
             if (abs(velocidad_horizontal) <= desaceleracion) then velocidad_horizontal = 0;
         }
 
-        if (control.boton_mantenido("boton_izquierda") and !control.boton_mantenido("boton_derecha")) {
+        if (controles.boton_mantenido("boton_izquierda") and !controles.boton_mantenido("boton_derecha")) {
             direccion_horizontal = -1;
-        } else if (control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) {
+        } else if (controles.boton_mantenido("boton_derecha") and !controles.boton_mantenido("boton_izquierda")) {
             direccion_horizontal = 1;
         }
     }

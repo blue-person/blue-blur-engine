@@ -1,15 +1,17 @@
 if (evento_finalizado) {
-    if (obj_jugador.jump_panel < 5) {
-        obj_jugador.accion = 24;
-        obj_jugador.gravedad = 0.21875;
-		obj_jugador.jump_panel++;  
+    if (jugador.jump_panel_actual != cantidad_jump_panels) {
+		// Ajustar variables del jugador
+        jugador.accion = 24;
+        jugador.gravedad = 0.21875;
+		jugador.jump_panel_actual++;  
 		
+		// Destruir el mensaje al triunfar anterior
         if (instance_exists(obj_mensaje_qte_triunfado)) {
             instance_destroy(obj_mensaje_qte_triunfado);
         }
 		
 		// Mensaje al completar el QTE
-        var mensaje_triunfo = instance_create_depth(x, y, -100, obj_mensaje_qte_triunfado);
+        var mensaje_triunfo = crear_elemento_gui(x, y, obj_mensaje_qte_triunfado);
 		mensaje_triunfo.respuesta_rapida = (tiempo_restante >= 66);
 		mensaje_triunfo.respuesta_normal = (tiempo_restante >= 33);
 		
@@ -20,16 +22,20 @@ if (evento_finalizado) {
 			nivel.aumentar_puntaje_cool(1250);
 		}
 		
-		// Sonido de triunfo
+		// Reproducir sonido
 		audio.reproducir_audio(snd_triunfar_jump_panel);
-    } else if (obj_jugador.jump_panel == 5) {
-		audio.reproducir_audio(obj_jugador.audio_festejo);
     }
 } else {
-	obj_jugador.accion = 0;
-    obj_jugador.jump_panel = 1;
-    obj_jugador.gravedad = 0.21875;
+	// Ajustar variables del jugador
+	jugador.accion = 0;
+    jugador.gravedad = 0.21875;
+    jugador.jump_panel_actual = 0;
 	
-	// Mensaje al fallar el QTE
-    instance_create_depth(x, y, -100, obj_mensaje_qte_fallido);
+	// Destruir el mensaje al triunfar anterior
+	if (instance_exists(obj_mensaje_qte_triunfado)) {
+		instance_destroy(obj_mensaje_qte_triunfado);
+	}
+	
+	// Crear el mensaje al fallar
+	crear_elemento_gui(x, y, obj_mensaje_qte_fallido);
 }

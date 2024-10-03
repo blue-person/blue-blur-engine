@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_gestion_hub_world",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Niveles",
-    "path": "folders/Scripts/Niveles.yy",
+  "$GMScript":"",
+  "%Name":"scr_gestion_hub_world",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_gestion_hub_world",
+  "parent":{
+    "name":"Niveles",
+    "path":"folders/Scripts/Niveles.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

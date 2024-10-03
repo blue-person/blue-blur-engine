@@ -1,4 +1,4 @@
-switch (estado_animacion) {
+switch (fase_animacion) {
     case 1:
         sprite_index = spr_animacion_checkpoint_a
         break;

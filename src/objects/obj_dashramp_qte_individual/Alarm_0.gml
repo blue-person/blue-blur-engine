@@ -1,0 +1,1 @@
+crear_elemento_gui(x, y, tipo_qte);

@@ -1,1 +1,1 @@
-instance_destroy();
+// El efecto a realizar

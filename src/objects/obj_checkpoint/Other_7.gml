@@ -1,3 +1,1 @@
-if (estado_animacion == 2) {
-	estado_animacion = 3;
-}
+if (fase_animacion == 2) then fase_animacion = 3;

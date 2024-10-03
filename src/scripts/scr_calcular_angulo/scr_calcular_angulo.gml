@@ -13,14 +13,15 @@ function calcular_angulo(angulo, espaciado_horizontal, cantidad_puntos_verificac
   var pos_y_2 = round(y - (valor_asin * espaciado_horizontal));
   
   // Declarar requisitos de colision
-  var requisitos_colision_riel = permitir_grinding;
-  var requisitos_caminar_sobre_agua = caminar_sobre_agua;
+  var evaluar_plataforma = permitir_grinding;
+  var evaluar_riel = permitir_grinding;
+  var evaluar_agua = caminar_sobre_agua;
   
   // Logica
   while (cantidad_puntos_verificacion > 0) {
     if (not primer_subconjunto) {
 		// Determinar estado del primer subconjunto
-		primer_subconjunto = colision_punto(pos_x_1, pos_y_1, requisitos_colision_riel, requisitos_caminar_sobre_agua);
+		primer_subconjunto = colision_punto(pos_x_1, pos_y_1, evaluar_plataforma, evaluar_riel, evaluar_agua);
 		
 		// Actualizar posiciones
 		pos_x_1 += valor_asin;
@@ -29,7 +30,7 @@ function calcular_angulo(angulo, espaciado_horizontal, cantidad_puntos_verificac
 	
     if (not segundo_subconjunto) {
 		// Determinar estado del segundo subconjunto
-		segundo_subconjunto = colision_punto(pos_x_2, pos_y_2, requisitos_colision_riel, requisitos_caminar_sobre_agua);
+		segundo_subconjunto = colision_punto(pos_x_2, pos_y_2, evaluar_plataforma, evaluar_riel, evaluar_agua);
 		
 		// Actualizar posiciones
 		pos_x_2 += valor_asin;

@@ -1,2 +1,0 @@
-Para agregar un Four Way Cannon a un nivel es necesario utilizar obj_fourwaycannon, el cual va a crear
-el objeto obj_fourwaycannon_lados, por lo que no es necesario el agregar este objeto manualmente en el nivel

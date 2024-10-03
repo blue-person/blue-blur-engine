@@ -1,11 +1,16 @@
-if (!place_meeting(x, y, obj_jugador)) {
-	activar_evento = false;
-}
-    
-if (activar_evento and (obj_jugador.accion == 27)) {
-    if (vspeed >= -8) {
-		vspeed -= 0.25;
+if (jugador_existe) {
+	if (activar_evento) {
+		// Ajustar la bandera
+		if (not place_meeting(x, y, jugador)) {
+			activar_evento = false;
+		}
+		
+		// Ajustar velocidad vertical
+		if (jugador.accion == 27) {
+			if (vspeed >= -8) then vspeed -= 0.25;
+		}
+	} else if (posicion_inicial > y) {
+		// Regresar a la posicion inicial
+		y += 4;
 	}
-} else if (!activar_evento and (y < ubicacion_predeterminada)) {
-    y += 4;
 }

@@ -1,1 +1,1 @@
-compuerta = obj_compuerta
+dispositivo_conectado = obj_compuerta

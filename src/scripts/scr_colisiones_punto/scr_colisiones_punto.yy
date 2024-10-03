@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_colisiones_punto",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Calculos generales",
-    "path": "folders/Scripts/Entidades/General/Colisiones/Calculos generales.yy",
+  "$GMScript":"",
+  "%Name":"scr_colisiones_punto",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_colisiones_punto",
+  "parent":{
+    "name":"Funciones",
+    "path":"folders/Scripts/Entidades/Jugador/General/Colisiones/Funciones.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

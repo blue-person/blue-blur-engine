@@ -2,7 +2,7 @@
 event_inherited();
 
 // Ajustar la profundidad
-depth = PROFUNDIDAD_AGUA;
+depth = Profundidades.Agua;
 
 // Determina que fondos se veran reflejados
 back_layers = [];
@@ -28,6 +28,6 @@ if (longitud_lista > 0) {
 }
 
 // Crear superficie y que tenga el mismo largo pero un menor ancho que este objeto
-superficie_agua = instance_create_depth(x, y, PROFUNDIDAD_AGUA, obj_superficie_agua);
+superficie_agua = instance_create_depth(x, y, Profundidades.Agua, obj_superficie_agua);
 superficie_agua.image_xscale = sprite_width / superficie_agua.sprite_width;
 superficie_agua.image_yscale = sprite_height / (superficie_agua.sprite_height * 16);

@@ -27,12 +27,12 @@ function gestion_grinding() {
             direccion_horizontal = -1;
         }
 
-        if (abs(velocidad_horizontal) < velocidad_horizontal_normal) {
+        if (abs(velocidad_horizontal) < limite_velocidad_normal) {
             velocidad_horizontal += aceleracion * direccion_horizontal;
         }
 
         if (instance_exists(obj_efecto_boost)) {
-            velocidad_horizontal = limite_velocidad_horizontal * direccion_horizontal;
+            velocidad_horizontal = limite_velocidad_maxima * direccion_horizontal;
         }
 
         velocidad_horizontal += -asin * (desaceleracion / 6);

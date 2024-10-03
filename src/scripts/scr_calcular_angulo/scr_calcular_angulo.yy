@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_calcular_angulo",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Angulos",
-    "path": "folders/Scripts/Entidades/General/Angulos.yy",
+  "$GMScript":"",
+  "%Name":"scr_calcular_angulo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_calcular_angulo",
+  "parent":{
+    "name":"Angulos",
+    "path":"folders/Scripts/Entidades/Jugador/General/Angulos.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

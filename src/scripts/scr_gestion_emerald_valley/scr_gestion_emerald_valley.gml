@@ -13,42 +13,42 @@ function configuracion_emerald_valley(){
 	  {
 	    capa: layer_get_id("cielo"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("oceano_a"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("oceano_b"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("oceano_c"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("oceano_d"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("nubes_a"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("nubes_b"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("nubes_c"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("nubes_d"),
@@ -58,12 +58,12 @@ function configuracion_emerald_valley(){
 	  {
 	    capa: layer_get_id("montes"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	  {
 	    capa: layer_get_id("piedras"),
 	    velocidad_desplazamiento: 0,
-	    permitir_reflexion_agua: true,
+	    permitir_reflexion_agua: false,
 	  },
 	];
 	nivel.establecer_propiedades_fondo(propiedades_fondo);

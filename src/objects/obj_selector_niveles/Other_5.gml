@@ -1,3 +1,3 @@
-if (not obj_jugador.permitir_movimiento) {
-	obj_jugador.permitir_movimiento = true;
+if (not jugador.permitir_movimiento) {
+	jugador.permitir_movimiento = true;
 }

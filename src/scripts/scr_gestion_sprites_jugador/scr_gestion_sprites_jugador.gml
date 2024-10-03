@@ -1,5 +1,5 @@
 function crear_particulas_jugador() {
-	if ((accion == 4) or (accion == 4.5) or (accion == 18) or instance_exists(obj_efecto_boost)) {
+	if (permitir_uso_boost or (accion == 4) or (accion == 4.5) or (accion == 18)) {
 		// Ajustar la direccion de las particulas
 		var direccion_jugador = floor(point_direction(x_inicial, y_inicial, x, y));
 		var angulo_rastro = normalizar_angulo(direccion_jugador);
@@ -11,13 +11,13 @@ function crear_particulas_jugador() {
 }
 
 function gestion_indice_sprites_jugador() {
-	if (image_index > 998) {
+	if (image_index >= 999) {
 	    image_index = 0;
 	}
 
 	if (fotograma >= 1) {
-	    image_index++;
 	    fotograma = 0;
+	    image_index++;
 	}
 }
 
@@ -63,4 +63,7 @@ function ajustes_comunes_sprites_jugador() {
 		var panel_mas_cercano = instance_nearest(x, y, obj_jump_panel);
 	    image_angle = panel_mas_cercano.image_angle;
 	}
+
+	// Ajustar la escala de la imagen en base a la direccion horizontal
+	image_xscale = direccion_horizontal;
 }

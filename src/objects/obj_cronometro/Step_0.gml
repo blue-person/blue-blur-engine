@@ -20,13 +20,9 @@ if (permitir_medir_tiempo) {
     }
 
 	// Pasar los datos a string
-	for (var i = 0; i < 3; i++) {
+	for (var i = 0; i < 3; ++i) {
 		var valor_actual = tiempo_en_numeros[i];
-		if (valor_actual < 10) {
-			tiempo_en_texto[i] = "0" + string(valor_actual);
-		} else {
-			tiempo_en_texto[i] = string(valor_actual);
-		}
+		tiempo_en_texto[i] = numero_a_texto(valor_actual, 2);
 	}
 
 	// Concatenar los datos

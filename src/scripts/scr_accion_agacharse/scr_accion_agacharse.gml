@@ -1,5 +1,5 @@
 function gestion_accion_agacharse() {
-	if (control.boton_mantenido("boton_abajo") and tocando_suelo and ((accion == 0) or (accion == 1))) {
+	if (controles.boton_mantenido("boton_abajo") and tocando_suelo and ((accion == 0) or (accion == 1))) {
         if (abs(velocidad_horizontal) < 1.03125) {
             velocidad_horizontal = 0;
             accion = -1;
@@ -13,7 +13,7 @@ function gestion_accion_agacharse() {
     }
 	
     // Dejar de agacharse
-    if ((accion == -1) and !control.boton_mantenido("boton_abajo") and (image_index >= 5)) {
+    if ((accion == -1) and !controles.boton_mantenido("boton_abajo") and (image_index >= 5)) {
         accion = 0;
     }
 

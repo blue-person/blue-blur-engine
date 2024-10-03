@@ -1,12 +1,12 @@
-// Variables del objeto
+// Variables
 limite_tiempo = 100;
 incremento_tiempo = 0.75;
 tiempo_restante = 0;
 evento_finalizado = false;
 
 // Variables temporales para las posiciones
-mitad_ancho = pantalla.obtener_ancho() / 2;
-mitad_altura = pantalla.obtener_altura()  / 2;
+mitad_ancho = graficos.obtener_ancho() / 2;
+mitad_altura = graficos.obtener_altura()  / 2;
 distancia_separacion = 30;
 
 // Posicion de la barra de tiempo

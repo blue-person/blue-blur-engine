@@ -6,8 +6,8 @@ if (other.accion != 26) {
     obj_camara.desactivar_enfoque();
     obj_cronometro.detener_cronometro();
     
-    if (instance_exists(obj_hud_normal)) {
-      obj_hud_normal.mostrar_en_pantalla = false;
+    if (instance_exists(hud)) {
+      hud.ocultar();
 	}
 	
 	audio.reproducir_audio(other.audio_muerte);

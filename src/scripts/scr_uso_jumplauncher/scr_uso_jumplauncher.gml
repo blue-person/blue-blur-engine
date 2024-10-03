@@ -1,34 +1,40 @@
 function gestion_uso_jumplauncher() {
-	var canon_mas_cercano = instance_nearest(x, y, obj_canon);
-	
-	if (accion >= 35 and accion < 36) {
-        tocando_suelo = false;
-    }
+    // Variables
+    var jump_launcher = instance_nearest(x, y, obj_jump_launcher);
 
+    // Gestionar la accion inicial
     if (accion == 35) {
+        // Ajustar variables
+        angulo = 0;
+        tocando_suelo = false;
         velocidad_vertical = 0;
         velocidad_horizontal = 0;
+        permitir_uso_boost = false;
 
-        y = canon_mas_cercano.y;
-        move_towards_point(canon_mas_cercano.x, canon_mas_cercano.y, 3);
+        // Mover hacia el jump launcher
+        move_towards_point(jump_launcher.x, jump_launcher.y, 3);
 
-        if (distance_to_point(canon_mas_cercano.x, canon_mas_cercano.y) < 2) {
+        // Ajustar variables al estar cerca
+        var distancia_al_launcher = distance_to_point(jump_launcher.x, jump_launcher.y);
+        if (distancia_al_launcher <= 2) {
             accion = 35.1;
-            canon_mas_cercano.alarm[0] = 60;
+            jump_launcher.alarm[0] = 60;
         }
-    }
 
-    if (accion == 35.1) {
-        x = canon_mas_cercano.x;
-        y = canon_mas_cercano.y;
+        // Salir del evento
+        exit;
+    } else if (accion == 35.1) {
+        // Ajustar posicion
+        x = jump_launcher.x;
+        y = jump_launcher.y;
 
-        velocidad_horizontal = 0;
-        velocidad_vertical = 0;
-    }
+        // Salir del evento
+        exit;
+    } else if ((accion == 35.2) and(tocando_suelo or(velocidad_vertical >= 2))) {
+        // Modificar accion
+        accion = 0;
 
-    if (accion == 35.2) {
-        if ((velocidad_vertical >= 2) or tocando_suelo) {
-            accion = 0;
-        }
+        // Salir del evento
+        exit;
     }
 }

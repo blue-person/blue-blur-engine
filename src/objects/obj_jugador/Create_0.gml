@@ -3,8 +3,8 @@ mascara_colision = 16;
 velocidad_horizontal = 0;
 velocidad_vertical = 0;
 limite_velocidad_vertical = 16;
-limite_velocidad_horizontal = 13;
-velocidad_horizontal_normal = 12;
+limite_velocidad_maxima = 13;
+limite_velocidad_normal = 12;
 altura_salto = -6.5;
 altura_salto_minima = -4;
 
@@ -26,7 +26,7 @@ limite_velocidad_actual = 0;
 
 // Variables para el manejo del boost
 cantidad_boost = 100;
-usando_boost = false;
+permitir_uso_boost = false;
 valor_incremento_rastro = 0;
 
 // Variables para el manejo del spindash
@@ -47,7 +47,7 @@ permitir_pisoton = false;
 
 // Variables para el manejo de los eventos Quick Time Events
 cantidad_eventos_qte = 1;  
-jump_panel = 1
+jump_panel_actual = 0;
 
 // Variables de otros casos
 sumergido_agua = false;
@@ -74,9 +74,7 @@ fotograma = 0;
 pos_y_efectos = 0;
 ultima_accion_realizada = 0;
 
-// Creacion de alarmas personalizadas para tener mas control sobre los ticks
-alarma_0 = 0;
-alarma_1 = 0;
+// Creacion de alarmas personalizadas para tener mas controles sobre los ticks
 alarma_2 = 0;
 alarma_3 = 0;
 alarma_4 = 0;
@@ -92,11 +90,30 @@ if (nivel.obtener_permiso_reaparicion()) {
 	y = ubicacion_reaparicion.pos_y;
 }
 
-// tmp
-animacion_presentacion = {
-	normal: { sprite: noone, velocidad: 0 },
-	corriendo: { sprite: noone, velocidad: 0 }
+// Parametros externos
+parametros_hud = {
+	font: noone,
+	vidas: { icono: noone },
+	boost: { colores: [noone, noone] }
 }
+
+parametros_titlecard = {
+	color_font: make_colour_rgb(155, 155, 155),
+	barra_diagonal: spr_barra_diagonal_blanca,
+	animaciones: {
+		normal: { sprite: noone, velocidad: 0 },
+		corriendo: { sprite: noone, velocidad: 0 }
+	}
+}
+
+parametros_resultados = {
+	color_font: make_colour_rgb(155, 155, 155),
+	bandas: { superior: noone, inferior: noone }
+}
+
+parametros_checkpoint = { animacion_normal: noone, font: noone }
+
+animaciones_dashring = { girando: noone, impulsandose: noone, saltando: noone }
 
 audios_grito_boost = [];
 sprite_explosion_boost = noone;
@@ -109,17 +126,6 @@ sprite_efecto_salto = { sprite_aura: noone, sprite_aterrizar: noone }
 
 sprites_acrobacia = [];
 audios_acrobacia = [];
-
-sprites_hud = {
-	icono_vidas: noone,
-	font_numeros: noone,
-	colores_barra_boost: {
-		superior: noone,
-		inferior: noone
-	}
-}
-
-font_checkpoint = noone;
 
 particulas_rastro = noone;
 
@@ -135,7 +141,3 @@ audio_muerte = noone;
 
 direccion_aura_boost = 0;
 
-parametros_titlecard = {
-	indice: 0,
-	color: make_colour_rgb(155, 155, 155)
-}

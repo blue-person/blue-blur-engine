@@ -1,5 +1,5 @@
 function gestion_accion_sonic_deslizarse() {
-    if (tocando_suelo and (accion == 0) and (abs(velocidad_horizontal) >= 3) and control.boton_mantenido("boton_ataque")) {
+    if (tocando_suelo and (accion == 0) and (abs(velocidad_horizontal) >= 3) and controles.boton_mantenido("boton_ataque")) {
         sprite_index = spr_sonic_trotando;
         accion = 9;
         audio.reproducir_audio(snd_ataque_sonic_c);
@@ -12,9 +12,9 @@ function gestion_accion_sonic_deslizarse() {
             direccion_horizontal = -1;
         }
 
-        if (direccion_horizontal == 1 and control.boton_mantenido("boton_izquierda")) {
+        if (direccion_horizontal == 1 and controles.boton_mantenido("boton_izquierda")) {
             velocidad_horizontal -= desaceleracion;
-        } else if (direccion_horizontal == -1 and control.boton_mantenido("boton_derecha")) {
+        } else if (direccion_horizontal == -1 and controles.boton_mantenido("boton_derecha")) {
             velocidad_horizontal += desaceleracion;
         }
 
@@ -30,7 +30,7 @@ function gestion_accion_sonic_deslizarse() {
             accion = 0;
         }
 
-        if (!control.boton_mantenido("boton_ataque")) {
+        if (!controles.boton_mantenido("boton_ataque")) {
             accion = 2;
         }
     }

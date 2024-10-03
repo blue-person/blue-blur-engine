@@ -1,2 +1,1 @@
-vspeed = 0;
-desvanecimiento = true;
+desvanecer = true;

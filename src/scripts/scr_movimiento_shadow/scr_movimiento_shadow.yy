@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_movimiento_shadow",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Gestor",
-    "path": "folders/Scripts/Entidades/Jugador/Shadow/Movimientos/Gestor.yy",
+  "$GMScript":"",
+  "%Name":"scr_movimiento_shadow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_movimiento_shadow",
+  "parent":{
+    "name":"Gestor",
+    "path":"folders/Scripts/Entidades/Jugador/Shadow/Movimientos/Gestor.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

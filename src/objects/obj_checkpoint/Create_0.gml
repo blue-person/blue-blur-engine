@@ -1,3 +1,6 @@
-depth = PROFUNDIDAD_JUGADOR + 2;
+// Parametros del objeto
+depth = Profundidades.Backstage;
 image_speed = 0.25;
-estado_animacion = 1;
+
+// Variables
+fase_animacion = 1;

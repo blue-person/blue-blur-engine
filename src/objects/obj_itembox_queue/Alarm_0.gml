@@ -1,1 +1,0 @@
-visibilidad = false;

@@ -9,7 +9,7 @@ function colision_lineal_simple(superficie) {
 	return collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, superficie, true, true);
 }
 
-function colision_lineal_general(pos_x_1, pos_y_1, pos_x_2, pos_y_2, requisitos_colision_riel = false, requisitos_caminar_sobre_agua = false) {
+function colision_lineal_general(pos_x_1, pos_y_1, pos_x_2, pos_y_2, evaluar_plataforma = false, evaluar_riel = false, evaluar_agua = false) {
 	// Declaracion de valores para los rieles
 	var valor_auxiliar_ancho = lengthdir_y(8, angulo);
 	var valor_auxiliar_altura = lengthdir_y(8, angulo - 90);
@@ -18,8 +18,14 @@ function colision_lineal_general(pos_x_1, pos_y_1, pos_x_2, pos_y_2, requisitos_
 	var colision_normal_superficie = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie, true, true);
 	if (colision_normal_superficie) then return true;
 	
+	// Determinar colisiones con plataforma
+	if (evaluar_plataforma) {
+		var colision_plataforma = collision_line(pos_x_1 + valor_auxiliar_ancho, pos_y_1 - valor_auxiliar_altura, pos_x_2, pos_y_2, obj_plataforma, true, true);
+		if (colision_plataforma) then return true;
+	}
+	
 	// Determinar colisiones con rieles
-	if (requisitos_colision_riel) {
+	if (evaluar_riel) {
 		var colision_normal_riel = collision_line(pos_x_1 + valor_auxiliar_ancho, pos_y_1 - valor_auxiliar_altura, pos_x_2, pos_y_2, obj_riel, true, true);
 		if (colision_normal_riel) then return true;
 	}
@@ -31,7 +37,7 @@ function colision_lineal_general(pos_x_1, pos_y_1, pos_x_2, pos_y_2, requisitos_
 		if (colision_superficie_frontal) then return true;
 		
 		// Determinar colisiones con rieles
-		if (requisitos_colision_riel) {
+		if (evaluar_riel) {
 			var colision_riel_frontal = collision_line(pos_x_1 + valor_auxiliar_ancho, pos_y_1 - valor_auxiliar_altura, pos_x_2, pos_y_2, obj_riel_frontal, true, true);
 			if (colision_riel_frontal) then return true;
 		}
@@ -41,14 +47,14 @@ function colision_lineal_general(pos_x_1, pos_y_1, pos_x_2, pos_y_2, requisitos_
 		if (colision_superficie_posterior) then return true;
 		
 		// Determinar colisiones con rieles
-		if (requisitos_colision_riel) {
+		if (evaluar_riel) {
 			var colision_riel_posterior = collision_line(pos_x_1 + valor_auxiliar_ancho, pos_y_1 - valor_auxiliar_altura, pos_x_2, pos_y_2, obj_riel_posterior, true, true);
 			if (colision_riel_posterior) then return true;
 		}
     }
 	
 	// Determinar si esta colisionando con la superficie del agua
-	if (requisitos_caminar_sobre_agua) {
+	if (evaluar_agua) {
 		var colision_superficie_agua = collision_line(pos_x_1, pos_y_1, pos_x_2, pos_y_2, obj_superficie_agua, true, true);
 		if (colision_superficie_agua) then return true;
 	}

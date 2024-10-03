@@ -1,4 +1,6 @@
-depth = -2;
+// Parametros del objeto
+depth = Profundidades.Frontstage;
 
-activar_evento = true;
+// Variables
+activar_evento = false;
 permitir_salto = false;

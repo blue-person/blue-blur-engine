@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "input_cursor_gyro_enabled_set",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "21  Gyro & Motion",
-    "path": "folders/Extensiones/Input v6.0.4/21  Gyro & Motion.yy",
+  "$GMScript":"",
+  "%Name":"input_cursor_gyro_enabled_set",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"input_cursor_gyro_enabled_set",
+  "parent":{
+    "name":"21  Gyro & Motion",
+    "path":"folders/Extensiones/Input v6.2.0/21  Gyro & Motion.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

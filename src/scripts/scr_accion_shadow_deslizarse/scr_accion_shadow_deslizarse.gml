@@ -1,5 +1,5 @@
 function gestion_accion_shadow_deslizarse() {
-    if (tocando_suelo and (accion == 0) and control.boton_presionado("boton_ataque")) {
+    if (tocando_suelo and (accion == 0) and controles.boton_presionado("boton_ataque")) {
         image_index = 0;
 
         if (abs(velocidad_horizontal) < 10) {

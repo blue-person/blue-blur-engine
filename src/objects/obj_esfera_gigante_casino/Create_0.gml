@@ -3,7 +3,7 @@ activar_evento = false;
 mascara_colision = 50;
 velocidad_vertical = 0;
 velocidad_horizontal = 0;
-limite_velocidad_horizontal = 13;
+limite_velocidad_maxima = 13;
 limite_velocidad_vertical = 14;
 
 gravedad = 0.3;

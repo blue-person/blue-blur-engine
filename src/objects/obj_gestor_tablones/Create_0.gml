@@ -1,9 +1,15 @@
-cantidad_tablones = 16;
-ancho_puente = cantidad_tablones * 16;           
-ancho_medio_puente = ancho_puente / 2;
-maxima_tension_puente = 16;
-    
-for (var i = 0; i < cantidad_tablones; i++) {
-	pesos_tablones[i] = 0;
-	tablones[i] = instance_create_depth(x + i * 16, y, 0, obj_tablon_puente);
+// Variables
+cantidad_nodos = 16;
+ancho_puente = cantidad_nodos * 16;
+mitad_ancho_puente = ancho_puente / 2;
+tension_maxima = 16;
+nodos = [];
+
+// Crear los nodos
+for (var i = 0; i < cantidad_nodos; ++i) {
+    var pos_x = x + i * 16;
+    nodos[i] = {
+        nodo: instance_create_depth(pos_x, y, Profundidades.Backstage, obj_nodo_puente),
+        altura: 0
+    }
 }

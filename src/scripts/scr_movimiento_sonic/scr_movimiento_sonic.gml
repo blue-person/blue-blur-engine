@@ -1,12 +1,12 @@
 function gestion_movimiento_sonic() {
     // Gestionar el boost
     gestion_boost();
-	
-    // Movimiento basico
-    gestion_movimiento_basico();
-	
+
     // Frenar al cambiar de direccion
     gestion_accion_frenar();
+	
+	// Movimiento basico
+    gestion_movimiento_basico();
 
     // Gestion del salto
     gestion_accion_salto();
@@ -34,9 +34,6 @@ function gestion_movimiento_sonic() {
 
     // Dash ramp
     gestion_uso_dashramp();
-
-    // Dash pad
-    gestion_uso_dashpad();
 
     // Deslizarse por el suelo
 	gestion_accion_sonic_deslizarse();

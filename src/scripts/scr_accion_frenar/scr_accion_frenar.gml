@@ -1,6 +1,9 @@
 function gestion_accion_frenar() {
 	if ((accion == 0) and tocando_suelo) {
-        if (((direccion_horizontal == 1) and control.boton_mantenido("boton_izquierda") and (velocidad_horizontal >= 3)) or ((direccion_horizontal == -1) and control.boton_mantenido("boton_derecha") and (velocidad_horizontal <= -3))) {
+		var cambiar_hacia_izquierda = (direccion_horizontal == 1) and controles.boton_mantenido("boton_izquierda") and (velocidad_horizontal >= 3);
+		var cambiar_hacia_derecha = (direccion_horizontal == -1) and controles.boton_mantenido("boton_derecha") and (velocidad_horizontal <= -3);
+		
+        if (cambiar_hacia_izquierda or cambiar_hacia_derecha) {
             if (colision_lineal_simple(obj_superficie_agua)) {
                 audio.reproducir_audio(snd_frenar_agua);
             } else if (colision_lineal_superficie(obj_material_vidrio, obj_muro_vidrio_posterior, obj_muro_vidrio_frontal)) {
@@ -32,15 +35,15 @@ function gestion_accion_frenar() {
             velocidad_horizontal += desaceleracion;
         }
 
-        if (velocidad_horizontal > 1 and control.boton_mantenido("boton_izquierda")) {
+        if ((velocidad_horizontal > 1) and controles.boton_mantenido("boton_izquierda")) {
             velocidad_horizontal -= desaceleracion / 0.75;
         }
 
-        if ((velocidad_horizontal < -1) and control.boton_mantenido("boton_derecha")) {
+        if ((velocidad_horizontal < -1) and controles.boton_mantenido("boton_derecha")) {
             velocidad_horizontal += desaceleracion / 0.75;
         }
 
-        if (((direccion_horizontal == 1) and control.boton_mantenido("boton_derecha") and !control.boton_mantenido("boton_izquierda")) or ((direccion_horizontal == -1) and control.boton_mantenido("boton_izquierda") and !control.boton_mantenido("boton_derecha"))) {
+        if (((direccion_horizontal == 1) and controles.boton_mantenido("boton_derecha") and !controles.boton_mantenido("boton_izquierda")) or ((direccion_horizontal == -1) and controles.boton_mantenido("boton_izquierda") and !controles.boton_mantenido("boton_derecha"))) {
             accion = 0;
         }
 
